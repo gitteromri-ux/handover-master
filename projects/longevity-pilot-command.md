@@ -1,5 +1,10 @@
 # Longevity Pilot Command
 
+## 🕰️ Started: **Jul 3, 2026**
+## 🟢 Last interaction: **Jul 10, 2026** (1mo ago)
+
+---
+
 ## One-line purpose
 
 Longevity Pilot Command is a new GitHub Pages dashboard repo for an interactive Longevity CEO planning command surface created after the July CEO Plan iteration.

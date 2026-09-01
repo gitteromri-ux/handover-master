@@ -1,5 +1,10 @@
 # LLA Course Checkout
 
+## 🕰️ Started: **Jul 29, 2026**
+## 🟢 Last interaction: **Aug 28, 2026** (4 days ago)
+
+---
+
 ## One-line purpose
 
 LLA Course Checkout is the separate `gitteromri-ux/lla-course-checkout` sales-funnel and self-service enrollment surface for The Longevity Blueprint.

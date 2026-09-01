@@ -1,5 +1,10 @@
 # Amy Squishy
 
+## 🕰️ Started: **Jun 10, 2026**
+## 🟢 Last interaction: **Aug 16, 2026** (2w ago)
+
+---
+
 ## One-line purpose
 
 Amy Squishy is a Hebrew RTL e-commerce site for squishy toys with a public GitHub Pages storefront.

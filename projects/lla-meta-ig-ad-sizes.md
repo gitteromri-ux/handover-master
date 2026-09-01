@@ -1,5 +1,10 @@
 # LLA Meta and Instagram Ad Sizes
 
+## 🕰️ Started: **Aug 14, 2026**
+## 🟢 Last interaction: **Aug 25, 2026** (1w ago)
+
+---
+
 ## One-line purpose
 
 LLA Meta and Instagram Ad Sizes is the `gitteromri-ux/lla-meta-ig-ad-sizes` repository for upload-ready Longevity Life Academy paid-social creatives, approval views, exact placement sizes, and downloadable campaign assets.

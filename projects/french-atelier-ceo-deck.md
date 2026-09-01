@@ -1,5 +1,10 @@
 # French Atelier CEO Deck
 
+## 🕰️ Started: **Jun 10, 2026**
+## 🟢 Last interaction: **Jul 15, 2026** (1mo ago)
+
+---
+
 ## One-line purpose
 
 French Atelier CEO Deck is the CEO/board-facing marketing review deck hosted at `gitteromri-ux/french-atelier-ceo-deck`, with recent versions focused on video correctness, organic social mockups, platform slides, sound toggles, and mobile l...

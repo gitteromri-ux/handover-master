@@ -1,5 +1,10 @@
 # Julie Gibson Clark Plan
 
+## 🕰️ Started: **Jul 6, 2026**
+## 🟢 Last interaction: **Aug 9, 2026** (3w ago)
+
+---
+
 ## One-line purpose
 
 Julie Gibson Clark Plan is an LLA partnership, production, animation, and PR track centered on Julie Gibson Clark.

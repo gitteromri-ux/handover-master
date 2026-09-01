@@ -1,5 +1,10 @@
 # French Atelier Client Demographics
 
+## 🕰️ Started: **Aug 8, 2026**
+## 🟢 Last interaction: **Aug 8, 2026** (3w ago)
+
+---
+
 ## One-line purpose
 
 French Atelier Client Demographics is a board-facing audience briefing in `gitteromri-ux/french-atelier-client-demographics`. It isolates who the client audience is without exposing campaign economics.

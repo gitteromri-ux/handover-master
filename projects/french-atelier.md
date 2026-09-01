@@ -1,5 +1,10 @@
 # French Atelier
 
+## 🕰️ Started: **Jun 10, 2026**
+## 🟢 Last interaction: **Aug 14, 2026** (2w ago)
+
+---
+
 ## One-line purpose
 
 French Atelier is a French e-learning website by Acadomia hosted at `gitteromri-ux/french-atelier`, with active work on the public GitHub Pages site, mobile UX, Mapstr integration, and the AI tutor character Julien.

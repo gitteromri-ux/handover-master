@@ -1,5 +1,10 @@
 # Courtney LLA Masterclass
 
+## 🕰️ Started: **Jul 7, 2026**
+## 🟢 Last interaction: **Aug 25, 2026** (1w ago)
+
+---
+
 ## One-line purpose
 
 Courtney LLA Masterclass is a Longevity Life Academy masterclass-video script and storyboard deck in `gitteromri-ux/courtney-lla-masterclass`, built to sell LLA enrollment to U.S. adults interested in longevity through 60–90 second video ad...

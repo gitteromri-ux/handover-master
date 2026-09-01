@@ -1,5 +1,10 @@
 # Apt Furniture Deck
 
+## 🕰️ Started: **Jul 6, 2026**
+## 🟢 Last interaction: **Aug 14, 2026** (2w ago)
+
+---
+
 ## One-line purpose
 
 Apt Furniture Deck is a Hebrew RTL GitHub Pages shopping deck for the user's apartment-furnishing sprint, built for a PA to compare and execute furniture and household purchases from live product sources.

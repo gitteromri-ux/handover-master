@@ -1,5 +1,10 @@
 # July Planning Longevity
 
+## 🕰️ Started: **Jul 1, 2026**
+## 🟢 Last interaction: **Jul 2, 2026** (2mo ago)
+
+---
+
 ## One-line purpose
 
 July Planning Longevity is a GitHub Pages and workbook planning surface for Longevity call-center behavior, budget options, and French Atelier benchmark comparisons.

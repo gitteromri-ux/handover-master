@@ -1,5 +1,10 @@
 # Longevity Productions Courtney Julie
 
+## 🕰️ Started: **Jul 9, 2026**
+## 🟢 Last interaction: **Aug 9, 2026** (3w ago)
+
+---
+
 ## One-line purpose
 
 Longevity Productions Courtney Julie is the LLA video-production track for Julie Gibson Clark and Courtney.

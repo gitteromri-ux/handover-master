@@ -1,5 +1,10 @@
 # Brown Hotels Greece
 
+## 🕰️ Started: **Aug 17, 2026**
+## 🟢 Last interaction: **Aug 17, 2026** (2w ago)
+
+---
+
 ## One-line purpose
 
 Brown Hotels Greece is a hospitality strategy and digital-redesign project centered on PLAY Paros, pairing a guest-facing site with a CEO briefing about F&B, service, and revenue transformation.

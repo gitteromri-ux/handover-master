@@ -1,5 +1,10 @@
 # Longevity Life Academy
 
+## 🕰️ Started: **Jun 10, 2026**
+## 🟢 Last interaction: **Aug 21, 2026** (1w ago)
+
+---
+
 ## One-line purpose
 
 Longevity Life Academy is the user's longevity education project for a premium, science-first online course/school associated with eTeacher Group.

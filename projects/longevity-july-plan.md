@@ -1,5 +1,10 @@
 # Longevity July Plan
 
+## 🕰️ Started: **Jul 2, 2026**
+## 🟢 Last interaction: **Jul 3, 2026** (2mo ago)
+
+---
+
 ## One-line purpose
 
 Longevity July Plan is a standalone GitHub Pages CEO-planning dashboard in `gitteromri-ux/longevity-july-plan` for Longevity Life Academy's July 2026 call-center economics, target gap, and capacity plan.

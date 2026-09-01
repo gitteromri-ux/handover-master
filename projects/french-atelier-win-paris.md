@@ -1,5 +1,10 @@
 # French Atelier Win Paris
 
+## 🕰️ Started: **Jun 22, 2026**
+## 🟢 Last interaction: **Jul 7, 2026** (1mo ago)
+
+---
+
 ## One-line purpose
 
 French Atelier Win Paris is a GitHub Pages satellite campaign for French Atelier’s “Win a Free Flight to Paris” Bastille Day contest. It separates the contest landing page, terms, popup, and Meta/Instagram ad-kit review/download surfaces fr...

@@ -1,5 +1,10 @@
 # French Atelier Social Deck
 
+## 🕰️ Started: **Jun 23, 2026**
+## 🟢 Last interaction: **Jun 28, 2026** (2mo ago)
+
+---
+
 ## One-line purpose
 
 French Atelier Social Deck is a GitHub Pages review deck for French Atelier organic social content, hosted in `gitteromri-ux/french-atelier-social-deck`. It packages 27 portrait videos in phone-style mockups under the ART DE VIVRE brand dir...

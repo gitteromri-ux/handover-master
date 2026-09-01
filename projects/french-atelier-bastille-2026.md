@@ -1,5 +1,10 @@
 # French Atelier Bastille 2026
 
+## 🕰️ Started: **Jun 28, 2026**
+## 🟢 Last interaction: **Jun 29, 2026** (2mo ago)
+
+---
+
 ## One-line purpose
 
 French Atelier Bastille 2026 is the GitHub Pages paid-social ad pack and posting playbook for French Atelier’s Bastille Day Paris-flight giveaway, hosted in `gitteromri-ux/frenchatelier-bastille-2026`. It is separate from the contest landin...

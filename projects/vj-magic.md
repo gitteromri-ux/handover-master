@@ -1,5 +1,10 @@
 # VJ Magic
 
+## 🕰️ Started: **Jun 17, 2026**
+## 🟢 Last interaction: **Jun 22, 2026** (2mo ago)
+
+---
+
 ## One-line purpose
 
 VJ Magic is the user's event-production software marketing site, represented by the GitHub Pages repos `gitteromri-ux/vj-magic-site` and `gitteromri-ux/vj-magic-site-v2`. V1 is preserved as the alpha/live baseline, while V2 is the active im...

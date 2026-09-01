@@ -1,5 +1,10 @@
 # French Atelier Onboarding
 
+## 🕰️ Started: **Jul 1, 2026**
+## 🟢 Last interaction: **Aug 6, 2026** (3w ago)
+
+---
+
 ## One-line purpose
 
 French Atelier Onboarding is the lifecycle email, landing-page, WhatsApp, Typeform, imagery, and mockup package for French Atelier by Acadomia.

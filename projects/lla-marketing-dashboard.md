@@ -1,5 +1,10 @@
 # LLA Marketing Dashboard
 
+## 🕰️ Started: **Jun 24, 2026**
+## 🟢 Last interaction: **Jul 29, 2026** (1mo ago)
+
+---
+
 ## One-line purpose
 
 LLA Marketing Dashboard is a standalone GitHub Pages command center for Longevity Life Academy Meta campaign planning, hosted in `gitteromri-ux/lla-marketing-dashboard` and separate from the CEO Performance Suite snapshot tab.

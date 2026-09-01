@@ -1,5 +1,10 @@
 # eTeacher Longevity PR Campaign
 
+## 🕰️ Started: **Jul 7, 2026**
+## 🟢 Last interaction: **Aug 6, 2026** (3w ago)
+
+---
+
 ## One-line purpose
 
 eTeacher Longevity PR Campaign is a CEO-facing PR rollout deck in `gitteromri-ux/eteacher-longevity-pr-campaign` for launching Longevity Life Academy as eTeacher Group's U.S. longevity-market initiative, then compounding the story through J...

@@ -1,5 +1,10 @@
 # CEO Performance Suite
 
+## 🕰️ Started: **Jun 15, 2026**
+## 🟢 Last interaction: **Jun 24, 2026** (2mo ago)
+
+---
+
 ## One-line purpose
 
 CEO Performance Suite is a CEO-facing dashboard and meeting-summary package for Rosen and IIBS call-center and marketing performance, exposed as a `gitteromri-ux/ceo-performance-suite` repository and a final Perplexity app link during the J...

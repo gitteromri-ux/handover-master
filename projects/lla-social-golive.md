@@ -1,5 +1,10 @@
 # LLA Social Go-Live
 
+## 🕰️ Started: **Aug 17, 2026**
+## 🟢 Last interaction: **Aug 25, 2026** (1w ago)
+
+---
+
 ## One-line purpose
 
 LLA Social Go-Live is the public organic Facebook and Instagram content pack for Longevity Life Academy, organized in `gitteromri-ux/lla-social-golive` as a review and download surface for platform-ready posts.

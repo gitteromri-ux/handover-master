@@ -1,5 +1,10 @@
 # French Atelier June Results
 
+## 🕰️ Started: **Jul 1, 2026**
+## 🟢 Last interaction: **Jul 1, 2026** (2mo ago)
+
+---
+
 ## One-line purpose
 
 French Atelier June Results is a standalone CEO-suite-style GitHub Pages dashboard for June 2026 French Atelier KPI results.

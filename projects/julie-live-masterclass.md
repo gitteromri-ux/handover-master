@@ -1,5 +1,10 @@
 # Julie Gibson Clark Live Masterclass
 
+## 🕰️ Started: **Aug 18, 2026**
+## 🟢 Last interaction: **Aug 27, 2026** (5 days ago)
+
+---
+
 ## One-line purpose
 
 Julie Gibson Clark Live Masterclass is LLA's public landing experience for a live protocol-focused event.
