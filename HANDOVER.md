@@ -1,11 +1,12 @@
-# 🗂️ MASTER HANDOVER
+# 🗂️ MASTER HANDOVER · v3
 # Omri Gitter → Next Perplexity Session
 
 > **Every active task. Every start date. Every last interaction. Zero holes.**
+> **Now includes every commit and session update from today.**
 
 ---
 
-## 📅 Compiled: **September 1, 2026** · 6:59 PM Asia/Jerusalem
+## 📅 Compiled: **September 1, 2026** · **10:08 PM Asia/Jerusalem**  ·  update #3 (adds today's 16 commits + new IN Venture / Julie Letter tasks)
 
 - **Owner:** Omri Gitter (`gitter.omri@gmail.com` · `omri.gitter@eteachergroup.com`)
 - **Personal GitHub:** [`gitteromri-ux`](https://github.com/gitteromri-ux)
@@ -13,68 +14,160 @@
 
 ---
 
+# ⚡ WHAT HAPPENED IN THE LAST FEW HOURS
+
+Today (Sep 1, 2026) had **very high activity**. Here's the summary before the deep index:
+
+## 🆕 New tasks born today
+
+1. **[LLA Julie Communications Letter](https://github.com/gitteromri-ux/lla-julie-letter)** — public editorial magazine site for Julie's masterclass launch. 3 commits, latest at **19:02 UTC (a few minutes ago)**.
+2. **[LLA Julie Communications Plan V2](https://github.com/gitteromri-ux/lla-julie-communications-plan-v2)** — inline-media rebuild of V1. 4 commits.
+3. **[LLA Masterclass Press (Round 3)](https://github.com/gitteromri-ux/lla-masterclass-press)** — two Yahoo/AP-format press releases.
+4. **[LLA Masterclass Syllabus](https://github.com/gitteromri-ux/lla-masterclass-syllabus)** — one-hour teaching syllabus site. 3 commits.
+
+## 🔄 Active tasks touched today
+
+- **[IN Venture Website (Gita Agency)](https://github.com/gitteromri-ux/in-venture-website)** — premium design overhaul V2 pushed at 10:23 UTC. Session went **9+ hours** iterating on typography, color, size, "premium" feel. **This is not in the older wiki index — added as new task below.**
+- **[Julie Masterclass (org production)](https://github.com/Longevity-Academy/julie-masterclass)** — 2 commits fixing checkout blocker (lead API PascalCase parse) and enriching ActiveCampaign event payload with session date + CRM order/student IDs.
+- **[Handover Master](https://github.com/gitteromri-ux/handover-master)** — this document itself, v1 → v2 → v3.
+
+## 🧠 IN Venture — critical context from today's session
+
+- Client: **IN Venture**, a Sumitomo Corporation-backed Israeli deep-tech VC fund.
+- Delivered under **Gita Agency** brand.
+- Sometimes misheard as "Inventor VC Fund" in voice input.
+- **Strong iterative feedback pattern today:** rejected small typography, template look, monotonic palette, yellow accents, generic AI-looking design, content mismatches with prompts.
+- **What lands:** Playfair Display / Playfair Italic at very large size, dark keynote hero, brand-true palette, executive-ready professional marketing tone.
+
+
+## 📆 Every commit landed **today** (Sep 1, 2026)
+
+| Time (UTC) | Repo | What changed |
+|---|---|---|
+| **19:02** | [`lla-julie-letter`](https://github.com/gitteromri-ux/lla-julie-letter) | Full-width layout, magazine-scale hero, larger nav, no wasted margins |
+| **18:58** | [`lla-julie-letter`](https://github.com/gitteromri-ux/lla-julie-letter) | Redesign: premium editorial letter, huge Playfair Italic type, embedded media |
+| **16:01** | [`handover-master`](https://github.com/gitteromri-ux/handover-master) | Add clear dates + large date headers on every task |
+| **14:46** | [`handover-master`](https://github.com/gitteromri-ux/handover-master) | Master handover — 36 projects, 365 URLs, 62 repos, full ruleset |
+| **13:30** | [`lla-julie-letter`](https://github.com/gitteromri-ux/lla-julie-letter) | Communications plan letter — initial full public site |
+| **11:04** | [`lla-masterclass-press`](https://github.com/gitteromri-ux/lla-masterclass-press) | Round-three press articles: two full Yahoo/AP-format releases |
+| **10:58** | [`Longevity-Academy/julie-masterclass`](https://github.com/Longevity-Academy/julie-masterclass) | Fix checkout blocker: parse lead API response body, accept PascalCase |
+| **10:51** | [`lla-masterclass-syllabus`](https://github.com/gitteromri-ux/lla-masterclass-syllabus) | Rewrite in LLA Blueprint course format (teaching-beat arrows) |
+| **10:47** | [`lla-masterclass-syllabus`](https://github.com/gitteromri-ux/lla-masterclass-syllabus) | Real teaching syllabus, minute-by-minute, no fluff |
+| **10:45** | [`Longevity-Academy/julie-masterclass`](https://github.com/Longevity-Academy/julie-masterclass) | AC events carry session date + CRM order/student ids for eTeacher ads |
+| **10:37** | [`lla-masterclass-syllabus`](https://github.com/gitteromri-ux/lla-masterclass-syllabus) | Masterclass one-hour syllabus site — initial commit |
+| **10:23** | [`in-venture-website`](https://github.com/gitteromri-ux/in-venture-website) | Premium design overhaul v2 — Playfair Display, brand-true dark keynote hero |
+| **09:52** | [`lla-julie-communications-plan-v2`](https://github.com/gitteromri-ux/lla-julie-communications-plan-v2) | V2 · zero external buttons · every material rendered as in-page mockup |
+| **09:36** | [`lla-julie-communications-plan-v2`](https://github.com/gitteromri-ux/lla-julie-communications-plan-v2) | V2 · inline media (videos, banners, animations, mockups, press mockups) |
+| **09:01** | [`lla-julie-communications-plan-v2`](https://github.com/gitteromri-ux/lla-julie-communications-plan-v2) | V2 · exact V1 structural clone · masterclass launch content |
+| **08:30** | [`lla-julie-communications-plan-v2`](https://github.com/gitteromri-ux/lla-julie-communications-plan-v2) | V2 communications plan — masterclass launch (initial commit) |
+
+**Total commits today:** **16** across **7 repos**.
+
+
+---
+
 # 📊 QUANTIFIED SCOPE
 
 | Metric | Count |
 |---|---|
-| **Active tasks with dedicated handover files** | **36** |
-| **Unique public URLs preserved** | **365** |
+| **Active tasks with dedicated handover files** | **43** (up from 36 — +7 new/updated today) |
+| **Commits landed today** | **16 across 7 repos** |
+| **Unique public URLs preserved** | **365+** |
 | **GitHub repos referenced in wiki** | **62** |
-| **GitHub Pages live sites detected** | **8** |
-| **Personal `gitteromri-ux` repos catalogued** | **99+** (see full list below) |
-| **`Longevity-Academy` org repos catalogued** | **12** |
-| **Google Drive assets** | **0** — all delivery via GitHub |
+| **Personal `gitteromri-ux` repos catalogued** | **99+** |
+| **`Longevity-Academy` org repos** | **12** |
 
 ---
 
-# 🕒 EVERY TASK, NEWEST FIRST — WITH DATES
-
-Sorted by **last interaction** (most recent on top). Click any name to jump to full context.
+# 🕒 EVERY TASK, NEWEST FIRST — WITH DATES (updated)
 
 | # | Task | Started | Last touch | Age |
 |---|---|---|---|---|
-| 1 | **[LLA Course Checkout](#lla-course-checkout)** | Jul 29, 2026 | **Aug 28, 2026** | 4 days ago |
-| 2 | **[LLA Masterclass Emails](#lla-masterclass-emails)** | Aug 27, 2026 | **Aug 28, 2026** | 4 days ago |
-| 3 | **[Julie Gibson Clark Live Masterclass](#julie-gibson-clark-live-masterclass)** | Aug 18, 2026 | **Aug 27, 2026** | 5 days ago |
-| 4 | **[LLA Delta Force](#lla-delta-force)** | Aug 8, 2026 | **Aug 27, 2026** | 5 days ago |
-| 5 | **[Courtney LLA Masterclass](#courtney-lla-masterclass)** | Jul 7, 2026 | **Aug 25, 2026** | 1w ago |
-| 6 | **[LLA Meta and Instagram Ad Sizes](#lla-meta-and-instagram-ad-sizes)** | Aug 14, 2026 | **Aug 25, 2026** | 1w ago |
-| 7 | **[LLA Social Go-Live](#lla-social-go-live)** | Aug 17, 2026 | **Aug 25, 2026** | 1w ago |
-| 8 | **[Longevity Life Academy](#longevity-life-academy)** | Jun 10, 2026 | **Aug 21, 2026** | 1w ago |
-| 9 | **[Brown Hotels Greece](#brown-hotels-greece)** | Aug 17, 2026 | **Aug 17, 2026** | 2w ago |
-| 10 | **[Amy Squishy](#amy-squishy)** | Jun 10, 2026 | **Aug 16, 2026** | 2w ago |
-| 11 | **[Apt Furniture Deck](#apt-furniture-deck)** | Jul 6, 2026 | **Aug 14, 2026** | 2w ago |
-| 12 | **[French Atelier](#french-atelier)** | Jun 10, 2026 | **Aug 14, 2026** | 2w ago |
-| 13 | **[Julie Gibson Clark Plan](#julie-gibson-clark-plan)** | Jul 6, 2026 | **Aug 9, 2026** | 3w ago |
-| 14 | **[Longevity Productions Courtney Julie](#longevity-productions-courtney-julie)** | Jul 9, 2026 | **Aug 9, 2026** | 3w ago |
-| 15 | **[French Atelier Client Demographics](#french-atelier-client-demographics)** | Aug 8, 2026 | **Aug 8, 2026** | 3w ago |
-| 16 | **[LLA Scripts 09/10 Downloads](#lla-scripts-0910-downloads)** | Jul 15, 2026 | **Aug 8, 2026** | 3w ago |
-| 17 | **[eTeacher Longevity PR Campaign](#eteacher-longevity-pr-campaign)** | Jul 7, 2026 | **Aug 6, 2026** | 3w ago |
-| 18 | **[French Atelier Onboarding](#french-atelier-onboarding)** | Jul 1, 2026 | **Aug 6, 2026** | 3w ago |
-| 19 | **[LLA Marketing Dashboard](#lla-marketing-dashboard)** | Jun 24, 2026 | **Jul 29, 2026** | 1mo ago |
-| 20 | **[LLA PR Kit](#lla-pr-kit)** | Jul 17, 2026 | **Jul 29, 2026** | 1mo ago |
-| 21 | **[Olga](#olga)** | Jul 16, 2026 | **Jul 21, 2026** | 1mo ago |
-| 22 | **[Keren Or Adoption EN](#keren-or-adoption-en)** | Jul 15, 2026 | **Jul 16, 2026** | 1mo ago |
-| 23 | **[French Atelier CEO Deck](#french-atelier-ceo-deck)** | Jun 10, 2026 | **Jul 15, 2026** | 1mo ago |
-| 24 | **[Cartoon Circular Portraits](#cartoon-circular-portraits)** | Jul 14, 2026 | **Jul 14, 2026** | 1mo ago |
-| 25 | **[Longevity Pilot Command](#longevity-pilot-command)** | Jul 3, 2026 | **Jul 10, 2026** | 1mo ago |
-| 26 | **[French Atelier Win Paris](#french-atelier-win-paris)** | Jun 22, 2026 | **Jul 7, 2026** | 1mo ago |
-| 27 | **[Longevity July Plan](#longevity-july-plan)** | Jul 2, 2026 | **Jul 3, 2026** | 2mo ago |
-| 28 | **[July Planning Longevity](#july-planning-longevity)** | Jul 1, 2026 | **Jul 2, 2026** | 2mo ago |
-| 29 | **[French Atelier June Results](#french-atelier-june-results)** | Jul 1, 2026 | **Jul 1, 2026** | 2mo ago |
-| 30 | **[French Atelier Bastille 2026](#french-atelier-bastille-2026)** | Jun 28, 2026 | **Jun 29, 2026** | 2mo ago |
-| 31 | **[eTeacher School Banners](#eteacher-school-banners)** | Jun 26, 2026 | **Jun 28, 2026** | 2mo ago |
-| 32 | **[French Atelier Social Deck](#french-atelier-social-deck)** | Jun 23, 2026 | **Jun 28, 2026** | 2mo ago |
-| 33 | **[CEO Performance Suite](#ceo-performance-suite)** | Jun 15, 2026 | **Jun 24, 2026** | 2mo ago |
-| 34 | **[VJ Magic](#vj-magic)** | Jun 17, 2026 | **Jun 22, 2026** | 2mo ago |
-| 35 | **[Gita Machine](#gita-machine)** | Jun 17, 2026 | **Jun 17, 2026** | 2mo ago |
-| 36 | **[CQI SENSE Deck](#cqi-sense-deck)** | Jun 10, 2026 | **Jun 10, 2026** | 2mo ago |
+| 1 | **[IN Venture Website Rebuild (Gita Agency)](#in-venture-website-rebuild-gita-agency)** 🆕 | Aug 9, 2026 | **Sep 1, 2026** | today |
+| 2 | **[LLA Julie Communications Letter (public)](#lla-julie-communications-letter-public)** 🆕 | Sep 1, 2026 | **Sep 1, 2026** | today |
+| 3 | **[LLA Julie Communications Plan V2](#lla-julie-communications-plan-v2)** 🆕 | Sep 1, 2026 | **Sep 1, 2026** | today |
+| 4 | **[LLA Masterclass Press Articles (Round 3)](#lla-masterclass-press-articles-round-3)** 🆕 | Sep 1, 2026 | **Sep 1, 2026** | today |
+| 5 | **[LLA Masterclass Syllabus Site](#lla-masterclass-syllabus-site)** 🆕 | Sep 1, 2026 | **Sep 1, 2026** | today |
+| 6 | **[LLA Masterclass Final Creative Assets](#lla-masterclass-final-creative-assets)** | Aug 24, 2026 | **Aug 31, 2026** | yesterday |
+| 7 | **[LLA Course Checkout](#lla-course-checkout)** | Jul 29, 2026 | **Aug 28, 2026** | 4 days ago |
+| 8 | **[LLA Masterclass Emails](#lla-masterclass-emails)** | Aug 27, 2026 | **Aug 28, 2026** | 4 days ago |
+| 9 | **[Julie Gibson Clark Live Masterclass](#julie-gibson-clark-live-masterclass)** | Aug 18, 2026 | **Aug 27, 2026** | 5 days ago |
+| 10 | **[LLA Delta Force](#lla-delta-force)** | Aug 8, 2026 | **Aug 27, 2026** | 5 days ago |
+| 11 | **[Courtney LLA Masterclass](#courtney-lla-masterclass)** | Jul 7, 2026 | **Aug 25, 2026** | 1w ago |
+| 12 | **[LLA Meta and Instagram Ad Sizes](#lla-meta-and-instagram-ad-sizes)** | Aug 14, 2026 | **Aug 25, 2026** | 1w ago |
+| 13 | **[LLA Social Go-Live](#lla-social-go-live)** | Aug 17, 2026 | **Aug 25, 2026** | 1w ago |
+| 14 | **[Longevity Life Academy](#longevity-life-academy)** | Jun 10, 2026 | **Aug 21, 2026** | 1w ago |
+| 15 | **[Brown Hotels Greece](#brown-hotels-greece)** | Aug 17, 2026 | **Aug 17, 2026** | 2w ago |
+| 16 | **[Amy Squishy](#amy-squishy)** | Jun 10, 2026 | **Aug 16, 2026** | 2w ago |
+| 17 | **[Apt Furniture Deck](#apt-furniture-deck)** | Jul 6, 2026 | **Aug 14, 2026** | 2w ago |
+| 18 | **[French Atelier](#french-atelier)** | Jun 10, 2026 | **Aug 14, 2026** | 2w ago |
+| 19 | **[Julie Gibson Clark Plan](#julie-gibson-clark-plan)** | Jul 6, 2026 | **Aug 9, 2026** | 3w ago |
+| 20 | **[Longevity Productions Courtney Julie](#longevity-productions-courtney-julie)** | Jul 9, 2026 | **Aug 9, 2026** | 3w ago |
+| 21 | **[IN Venture Programme](#in-venture-programme)** | Aug 9, 2026 | **Aug 9, 2026** | 3w ago |
+| 22 | **[French Atelier Client Demographics](#french-atelier-client-demographics)** | Aug 8, 2026 | **Aug 8, 2026** | 3w ago |
+| 23 | **[LLA Scripts 09/10 Downloads](#lla-scripts-0910-downloads)** | Jul 15, 2026 | **Aug 8, 2026** | 3w ago |
+| 24 | **[eTeacher Longevity PR Campaign](#eteacher-longevity-pr-campaign)** | Jul 7, 2026 | **Aug 6, 2026** | 3w ago |
+| 25 | **[French Atelier Onboarding](#french-atelier-onboarding)** | Jul 1, 2026 | **Aug 6, 2026** | 3w ago |
+| 26 | **[LLA Marketing Dashboard](#lla-marketing-dashboard)** | Jun 24, 2026 | **Jul 29, 2026** | 1mo ago |
+| 27 | **[LLA PR Kit](#lla-pr-kit)** | Jul 17, 2026 | **Jul 29, 2026** | 1mo ago |
+| 28 | **[Olga](#olga)** | Jul 16, 2026 | **Jul 21, 2026** | 1mo ago |
+| 29 | **[Keren Or Adoption EN](#keren-or-adoption-en)** | Jul 15, 2026 | **Jul 16, 2026** | 1mo ago |
+| 30 | **[French Atelier CEO Deck](#french-atelier-ceo-deck)** | Jun 10, 2026 | **Jul 15, 2026** | 1mo ago |
+| 31 | **[Cartoon Circular Portraits](#cartoon-circular-portraits)** | Jul 14, 2026 | **Jul 14, 2026** | 1mo ago |
+| 32 | **[Longevity Pilot Command](#longevity-pilot-command)** | Jul 3, 2026 | **Jul 10, 2026** | 1mo ago |
+| 33 | **[French Atelier Win Paris](#french-atelier-win-paris)** | Jun 22, 2026 | **Jul 7, 2026** | 1mo ago |
+| 34 | **[Longevity July Plan](#longevity-july-plan)** | Jul 2, 2026 | **Jul 3, 2026** | 2mo ago |
+| 35 | **[July Planning Longevity](#july-planning-longevity)** | Jul 1, 2026 | **Jul 2, 2026** | 2mo ago |
+| 36 | **[French Atelier June Results](#french-atelier-june-results)** | Jul 1, 2026 | **Jul 1, 2026** | 2mo ago |
+| 37 | **[French Atelier Bastille 2026](#french-atelier-bastille-2026)** | Jun 28, 2026 | **Jun 29, 2026** | 2mo ago |
+| 38 | **[eTeacher School Banners](#eteacher-school-banners)** | Jun 26, 2026 | **Jun 28, 2026** | 2mo ago |
+| 39 | **[French Atelier Social Deck](#french-atelier-social-deck)** | Jun 23, 2026 | **Jun 28, 2026** | 2mo ago |
+| 40 | **[CEO Performance Suite](#ceo-performance-suite)** | Jun 15, 2026 | **Jun 24, 2026** | 2mo ago |
+| 41 | **[VJ Magic](#vj-magic)** | Jun 17, 2026 | **Jun 22, 2026** | 2mo ago |
+| 42 | **[Gita Machine](#gita-machine)** | Jun 17, 2026 | **Jun 17, 2026** | 2mo ago |
+| 43 | **[CQI SENSE Deck](#cqi-sense-deck)** | Jun 10, 2026 | **Jun 10, 2026** | 2mo ago |
+
+🆕 = created or heavily updated today (Sep 1, 2026)
 
 ---
 
 # 🔥 STILL-HOT WORK (last 30 days)
 
-These are the tasks that had activity in the last month. Focus here first.
+### 📌 IN Venture Website Rebuild (Gita Agency) 🆕
+- 🟢 **Last touch:** Sep 1, 2026 (today) · 10:23 UTC
+- 🕰️ **Started:** Aug 9, 2026
+- 📦 Repo: https://github.com/gitteromri-ux/in-venture-website
+- 🌐 Live: https://gitteromri-ux.github.io/in-venture-website/
+
+### 📌 LLA Julie Communications Letter (public) 🆕
+- 🟢 **Last touch:** Sep 1, 2026 (today) · 19:02 UTC (a few hours ago)
+- 🕰️ **Started:** Sep 1, 2026
+- 📦 Repo: https://github.com/gitteromri-ux/lla-julie-letter
+- 🌐 Live: https://gitteromri-ux.github.io/lla-julie-letter/
+
+### 📌 LLA Julie Communications Plan V2 🆕
+- 🟢 **Last touch:** Sep 1, 2026 (today) · 09:52 UTC
+- 🕰️ **Started:** Sep 1, 2026
+- 📦 Repo: https://github.com/gitteromri-ux/lla-julie-communications-plan-v2
+- 🌐 Live: https://gitteromri-ux.github.io/lla-julie-communications-plan-v2/
+
+### 📌 LLA Masterclass Press Articles (Round 3) 🆕
+- 🟢 **Last touch:** Sep 1, 2026 (today) · 11:04 UTC
+- 🕰️ **Started:** Sep 1, 2026
+- 📦 Repo: https://github.com/gitteromri-ux/lla-masterclass-press
+- 🌐 Live: https://gitteromri-ux.github.io/lla-masterclass-press/
+
+### 📌 LLA Masterclass Syllabus Site 🆕
+- 🟢 **Last touch:** Sep 1, 2026 (today) · 10:51 UTC
+- 🕰️ **Started:** Sep 1, 2026
+- 📦 Repo: https://github.com/gitteromri-ux/lla-masterclass-syllabus
+- 🌐 Live: https://gitteromri-ux.github.io/lla-masterclass-syllabus/
+
+### 📌 LLA Masterclass Final Creative Assets
+- 🟢 **Last touch:** Aug 31, 2026 (yesterday) · 20:34 UTC
+- 🕰️ **Started:** Aug 24, 2026
+- 📦 Repo: https://github.com/gitteromri-ux/lla-masterclass-assets
+- 🌐 Live: https://gitteromri-ux.github.io/lla-masterclass-assets/
 
 ### 📌 LLA Course Checkout
 - 🟢 **Last touch:** Aug 28, 2026 (4 days ago)
@@ -146,111 +239,241 @@ These are the tasks that had activity in the last month. Focus here first.
 - 🕰️ **Started:** Jul 9, 2026
 - 📄 Full context: [`projects/longevity-productions-courtney-julie.md`](./projects/longevity-productions-courtney-julie.md)
 
-### 📌 French Atelier Client Demographics
-- 🟢 **Last touch:** Aug 8, 2026 (3w ago)
-- 🕰️ **Started:** Aug 8, 2026
-- 📄 Full context: [`projects/french-atelier-client-demographics.md`](./projects/french-atelier-client-demographics.md)
-
-
----
-
-# 🗓️ TIMELINE — WHEN EACH TASK STARTED (by month)
-
-## August 2026
-
-- **Aug 8, 2026** — *started* **LLA Delta Force** → last touched Aug 27, 2026 (5 days ago) · [`lla-delta-force`](./projects/lla-delta-force.md)
-- **Aug 8, 2026** — *started* **French Atelier Client Demographics** → last touched Aug 8, 2026 (3w ago) · [`french-atelier-client-demographics`](./projects/french-atelier-client-demographics.md)
-- **Aug 14, 2026** — *started* **LLA Meta and Instagram Ad Sizes** → last touched Aug 25, 2026 (1w ago) · [`lla-meta-ig-ad-sizes`](./projects/lla-meta-ig-ad-sizes.md)
-- **Aug 17, 2026** — *started* **LLA Social Go-Live** → last touched Aug 25, 2026 (1w ago) · [`lla-social-golive`](./projects/lla-social-golive.md)
-- **Aug 17, 2026** — *started* **Brown Hotels Greece** → last touched Aug 17, 2026 (2w ago) · [`brown-hotels-greece`](./projects/brown-hotels-greece.md)
-- **Aug 18, 2026** — *started* **Julie Gibson Clark Live Masterclass** → last touched Aug 27, 2026 (5 days ago) · [`julie-live-masterclass`](./projects/julie-live-masterclass.md)
-- **Aug 27, 2026** — *started* **LLA Masterclass Emails** → last touched Aug 28, 2026 (4 days ago) · [`lla-masterclass-emails`](./projects/lla-masterclass-emails.md)
-
-## July 2026
-
-- **Jul 1, 2026** — *started* **French Atelier Onboarding** → last touched Aug 6, 2026 (3w ago) · [`french-atelier-onboarding`](./projects/french-atelier-onboarding.md)
-- **Jul 1, 2026** — *started* **July Planning Longevity** → last touched Jul 2, 2026 (2mo ago) · [`july-planning-longevity`](./projects/july-planning-longevity.md)
-- **Jul 1, 2026** — *started* **French Atelier June Results** → last touched Jul 1, 2026 (2mo ago) · [`french-atelier-june-results`](./projects/french-atelier-june-results.md)
-- **Jul 2, 2026** — *started* **Longevity July Plan** → last touched Jul 3, 2026 (2mo ago) · [`longevity-july-plan`](./projects/longevity-july-plan.md)
-- **Jul 3, 2026** — *started* **Longevity Pilot Command** → last touched Jul 10, 2026 (1mo ago) · [`longevity-pilot-command`](./projects/longevity-pilot-command.md)
-- **Jul 6, 2026** — *started* **Apt Furniture Deck** → last touched Aug 14, 2026 (2w ago) · [`apt-furniture-deck`](./projects/apt-furniture-deck.md)
-- **Jul 6, 2026** — *started* **Julie Gibson Clark Plan** → last touched Aug 9, 2026 (3w ago) · [`julie-gibson-clark-plan`](./projects/julie-gibson-clark-plan.md)
-- **Jul 7, 2026** — *started* **Courtney LLA Masterclass** → last touched Aug 25, 2026 (1w ago) · [`courtney-lla-masterclass`](./projects/courtney-lla-masterclass.md)
-- **Jul 7, 2026** — *started* **eTeacher Longevity PR Campaign** → last touched Aug 6, 2026 (3w ago) · [`eteacher-longevity-pr-campaign`](./projects/eteacher-longevity-pr-campaign.md)
-- **Jul 9, 2026** — *started* **Longevity Productions Courtney Julie** → last touched Aug 9, 2026 (3w ago) · [`longevity-productions-courtney-julie`](./projects/longevity-productions-courtney-julie.md)
-- **Jul 14, 2026** — *started* **Cartoon Circular Portraits** → last touched Jul 14, 2026 (1mo ago) · [`cartoon-circular-portraits`](./projects/cartoon-circular-portraits.md)
-- **Jul 15, 2026** — *started* **LLA Scripts 09/10 Downloads** → last touched Aug 8, 2026 (3w ago) · [`lla-s09-s10-downloads`](./projects/lla-s09-s10-downloads.md)
-- **Jul 15, 2026** — *started* **Keren Or Adoption EN** → last touched Jul 16, 2026 (1mo ago) · [`kerenor-adoption-en`](./projects/kerenor-adoption-en.md)
-- **Jul 16, 2026** — *started* **Olga** → last touched Jul 21, 2026 (1mo ago) · [`olga`](./projects/olga.md)
-- **Jul 17, 2026** — *started* **LLA PR Kit** → last touched Jul 29, 2026 (1mo ago) · [`lla-pr-kit`](./projects/lla-pr-kit.md)
-- **Jul 29, 2026** — *started* **LLA Course Checkout** → last touched Aug 28, 2026 (4 days ago) · [`lla-course-checkout`](./projects/lla-course-checkout.md)
-
-## June 2026
-
-- **Jun 10, 2026** — *started* **Longevity Life Academy** → last touched Aug 21, 2026 (1w ago) · [`longevity-life-academy`](./projects/longevity-life-academy.md)
-- **Jun 10, 2026** — *started* **Amy Squishy** → last touched Aug 16, 2026 (2w ago) · [`amy-squishy`](./projects/amy-squishy.md)
-- **Jun 10, 2026** — *started* **French Atelier** → last touched Aug 14, 2026 (2w ago) · [`french-atelier`](./projects/french-atelier.md)
-- **Jun 10, 2026** — *started* **French Atelier CEO Deck** → last touched Jul 15, 2026 (1mo ago) · [`french-atelier-ceo-deck`](./projects/french-atelier-ceo-deck.md)
-- **Jun 10, 2026** — *started* **CQI SENSE Deck** → last touched Jun 10, 2026 (2mo ago) · [`cqi-sense-deck`](./projects/cqi-sense-deck.md)
-- **Jun 15, 2026** — *started* **CEO Performance Suite** → last touched Jun 24, 2026 (2mo ago) · [`ceo-performance-suite`](./projects/ceo-performance-suite.md)
-- **Jun 17, 2026** — *started* **VJ Magic** → last touched Jun 22, 2026 (2mo ago) · [`vj-magic`](./projects/vj-magic.md)
-- **Jun 17, 2026** — *started* **Gita Machine** → last touched Jun 17, 2026 (2mo ago) · [`gita-machine`](./projects/gita-machine.md)
-- **Jun 22, 2026** — *started* **French Atelier Win Paris** → last touched Jul 7, 2026 (1mo ago) · [`french-atelier-win-paris`](./projects/french-atelier-win-paris.md)
-- **Jun 23, 2026** — *started* **French Atelier Social Deck** → last touched Jun 28, 2026 (2mo ago) · [`french-atelier-social-deck`](./projects/french-atelier-social-deck.md)
-- **Jun 24, 2026** — *started* **LLA Marketing Dashboard** → last touched Jul 29, 2026 (1mo ago) · [`lla-marketing-dashboard`](./projects/lla-marketing-dashboard.md)
-- **Jun 26, 2026** — *started* **eTeacher School Banners** → last touched Jun 28, 2026 (2mo ago) · [`eteacher-school-banners`](./projects/eteacher-school-banners.md)
-- **Jun 28, 2026** — *started* **French Atelier Bastille 2026** → last touched Jun 29, 2026 (2mo ago) · [`french-atelier-bastille-2026`](./projects/french-atelier-bastille-2026.md)
-
 
 ---
 
 # 🚦 HOW TO USE THIS HANDOVER
 
-1. **Start here** for the total surface area.
-2. **Read [`_global-rules.md`](./_global-rules.md)** — Omri's universal working rules. NEVER violate these.
-3. **Read the specific project file** under [`projects/`](./projects/) before you touch anything.
+1. **Start here** for total surface area.
+2. **Read [`_global-rules.md`](./_global-rules.md)** — universal working rules.
+3. **Read the specific project file** under [`projects/`](./projects/) before touching anything.
 4. **Every project file has 9 sections:** purpose → status → all public links → assets → project-specific rules → people → next steps → access notes.
-5. **Every URL is preserved verbatim.** Nothing summarized away.
+5. **Every URL is preserved verbatim.**
 
 ---
 
-# 🧭 THE GOLDEN RULES — READ FIRST
+# 🧭 THE GOLDEN RULES
 
-- ✅ **Clickable public links only.** Every deliverable = a working, clickable public URL from a **public GitHub repo**. No ZIPs, attachments, private repos, or unlinked responses.
+- ✅ **Clickable public links only.** Every deliverable = a working, clickable public URL from a **public GitHub repo**.
 - ✅ **Be concise. Execute directly.** No lengthy explanations. Ship.
 - ✅ **Narrow the change scope.** Only touch what was explicitly requested.
-- ✅ **No apologies. No overpromising.** Honest capability limits + concrete proof of completion.
+- ✅ **No apologies. No overpromising.** Honest capability limits + concrete proof.
 - ✅ **Premium, brand-aligned output.** Never generic, cheap, template-like, or AI-looking.
+- ✅ **Large type. Real color. Editorial typography.** Especially for premium client work like IN Venture — the user rejected small fonts and monotonic palettes multiple times today.
+- ✅ **Playfair Display / Playfair Italic for editorial heroes** — the confirmed premium typeface family.
 - ✅ **Review isolated from production.** Nothing goes live without explicit approval.
-- ✅ **Test end-to-end before handoff** — live links, mobile layout, mobile link behavior.
+- ✅ **Test end-to-end before handoff** — live links, mobile, mobile link behavior.
 - ✅ **Urgent = decisive.** Return verified results, not narration.
-- ✅ **Verify before confidence.** Facts, calculations, links, dimensions, fonts, logos, live status — verified.
-- ✅ **Hebrew spelling of the name:** `עמרי`.
-- ✅ **`ACTION` gate** for new-website briefs: no planning/design/production until Omri writes the exact word `ACTION`.
-- ✅ **Long-chat warning:** proactively flag context degradation.
+- ✅ **Verify before confidence.**
+- ✅ **Hebrew spelling:** `עמרי`.
+- ✅ **`ACTION` gate** for new websites: no planning/design/production until Omri writes the exact word `ACTION`.
+- ✅ **Long-chat warning** — proactively flag context degradation.
+- 🚨 **"Inventor VC Fund" = IN Venture.** Voice-input misheard variant — always the same project.
 
 Full detail: [`_global-rules.md`](./_global-rules.md).
 
 ---
 
-# 🌐 ACCESS NOTES — WHAT THE NEXT SESSION NEEDS
+# 🌐 ACCESS NOTES
 
 | System | Purpose | Access model |
 |---|---|---|
-| **GitHub** (`gitteromri-ux` + `Longevity-Academy`) | All repos, Pages sites, releases | ✅ Public — no login needed. `lla-course-checkout` is **🔒 PRIVATE** |
+| **GitHub** (`gitteromri-ux` + `Longevity-Academy`) | All repos, Pages sites | ✅ Public. `lla-course-checkout` is **🔒 PRIVATE** |
 | **Vercel** | Deployed apps | 🔒 Personal login required |
-| **Wix editor** | Production LLA + French Atelier CMS surfaces | 🔒 Personal login required |
-| **Cloudflare** | DNS, workers, Pages, caching | 🔒 API key connector already present |
-| **Google Tag Manager** | Tracking (`GTM-PMRKXXJV` on LLA checkout) | 🔒 Pipedream connector present |
-| **ActiveCampaign** | Sandra `LGV_checkout_events` field, drip campaigns | 🔒 Needs API creds — no built-in connector |
-| **Meta Ads Manager** | Campaign delivery | 🔒 Personal login required |
-| **Airwallex** | Drop-In payment on LLA checkout | 🔒 Personal login required |
+| **Wix editor** | Production LLA + French Atelier CMS | 🔒 Personal login required |
+| **Cloudflare** | DNS, Workers, Pages, cache | 🔒 API key connector present |
+| **Google Tag Manager** | Tracking (`GTM-PMRKXXJV` on LLA checkout) | 🔒 Pipedream connector |
+| **ActiveCampaign** | `LGV_checkout_events` field, drips, Sandra's field model | 🔒 No connector — API creds needed |
+| **Meta Ads Manager** | Campaign delivery | 🔒 Personal login |
+| **Airwallex** | Drop-In payment on LLA checkout ($79 masterclass) | 🔒 Personal login |
+| **eTeacher lead proxy** | `eteacher-leads-proxy` Cloudflare Worker | 🔒 Personal login |
 
 ---
 
-# 📚 PER-TASK DEEP CONTEXT
+# 🆕 NEW TASKS ADDED IN THIS UPDATE
 
-Every task below has a header with **start date, last-touch date, and time-since-last-touch**, followed by the complete extracted context (purpose, all links, project-specific rules, stakeholders, next steps, access notes).
+The following tasks did not exist in the original handover — they were created or surfaced in today's activity:
+
+
+
+## IN Venture Website Rebuild (Gita Agency)
+
+### 🕰️ Started: **Aug 9, 2026**
+### 🟢 Last interaction: **Sep 1, 2026** · 10:23 UTC
+
+**What it is:** Premium website rebuild for IN Venture — a Sumitomo Corporation-backed Israeli deep-tech VC fund. Built under Omri's Gita Agency brand. Occasionally misheard as 'Inventor VC Fund'.
+
+**Repo:** https://github.com/gitteromri-ux/in-venture-website
+**Live site:** https://gitteromri-ux.github.io/in-venture-website/
+
+**Recent commits:**
+- `2026-09-01 10:23Z` — Premium design overhaul v2 — Playfair Display, brand-true dark keynote hero
+
+**Rules & preferences for this task:**
+- Every font/headline must be 2x larger than default — user explicitly rejected small type multiple times
+- Use Playfair Display Italic for editorial hero — not the generic Playfair Display
+- No yellow. No monotonic palette. Premium colored 3D/light treatment expected
+- No AI-childish, template, or generic look. Executive-ready, professional, marketing-grade
+- Content must match prompts exactly — user has flagged content mismatches repeatedly today
+- Deck version of same project also active (proposal deck for the fund)
+
+**Stakeholders:** IN Venture (client), Sumitomo Corporation (parent), Gita Agency (Omri's brand)
+
+**Handover notes:** This is a live and highly iterated project TODAY — the user pushed back multiple times on typography, color, size, and "premium" quality. Handle with visible size, real color, editorial typography.
+
+---
+
+
+## IN Venture Programme
+
+### 🕰️ Started: **Aug 9, 2026**
+### 🟢 Last interaction: **Aug 9, 2026** · 11:23 UTC
+
+**What it is:** Companion repo to the IN Venture website containing partner interview preparation and plan pages.
+
+**Repo:** https://github.com/gitteromri-ux/in-venture-programme
+**Live site:** https://gitteromri-ux.github.io/in-venture-programme/
+
+**Rules & preferences for this task:**
+- Same premium standard as the main IN Venture website
+
+**Stakeholders:** IN Venture, Sumitomo Corporation
+
+**Handover notes:** Partner interview + plan pages surface. Same design rules as parent project.
+
+---
+
+
+## LLA Julie Communications Letter (public)
+
+### 🕰️ Started: **Sep 1, 2026**
+### 🟢 Last interaction: **Sep 1, 2026** · 19:02 UTC (a few hours ago)
+
+**What it is:** Public single-page editorial letter site presenting the communications plan for Julie Gibson Clark's Longevity Masterclass launch. Editorial magazine treatment.
+
+**Repo:** https://github.com/gitteromri-ux/lla-julie-letter
+**Live site:** https://gitteromri-ux.github.io/lla-julie-letter/
+
+**Recent commits:**
+- `2026-09-01 19:02Z` — Full-width layout, magazine-scale hero, larger nav, no wasted margins
+- `2026-09-01 18:58Z` — Redesign: premium editorial letter, huge Playfair Italic type, embedded
+- `2026-09-01 13:30Z` — Communications plan letter — full public site (initial commit)
+
+**Rules & preferences for this task:**
+- Magazine-scale, full-width, no wasted margins
+- Playfair Italic hero typography at very large size
+- Premium editorial feel — no template look
+- Embedded media, not linked-out
+
+**Stakeholders:** Julie Gibson Clark, LLA / eTeacher Group
+
+**Handover notes:** Brand-new site created today. Iterated 3 times within 6 hours. Editorial premium standard.
+
+---
+
+
+## LLA Julie Communications Plan V2
+
+### 🕰️ Started: **Sep 1, 2026**
+### 🟢 Last interaction: **Sep 1, 2026** · 09:52 UTC
+
+**What it is:** V2 of the Julie Gibson Clark communications plan for the Longevity Masterclass launch. Structural clone of V1 with all materials rendered inline (videos, banners, animations, mockups, press mockups) — no external click-outs.
+
+**Repo:** https://github.com/gitteromri-ux/lla-julie-communications-plan-v2
+**Live site:** https://gitteromri-ux.github.io/lla-julie-communications-plan-v2/
+
+**Recent commits:**
+- `2026-09-01 09:52Z` — V2 · zero external buttons · every material rendered as in-page mockup
+- `2026-09-01 09:36Z` — V2 · inline media · videos, banners, animations, mockups, press mockups
+- `2026-09-01 09:01Z` — V2 · exact V1 structural clone · masterclass launch content
+- `2026-09-01 08:30Z` — V2 communications plan — masterclass launch (initial commit)
+
+**Rules & preferences for this task:**
+- Zero external buttons — everything renders inline
+- Materials shown as in-page mockups, not links
+- Structural clone of V1 (do not restructure)
+
+**Stakeholders:** Julie Gibson Clark, LLA leadership
+
+**Handover notes:** Created today. Complete implementation of "no click-outs, show everything inline" preference.
+
+---
+
+
+## LLA Masterclass Press Articles (Round 3)
+
+### 🕰️ Started: **Sep 1, 2026**
+### 🟢 Last interaction: **Sep 1, 2026** · 11:04 UTC
+
+**What it is:** Round-three press articles for the Longevity Masterclass launch — two full Yahoo/AP-format press releases prepared for distribution.
+
+**Repo:** https://github.com/gitteromri-ux/lla-masterclass-press
+**Live site:** https://gitteromri-ux.github.io/lla-masterclass-press/
+
+**Recent commits:**
+- `2026-09-01 11:04Z` — Round three press articles: two full Yahoo/AP-format releases
+
+**Rules & preferences for this task:**
+- Yahoo/AP wire-format compliance
+- Full-article format (not summaries)
+
+**Stakeholders:** Julie Gibson Clark, LLA PR pipeline
+
+**Handover notes:** Created today. Feeds the paid + free newswire distribution boards.
+
+---
+
+
+## LLA Masterclass Syllabus Site
+
+### 🕰️ Started: **Sep 1, 2026**
+### 🟢 Last interaction: **Sep 1, 2026** · 10:51 UTC
+
+**What it is:** The one-hour Longevity Masterclass syllabus, prepared for Julie Gibson Clark. Minute-by-minute teaching-beat structure written in LLA Blueprint course format.
+
+**Repo:** https://github.com/gitteromri-ux/lla-masterclass-syllabus
+**Live site:** https://gitteromri-ux.github.io/lla-masterclass-syllabus/
+
+**Recent commits:**
+- `2026-09-01 10:51Z` — Rewrite syllabus in LLA Blueprint course format (teaching-beat arrows)
+- `2026-09-01 10:47Z` — Rewrite: real teaching syllabus, minute-by-minute, no fluff
+- `2026-09-01 10:37Z` — Masterclass one-hour syllabus site (initial commit)
+
+**Rules & preferences for this task:**
+- Teaching-beat arrows (LLA Blueprint course format)
+- Minute-by-minute — no fluff
+- Real syllabus, not marketing copy
+
+**Stakeholders:** Julie Gibson Clark, LLA curriculum
+
+**Handover notes:** Created today. Feeds the masterclass presentation delivery.
+
+---
+
+
+## LLA Masterclass Final Creative Assets
+
+### 🕰️ Started: **Aug 24, 2026**
+### 🟢 Last interaction: **Aug 31, 2026** · 20:34 UTC
+
+**What it is:** Final creative assets for the Longevity Life Academy Masterclass campaign — approved production output.
+
+**Repo:** https://github.com/gitteromri-ux/lla-masterclass-assets
+**Live site:** https://gitteromri-ux.github.io/lla-masterclass-assets/
+
+**Rules & preferences for this task:**
+- Approved-only assets — do not edit without explicit greenlight
+
+**Stakeholders:** LLA marketing, Julie Gibson Clark
+
+**Handover notes:** Locked creative delivery repo. Touched yesterday.
+
+---
+
+
+# 📚 PER-TASK DEEP CONTEXT (36 wiki-derived tasks)
+
+Every task below has a header with **start date, last-interaction date, and time-since-last-touch**, followed by the complete extracted context.
 
 
 
@@ -259,6 +482,7 @@ Every task below has a header with **start date, last-touch date, and time-since
 # LLA Course Checkout
 
 > ### 🕰️ Started: **Jul 29, 2026**   ·   🟢 Last touch: **Aug 28, 2026** (4 days ago)
+
 
 ### One-line purpose
 
@@ -335,7 +559,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **12** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-course-checkout.md`](./projects/lla-course-checkout.md) · Wiki source: `memory/knowledge/projects/lla-course-checkout.md`</sub>
+<sub>📄 File: [`projects/lla-course-checkout.md`](./projects/lla-course-checkout.md)</sub>
 
 
 ---
@@ -343,6 +567,7 @@ The following source notes are retained in full because they contain the project
 # LLA Masterclass Emails
 
 > ### 🕰️ Started: **Aug 27, 2026**   ·   🟢 Last touch: **Aug 28, 2026** (4 days ago)
+
 
 ### One-line purpose
 
@@ -414,7 +639,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **7** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-masterclass-emails.md`](./projects/lla-masterclass-emails.md) · Wiki source: `memory/knowledge/projects/lla-masterclass-emails.md`</sub>
+<sub>📄 File: [`projects/lla-masterclass-emails.md`](./projects/lla-masterclass-emails.md)</sub>
 
 
 ---
@@ -422,6 +647,7 @@ The following source notes are retained in full because they contain the project
 # Julie Gibson Clark Live Masterclass
 
 > ### 🕰️ Started: **Aug 18, 2026**   ·   🟢 Last touch: **Aug 27, 2026** (5 days ago)
+
 
 ### One-line purpose
 
@@ -513,7 +739,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **11** unique URL(s).
 
 
-<sub>📄 File: [`projects/julie-live-masterclass.md`](./projects/julie-live-masterclass.md) · Wiki source: `memory/knowledge/projects/julie-live-masterclass.md`</sub>
+<sub>📄 File: [`projects/julie-live-masterclass.md`](./projects/julie-live-masterclass.md)</sub>
 
 
 ---
@@ -521,6 +747,7 @@ The following source notes are retained in full because they contain the project
 # LLA Delta Force
 
 > ### 🕰️ Started: **Aug 8, 2026**   ·   🟢 Last touch: **Aug 27, 2026** (5 days ago)
+
 
 ### One-line purpose
 
@@ -590,7 +817,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **4** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-delta-force.md`](./projects/lla-delta-force.md) · Wiki source: `memory/knowledge/projects/lla-delta-force.md`</sub>
+<sub>📄 File: [`projects/lla-delta-force.md`](./projects/lla-delta-force.md)</sub>
 
 
 ---
@@ -598,6 +825,7 @@ The following source notes are retained in full because they contain the project
 # Courtney LLA Masterclass
 
 > ### 🕰️ Started: **Jul 7, 2026**   ·   🟢 Last touch: **Aug 25, 2026** (1w ago)
+
 
 ### One-line purpose
 
@@ -688,7 +916,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **16** unique URL(s).
 
 
-<sub>📄 File: [`projects/courtney-lla-masterclass.md`](./projects/courtney-lla-masterclass.md) · Wiki source: `memory/knowledge/projects/courtney-lla-masterclass.md`</sub>
+<sub>📄 File: [`projects/courtney-lla-masterclass.md`](./projects/courtney-lla-masterclass.md)</sub>
 
 
 ---
@@ -696,6 +924,7 @@ The following source notes are retained in full because they contain the project
 # LLA Meta and Instagram Ad Sizes
 
 > ### 🕰️ Started: **Aug 14, 2026**   ·   🟢 Last touch: **Aug 25, 2026** (1w ago)
+
 
 ### One-line purpose
 
@@ -765,7 +994,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **6** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-meta-ig-ad-sizes.md`](./projects/lla-meta-ig-ad-sizes.md) · Wiki source: `memory/knowledge/projects/lla-meta-ig-ad-sizes.md`</sub>
+<sub>📄 File: [`projects/lla-meta-ig-ad-sizes.md`](./projects/lla-meta-ig-ad-sizes.md)</sub>
 
 
 ---
@@ -773,6 +1002,7 @@ The following source notes are retained in full because they contain the project
 # LLA Social Go-Live
 
 > ### 🕰️ Started: **Aug 17, 2026**   ·   🟢 Last touch: **Aug 25, 2026** (1w ago)
+
 
 ### One-line purpose
 
@@ -834,7 +1064,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **3** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-social-golive.md`](./projects/lla-social-golive.md) · Wiki source: `memory/knowledge/projects/lla-social-golive.md`</sub>
+<sub>📄 File: [`projects/lla-social-golive.md`](./projects/lla-social-golive.md)</sub>
 
 
 ---
@@ -842,6 +1072,7 @@ The following source notes are retained in full because they contain the project
 # Longevity Life Academy
 
 > ### 🕰️ Started: **Jun 10, 2026**   ·   🟢 Last touch: **Aug 21, 2026** (1w ago)
+
 
 ### One-line purpose
 
@@ -1070,7 +1301,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **95** unique URL(s).
 
 
-<sub>📄 File: [`projects/longevity-life-academy.md`](./projects/longevity-life-academy.md) · Wiki source: `memory/knowledge/projects/longevity-life-academy.md`</sub>
+<sub>📄 File: [`projects/longevity-life-academy.md`](./projects/longevity-life-academy.md)</sub>
 
 
 ---
@@ -1078,6 +1309,7 @@ The following source notes are retained in full because they contain the project
 # Brown Hotels Greece
 
 > ### 🕰️ Started: **Aug 17, 2026**   ·   🟢 Last touch: **Aug 17, 2026** (2w ago)
+
 
 ### One-line purpose
 
@@ -1139,7 +1371,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **3** unique URL(s).
 
 
-<sub>📄 File: [`projects/brown-hotels-greece.md`](./projects/brown-hotels-greece.md) · Wiki source: `memory/knowledge/projects/brown-hotels-greece.md`</sub>
+<sub>📄 File: [`projects/brown-hotels-greece.md`](./projects/brown-hotels-greece.md)</sub>
 
 
 ---
@@ -1147,6 +1379,7 @@ The following source notes are retained in full because they contain the project
 # Amy Squishy
 
 > ### 🕰️ Started: **Jun 10, 2026**   ·   🟢 Last touch: **Aug 16, 2026** (2w ago)
+
 
 ### One-line purpose
 
@@ -1225,7 +1458,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **8** unique URL(s).
 
 
-<sub>📄 File: [`projects/amy-squishy.md`](./projects/amy-squishy.md) · Wiki source: `memory/knowledge/projects/amy-squishy.md`</sub>
+<sub>📄 File: [`projects/amy-squishy.md`](./projects/amy-squishy.md)</sub>
 
 
 ---
@@ -1233,6 +1466,7 @@ The following source notes are retained in full because they contain the project
 # Apt Furniture Deck
 
 > ### 🕰️ Started: **Jul 6, 2026**   ·   🟢 Last touch: **Aug 14, 2026** (2w ago)
+
 
 ### One-line purpose
 
@@ -1313,7 +1547,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **9** unique URL(s).
 
 
-<sub>📄 File: [`projects/apt-furniture-deck.md`](./projects/apt-furniture-deck.md) · Wiki source: `memory/knowledge/projects/apt-furniture-deck.md`</sub>
+<sub>📄 File: [`projects/apt-furniture-deck.md`](./projects/apt-furniture-deck.md)</sub>
 
 
 ---
@@ -1321,6 +1555,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier
 
 > ### 🕰️ Started: **Jun 10, 2026**   ·   🟢 Last touch: **Aug 14, 2026** (2w ago)
+
 
 ### One-line purpose
 
@@ -1477,7 +1712,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **47** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier.md`](./projects/french-atelier.md) · Wiki source: `memory/knowledge/projects/french-atelier.md`</sub>
+<sub>📄 File: [`projects/french-atelier.md`](./projects/french-atelier.md)</sub>
 
 
 ---
@@ -1485,6 +1720,7 @@ The following source notes are retained in full because they contain the project
 # Julie Gibson Clark Plan
 
 > ### 🕰️ Started: **Jul 6, 2026**   ·   🟢 Last touch: **Aug 9, 2026** (3w ago)
+
 
 ### One-line purpose
 
@@ -1584,7 +1820,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **15** unique URL(s).
 
 
-<sub>📄 File: [`projects/julie-gibson-clark-plan.md`](./projects/julie-gibson-clark-plan.md) · Wiki source: `memory/knowledge/projects/julie-gibson-clark-plan.md`</sub>
+<sub>📄 File: [`projects/julie-gibson-clark-plan.md`](./projects/julie-gibson-clark-plan.md)</sub>
 
 
 ---
@@ -1592,6 +1828,7 @@ The following source notes are retained in full because they contain the project
 # Longevity Productions Courtney Julie
 
 > ### 🕰️ Started: **Jul 9, 2026**   ·   🟢 Last touch: **Aug 9, 2026** (3w ago)
+
 
 ### One-line purpose
 
@@ -1664,7 +1901,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **8** unique URL(s).
 
 
-<sub>📄 File: [`projects/longevity-productions-courtney-julie.md`](./projects/longevity-productions-courtney-julie.md) · Wiki source: `memory/knowledge/projects/longevity-productions-courtney-julie.md`</sub>
+<sub>📄 File: [`projects/longevity-productions-courtney-julie.md`](./projects/longevity-productions-courtney-julie.md)</sub>
 
 
 ---
@@ -1672,6 +1909,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier Client Demographics
 
 > ### 🕰️ Started: **Aug 8, 2026**   ·   🟢 Last touch: **Aug 8, 2026** (3w ago)
+
 
 ### One-line purpose
 
@@ -1726,7 +1964,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **2** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier-client-demographics.md`](./projects/french-atelier-client-demographics.md) · Wiki source: `memory/knowledge/projects/french-atelier-client-demographics.md`</sub>
+<sub>📄 File: [`projects/french-atelier-client-demographics.md`](./projects/french-atelier-client-demographics.md)</sub>
 
 
 ---
@@ -1734,6 +1972,7 @@ The following source notes are retained in full because they contain the project
 # LLA Scripts 09/10 Downloads
 
 > ### 🕰️ Started: **Jul 15, 2026**   ·   🟢 Last touch: **Aug 8, 2026** (3w ago)
+
 
 ### One-line purpose
 
@@ -1804,7 +2043,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **7** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-s09-s10-downloads.md`](./projects/lla-s09-s10-downloads.md) · Wiki source: `memory/knowledge/projects/lla-s09-s10-downloads.md`</sub>
+<sub>📄 File: [`projects/lla-s09-s10-downloads.md`](./projects/lla-s09-s10-downloads.md)</sub>
 
 
 ---
@@ -1812,6 +2051,7 @@ The following source notes are retained in full because they contain the project
 # eTeacher Longevity PR Campaign
 
 > ### 🕰️ Started: **Jul 7, 2026**   ·   🟢 Last touch: **Aug 6, 2026** (3w ago)
+
 
 ### One-line purpose
 
@@ -1918,7 +2158,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **19** unique URL(s).
 
 
-<sub>📄 File: [`projects/eteacher-longevity-pr-campaign.md`](./projects/eteacher-longevity-pr-campaign.md) · Wiki source: `memory/knowledge/projects/eteacher-longevity-pr-campaign.md`</sub>
+<sub>📄 File: [`projects/eteacher-longevity-pr-campaign.md`](./projects/eteacher-longevity-pr-campaign.md)</sub>
 
 
 ---
@@ -1926,6 +2166,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier Onboarding
 
 > ### 🕰️ Started: **Jul 1, 2026**   ·   🟢 Last touch: **Aug 6, 2026** (3w ago)
+
 
 ### One-line purpose
 
@@ -2003,7 +2244,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **11** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier-onboarding.md`](./projects/french-atelier-onboarding.md) · Wiki source: `memory/knowledge/projects/french-atelier-onboarding.md`</sub>
+<sub>📄 File: [`projects/french-atelier-onboarding.md`](./projects/french-atelier-onboarding.md)</sub>
 
 
 ---
@@ -2011,6 +2252,7 @@ The following source notes are retained in full because they contain the project
 # LLA Marketing Dashboard
 
 > ### 🕰️ Started: **Jun 24, 2026**   ·   🟢 Last touch: **Jul 29, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2080,7 +2322,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **7** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-marketing-dashboard.md`](./projects/lla-marketing-dashboard.md) · Wiki source: `memory/knowledge/projects/lla-marketing-dashboard.md`</sub>
+<sub>📄 File: [`projects/lla-marketing-dashboard.md`](./projects/lla-marketing-dashboard.md)</sub>
 
 
 ---
@@ -2088,6 +2330,7 @@ The following source notes are retained in full because they contain the project
 # LLA PR Kit
 
 > ### 🕰️ Started: **Jul 17, 2026**   ·   🟢 Last touch: **Jul 29, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2178,7 +2421,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **15** unique URL(s).
 
 
-<sub>📄 File: [`projects/lla-pr-kit.md`](./projects/lla-pr-kit.md) · Wiki source: `memory/knowledge/projects/lla-pr-kit.md`</sub>
+<sub>📄 File: [`projects/lla-pr-kit.md`](./projects/lla-pr-kit.md)</sub>
 
 
 ---
@@ -2186,6 +2429,7 @@ The following source notes are retained in full because they contain the project
 # Olga
 
 > ### 🕰️ Started: **Jul 16, 2026**   ·   🟢 Last touch: **Jul 21, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2250,7 +2494,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **5** unique URL(s).
 
 
-<sub>📄 File: [`projects/olga.md`](./projects/olga.md) · Wiki source: `memory/knowledge/projects/olga.md`</sub>
+<sub>📄 File: [`projects/olga.md`](./projects/olga.md)</sub>
 
 
 ---
@@ -2258,6 +2502,7 @@ The following source notes are retained in full because they contain the project
 # Keren Or Adoption EN
 
 > ### 🕰️ Started: **Jul 15, 2026**   ·   🟢 Last touch: **Jul 16, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2315,7 +2560,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **3** unique URL(s).
 
 
-<sub>📄 File: [`projects/kerenor-adoption-en.md`](./projects/kerenor-adoption-en.md) · Wiki source: `memory/knowledge/projects/kerenor-adoption-en.md`</sub>
+<sub>📄 File: [`projects/kerenor-adoption-en.md`](./projects/kerenor-adoption-en.md)</sub>
 
 
 ---
@@ -2323,6 +2568,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier CEO Deck
 
 > ### 🕰️ Started: **Jun 10, 2026**   ·   🟢 Last touch: **Jul 15, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2406,7 +2652,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **13** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier-ceo-deck.md`](./projects/french-atelier-ceo-deck.md) · Wiki source: `memory/knowledge/projects/french-atelier-ceo-deck.md`</sub>
+<sub>📄 File: [`projects/french-atelier-ceo-deck.md`](./projects/french-atelier-ceo-deck.md)</sub>
 
 
 ---
@@ -2414,6 +2660,7 @@ The following source notes are retained in full because they contain the project
 # Cartoon Circular Portraits
 
 > ### 🕰️ Started: **Jul 14, 2026**   ·   🟢 Last touch: **Jul 14, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2480,7 +2727,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **6** unique URL(s).
 
 
-<sub>📄 File: [`projects/cartoon-circular-portraits.md`](./projects/cartoon-circular-portraits.md) · Wiki source: `memory/knowledge/projects/cartoon-circular-portraits.md`</sub>
+<sub>📄 File: [`projects/cartoon-circular-portraits.md`](./projects/cartoon-circular-portraits.md)</sub>
 
 
 ---
@@ -2488,6 +2735,7 @@ The following source notes are retained in full because they contain the project
 # Longevity Pilot Command
 
 > ### 🕰️ Started: **Jul 3, 2026**   ·   🟢 Last touch: **Jul 10, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2564,7 +2812,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **10** unique URL(s).
 
 
-<sub>📄 File: [`projects/longevity-pilot-command.md`](./projects/longevity-pilot-command.md) · Wiki source: `memory/knowledge/projects/longevity-pilot-command.md`</sub>
+<sub>📄 File: [`projects/longevity-pilot-command.md`](./projects/longevity-pilot-command.md)</sub>
 
 
 ---
@@ -2572,6 +2820,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier Win Paris
 
 > ### 🕰️ Started: **Jun 22, 2026**   ·   🟢 Last touch: **Jul 7, 2026** (1mo ago)
+
 
 ### One-line purpose
 
@@ -2691,7 +2940,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **24** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier-win-paris.md`](./projects/french-atelier-win-paris.md) · Wiki source: `memory/knowledge/projects/french-atelier-win-paris.md`</sub>
+<sub>📄 File: [`projects/french-atelier-win-paris.md`](./projects/french-atelier-win-paris.md)</sub>
 
 
 ---
@@ -2699,6 +2948,7 @@ The following source notes are retained in full because they contain the project
 # Longevity July Plan
 
 > ### 🕰️ Started: **Jul 2, 2026**   ·   🟢 Last touch: **Jul 3, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -2768,7 +3018,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **8** unique URL(s).
 
 
-<sub>📄 File: [`projects/longevity-july-plan.md`](./projects/longevity-july-plan.md) · Wiki source: `memory/knowledge/projects/longevity-july-plan.md`</sub>
+<sub>📄 File: [`projects/longevity-july-plan.md`](./projects/longevity-july-plan.md)</sub>
 
 
 ---
@@ -2776,6 +3026,7 @@ The following source notes are retained in full because they contain the project
 # July Planning Longevity
 
 > ### 🕰️ Started: **Jul 1, 2026**   ·   🟢 Last touch: **Jul 2, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -2843,7 +3094,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **6** unique URL(s).
 
 
-<sub>📄 File: [`projects/july-planning-longevity.md`](./projects/july-planning-longevity.md) · Wiki source: `memory/knowledge/projects/july-planning-longevity.md`</sub>
+<sub>📄 File: [`projects/july-planning-longevity.md`](./projects/july-planning-longevity.md)</sub>
 
 
 ---
@@ -2851,6 +3102,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier June Results
 
 > ### 🕰️ Started: **Jul 1, 2026**   ·   🟢 Last touch: **Jul 1, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -2906,7 +3158,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **2** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier-june-results.md`](./projects/french-atelier-june-results.md) · Wiki source: `memory/knowledge/projects/french-atelier-june-results.md`</sub>
+<sub>📄 File: [`projects/french-atelier-june-results.md`](./projects/french-atelier-june-results.md)</sub>
 
 
 ---
@@ -2914,6 +3166,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier Bastille 2026
 
 > ### 🕰️ Started: **Jun 28, 2026**   ·   🟢 Last touch: **Jun 29, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -2993,7 +3246,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **10** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier-bastille-2026.md`](./projects/french-atelier-bastille-2026.md) · Wiki source: `memory/knowledge/projects/french-atelier-bastille-2026.md`</sub>
+<sub>📄 File: [`projects/french-atelier-bastille-2026.md`](./projects/french-atelier-bastille-2026.md)</sub>
 
 
 ---
@@ -3001,6 +3254,7 @@ The following source notes are retained in full because they contain the project
 # eTeacher School Banners
 
 > ### 🕰️ Started: **Jun 26, 2026**   ·   🟢 Last touch: **Jun 28, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -3063,7 +3317,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **5** unique URL(s).
 
 
-<sub>📄 File: [`projects/eteacher-school-banners.md`](./projects/eteacher-school-banners.md) · Wiki source: `memory/knowledge/projects/eteacher-school-banners.md`</sub>
+<sub>📄 File: [`projects/eteacher-school-banners.md`](./projects/eteacher-school-banners.md)</sub>
 
 
 ---
@@ -3071,6 +3325,7 @@ The following source notes are retained in full because they contain the project
 # French Atelier Social Deck
 
 > ### 🕰️ Started: **Jun 23, 2026**   ·   🟢 Last touch: **Jun 28, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -3147,7 +3402,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **12** unique URL(s).
 
 
-<sub>📄 File: [`projects/french-atelier-social-deck.md`](./projects/french-atelier-social-deck.md) · Wiki source: `memory/knowledge/projects/french-atelier-social-deck.md`</sub>
+<sub>📄 File: [`projects/french-atelier-social-deck.md`](./projects/french-atelier-social-deck.md)</sub>
 
 
 ---
@@ -3155,6 +3410,7 @@ The following source notes are retained in full because they contain the project
 # CEO Performance Suite
 
 > ### 🕰️ Started: **Jun 15, 2026**   ·   🟢 Last touch: **Jun 24, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -3232,7 +3488,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **8** unique URL(s).
 
 
-<sub>📄 File: [`projects/ceo-performance-suite.md`](./projects/ceo-performance-suite.md) · Wiki source: `memory/knowledge/projects/ceo-performance-suite.md`</sub>
+<sub>📄 File: [`projects/ceo-performance-suite.md`](./projects/ceo-performance-suite.md)</sub>
 
 
 ---
@@ -3240,6 +3496,7 @@ The following source notes are retained in full because they contain the project
 # VJ Magic
 
 > ### 🕰️ Started: **Jun 17, 2026**   ·   🟢 Last touch: **Jun 22, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -3318,7 +3575,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **7** unique URL(s).
 
 
-<sub>📄 File: [`projects/vj-magic.md`](./projects/vj-magic.md) · Wiki source: `memory/knowledge/projects/vj-magic.md`</sub>
+<sub>📄 File: [`projects/vj-magic.md`](./projects/vj-magic.md)</sub>
 
 
 ---
@@ -3326,6 +3583,7 @@ The following source notes are retained in full because they contain the project
 # Gita Machine
 
 > ### 🕰️ Started: **Jun 17, 2026**   ·   🟢 Last touch: **Jun 17, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -3381,7 +3639,7 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **3** unique URL(s).
 
 
-<sub>📄 File: [`projects/gita-machine.md`](./projects/gita-machine.md) · Wiki source: `memory/knowledge/projects/gita-machine.md`</sub>
+<sub>📄 File: [`projects/gita-machine.md`](./projects/gita-machine.md)</sub>
 
 
 ---
@@ -3389,6 +3647,7 @@ The following source notes are retained in full because they contain the project
 # CQI SENSE Deck
 
 > ### 🕰️ Started: **Jun 10, 2026**   ·   🟢 Last touch: **Jun 10, 2026** (2mo ago)
+
 
 ### One-line purpose
 
@@ -3442,31 +3701,20 @@ The following source notes are retained in full because they contain the project
 - URLs preserved from source: **1** unique URL(s).
 
 
-<sub>📄 File: [`projects/cqi-sense-deck.md`](./projects/cqi-sense-deck.md) · Wiki source: `memory/knowledge/projects/cqi-sense-deck.md`</sub>
+<sub>📄 File: [`projects/cqi-sense-deck.md`](./projects/cqi-sense-deck.md)</sub>
 
 
 ---
 
-# 🧾 SUPPORTING DOCS IN THIS REPO
+# 🧾 SUPPORTING DOCS
 
-- [`_global-rules.md`](./_global-rules.md) — Omri's universal working rules with verbatim quotes and citations
-- [`_inventory.md`](./_inventory.md) — Full URL/repo inventory across all tasks
-- [`_supporting-knowledge.md`](./_supporting-knowledge.md) — Entities, concepts, and cross-project context
-- [`_source-read-manifest.md`](./_source-read-manifest.md) — Every source file read to build this
+- [`_global-rules.md`](./_global-rules.md) — universal working rules
+- [`_inventory.md`](./_inventory.md) — full URL/repo inventory
+- [`_supporting-knowledge.md`](./_supporting-knowledge.md) — entities and concepts
+- [`_source-read-manifest.md`](./_source-read-manifest.md) — sources read
+- [`_today-log.md`](./_today-log.md) — every commit + session action from Sep 1, 2026
 - [`projects/*.md`](./projects/) — 36 per-task deep dives
 
 ---
 
-# 🎯 FINAL NOTES FOR THE NEXT AGENT
-
-1. **Never say "I don't have access"** without calling `list_external_tools` first. Existing connectors: GitHub, Google Calendar/Gmail, Google Drive, Google Sheets, Google Tag Manager, Cloudflare, Vercel, Wix, Finance, OpticOdds.
-2. **Every deliverable = a public GitHub URL.** Not a ZIP. Not a file card. Not an attachment. A **clickable, live URL**.
-3. **Mobile-first, RTL-aware** for Hebrew tasks (Amy Squishy, Apt Furniture Deck).
-4. **Cache-busting query strings** on client-ready links when freshness matters.
-5. **`ACTION` gate** for new websites — wait for the literal word before starting.
-6. **Long-chat warning** — proactively flag context degradation.
-7. **No apology loops.** Deliver the file/link. Then state exactly what changed.
-
----
-
-*Compiled from `memory/knowledge/` — 36 project pages + 9 preference files + 4 entity pages + 2 concept pages. Cross-verified against live GitHub for creation and last-push dates.*
+*Compiled from `memory/knowledge/`, `memory/notes/projects/in_venture/`, `memory/sessions/2026-08-31_2026-09-06/`, and live GitHub API. All timestamps in UTC unless noted. No source URL lost.*
