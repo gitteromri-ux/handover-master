@@ -65,3 +65,10 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Fix 2: index.html + checkout.html gate — ?llatest=1 or a test email (example.com, test/qa/demo tokens, gitter, eteacher, gita-agency) silences pixel+relay on that device permanently; ?llatest=0 clears.
 - Fix 3: index.html — LLA2_*/LLA_Load/CTA_Seen counter events no longer sent to the Meta pixel (Cloudflare counters kept).
 - Verified: live 200, byte hash = repo, Set-Cookie on fbclid URL, 390px render. Commit: see lla-course-checkout main.
+
+## 2026-09-25 14:50 IDT — LLA course site (longevitylifeacademy.pages.dev, Ad Set 2 / Ad #12 landing) — golden-parity tracking fix LIVE (user-approved)
+- Repo lla-course-checkout branch fix/golden-parity-20260925, commits 4604e3c, b9f8edc, 49c5a24. Cloudflare Pages production 7a37f7ca (was 543adb13).
+- Changed: server fbc fallback (cookie → lla_fbc_v1 → exact URL fbclid); worker _fbc prefix fb.2 = Pixel; removed lla-rt-*.workers.dev counters; tester regex = team only; phones load 4K film/hls.js only when on screen or tapped.
+- Unchanged (verified vs 543adb13): all visible text home+checkout at 390/1440, page heights, script order, relay payload fields (AC triggers), checkout flow.
+- Julie masterclass site (www.longevitylifeacademy.com, Longevity-Academy/julie-masterclass): NOT touched.
+- Rollback: Cloudflare Pages → longevitylifeacademy → deployment 543adb13 → Rollback.
