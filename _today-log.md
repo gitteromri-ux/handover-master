@@ -58,3 +58,10 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Content must match prompts exactly
 - "Premium" means real color, 3D/light, editorial typography — not white minimalism
 - Playfair Italic (not just Playfair Display) for the letter hero
+
+## 2026-09-25 07:45 IDT — lla-course-checkout (longevitylifeacademy.pages.dev)
+- Live: Cloudflare Pages deployment 543adb13 (production). Rollback: redeploy/rollback to a5414f7c.
+- Fix 1: dist/_worker.js + _routes.json — server re-issues _fbc/_fbp (90 days, byte-identical) and sets _fbc=fb.1.<ms>.<fbclid> on landing; HTML routes only.
+- Fix 2: index.html + checkout.html gate — ?llatest=1 or a test email (example.com, test/qa/demo tokens, gitter, eteacher, gita-agency) silences pixel+relay on that device permanently; ?llatest=0 clears.
+- Fix 3: index.html — LLA2_*/LLA_Load/CTA_Seen counter events no longer sent to the Meta pixel (Cloudflare counters kept).
+- Verified: live 200, byte hash = repo, Set-Cookie on fbclid URL, 390px render. Commit: see lla-course-checkout main.
