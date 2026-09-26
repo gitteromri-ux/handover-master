@@ -72,3 +72,21 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Unchanged (verified vs 543adb13): all visible text home+checkout at 390/1440, page heights, script order, relay payload fields (AC triggers), checkout flow.
 - Julie masterclass site (www.longevitylifeacademy.com, Longevity-Academy/julie-masterclass): NOT touched.
 - Rollback: Cloudflare Pages → longevitylifeacademy → deployment 543adb13 → Rollback.
+# 2026-09-26 01:25 IDT: tracking receipt repair candidate, not production
+
+- Repository: gitteromri-ux/lla-course-checkout.
+- Branch: fix/tracking-receipts-20260925; commit: 6ad9a08c960bb968879831c0a67b828e6f7bab37.
+- Changes: browser relay receipts, server structured outcome logs, server known-test exclusion, order-stable Purchase event IDs and callback guard, removal of fabricated Purchase amount fallback, original event timestamp retention, funnel product-field forwarding.
+- Verification: 21 receipt regressions and 20 click-ID regressions passed locally with upstream requests mocked; three offline WebKit IC paths passed. Desktop 1440px and mobile 390px checks returned local HTTP 200, no page errors and no horizontal overflow. Non-script markup unchanged.
+- Production: NOT DEPLOYED. No live attribution or real-buyer proof asserted. Runtime logs still need durable retention and actual project access.
+- Blockers: connected Vercel context cannot see existing lla-ac-events project; Cloudflare connector invalid X-Auth-Key header, reauthorization requested.
+- Rollback: no production rollback needed. Candidate can be abandoned; base 49c5a24, backup/20260925-2209-measurement retained. Prior Cloudflare production record 7a37f7ca must be reverified before any eventual promotion.
+
+## 2026-09-26 12:45 IDT: Cloudflare Pages access verified; receipt preview deployed
+
+- Repository: gitteromri-ux/lla-course-checkout; candidate SHA 6ad9a08c960bb968879831c0a67b828e6f7bab37.
+- The established approved LLA Funnel Deploy credential successfully reads and deploys Pages. The separate Pipedream API-key connector remains invalid; it is not the Pages deployment route.
+- Preview only: https://0d6ba1c7.longevitylifeacademy.pages.dev, deployment 0d6ba1c7-e770-4bd7-867c-fdffd294aea5, branch receipt-review-20260926. Provider reports successful preview deployment.
+- Preview index and receipt helper HTTP 200; helper bytes match the candidate. Browser checks: receipt API loaded, LLA_LIVE=false, no horizontal overflow at desktop and 390px mobile. No form was submitted.
+- Production remains 7a37f7ca-007f-484a-82c1-4437e695083a, verified against the Pages project API. No production change or rollback needed. For a later approved promotion, rollback target is that deployment.
+- Vercel connector still cannot see the recorded ac-events project, including its documented ID. Server repair remains undeployed. Preview does not prove CAPI repair, Meta deduplication, or real Ad Set 2 attribution.
