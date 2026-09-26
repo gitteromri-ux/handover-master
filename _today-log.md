@@ -90,3 +90,14 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Preview index and receipt helper HTTP 200; helper bytes match the candidate. Browser checks: receipt API loaded, LLA_LIVE=false, no horizontal overflow at desktop and 390px mobile. No form was submitted.
 - Production remains 7a37f7ca-007f-484a-82c1-4437e695083a, verified against the Pages project API. No production change or rollback needed. For a later approved promotion, rollback target is that deployment.
 - Vercel connector still cannot see the recorded ac-events project, including its documented ID. Server repair remains undeployed. Preview does not prove CAPI repair, Meta deduplication, or real Ad Set 2 attribution.
+
+## 2026-09-26 12:49 IDT: approved browser receipt repair in production
+
+- User explicitly approved browser-only deployment at 12:46 IDT, then required comparison with other-session and golden-years changes before proceeding.
+- Preflight: current index/checkout matched 49c5a24 byte-for-byte; Cloudflare production still 7a37f7ca. No newer production version was overwritten. Other retrieved session referred to that same deployment and had not proven all attribution repaired.
+- Source candidate: 6ad9a08c960bb968879831c0a67b828e6f7bab37; only browser files shipped, not capi-relay server code.
+- New Cloudflare production: 3cc41778-8b06-4d8f-8556-01869e438064, created 09:49:40 UTC, provider success.
+- Verified production index, checkout and receipt helper HTTP200 and exact candidate byte matches; both pages checked at 1440/390px with test mode active, no horizontal overflow, receipt helper loaded, no Meta/relay resource requests observed and no forms submitted.
+- Unchanged: golden-parity click-ID and cookie behavior, ATC/IC triggers, checkout flow, design, CRM/payment calls, Meta campaign settings. Julie masterclass untouched.
+- CAPI server still reports clickid-exact-20260922. Full attribution, central retained receipts and real Meta deduplication remain unverified; no claim of full repair.
+- Rollback: Cloudflare restore 7a37f7ca-007f-484a-82c1-4437e695083a; local backup/20260926-1250-approved-browser at 49c5a24.
