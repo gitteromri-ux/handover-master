@@ -90,3 +90,8 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Preview index and receipt helper HTTP 200; helper bytes match the candidate. Browser checks: receipt API loaded, LLA_LIVE=false, no horizontal overflow at desktop and 390px mobile. No form was submitted.
 - Production remains 7a37f7ca-007f-484a-82c1-4437e695083a, verified against the Pages project API. No production change or rollback needed. For a later approved promotion, rollback target is that deployment.
 - Vercel connector still cannot see the recorded ac-events project, including its documented ID. Server repair remains undeployed. Preview does not prove CAPI repair, Meta deduplication, or real Ad Set 2 attribution.
+
+## 2026-09-26 22:40 IDT — LLA tracking: no production change; truth table written
+- Repo lla-course-checkout: unchanged (production 3cc41778). No test events sent. Replay identifiers recorded in projects/lla-course-checkout.md.
+- Wrote "TRACKING TRUTH TABLE" into projects/lla-course-checkout.md: settled facts, the 4 open items, and what never to redo. Every future tracking session must start from that section, not from re-pulling Sep 19–26 data.
+- Rollback: n/a.
