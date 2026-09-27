@@ -355,3 +355,13 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Rendered and checked all nine for font/image loads and text-block overflow/intersection. Gallery inspected at 1440px desktop and 390px mobile. Three color selectors tested.
 - Updated private review preview and shared three blue full-size proofs. No Meta upload or production websites/payments/forms/CRM/tracking changes.
 - Source: masterclass-editorial-v6.html/css. Notes: EDITORIAL-V6-REVIEW.md. Rollback: withdraw review candidate; existing production remains unchanged.
+
+## 2026-09-27 | Julie full-width proofs 07 | Approval pending
+
+- Repo: gitteromri-ux/lla-meta-ig-ad-sizes. Review branch: review/masterclass-readable-20260927. Commit: ecd462e.
+- User rejected narrow left-column compositions and forbade all-capital words. Replaced them with full-width headline lines, full-width imagery and centered three-line event/enrollment copy.
+- Removed arrows, isolated price strips and left-half text panels. Original font files only; compact $49. Exclusivity remains removed.
+- Nine Feed proofs: three original image concepts in gold, light blue and white.
+- All nine passed image/font loading, text overflow, main-block overlap and uppercase-word checks. Gallery color controls tested; 1440px desktop and 390px mobile screenshots inspected.
+- Updated private review preview; three blue proofs shared. No Meta upload, existing ad changes or production website/checkout/CRM/tracking changes.
+- Other placement sizes await design approval. Rollback: withdraw review candidate; production remains unchanged.
