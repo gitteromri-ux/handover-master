@@ -1,3 +1,16 @@
+## 2026-09-27 · Blueprint tracking recovery approved and LIVE
+
+- User explicitly approved the exact tracking-only promotion at 11:47 IDT. Deployment completed around 11:48 IDT.
+- Repo `gitteromri-ux/lla-course-checkout`; branch `fix/blueprint-golden-tracking-20260927`. Browser code commit `e6d305fb4e34c92eccaa1d44236f91afef2d442e`; scoped relay/evidence commit `e14ec5f012a7024048d37c902a7540a3aed586cb`.
+- Cloudflare production `7811edbc-7259-45f1-bd82-79d7b6210255`, successful and uses_functions=true. https://longevitylifeacademy.pages.dev/ and `/checkout` HTTP 200. All three approved changed files byte-exact; 226 assets retained, only those three hashes changed.
+- Vercel production `dpl_7ptRYWVGUsbhVPsmx4diuCsEXLvP` confirmed by project target. Deployed CAPI source byte-identical to candidate; current AC source hash preserved. Live OPTIONS 204 for Blueprint and Julie origins; GET 405 as expected.
+- Live desktop 1440px and mobile 390px homepage/checkout: four HTTP 200 responses, no page JS errors, `qa=1` tracking exclusion active and outbound writes blocked. No payment or live Meta test event sent.
+- Scope: historical Blueprint commerce fbc fallback and immediate dispatch; historical CAPI handler for Blueprint commerce only. Design, forms, card/PayPal, AC, CRM, Julie, ad sets and budgets were not edited.
+- Rollback Cloudflare: POST `/client/v4/accounts/55eb74f4002b7237e393bd6980a1676a/pages/projects/longevitylifeacademy/deployments/3cc41778-8b06-4d8f-8556-01869e438064/rollback`.
+- Rollback Vercel: POST `/v9/projects/prj_3v7g4Xwve6OmXrcPCVQOWJOiN2SK/rollback/dpl_EPnkKzboNGiXLhYUwap9fcxoFWj8` with empty JSON body. Git snapshot remains `backup/20260927-blueprint-tracking`.
+- NOT a whole-system September 17 rollback and NOT proof of restored paid attribution. Real payment settlement, Meta receipt/deduplication and Ads Manager ad-set credit remain unverified. Never present offline tests or deployment checks as sale/attribution proof.
+
+
 ## 2026-09-27 · Blueprint tracking historical recovery, staged only
 
 - Repo: `gitteromri-ux/lla-course-checkout`, branch `fix/blueprint-golden-tracking-20260927`.
