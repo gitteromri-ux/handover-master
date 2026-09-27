@@ -336,3 +336,12 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Claim boundary: world-ranking language is user-requested campaign wording consistent with the masterclass page, not independently verified current ranking. Zoom image is original illustrative artwork.
 - Source: masterclass-brand-v4.html/css. Proof: brand-v4-exports/proof.json and review-checks.json.
 - Rollback: withdraw review candidate. Original production banners and ads remain unchanged.
+
+## 2026-09-27 | Julie layout proof 05 | APPROVAL PENDING
+
+- Repo: gitteromri-ux/lla-meta-ig-ad-sizes, review/masterclass-readable-20260927, commit 372f064.
+- Removed the exclusivity line at user's request. Replaced oversized decorative Playfair $49 with compact Inter price; reworked headline hierarchy and aligned price/CTA/date footer.
+- 18 Feed proofs only: three concepts, two headline directions, gold/blue/white. Further placement export work held for layout approval to avoid another long batch.
+- All 18 pass image/overflow/named-block-overlap checks. Gallery checked at desktop and 390px mobile; all six copy/color combinations load.
+- Updated private review preview; no Meta upload or production website/checkout/CRM/tracking changes.
+- Rollback: discard review candidate; production remains untouched.
