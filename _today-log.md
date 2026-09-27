@@ -375,3 +375,12 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Render checks found no text overlap, overflow or new all-capital copy. Desktop and mobile review gallery checked, all three color controls work.
 - No Meta upload, existing-ad change, production website change, checkout change or tracking change. Other placement sizes await layout approval.
 - Next: user approval of revised banner layout before placement exports and any authorized upload.
+
+## 2026-09-27 · Julie banner review 09
+
+- Removed the top logo from three review creatives. Enlarged subheaders using actual Playfair Display and Playfair Display Italic, with light-blue or gold emphasis; white-headline variants retain blue subheader emphasis.
+- Added 72px space between Zoom subheader block and image. Added cyan edge lighting and separated presenter, event dates and enrollment rows in the bottom frame.
+- Nine Feed proofs rendered with original assets; no detected text overflow. Three screenshots shared immediately. Review gallery inspected at desktop and 390px mobile.
+- Source commit `9485a7a` on `review/masterclass-readable-20260927`, repository `gitteromri-ux/lla-meta-ig-ad-sizes`. Prior proof commit `4cba3e9` remains available.
+- No Meta upload, ad edit, activation, tracking, checkout, website-production or CRM change. Current ad-set inventory being checked read-only in parallel for user selection.
+- Next: user selects banners and destination ad sets. No launch sign-off inferred from creative rendering.
