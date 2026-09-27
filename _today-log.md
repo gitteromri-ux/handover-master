@@ -1,3 +1,16 @@
+## 2026-09-27 | Julie masterclass Meta banner uploads only
+
+- Scope: Meta ad account 1459085242361281, campaign 52668266203628. Uploaded the user's original 7C, 7B and EVENT-ZOOM concepts from https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/adset-masterclass.html?v=3 in 4:5 1440x1800, 9:16 1440x2560 and 1:1 1440x1440. Nine images, intended as three ads. Meta readback verified all nine dimensions and image hashes.
+- No ads/creatives created or replaced; no campaign/adset, budgets, targeting, pixel, website, checkout, CRM or ActiveCampaign changes. Campaign reread PAUSED.
+- Proposed new-ad destination: populated prospecting Ad Set 1 52668330533628 / CRM108813, same URL tags and settings. Await exact copy/scope approval before creating three paused ads.
+- Existing posts: two Ad#12 creatives already have the masterclass offer; eight remaining ads in AS1/AS2 still have Blueprint $179/month copy. Original Page1036363559571443 is not accessible to the connected identity; previous mutation failed Advertiser-role code10/subcode3858749 and today's Page metadata read failed permission. Do not retry unchanged or silently substitute Page identity. Connected LLA Page1179505785236150 has Advertise/Create Content access. Ask whether to preserve original Page and obtain access or approve new posts under the connected LLA Page, losing old post engagement.
+- Image hashes, Feed / vertical / square:
+  - 7C: 1245b2180185701fef53a748a3ae01af / 8441be0a5b2863ca29afc1563b8b0cd1 / b5e3149017e17c487f56dff09422005f
+  - 7B: 96d53f935f8b41e57e1e0847d2d59b75 / 4bd88a43ed68de0bffdc127124435534 / 0df339ed1a04f42bf55108fe7c6cd42a
+  - EVENT-ZOOM: 55ae342a7ff71f2164aabd9a9d5163ee / 549d70dff9b8315702b028373401dbaa / f15f3e1ad3aa33eb632acc4230f93d82
+- Evidence/workspace: julie-meta-banners-20260927; shared review artifact0f69f815-f617-4d0b-9f4a-d6d1e8b6c87c. Rollback: none needed for existing ads because untouched; unused uploaded media has no delivery effect. No production source SHA changed.
+
+
 ## 2026-09-27 · Approved home-banner video repair LIVE
 
 - User reported slow/nonworking hero video and required no design changes. Video-only candidate explicitly approved at 12:15 IDT.
