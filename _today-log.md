@@ -313,3 +313,14 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Preview: https://www.perplexity.ai/computer/a/julie-masterclass-banner-revie-oe9n6lIESCWNtFZ4S9BGTA
 - Source: https://github.com/gitteromri-ux/lla-meta-ig-ad-sizes/tree/review/masterclass-readable-20260927
 - Review-only rollback: prior revision `cf31a2861f27e9275a011729001d90aecbfc2702` (rejected; preserve history, do not publish). No production rollback necessary because production was not changed.
+
+## 2026-09-27 | Julie banner brand revision 03 | APPROVAL PENDING
+
+- Repo: gitteromri-ux/lla-meta-ig-ad-sizes.
+- Review branch: review/masterclass-readable-20260927. Commit: b4e4cde.
+- Revisions 01 and 02 rejected by user. Revision 03 rebuilds the three original concepts with only original Playfair Display, Playfair Display Italic and Inter files.
+- 27 PNG exports in brand-v3-exports. All sizes rendered and visually inspected; zero automated missing-image, text-overflow or named-block-overlap failures.
+- Review gallery checked at desktop 1440px and mobile 390px. All five format selectors verified.
+- No existing Meta ad, campaign setting, production website, form, payment flow, CRM, AC or tracking changed.
+- Source: masterclass-brand-v3.html/css. Review evidence: BRAND-V3-REVIEW.md and brand-v3-exports/proof.json.
+- User approval required before any Meta upload. Rollback: withdraw review candidate; original generators and production ads remain untouched.
