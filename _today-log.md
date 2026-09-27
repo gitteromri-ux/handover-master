@@ -254,3 +254,19 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Diff: https://github.com/Longevity-Academy/julie-masterclass/compare/eeed4057fff9d5a8211652905f25678841d76fad...6b1746ab79019b1b5e7663833e44a93c98a28db2 .
 - Production NOT promoted. Live Meta dedup/paid attribution/ROAS, sales queue execution, physical Safari/wallet charges and webhook durability remain unverified/unresolved. Do not call this a full launch sign-off.
 - Rollback after any approved promotion: revert ONLY 6b1746ab79019b1b5e7663833e44a93c98a28db2, preserving newer approved changes. Backup: backup/20260927-1708-tracking.
+
+
+## 2026-09-27: APPROVED Julie tracking candidate promoted and production verified
+
+- This supersedes the earlier “NOT production” candidate status for commit 6b1746ab79019b1b5e7663833e44a93c98a28db2.
+- User explicitly approved exact tracking-only promotion at 17:45 IDT.
+- Repository: Longevity-Academy/julie-masterclass. Main was still eeed4057fff9d5a8211652905f25678841d76fad before the fast-forward; no other approved work overwritten.
+- LIVE commit: 6b1746ab79019b1b5e7663833e44a93c98a28db2. Helper julie-meta-20260927-3; attribution module julie-attribution-20260927-1.
+- Deployment succeeded: https://github.com/Longevity-Academy/julie-masterclass/actions/runs/36327100925 (built 2026-09-27T14:46:44Z).
+- Production https://www.longevitylifeacademy.com/julie-masterclass/ returns HTTP 200. Index + helper + attribution module exactly byte-match approved files.
+- Post-deploy tests: 24/24 checkout and 6/6 CRM-link cases using real production assets with external writes intercepted; NOT real charges/Meta attribution proof.
+- Production desktop/390px: no page errors/horizontal overflow, forms open, hero autoplay and “Watch with sound” playback verified. Full player 1080p desktop/720p mobile, duration139.050667 seconds.
+- Normal ecommerce https://longevitylifeacademy.pages.dev/ unchanged; pre/post HTML SHA256 70f2aa82fc10bd1dfc6897befb2af0dcd5f52bcd5cf071a696e427a69233906b.
+- No Vercel relay, Cloudflare, Meta campaign/ad-set/rule, AC trigger/automation, video, CSS or payment-method changes.
+- Remaining unverified/unresolved: actual Meta receipt/dedup/paid ad-set attribution/ROAS for this release, CRM sales-queue execution, physical Safari/wallet charges, durable webhook purchase recovery. Do not describe these mocked tests as sales.
+- Preserve this code in other tabs. Rollback, if needed: revert ONLY 6b1746ab79019b1b5e7663833e44a93c98a28db2; backup branch backup/20260927-1708-tracking. Do not overwrite v9.7 Mac/desktop checkout fix or later approved work.
