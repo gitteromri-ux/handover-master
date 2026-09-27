@@ -208,3 +208,9 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Script julie-tracking-20260927/funnel-browser-regression.cjs; results evidence/funnel-browser-regression.json. No additionalproductioncodechanges.
 - Current main99da1dff44c9d6f84bba687a8e2f89ce25645c02 was addedbyothertab forfilm/Lenisscrolling; comparedwith03e8a91 andconfirmedtrackingpatchpreserved. Otherworkersmuststartlatestmain, notrestore03e8a91overlaterwork.
 - MetaAPI GETpixel fields=test_event_code returned100 nonexistingfield. No logged-inbrowser/devices available; actualMetaTestEvents/receipt/dedup/ROAS andCRMqueue remainunverified. Do notpresent24testsassalesoractualattribution.
+
+## 2026-09-27 16:10 IDT — Julie hero film uncut (v9.6) — LIVE `a4e90d4`
+- `julie-masterclass` main `a4e90d4` (descendant of 03e8a91 → 99da1df). CSS only (`assets/julie-v8.css?v=10`): hero film is a 16:9 frame beside the copy on desktop (no mask fade, no gradient over the film, rounded frame), and on ≤980px it sits under the copy in its own 16:9 frame (never behind the headline). Copy/video overlap measured 0 at 1024/1280/1440/1920/390.
+- Film identity proven: `julie-film-720p.mp4` md5 2d135f18c24e == .dev `full-film-720p.mp4`; 1080p frames at t=10/70/130 md5-identical to the .dev 1080p HLS rendition; duration 139.05 s on both. Live: hero 720p, trailer 1080p (1120×630, 16:9), sound unmuted on open.
+- Desktop dialog scroll re-tested live on a4e90d4: scrollTop 345, page 0.
+- Cache: www.longevitylifeacademy.com is a direct CNAME to GitHub Pages (server GitHub.com/varnish, no Cloudflare proxy) → nothing to purge; CDN already serves last-modified 12:57Z. Browser HTML cache max-age=600 → any visitor sees the new page within ≤10 min on the same link; assets are versioned.
