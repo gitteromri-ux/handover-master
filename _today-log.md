@@ -345,3 +345,13 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - All 18 pass image/overflow/named-block-overlap checks. Gallery checked at desktop and 390px mobile; all six copy/color combinations load.
 - Updated private review preview; no Meta upload or production website/checkout/CRM/tracking changes.
 - Rollback: discard review candidate; production remains untouched.
+
+## 2026-09-27 | Julie editorial rebuild 06 | APPROVAL PENDING
+
+- Repo: gitteromri-ux/lla-meta-ig-ad-sizes, review/masterclass-readable-20260927, commit 568a497.
+- User rejected revision 05. Rebuilt from blank stylesheet with no inherited prior banner CSS: one dominant promise/title, presenter-led imagery, compact price and unified enrollment strip.
+- Original font files and imagery preserved. Exclusivity line remains removed. Blue portrait uses full-height editorial material plane, not old rounded floating panel.
+- Three concepts in gold, blue and white: nine Feed proofs only. More placement sizes held for approval.
+- Rendered and checked all nine for font/image loads and text-block overflow/intersection. Gallery inspected at 1440px desktop and 390px mobile. Three color selectors tested.
+- Updated private review preview and shared three blue full-size proofs. No Meta upload or production websites/payments/forms/CRM/tracking changes.
+- Source: masterclass-editorial-v6.html/css. Notes: EDITORIAL-V6-REVIEW.md. Rollback: withdraw review candidate; existing production remains unchanged.
