@@ -1,3 +1,14 @@
+## 2026-09-28 | Julie page CAPI timing-only release
+
+- User approved the prepared timing-only fix. Production repo: `Longevity-Academy/julie-masterclass`; only `assets/julie-meta-tracking.js` changed.
+- Commit: https://github.com/Longevity-Academy/julie-masterclass/commit/42726fcd6a46908a499f2d94bb5cbf2f9558c947 ; release `julie-meta-20260927-4`.
+- GitHub Pages built this commit; unversioned production helper byte-matches it. Production HTML unchanged.
+- Page-level CAPI gets a two-second scheduled fallback independent of full page load and a visibility-hidden flush, retaining the existing one-time guard and cookie reread. No design, form, checkout, payment, AC, CRM, relay, or ad-setting changes.
+- Real 390px slow-network visit: page CAPI sent at 2.83 seconds while still loading; both responses accepted. Browser/server event IDs matched. Early cold-visit server events lacked fbp because the pixel cookie appeared later; do not claim full cookie coverage.
+- Six focused checks, fourteen controlled checkout cases and eight post-deploy simulated-payment cases passed. Simulated tests are not real CRM, payment, wallet or paid-attribution proof.
+- Rollback snapshot: `backup/20260928-0035-capi-timing` at `dea444050697c4d66dd1125f5c86cfc4f9a763c2`. Reverse only this change with `git revert 42726fcd6a46908a499f2d94bb5cbf2f9558c947` on a new branch from current main, then review/promote. Never reset over later work.
+- Keep this release when other tabs edit the website. Outstanding business-outcome proofs remain separate; no blanket tracking sign-off.
+
 ## 2026-09-27 | Julie: three new banner ads created, existing ads protected
 
 - Latest explicit user scope: "No dont touch existing ones just upload new ones in full under same exact settings as the older ones." Any prior plan to replace eight older posts is cancelled. Do not execute it.
