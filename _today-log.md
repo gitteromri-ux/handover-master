@@ -404,3 +404,8 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Further refined original 7B/7C source: requested “The world’s 2nd slowest ager reveals her protocol” subheader, no bullet dots, compact full-width event rows, only $49, no VIP/$79. Commit `092e85e` on `review/masterclass-readable-20260927` in `gitteromri-ux/lla-meta-ig-ad-sizes`; prior source `7ba1c2b` retained.
 - Six card exports report fit=true/no $79/no VIP. Unified board tested at 1440px and 390px: selection summary, thirteen Meta cards, image zoom and no horizontal overflow, with no page errors.
 - No Meta change, upload or activation. No checkout, tracking, production site or CRM change. Creative approval is not payment or tracking sign-off.
+
+
+## 2026-09-28 Blueprint attribution candidate, not production
+
+Repo: gitteromri-ux/lla-course-checkout. Branch fix/blueprint-attribution-20260928, SHA c3c0147da351eb8c224028e48a1e122a957ecabd. One commerce helper changed to retain same-touch campaign/ad-set/click data and restore missing CRM QueryString values. Actual preview b3d7e1cd-4d4d-425c-afe1-5e853f761355 reactivates byte-identical existing click-cookie worker; baseline production 5205c5b4-f72a-4099-8460-1ae98772f963 reports uses_functions=false. Fourteen offline checks plus 390/1440 preview checks pass; not customer attribution or CRM queue proof. Production unchanged pending exact promotion approval. Rollback target production 5205c5b4-f72a-4099-8460-1ae98772f963; code backup/20260928-attribution-before at 734f476a5c981e880887a158d775c3d4424b1a47. Do not pause campaigns or change Julie/payments/AC.
