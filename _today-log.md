@@ -95,3 +95,10 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Repo lla-course-checkout: unchanged (production 3cc41778). No test events sent. Replay identifiers recorded in projects/lla-course-checkout.md.
 - Wrote "TRACKING TRUTH TABLE" into projects/lla-course-checkout.md: settled facts, the 4 open items, and what never to redo. Every future tracking session must start from that section, not from re-pulling Sep 19–26 data.
 - Rollback: n/a.
+
+## 2026-09-27 — Julie masterclass v8 (production)
+- Repo: Longevity-Academy/julie-masterclass, main 9c69156 → **5bf678c** (live at https://www.longevitylifeacademy.com/julie-masterclass/, HTTP 200, `assets/julie-v8.css` 200).
+- Changed: container 1400px + larger type sitewide; pricing cards full width, bigger fonts; Zoom shot enlarged/symmetric with cards; `#protocol` fold removed, phone mockup moved into new `#how` fold; `#dv-news` removed, `#press` rebuilt as 9 .dev-style cards with real Julie/Harel photos; `#school` = exact .dev institution fold (PNG eTeacher logo); `#reveal` flat wide grid + movement video card 2; `#julie` restored v48 claims fold (3 animations + portrait + stats).
+- New assets: assets/julie-v8.css, assets/pillars/exercise-yoga-v2.mp4 (+poster), assets/phone-mockup-julie-live.jpg, assets/press-people/harel-tayeb.jpg, assets/instructors/julie-gibson-clark.jpg.
+- Rollback: `git revert 5bf678c` on main (or `git push origin 9c69156:main --force`).
+- Not verified: real-device fonts (Codec Pro via cdnfonts) and video autoplay on iOS Safari.
