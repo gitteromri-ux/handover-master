@@ -214,3 +214,10 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Film identity proven: `julie-film-720p.mp4` md5 2d135f18c24e == .dev `full-film-720p.mp4`; 1080p frames at t=10/70/130 md5-identical to the .dev 1080p HLS rendition; duration 139.05 s on both. Live: hero 720p, trailer 1080p (1120×630, 16:9), sound unmuted on open.
 - Desktop dialog scroll re-tested live on a4e90d4: scrollTop 345, page 0.
 - Cache: www.longevitylifeacademy.com is a direct CNAME to GitHub Pages (server GitHub.com/varnish, no Cloudflare proxy) → nothing to purge; CDN already serves last-modified 12:57Z. Browser HTML cache max-age=600 → any visitor sees the new page within ≤10 min on the same link; assets are versioned.
+
+## 2026-09-27 approximately16:24 IDT: live Meta receipt evidence improved, no complete sign-off
+
+- Meta dataset1440305917310328 active; server_last_fired_time2026-09-27T06:09:21-0700 (16:09:21IDT). SERVER_ONLY query returned PageView/ViewContent/ATC/IC activity on sharedpixel; do not inferJulie-specificPurchase orquotevolumes thatcouldincludetests.
+- Julie-specific customconversion1099790382424644 InitiateCheckout reports first/last_fired_time2026-09-27T12:36:22+0000 (15:36:22IDT). Rule ANDInitiateCheckout + JulieURL + product_linejulie_masterclass. This is actualMetareceiptproof forJuliecheckout, channel/dedupnotidentified.
+- JulieATC1417373073897207 andPurchase1426010666308623 return nofirst/lastreceipt timestamp, bothis_unavailablefalse. NoactualPurchase/ROAS/CRMqueueverificationyet. Do notsignofftheseitemsaspassed.
+- Freshlocalbrowserattemptstillnoreachableloggedinsession. Noadditionalads/site/CRM/paymentmutations.
