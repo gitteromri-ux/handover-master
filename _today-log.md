@@ -409,3 +409,8 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 ## 2026-09-28 Blueprint attribution candidate, not production
 
 Repo: gitteromri-ux/lla-course-checkout. Branch fix/blueprint-attribution-20260928, SHA c3c0147da351eb8c224028e48a1e122a957ecabd. One commerce helper changed to retain same-touch campaign/ad-set/click data and restore missing CRM QueryString values. Actual preview b3d7e1cd-4d4d-425c-afe1-5e853f761355 reactivates byte-identical existing click-cookie worker; baseline production 5205c5b4-f72a-4099-8460-1ae98772f963 reports uses_functions=false. Fourteen offline checks plus 390/1440 preview checks pass; not customer attribution or CRM queue proof. Production unchanged pending exact promotion approval. Rollback target production 5205c5b4-f72a-4099-8460-1ae98772f963; code backup/20260928-attribution-before at 734f476a5c981e880887a158d775c3d4424b1a47. Do not pause campaigns or change Julie/payments/AC.
+
+
+## 2026-09-28 01:47 IDT Blueprint limited tracking release approved and live
+
+Production Cloudflare deployment 9ddfcf0c-9231-4659-aa5d-3f661d7b6b59 successful, uses_functions=true. Code c3c0147da351eb8c224028e48a1e122a957ecabd. Exactly one of 444 asset hashes changed (dist/assets/eteacher-ecomm.js); home/checkout HTML unchanged. Existing click-cookie worker reactivated, source unchanged. Production Set-Cookie verified; 390/1440 return-visit QA passed with writes/Meta blocked. Rollback 5205c5b4-f72a-4099-8460-1ae98772f963. Campaigns remain running; no Meta/AC/Julie/payment changes. Original end-to-end attribution/CRM queue task is NOT COMPLETE; this release is not proof of buyer attribution or queue assignment.
