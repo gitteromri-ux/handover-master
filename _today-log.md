@@ -384,3 +384,12 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Source commit `9485a7a` on `review/masterclass-readable-20260927`, repository `gitteromri-ux/lla-meta-ig-ad-sizes`. Prior proof commit `4cba3e9` remains available.
 - No Meta upload, ad edit, activation, tracking, checkout, website-production or CRM change. Current ad-set inventory being checked read-only in parallel for user selection.
 - Next: user selects banners and destination ad sets. No launch sign-off inferred from creative rendering.
+
+## 2026-09-27 · Consolidated banner and ad-set approval board
+
+- Replaced fragmented review with one private board in `julie-banner-readable-preview`: revised choices, current Meta inventory, and prior rejected/superseded proofs.
+- Fifteen selectable revised creative/size options; thirteen existing Meta ads grouped across six ad sets from the read-only 21:21 IDT snapshot. Existing Meta artwork and revised proofs are explicitly separated.
+- Added per-creative destination-set selection, enlarge view, copy/download selection summary. Selections are in memory only; user must copy/download before reload. No direct publishing or activation action exists.
+- Further refined original 7B/7C source: requested “The world’s 2nd slowest ager reveals her protocol” subheader, no bullet dots, compact full-width event rows, only $49, no VIP/$79. Commit `092e85e` on `review/masterclass-readable-20260927` in `gitteromri-ux/lla-meta-ig-ad-sizes`; prior source `7ba1c2b` retained.
+- Six card exports report fit=true/no $79/no VIP. Unified board tested at 1440px and 390px: selection summary, thirteen Meta cards, image zoom and no horizontal overflow, with no page errors.
+- No Meta change, upload or activation. No checkout, tracking, production site or CRM change. Creative approval is not payment or tracking sign-off.
