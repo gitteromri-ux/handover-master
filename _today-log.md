@@ -1,3 +1,16 @@
+## 2026-09-27 · Blueprint tracking historical recovery, staged only
+
+- Repo: `gitteromri-ux/lla-course-checkout`, branch `fix/blueprint-golden-tracking-20260927`.
+- Browser commit `e6d305fb4e34c92eccaa1d44236f91afef2d442e`; evidence/scoped-relay commit `e14ec5f` (full SHA in branch history).
+- Preview: https://4757e40b.longevitylifeacademy.pages.dev/ and `/checkout`, HTTP 200; three changed files byte-exact to candidate. Cloudflare preview ID `4757e40b-b7ed-40b0-82bb-09c409f4fa4b`, uses_functions true.
+- Restored historical commerce fbc helpers and immediate commerce dispatch only. Design, forms, payments and Julie unchanged. 18 offline tests pass; desktop and 390px screenshots inspected; no live Meta test traffic or payment transactions.
+- Actual Vercel project name is `lla-ac-events`, ID `prj_3v7g4Xwve6OmXrcPCVQOWJOiN2SK`. Unscoped built-in `vercel api` reads/source retrieval and deployment creation succeeded, unlike scoped CLI linkage. Candidate `dpl_7ptRYWVGUsbhVPsmx4diuCsEXLvP` READY with `autoAssignCustomDomains:false`. Preview endpoint is SSO protected (302), not runtime-validated.
+- Production NOT promoted. Cloudflare remains `3cc41778-8b06-4d8f-8556-01869e438064`; Vercel remains `dpl_EPnkKzboNGiXLhYUwap9fcxoFWj8`. These are the rollback targets.
+- Git snapshot `backup/20260927-blueprint-tracking` points to `6ad9a08c960bb968879831c0a67b828e6f7bab37`.
+- This is NOT a complete September 17 rollback. Historical matching/dispatch is scoped while newer payments, order-stable Purchase IDs, browser exclusions and receipts remain. No guarantee of attribution or sales; Meta acceptance, deduplication and paid ad-set credit still unverified.
+- Required next gate: explicit post-preview approval, then promote only scoped candidate and re-verify. Never replace the full relay with the old deployment: current AC behavior must remain.
+
+
 ## 2026-09-27 · Julie CEO acquisition chart
 
 - Repo: `gitteromri-ux/julie-500-launch-plan`.
