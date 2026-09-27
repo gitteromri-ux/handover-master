@@ -300,3 +300,16 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - No Vercel relay, Cloudflare, Meta campaign/ad-set/rule, AC trigger/automation, video, CSS or payment-method changes.
 - Remaining unverified/unresolved: actual Meta receipt/dedup/paid ad-set attribution/ROAS for this release, CRM sales-queue execution, physical Safari/wallet charges, durable webhook purchase recovery. Do not describe these mocked tests as sales.
 - Preserve this code in other tabs. Rollback, if needed: revert ONLY 6b1746ab79019b1b5e7663833e44a93c98a28db2; backup branch backup/20260927-1708-tracking. Do not overwrite v9.7 Mac/desktop checkout fix or later approved work.
+
+## 2026-09-27 | Julie banner review revision 02 (not approved for Meta)
+
+- Repository: `gitteromri-ux/lla-meta-ig-ad-sizes`
+- Branch: `review/masterclass-readable-20260927`
+- Commit: `75d2f5d9d8cdd3d1d675d6e905304edeae8dcca8`
+- User rejected first revision for generic flyer composition and missing real Playfair Display italic. Revision 02 restores the exact italic font, stronger presenter-led layouts, larger price and original-style dimensional blue card.
+- Three concepts: Zoom, standing Julie portrait converted from Blueprint to masterclass, and 7C-style masterclass card. 27 rendered PNG exports and phone-size proof sheets on review branch.
+- Original production banner generators, default branch, existing Meta ads, ad sets, campaign settings, pixels, website functionality, payments and ActiveCampaign remain unchanged.
+- Status: review screenshots shared; user approval still pending. Do not upload these replacements to Meta without approval.
+- Preview: https://www.perplexity.ai/computer/a/julie-masterclass-banner-revie-oe9n6lIESCWNtFZ4S9BGTA
+- Source: https://github.com/gitteromri-ux/lla-meta-ig-ad-sizes/tree/review/masterclass-readable-20260927
+- Review-only rollback: prior revision `cf31a2861f27e9275a011729001d90aecbfc2702` (rejected; preserve history, do not publish). No production rollback necessary because production was not changed.
