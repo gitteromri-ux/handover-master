@@ -151,3 +151,14 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - New assets: assets/julie-v8.css, assets/pillars/exercise-yoga-v2.mp4 (+poster), assets/phone-mockup-julie-live.jpg, assets/press-people/harel-tayeb.jpg, assets/instructors/julie-gibson-clark.jpg.
 - Rollback: `git revert 5bf678c` on main (or `git push origin 9c69156:main --force`).
 - Not verified: real-device fonts (Codec Pro via cdnfonts) and video autoplay on iOS Safari.
+
+## 2026-09-27 13:11 IDT: approved Blueprint hero presentation and wallet removal
+
+- Repo `gitteromri-ux/lla-course-checkout`, branch `fix/hero-wallet-20260927`, code SHA `36b2148`.
+- User approved production at 13:10 IDT after preview `https://a71754f2.longevitylifeacademy.pages.dev/?qa=1`.
+- Live only `https://longevitylifeacademy.pages.dev/`, Cloudflare deployment `9b2b07d7-a8c5-4ff6-8813-bf2a9f4a143b`.
+- Three files only: index cache version, player presentation overrides removed, checkout Google Pay logo and both wallet request configurations removed. Card/PayPal allowlists remain. Hero HTML/CSS equals pre-video-repair `77f2bdb` except cache version. Full 139-second adaptive video retained.
+- Production verified HTTP 200, exact bytes, desktop1440/mobile390 matching original hero computed dimensions/fit/position/radius/controls, video/sound pass, wallet logos absent, JS errors none. Chromium only; no physical Apple-device test and no completed payment. All outgoing payment/CRM/analytics writes blocked during QA.
+- Julie masterclass, tracking relay, form handlers, CRM backend and campaigns untouched.
+- Rollback: POST `/client/v4/accounts/55eb74f4002b7237e393bd6980a1676a/pages/projects/longevitylifeacademy/deployments/49e32c83-83b2-44a8-866f-ce66a271ccdc/rollback`. Backup `backup/20260927-1232-hero-wallet`.
+- Proof: https://github.com/gitteromri-ux/lla-course-checkout/tree/fix/hero-wallet-20260927/hero-wallet-20260927
