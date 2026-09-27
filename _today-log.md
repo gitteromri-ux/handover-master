@@ -1,3 +1,16 @@
+## 2026-09-27 · Approved home-banner video repair LIVE
+
+- User reported slow/nonworking hero video and required no design changes. Video-only candidate explicitly approved at 12:15 IDT.
+- Found 176 original HLS files missing from current Pages manifest; warm cache sometimes served them but cold requests returned homepage HTML. Recovered the complete original from `1deb9241f274eda642bd7a66588c4cae43d85263`; 138.967s video, 139s delivery, no cut.
+- Repo `gitteromri-ux/lla-course-checkout`, branch `fix/home-video-20260927`, code commit `84efbc2`. Added adaptive 480/720/1080 HLS + full MP4 fallback. Restored old HLS asset hashes for cached-player compatibility. Only existing `index.html` (script cache version) and `assets/julie-approved-player.js` changed; no layout/content/forms/payments/tracking changes.
+- Live https://longevitylifeacademy.pages.dev/ ; Cloudflare `49e32c83-83b2-44a8-866f-ce66a271ccdc`, success, uses_functions true, 617 assets, none removed.
+- Live Chromium desktop first playing 0.98s; 390px simulated mobile at 4 Mbps / 150ms first playing 2.982s. Full duration, sound toggle, end seek/playback passed; no JS or media-request errors. Source and cold video segment byte-exact; checkout/tracking-helper hashes unchanged.
+- Actual iPhone Safari NOT tested (WebKit unavailable). Emergency MP4 preview starts with sound but end-seek timed out; full-file HTTP 200 rather than Range 206. No claim of universal playback guarantee.
+- QA blocked analytics and outbound writes; no Meta, CRM, or payment test pollution.
+- Rollback CF: POST `/client/v4/accounts/55eb74f4002b7237e393bd6980a1676a/pages/projects/longevitylifeacademy/deployments/7811edbc-7259-45f1-bd82-79d7b6210255/rollback`.
+- Vercel remains approved tracking deployment `dpl_7ptRYWVGUsbhVPsmx4diuCsEXLvP`. This video task did not touch relay or campaigns. Real paid attribution remains unproven.
+
+
 ## 2026-09-27 · Blueprint tracking recovery approved and LIVE
 
 - User explicitly approved the exact tracking-only promotion at 11:47 IDT. Deployment completed around 11:48 IDT.
