@@ -365,3 +365,13 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - All nine passed image/font loading, text overflow, main-block overlap and uppercase-word checks. Gallery color controls tested; 1440px desktop and 390px mobile screenshots inspected.
 - Updated private review preview; three blue proofs shared. No Meta upload, existing ad changes or production website/checkout/CRM/tracking changes.
 - Other placement sizes await design approval. Rollback: withdraw review candidate; production remains unchanged.
+
+## 2026-09-27 · Julie banner review 08
+
+- Enlarged single-line subheaders most, then presenter, duration, dates, pricing line and button text. Main headlines and original logo remain unchanged.
+- Restored a structured blue information panel inspired by the supplied originals. Uses existing Playfair Display, Playfair Display Italic and Inter only.
+- Nine 1080 × 1350 Feed drafts: three concepts in light blue, gold and white. Three light-blue proofs shared for approval.
+- Review branch commit: `4cba3e9`, repository `gitteromri-ux/lla-meta-ig-ad-sizes`, branch `review/masterclass-readable-20260927`.
+- Render checks found no text overlap, overflow or new all-capital copy. Desktop and mobile review gallery checked, all three color controls work.
+- No Meta upload, existing-ad change, production website change, checkout change or tracking change. Other placement sizes await layout approval.
+- Next: user approval of revised banner layout before placement exports and any authorized upload.
