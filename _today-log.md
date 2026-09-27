@@ -199,3 +199,12 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Film: the page used a 90 s Julie film (cloudfront e4f963bb) and a 9 s b-roll loop (5ad9539e). Replaced with the approved 2:19 film identical to the .dev site (`julie-film-v20260927`, 1080p HLS rendition remuxed with `-c copy`, no re-encode, 139.05 s): `assets/film/julie-film-1080p.mp4` (43 MB, hero sound + trailer on ≥900px), `assets/film/julie-film-720p.mp4` (19.5 MB, hero muted loop + phones), poster `julie-film-poster.jpg` (= .dev `julie-approved-4k-poster.jpg`). Live HTTP 200, accept-ranges bytes.
 - Checkout scroll (Mac reports, step 2 stuck): reproduced headless 1440px — wheel over `.em-dialog` moved the page behind (scrollY 1193) and not the dialog (scrollTop 0) because Lenis hijacks wheel. Fix: `lenisPause()` stops Lenis on `open()`/`openCheckout()`, restarts on `close()`/`closeCheckout()`; `data-lenis-prevent` on `.em-dialog`, `#ckScreen`, `#trailerModal`. Live re-test: dialog scrollTop 345 (bottom), page scrollY 0.
 - No change to pixel/LLA_META/tracking helper, LLA_PLAN, CRM, AC, payments. Rollback `git revert 99da1df`.
+
+## 2026-09-27: Julie complete-browser tracking regression, all 24 scenarios passed
+
+- After user demanded further end-to-end testing, ran actual-site browser flows for all six supplied CRM adGroupIDs108813–108818, both Standard49/VIP79 and both existing Airwallex/PayPal success callbacks. Desktop1440 and mobile390 covered.
+- Every external write intercepted and payment SDK mocked: no reallead/order/charge/Meta conversion. Results are integration tests, NOT provider acceptance or paid attribution proof.
+- All24 passed: PV/VC/ATC/IC/Purchase onceperside andpairedIDs; Purchase onlyafter simulatedsuccess, duplicatecallbackguard; correctUSDamount/orderID/fbc; cid118149/adGroupID inCRMpayload; allthree existingACstages withRegular/VIP; singlepaymentreport; card/googlepay/applepayconfigretained; noJSerrors.
+- Script julie-tracking-20260927/funnel-browser-regression.cjs; results evidence/funnel-browser-regression.json. No additionalproductioncodechanges.
+- Current main99da1dff44c9d6f84bba687a8e2f89ce25645c02 was addedbyothertab forfilm/Lenisscrolling; comparedwith03e8a91 andconfirmedtrackingpatchpreserved. Otherworkersmuststartlatestmain, notrestore03e8a91overlaterwork.
+- MetaAPI GETpixel fields=test_event_code returned100 nonexistingfield. No logged-inbrowser/devices available; actualMetaTestEvents/receipt/dedup/ROAS andCRMqueue remainunverified. Do notpresent24testsassalesoractualattribution.
