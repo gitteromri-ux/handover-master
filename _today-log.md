@@ -162,3 +162,15 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Julie masterclass, tracking relay, form handlers, CRM backend and campaigns untouched.
 - Rollback: POST `/client/v4/accounts/55eb74f4002b7237e393bd6980a1676a/pages/projects/longevitylifeacademy/deployments/49e32c83-83b2-44a8-866f-ce66a271ccdc/rollback`. Backup `backup/20260927-1232-hero-wallet`.
 - Proof: https://github.com/gitteromri-ux/lla-course-checkout/tree/fix/hero-wallet-20260927/hero-wallet-20260927
+
+## 2026-09-27: Julie tracking candidate and approved reporting separation
+
+- Confirmed target only https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-link-sample. User approved exact tracking-only release after remaining checks at 15:07 IDT. Campaign activation, ad-set optimization, design, video, forms, payments, AC triggers and normal .dev changes excluded.
+- Operator OS tracking/change safety loaded; Claude Fable 5 maximum effort implemented candidate, main agent independently reviewed and corrected 7 identity/retry/gating risks.
+- Site repo Longevity-Academy/julie-masterclass: backup branch backup/20260927-julie-tracking at 2f51535008e1011d32d5b612b75257c842dee934; candidate branch fix/julie-tracking-20260927 at 395c4967ee6b4d20d8a804419346dec3992211dd. Only index.html tracking/attribution wiring and new assets/julie-meta-tracking.js changed. Main NOT promoted.
+- Relay candidate dpl_5SuufwCXfp7DFafmSRbs7SN7giiC, READY, autoAssignCustomDomains false. Only api/meta/capi.js Julie dispatch + new lib/julie-capi.js changed. AC, historical Blueprint, click-id and package files byte-identical. Production target remains dpl_7ptRYWVGUsbhVPsmx4diuCsEXLvP. Preview returned SSO302; vercel curl failed linked-project visibility. No bypass/security change attempted.
+- Live Meta reporting-only custom conversions created and read back: ATC 1417373073897207; IC 1099790382424644; Purchase 1426010666308623. Each rule requires exact standard event + URL contains www.longevitylifeacademy.com/julie-masterclass/ + product_line contains julie_masterclass. Account1459085242361281/pixel1440305917310328. Campaign52668266203628 stillPAUSED; all existing standardPurchase optimization unchanged.
+- 55/55 offline tests pass, allfetch mocked. Desktop1440/mobile390 hero + firstform computedgeometry/styles match baseline; zero JS errors, externaltracking/CRM/payment writesblocked. Not actual iPhone/wallet/settledpayment or ad-setattributionproof.
+- Release remains gated: current MetaTestEventscode pending, previewruntime unverified, realpaidPurchase/CRMqueue/dedup/EMQ notproven. No inventedtestcode/fakeproductionPurchase. No AC mutations or paymenttransactions. Replacementadcopy drafted only; token lacks pages_manage_posts.
+- Rollback: restorewebsite2f51535 andrelaydpl_7ptRYWVGUsbhVPsmx4diuCsEXLvP; remove only the three newJulie customconversions if required. No existingcampaignpixelrules edited/deleted.
+- Candidate source https://github.com/Longevity-Academy/julie-masterclass/commit/395c4967ee6b4d20d8a804419346dec3992211dd
