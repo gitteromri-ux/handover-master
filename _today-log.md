@@ -324,3 +324,15 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - No existing Meta ad, campaign setting, production website, form, payment flow, CRM, AC or tracking changed.
 - Source: masterclass-brand-v3.html/css. Review evidence: BRAND-V3-REVIEW.md and brand-v3-exports/proof.json.
 - User approval required before any Meta upload. Rollback: withdraw review candidate; original generators and production ads remain untouched.
+
+## 2026-09-27 | Julie banner copy/color revision 04 | APPROVAL PENDING
+
+- Repo: gitteromri-ux/lla-meta-ig-ad-sizes. Review branch: review/masterclass-readable-20260927. Commit: 83dbffe.
+- User requested two stronger authority-led headline directions, LLA Exclusive, Limited Seats, larger lighter brand lettering and gold/light-blue/white variants.
+- Implemented both headlines across all three concepts and three colors. 162 PNG exports in brand-v4-exports; zero automated image/overflow/named-block-overlap failures.
+- All placement compositions and 18 Feed variants visually inspected. Review gallery verified at 1440px desktop and 390px mobile; all 30 copy/color/format control combinations passed.
+- Exact original Playfair Display regular, Playfair Display Italic and Inter files only. $49 starting price only.
+- Updated existing private review preview; no Meta upload, no production website or tracking/checkout/CRM changes.
+- Claim boundary: world-ranking language is user-requested campaign wording consistent with the masterclass page, not independently verified current ranking. Zoom image is original illustrative artwork.
+- Source: masterclass-brand-v4.html/css. Proof: brand-v4-exports/proof.json and review-checks.json.
+- Rollback: withdraw review candidate. Original production banners and ads remain unchanged.
