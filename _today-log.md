@@ -1,3 +1,13 @@
+## 2026-09-27 · Julie CEO acquisition chart
+
+- Repo: `gitteromri-ux/julie-500-launch-plan`.
+- User authorized uploading the reviewed, enlarged chart as the first slide.
+- Changed only `index.html` and new `acquisition-plan.html`: current daily/weekly chart first, color coding, large typography, weekly volumes and unit costs, plain-language funnel ratios. Original deck preserved and labeled earlier assumptions.
+- Commit: `40c64f9c328be02e84da8b31569931f818614f89`.
+- Snapshot: `backup/20260927-1027-ceo-chart` at `a9e14a28304a78578c4fd0268e5580b877e133f5`.
+- Rollback: `git revert 40c64f9c328be02e84da8b31569931f818614f89` and push normally.
+- Preview verified HTTP 200, 1920px desktop and 390px mobile, no page errors. Model remains assumptions: $40,813 total, 294 paid by week 2 (206 short), exactly 1,000 by week 4; no campaign budgets changed.
+
 # 📆 Today's Activity Log — September 1, 2026
 
 Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
