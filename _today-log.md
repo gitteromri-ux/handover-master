@@ -239,3 +239,18 @@ Compiled at **10:08 PM Asia/Jerusalem** (19:08 UTC).
 - Independent ActiveCampaign read connector remains TypeError Invalid URL. Purchase/ROAS/actual Meta dedup and assigned sales queue remain beyond no-payment proof.
 - Screenshots1440desktop/390mobile-emulation and receipts recorded in Julie masterclass tracking release status. No actual iPhone/wallet transaction. Existing tracking release03e8a91/helper julie-meta-20260927-2 and relaydpl_5SuufwCXfp7DFafmSRbs7SN7giiC unchanged; later other-tab website revisions preserved.
 - Rollback not applicable: no code/config change. Do not delete test records or alter automations without authorization; identify/exclude them using IDs above.
+
+
+## 2026-09-27: Julie tracking-only repair candidate, NOT production
+
+- Repository: Longevity-Academy/julie-masterclass.
+- Candidate commit: 6b1746ab79019b1b5e7663833e44a93c98a28db2; branch fix/julie-attribution-20260927.
+- Baseline/main: eeed4057fff9d5a8211652905f25678841d76fad (v9.7 latest single-scrollbar checkout fix).
+- Scope: index.html tracking-only attribution and read-only checkout response observers; assets/julie-attribution.js new; assets/julie-meta-tracking.js release julie-meta-20260927-3.
+- Repairs: Julie-owned attribution storage; full cid/adGroupID/UTM/cq handoff; no inherited Google fallback; valid first-seen fbc persistence; order-bound CRM email matching; full surnames. No repeated Pixel init.
+- Preserved: visible HTML/CSS, forms, payment validation/callbacks, card/Google Pay/Apple Pay/PayPal configuration, AC stages/triggers, approved 139.05-second videos, latest Mac/desktop scroll code. No Blueprint, Vercel relay, Cloudflare, or Meta writes.
+- Tests: 16/16 attribution/protected checks, 31/31 helper tests, 24/24 intercepted full browser scenarios, 6/6 intercepted CRM-link scenarios, desktop/390px parity. Mock purchases are NOT sales or paid-attribution proof.
+- Preview: https://www.perplexity.ai/computer/a/julie-tracking-repair-protecte-I32MNfFVRyqZLH8RLw5bxg . Review copy blocks writes and uses temporary memory; not a live checkout.
+- Diff: https://github.com/Longevity-Academy/julie-masterclass/compare/eeed4057fff9d5a8211652905f25678841d76fad...6b1746ab79019b1b5e7663833e44a93c98a28db2 .
+- Production NOT promoted. Live Meta dedup/paid attribution/ROAS, sales queue execution, physical Safari/wallet charges and webhook durability remain unverified/unresolved. Do not call this a full launch sign-off.
+- Rollback after any approved promotion: revert ONLY 6b1746ab79019b1b5e7663833e44a93c98a28db2, preserving newer approved changes. Backup: backup/20260927-1708-tracking.
