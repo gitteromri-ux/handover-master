@@ -1,3 +1,20 @@
+## 2026-09-27 | Julie: three new banner ads created, existing ads protected
+
+- Latest explicit user scope: "No dont touch existing ones just upload new ones in full under same exact settings as the older ones." Any prior plan to replace eight older posts is cancelled. Do not execute it.
+- Campaign52668266203628 / CRM118149 remains PAUSED. Three new PAUSED ads were created only in Ad Set1 52668330533628 / CRM108813.
+- 7C ad52668877503028 / creative1768998810966061; 7B ad52668877520228 / creative2064252291124869; EVENT-ZOOM ad52668877520428 / creative1107956188434366.
+- Each new creative has original 4:5 Feed, 9:16 Stories/Reels and square fallback images, approved masterclass copy, Apply Now CTA and https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-link-sample. Destination returned HTTP200. Original Ad Set1 URL tags retained byte-for-byte.
+- Attribution: 7-day click +1-day view. Pixel1440305917310328, Purchase, OFFSITE_CONVERSIONS. Audience35–64, selected US regions/D.C., original interest/income flexible group, no custom audience retargeting. No adset or budget mutation.
+- Compared all ten old ads' IDs/names/creative IDs/status/tracking_specs, plus all six adsets' retrieved config and campaign status before/after: unchanged. New ads' initially copied old-post interaction reference was removed before completion; their own new post IDs read back correctly. Reference ad never edited.
+- Meta returned three durable ad IDs; final readback new ads PAUSED/effective IN_PROCESS, no issues_info. This does not certify final policy approval. Browser-rendered Meta Feed previews for7C/7B and Story preview forEVENT visually inspected.
+- Ad links:
+  - https://www.facebook.com/adsmanager/manage/ads/edit?act=1459085242361281&selected_ad_ids=52668877503028
+  - https://www.facebook.com/adsmanager/manage/ads/edit?act=1459085242361281&selected_ad_ids=52668877520228
+  - https://www.facebook.com/adsmanager/manage/ads/edit?act=1459085242361281&selected_ad_ids=52668877520428
+- Evidence: julie-meta-banners-20260927/final-snapshot.json, creative-readback.json, ad-verification.json, actual-meta-previews.jpg, Julie-ad-upload-review.md.
+- No website/checkout/payment/AC/CRM/CAPI changes. No production source SHA changed. Rollback: keep the three new ads PAUSED; they already are. Do not activate campaign without separate instruction.
+
+
 ## 2026-09-27 | Julie masterclass Meta banner uploads only
 
 - Scope: Meta ad account 1459085242361281, campaign 52668266203628. Uploaded the user's original 7C, 7B and EVENT-ZOOM concepts from https://gitteromri-ux.github.io/lla-meta-ig-ad-sizes/adset-masterclass.html?v=3 in 4:5 1440x1800, 9:16 1440x2560 and 1:1 1440x1440. Nine images, intended as three ads. Meta readback verified all nine dimensions and image hashes.
