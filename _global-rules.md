@@ -97,3 +97,7 @@ Omri operates a high-velocity digital delivery stack across French e-learning, H
 - `memory/knowledge/preferences/urgent-decisive-progress.md`
 - `memory/knowledge/preferences/verify-before-confidence.md`
 - `memory/knowledge/entities/omri-gitter.md`
+
+## GOLDEN CAPI (permanent, code name set by Omri 2026-09-28)
+
+A tracking state that produced a real attributed purchase is golden: record it (IDs, file hashes, deployment id, ad settings) in `projects/<x>-tracking-freeze/`, tag the repo, and never change a golden component in place — not for urgency, tests, or an in-the-moment request — unless Omri writes the literal sentence "I lift the Julie tracking freeze for <item>" (same sentence naming another project when applicable). All other changes: branch → guard PASS → preview → "approve" → merge → guard PASS again → any FAIL reverted at once → `_today-log.md`. Status is reported only from the guard output. Current golden record: `projects/julie-tracking-freeze/` (2026-09-28 → 2026-10-26).
