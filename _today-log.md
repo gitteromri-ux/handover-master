@@ -460,3 +460,10 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Delphine + Christ city label France -> Paris (homepage teacher cards + alt text); cache-bust all CSS/JS (?v=1790665240) across 35 HTML files, teacher images ?v=2.
 - Commit 906a0fa on main; Pages deploy success; verified live desktop 1440 + mobile 390.
 - Rollback: git revert 906a0fa
+## 2026-09-29: French Atelier teacher alignment and portraits
+- User explicitly authorized immediate live publication.
+- Repo: gitteromri-ux/french-atelier. Commit: 2cb569c5f330cdda5e3e6ce9ffb6b8c0c93c6b2c.
+- Homepage-only layout: desktop gallery 1080px, 32px gaps, centered flex-wrap four-plus-three rows. Mobile rail preserved.
+- Delphine: image-assisted extension of clipped crown and looser portrait framing; original asset retained. Christ: 1.05 scale, anchored 50% 40%.
+- Final matching crop refinement: 398c796; Delphine portrait scale 1.4, origin 50% 30%, retaining full crown while matching neighboring face sizes.
+- Backup: backup/20260929-teacher-framing. Rollback in order: git revert 398c796; git revert 2cb569c.
