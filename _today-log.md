@@ -455,3 +455,8 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Verified live: www.frenchatelierlive.com HTML contains new cards; christ.jpg 200 / delphine.jpg 200; desktop + 390px screenshots checked. Mobile swipe rail unchanged.
 - Open: Delphine and Christ city labels are placeholder "France" pending Omri's input.
 - Rollback: `git revert -m 1 748d3e5` on main.
+
+## 2026-09-29 10:05 IDT — french-atelier
+- Delphine + Christ city label France -> Paris (homepage teacher cards + alt text); cache-bust all CSS/JS (?v=1790665240) across 35 HTML files, teacher images ?v=2.
+- Commit 906a0fa on main; Pages deploy success; verified live desktop 1440 + mobile 390.
+- Rollback: git revert 906a0fa
