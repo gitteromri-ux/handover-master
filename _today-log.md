@@ -467,3 +467,8 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Delphine: image-assisted extension of clipped crown and looser portrait framing; original asset retained. Christ: 1.05 scale, anchored 50% 40%.
 - Final matching crop refinement: 398c796; Delphine portrait scale 1.4, origin 50% 30%, retaining full crown while matching neighboring face sizes.
 - Backup: backup/20260929-teacher-framing. Rollback in order: git revert 398c796; git revert 2cb569c.
+## 2026-09-29: Julien bottom Instant Corrections clip only
+- User supplied screenshot of dark transparency artifacts on forehead/hands and requested only this bottom animation be fixed immediately.
+- Repo: gitteromri-ux/french-atelier. Commit: 4a60313.
+- Exactly one line in juliane.html changed: bottom julian-base.webm replaced with the existing clean julian-309.webm (cache-versioned), matching 309 poster and fallback. All other animations, assets, styles, copy and tracking untouched.
+- Backup: backup/20260929-julien-bottom. Rollback: git revert 4a60313.
