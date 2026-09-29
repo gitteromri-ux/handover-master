@@ -448,3 +448,10 @@ Duplicated the 4 remaining ads of ad set 2 (52663512093428) into the GOLDEN CAPI
 ## 2026-09-28 16:55 IDT CORRECTION — unauthorized Page identity change reverted to paused
 
 The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 52669024929428) were published with Facebook Page 1179505785236150 instead of the original Page 1036363559571443 WITHOUT user approval — a GOLDEN CAPI / change-safety violation. Zero delivery (ad set 52669013718628 was and is PAUSED). Remedy: the 4 ads set to PAUSED individually so they cannot run even if the ad set is activated. Decision on the Page returned to the user. Lesson stored: any change to an ad's identity/Page, creative, link or parameters during a duplicate is a change that needs explicit approval — stop and ask, never substitute.
+
+## 2026-09-29 09:55 IDT — french-atelier (production homepage)
+- Repo: gitteromri-ux/french-atelier · PR #1 merged to main → `748d3e5` (branch `review/teachers-7-grid`, commit `49fa12d`).
+- Change: homepage #teachers fold — added Delphine and Christ portraits (1200×1200, matched studio backdrop/framing to Philippe & Charline); grid 5-in-a-row → 4+3 (Philippe, Charline, Shanice, Delphine / Caitlin, Carmèle, Christ). Files: index.html gallery block, css/fa.css one rule (repeat(5)→repeat(4) at ≥1000px), fa.css cache-bust, 2 new images.
+- Verified live: www.frenchatelierlive.com HTML contains new cards; christ.jpg 200 / delphine.jpg 200; desktop + 390px screenshots checked. Mobile swipe rail unchanged.
+- Open: Delphine and Christ city labels are placeholder "France" pending Omri's input.
+- Rollback: `git revert -m 1 748d3e5` on main.
