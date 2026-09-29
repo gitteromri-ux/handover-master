@@ -467,3 +467,12 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Delphine: image-assisted extension of clipped crown and looser portrait framing; original asset retained. Christ: 1.05 scale, anchored 50% 40%.
 - Final matching crop refinement: 398c796; Delphine portrait scale 1.4, origin 50% 30%, retaining full crown while matching neighboring face sizes.
 - Backup: backup/20260929-teacher-framing. Rollback in order: git revert 398c796; git revert 2cb569c.
+
+## 2026-09-29 10:23 IDT: Julie native Meta CPM notification rule
+- User explicitly requested native Meta notification when Julie masterclass ad set CPM drops below $250. No Perplexity automation authorized or created in this turn.
+- VERIFIED via API read-back: rule 1576160373623566 ENABLED, name "Julie masterclass | CPM below $250 | Notify only".
+- Account 1459085242361281 (USD, Israel timezone); selected ad sets 52668330533628 (#108813) and 52668268711228 (#108814).
+- Conditions: TODAY CPM LESS_THAN 25000 (USD cents, $250), impressions GREATER_THAN 0. Schedule SEMI_HOURLY. Execution NOTIFICATION only, recipient connected user 10165945960459853. Meta returned instant and summary alert preferences with trigger CHANGE.
+- No campaign, ad set, budget, attribution, pixel, site, or relay settings changed. This read-back proves rule configuration, not future notification receipt.
+- Rollback: disable rule 1576160373623566 in Meta Automated Rules, or POST /v25.0/1576160373623566 with status=DISABLED.
+- Documentation-only change stored on an audit branch; no application code SHA applies to the native Meta rule.
