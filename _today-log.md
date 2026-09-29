@@ -478,3 +478,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Added video/julie-masterclass-film-full-1080p.mp4 (43,080,482 B, 1920×1080, 139.05 s) + poster; new tile 17 in index.html and README line. Existing 64-tile gallery untouched.
 - Source: longevitylifeacademy.pages.dev hero film julie-film-v20260927 1080p HLS, remuxed with -c copy (no re-encode); byte-identical to Longevity-Academy/julie-masterclass assets/film/julie-film-1080p.mp4; frame md5 match at 10/70/130 s.
 - Live: https://gitteromri-ux.github.io/lla-masterclass-assets/#17 (HTTP 200, md5 82d140d8…). Rollback: git revert 273b7e8.
+
+## 2026-09-29 19:40 IDT · julie-500-launch-plan daily tabs
+- Repo: gitteromri-ux/julie-500-launch-plan, commit 61c3b552548a2253ff69352253fa8493434eacd6 (main, GitHub Pages).
+- Changed: acquisition-plan.html gains tabs (Plan unchanged + Day 1 28 Sep + Day 2 29 Sep as of 19:23 IDT); new daily-log.js holds daily data; index.html nav adds "Daily results" link.
+- No Meta, site, tracking or relay change. GOLDEN CAPI items untouched.
+- Rollback: git revert 61c3b55.
