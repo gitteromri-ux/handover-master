@@ -579,3 +579,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Meta accepted both (activity log: bid_strategy, target_spec, run status Pending Process → Active 19:40:29 / 19:41:00). Ads re-entered Pending Review 19:40:47–50.
 - Tracking untouched: promoted object, attribution, optimization, ad links, url_tags, custom conversions, pixel — guard 25/25 PASS 19:45. golden.json bid invariant restored to LOWEST_COST_WITHOUT_CAP; freeze_lifts entry added. Snapshots `projects/julie-meta-handover-20260930/data/final_*.json`.
 - Rule from here: NO edit of any kind on sets 01/03 for 7 days (to 7 Oct 19:40 IDT) except pausing an ad with Omri's approval. Advantage+ creative enhancements NOT applied (would edit ads in place → new review + brand risk on a talking-head video).
+
+## 2026-09-30 · lla-julie-ugc-ads v5 + new repo final-versions (creative only, no tracking touched)
+- gitteromri-ux/lla-julie-ugc-ads v5: ad1 (man 42) and ad2 (woman 42) second halves regenerated with Higgsfield Seedance 2.5 at 1080p; new ad3 (woman 51). Higgsfield Plus plan active (no new purchase).
+- New repo gitteromri-ux/final-versions = FINAL VERSIONS delivery site. Render matrix 3 ads × 45/60/75 s × 9:16/4:5/1:1/16:9 in progress (output contract in `final-versions/BRIEF.md`; Meta upload spec drafted in `final-versions/META-UPLOAD-SPEC.md`, awaiting Omri's approval; new ads would go to set 03 only and are blocked by the 7-day no-edit rule above until Omri lifts it).
+- Tracking: nothing touched (pixel, CAPI, ad sets, ads, site). GOLDEN CAPI freeze to 2026-10-26 intact.
+- Rollback: previous commit `101c3c2` of lla-julie-ugc-ads.
