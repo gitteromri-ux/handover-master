@@ -506,3 +506,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Ad 52669232322428 (set 03 #108815, per-placement Ad#12 copy) ACTIVE → PAUSED. Set 03 now runs one ad: single-video 52669371390428. Rollback: POST status=ACTIVE.
 - Ad set 52668330165828 (#108815) daily_budget 14000 → 23000 ($140 → $230). Not frozen. Name unchanged. Rollback: daily_budget=14000.
 - Sets 01 ($350) and 02 ($75) budgets unchanged. No targeting, pixel, event, link or URL-param change anywhere. Verified via Graph GET after POST.
+## 2026-09-30 11:16–11:32 IDT — Julie masterclass: Standard card "You learn" bullets live (index.html freeze lifted for pricing copy)
+- Omri wrote the literal sentence "I lift the Julie tracking freeze for index.html pricing copy" at 11:16 IDT; merge approved 11:24 ("do it now").
+- Repo: Longevity-Academy/julie-masterclass main `790a875` → `091617f` (merge of change/20260930-pricing-copy, HEAD 87417b0). Changed: index.html lines 1263–1267 (one <dd> → <ul class="pk-ul"> with three bullets taken from the What-you'll-learn section) and 8 lines of list styling in assets/julie-v8.css. No other index.html bytes changed (diff checked line by line).
+- Golden record updated: `projects/julie-tracking-freeze/golden.json` index.html sha1 dec2210e7f89 → c4cf5e2b402d, `freeze_lifts` entry added. Tracking scripts, pixel, relay, release marker unchanged and still frozen until 2026-10-26.
+- Guard after merge: repo 9/9 PASS; live `--meta` all PASS; live `--vercel` all PASS. Live 390px capture shows the three bullets; tracking hosts blocked during QA, no forms submitted.
+- Rollback: `git revert -m 1 091617f` on main and restore the previous index.html sha1 in golden.json.
