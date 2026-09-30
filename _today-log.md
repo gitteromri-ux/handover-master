@@ -558,3 +558,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Rollback: `git revert -m 1 3284e23`.
 - 2026-09-30 later: lla-julie-ugc-ads v2 pushed (master). Both ads re-cut to ~60 s (speed 1.12, opener 1.2 s, closer 2.0 s, offer 4.0 s), phrase-aware captions with wrapping, Zoom shot now 50 faces + Oct 27 & Nov 14, Artlist music bed (Damon Power – The Last Dawn, Creative Cut Minimal) from ~34 s, loudnorm −14 LUFS / limiter −1 dBTP. Audio audit: language en, transcript complete, caption sync ≤0.16 s. Rollback: previous commit on master.
 - 2026-09-30 17:20 — lla-julie-ugc-ads 24bb9e5: added full 16:9 Julie hero film masterclass edit (v3, same file as lla-masterclass-assets ff90d7f) as a clearly-labelled non-UGC card + page film-full-masterclass-edit.html; build_site.py/ads.json extended with optional aspect/format/kind fields (rebuilds keep it). Download click-tested: 95,549,454 bytes. Rollback: git revert 24bb9e5.
+
+## 2026-09-30 17:00–17:15 IDT — Julie masterclass: stale backup page removed (audit item 8)
+- Repo: Longevity-Academy/julie-masterclass main `3284e23` → `45573be` (merge of change/20260930-remove-backup, deletes index-v50-backup.html only) → `1994ac7` (empty commit; the Pages build for 45573be never started, empty push re-triggered it). Authorized by Omri 16:56 ("DO ALL THE ONES I SAID TO DO + ITEM 8 ONLY").
+- Live: /julie-masterclass/index-v50-backup.html → 404; /julie-masterclass/ → 200; live julie-v8.css carries v9.9f. Guard: repo 9/9, Meta 33/33, Vercel PASS.
+- Omri declined all freeze lifts: area-code duplicates (7), intl prefix (9), Terms/STOP-HELP/focus (10), performance (11), PayPal lock/onerror (5–6), worker verification (4) all remain open, not touched. New from the PDF: VIP card claims "$249 toward The Longevity Blueprint" while MASTERCLASS-VIP gives $149×5 vs $179×5 = $150 off regular (lla-promo.js). Copy/offer decision, index.html frozen.
+- Rollback: `git revert -m 1 45573be`.
