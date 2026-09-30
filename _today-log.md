@@ -512,3 +512,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Golden record updated: `projects/julie-tracking-freeze/golden.json` index.html sha1 dec2210e7f89 → c4cf5e2b402d, `freeze_lifts` entry added. Tracking scripts, pixel, relay, release marker unchanged and still frozen until 2026-10-26.
 - Guard after merge: repo 9/9 PASS; live `--meta` all PASS; live `--vercel` all PASS. Live 390px capture shows the three bullets; tracking hosts blocked during QA, no forms submitted.
 - Rollback: `git revert -m 1 091617f` on main and restore the previous index.html sha1 in golden.json.
+
+## 2026-09-30 11:49–12:05 IDT — Julie masterclass: phone enrollment dialog, Continue always visible (CSS-only)
+- Omri authorized restyling the protected enrollment dialog on phones at 11:49 ("Yes, do it"); merge approved 11:58 ("approve").
+- Repo: Longevity-Academy/julie-masterclass main `091617f` → `ea36be0` (merge of change/20260930-checkout-continue, HEAD 7fcc097). Changed: assets/julie-v8.css only (+18 lines, max-width 699px): #emGo1 position:sticky at dialog bottom, #emErr sticky above it, tighter top (steps/h2/summary margins), fields 52px/12px gaps, consent 13px, inputs 16px (no iOS focus zoom). No field, id, order, script, validation or tracking change; index.html untouched.
+- Guard after merge: repo 9/9 PASS; live `--meta` 37/37 PASS; live `--vercel` PASS. Live 390×664 check: Continue sticky, on screen at open (598–654), dialog opens/closes; tracking hosts blocked, no submit, no leads.
+- Rollback: `git revert -m 1 ea36be0`.
