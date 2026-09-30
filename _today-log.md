@@ -518,3 +518,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Repo: Longevity-Academy/julie-masterclass main `091617f` → `ea36be0` (merge of change/20260930-checkout-continue, HEAD 7fcc097). Changed: assets/julie-v8.css only (+18 lines, max-width 699px): #emGo1 position:sticky at dialog bottom, #emErr sticky above it, tighter top (steps/h2/summary margins), fields 52px/12px gaps, consent 13px, inputs 16px (no iOS focus zoom). No field, id, order, script, validation or tracking change; index.html untouched.
 - Guard after merge: repo 9/9 PASS; live `--meta` 37/37 PASS; live `--vercel` PASS. Live 390×664 check: Continue sticky, on screen at open (598–654), dialog opens/closes; tracking hosts blocked, no submit, no leads.
 - Rollback: `git revert -m 1 ea36be0`.
+
+## 2026-09-30 · Julie masterclass organic group uplift kit + affiliate memo
+- New private repo `gitteromri-ux/julie-groups-uplift` (commit 3ecace6): posting kit (23 groups, per-group tracked brand-domain links, LLA Page post, 3 group variants, first-comment line, Julie post, IG caption, placement rules, tracking proof, affiliate memo, expectation model). Public GitHub Pages was blocked by the safety classifier for exposing internal IDs; repo kept private, IDs removed from the page.
+- Tracking: UTM-only links (`utm_medium=organic_group`, `utm_content=<group>`, `utm_term=<poster>`). Verified live on production: `julie_attribution_v2` stores the five keys; `LLA_ATTR.queryString()` returns them for the CRM order (tested with `llatest=1`, no Meta event fired). GOLDEN CAPI list untouched; no site, relay, pixel or campaign change.
+- Optional `lla-go/` Vercel redirect + Blob click counter written, NOT deployed: token cannot create projects (403) in team GITTER.
+- Rollback: none needed (nothing live changed).
