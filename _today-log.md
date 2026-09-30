@@ -536,3 +536,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Delivered: ad1-man42 (62.5 s, Seedance 2.5 1080p) and ad2-woman42 (63.1 s, 720p+480p hybrid). Per-video pages autoplay + download. Transcripts verified with faster-whisper; frame-tile QC done.
 - NOT delivered: ad3-woman51 — Artlist credits insufficient (3,621 left, 12,000 needed at 480p; renew Oct 16). Start frame ready in Artlist Studio project "LLA", Shot 7. Higgsfield account is Free plan (Seedance 2.5 locked).
 - Julie tracking / live page untouched (GOLDEN CAPI freeze respected). Rollback: delete repo or revert commits on master.
+
+## 2026-09-30 · Julie organic uplift kit v2 (5x scale) — `gitteromri-ux/julie-groups-uplift` a9ba890
+- 115 groups / 6.42M cumulative members (4 audiences; Bryan Johnson, non-US, condition-specific and duplicate groups filtered), 38 warm partners + DM templates, poster/wave scheduler, per-group links with `utm_campaign=julie0930&utm_medium=group&utm_content=<group>&utm_term=<poster>`.
+- Post format fixed for click-through: link on line 2 (above mobile “See more”), again last line, again first comment; native photo post with new share cards (`share-cards/…1200x630.jpg`, `…1080x1080.jpg`).
+- FINDING (no change made): LP `og:image` is a 1080×1920 video frame → Facebook link previews render a blurred crop. Fix = one `og:image` tag in frozen `index.html`; requires "I lift the Julie tracking freeze for og:image".
+- GOLDEN CAPI untouched. Rollback: none needed.
