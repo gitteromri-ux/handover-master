@@ -17,10 +17,7 @@
     "pixel_id": "1440305917310328",
     "custom_event_type": "PURCHASE"
    },
-   "bid_strategy": {
-    "52668330533628": "COST_CAP",
-    "52668268711228": "LOWEST_COST_WITHOUT_CAP"
-   }
+   "bid_strategy": "LOWEST_COST_WITHOUT_CAP"
   },
   "attribution_spec": {
    "52668330533628": [
@@ -185,6 +182,14 @@
    "tracking_untouched": "promoted_object pixel 1440305917310328 PURCHASE, attribution 7d click/1d view, optimization OFFSITE_CONVERSIONS, ad links + url_tags, site files, relay, custom conversions — guard 24/25 PASS, single FAIL was this bid-strategy invariant, now updated",
    "before_snapshot": "projects/julie-meta-handover-20260930/data/before_52668330533628.json",
    "rollback": "POST /52668330533628?bid_strategy=LOWEST_COST_WITHOUT_CAP&targeting=<targeting from before_52668330533628.json>"
+  },
+  {
+   "date": "2026-09-30T19:41+03:00",
+   "item": "ad set 01 final configuration (delivery-only fields)",
+   "sentence": "Omri 19:39 IDT: 'DO IT NOW. I WANT 35-65+ AND I WANT ADSET 1 ON THE BEST INTEREST GROUPS. INCLUDE YOURS AND SOME OF MINE ALSO. AND ADSET 3 WE DO AS U SAID.'",
+   "scope": "52668330533628: COST_CAP -> LOWEST_COST_WITHOUT_CAP; age 35-65+; FB feed + reels overlay; interests replaced: Life extension, Anti-aging cream, Natural skin care, Healthy diet, Vitamins and nutritional supplements, Human nutrition, Meditations, Personal development, Physical fitness, Wearable technology (dropped Bodybuilding, Weight training, Bulletproof, High-net-worth individual); no income filter. 52668330165828 (not frozen): LOWEST_COST_WITHOUT_CAP, 35-65+, FB feed + reels overlay, NO interests (broad test).",
+   "tracking_untouched": "promoted_object, attribution_spec, optimization_goal, ad links, url_tags, site, relay unchanged",
+   "rollback": "POST targeting from projects/julie-meta-handover-20260930/data/before_52668330533628.json"
   }
  ]
 }
