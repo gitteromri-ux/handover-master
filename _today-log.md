@@ -491,3 +491,12 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Status ACTIVE, in Meta review at 03:10. Original ad 52669232322428 still ACTIVE. #108813, #108814, relay, site untouched.
 - Rollback: pause ad 52669371390428.
 - Rule recorded: never rename ad sets with anything after the last "#".
+
+## 2026-09-30 10:53–11:05 IDT — Julie masterclass: phone layout v9.9 live (CSS-only)
+- Repo: Longevity-Academy/julie-masterclass. main `42726fc` (golden) → `790a875` (merge of change/20260929-hero-desktop, branch HEAD d3b26bd). Approved by Omri in-thread with the word "approve" at 10:53 IDT.
+- Changed: `assets/julie-v8.css` only (+65 lines): v9.8 desktop hero spacing/type (min-width 981px), v9.8b phone header (nav Enroll exempt from full-width .btn rule), v9.9 phone hero (Inter sentence-case eyebrow, 38/42px headline, single CTA, dates block), logo 66px, WhatsApp 60px, pricing as horizontal snap slider with compact cards (Standard 448px / VIP 517px vs 825/937 before).
+- Untouched (verified by guard, byte-identical to golden): index.html, julie-meta-tracking.js, julie-attribution.js, julie-payment-safety.js, julie-international-checkout.js, julie-premium-routing.js; #enrollModal/#ckScreen; relay; ad sets.
+- GOLDEN CAPI guard after merge: `--repo` 9/9 PASS; live `--meta` 39/39 PASS (meta_ads credential alone); live `--vercel` all PASS. Note: running with api_credentials meta_ads+vercel together makes the Graph calls return empty and the meta section false-FAILs — run the two flags in separate shells.
+- Live proof: GitHub Pages served the v9.9 CSS ~2 min after merge; 390px cloud-browser capture of production shows the new hero and slider (tracking hosts blocked during QA, no forms submitted, no test leads).
+- Not changed (needs freeze-lift sentence for index.html): eyebrow suffix "· 60 minutes, live", "You learn" copy.
+- Rollback: `git revert -m 1 790a875` on main, or `git checkout tracking-golden-20260928 -- assets/julie-v8.css && git commit`.
