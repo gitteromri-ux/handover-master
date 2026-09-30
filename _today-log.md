@@ -500,3 +500,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Live proof: GitHub Pages served the v9.9 CSS ~2 min after merge; 390px cloud-browser capture of production shows the new hero and slider (tracking hosts blocked during QA, no forms submitted, no test leads).
 - Not changed (needs freeze-lift sentence for index.html): eyebrow suffix "· 60 minutes, live", "You learn" copy.
 - Rollback: `git revert -m 1 790a875` on main, or `git checkout tracking-golden-20260928 -- assets/julie-v8.css && git commit`.
+
+## 2026-09-30 11:05 IDT · Meta: approved changes in Julie masterclass campaign 52668266203628 (Omri: "I approve following… adset3 budgets raise 90$")
+- Ad 52668897625628 (set 01 #108813, "Julie Masterclass | original7c | Revised") ACTIVE → PAUSED. Set 01 is frozen; pausing an ad is an allowed action with approval. Budget $350, targeting, name untouched. Rollback: POST status=ACTIVE.
+- Ad 52669232322428 (set 03 #108815, per-placement Ad#12 copy) ACTIVE → PAUSED. Set 03 now runs one ad: single-video 52669371390428. Rollback: POST status=ACTIVE.
+- Ad set 52668330165828 (#108815) daily_budget 14000 → 23000 ($140 → $230). Not frozen. Name unchanged. Rollback: daily_budget=14000.
+- Sets 01 ($350) and 02 ($75) budgets unchanged. No targeting, pixel, event, link or URL-param change anywhere. Verified via Graph GET after POST.
