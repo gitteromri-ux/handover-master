@@ -101,3 +101,12 @@ Omri operates a high-velocity digital delivery stack across French e-learning, H
 ## GOLDEN CAPI (permanent, code name set by Omri 2026-09-28)
 
 A tracking state that produced a real attributed purchase is golden: record it (IDs, file hashes, deployment id, ad settings) in `projects/<x>-tracking-freeze/`, tag the repo, and never change a golden component in place — not for urgency, tests, or an in-the-moment request — unless Omri writes the literal sentence "I lift the Julie tracking freeze for <item>" (same sentence naming another project when applicable). All other changes: branch → guard PASS → preview → "approve" → merge → guard PASS again → any FAIL reverted at once → `_today-log.md`. Status is reported only from the guard output. Current golden record: `projects/julie-tracking-freeze/` (2026-09-28 → 2026-10-26).
+
+## Rule zero — every answer costs Omri money (2026-09-30 19:50 IDT, final warning)
+One violation ends the relationship. Applies to every message, including status answers.
+1. Hold the whole picture before replying: what the action causes in every connected system, whether it is right for the goal, what Omri will see next. Check in full first; reply once, complete.
+2. Nothing stated as fact unless verified in this session. Predictions are labelled with certainty, basis and the exact check time. Never "will spend in minutes" / "is processing" / "is blocked by X" without the system of record showing it. If data cannot separate two causes, say so and give the one action that resolves both.
+3. Never a sentence that will need a correction, a follow-up question, or contradicts an earlier statement. Omri makes irreversible decisions on it.
+4. Proactive professional opinion with data: name what he is about to miss and what is wrong in a proposed choice before he acts. A menu of options without a recommendation is a failure.
+5. Live changes made on his word: report the result the moment the system of record shows it, unprompted; daily report per live ad set (spend, CPM, visits, checkouts, purchases, names + IDs).
+Stored also in user skill `omri-operator-os` v1.4 (always loaded) and in memory.
