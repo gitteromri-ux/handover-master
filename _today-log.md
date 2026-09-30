@@ -530,3 +530,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Change: offer cards at 1:29, 1:53, 1:57, 2:01 rewritten from Blueprint to live masterclass copy (same fonts/sizes/motion); 1:49.7–1:53.7 stock Zoom shot replaced with Omri's latest Artlist generation (Seedance 2.5, Julie hosting 50-ppl Zoom); VO "across six pillars and 18 live sessions" removed via Demucs music stem. No tracking/site/checkout touched.
 - Verified: live URL HTTP 200, md5 of served file == local render, 139.0 s. Approved by Omri in-session before push.
 - Rollback: git revert 8e47988 (or delete tile 18 block in index.html + the two new video/ files).
+
+## 2026-09-30 — Julie masterclass UGC ads (repo lla-julie-ugc-ads)
+- New public repo gitteromri-ux/lla-julie-ugc-ads, GitHub Pages: https://gitteromri-ux.github.io/lla-julie-ugc-ads/
+- Delivered: ad1-man42 (62.5 s, Seedance 2.5 1080p) and ad2-woman42 (63.1 s, 720p+480p hybrid). Per-video pages autoplay + download. Transcripts verified with faster-whisper; frame-tile QC done.
+- NOT delivered: ad3-woman51 — Artlist credits insufficient (3,621 left, 12,000 needed at 480p; renew Oct 16). Start frame ready in Artlist Studio project "LLA", Shot 7. Higgsfield account is Free plan (Seedance 2.5 locked).
+- Julie tracking / live page untouched (GOLDEN CAPI freeze respected). Rollback: delete repo or revert commits on master.
