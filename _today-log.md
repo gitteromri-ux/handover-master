@@ -542,3 +542,4 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Post format fixed for click-through: link on line 2 (above mobile “See more”), again last line, again first comment; native photo post with new share cards (`share-cards/…1200x630.jpg`, `…1080x1080.jpg`).
 - FINDING (no change made): LP `og:image` is a 1080×1920 video frame → Facebook link previews render a blurred crop. Fix = one `og:image` tag in frozen `index.html`; requires "I lift the Julie tracking freeze for og:image".
 - GOLDEN CAPI untouched. Rollback: none needed.
+- 2026-09-30 15:58 — lla-masterclass-assets a1a853b: film v2 — card 1:29 headline changed to "Longevity Masterclass of the Year" / "Claim your seat." (130px, card-3 sizing; no first-name lead) per Omri. Same filename, download page unchanged; live content-length 93,373,032 verified. Rollback: git revert a1a853b.
