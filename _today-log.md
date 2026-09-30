@@ -524,3 +524,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Tracking: UTM-only links (`utm_medium=organic_group`, `utm_content=<group>`, `utm_term=<poster>`). Verified live on production: `julie_attribution_v2` stores the five keys; `LLA_ATTR.queryString()` returns them for the CRM order (tested with `llatest=1`, no Meta event fired). GOLDEN CAPI list untouched; no site, relay, pixel or campaign change.
 - Optional `lla-go/` Vercel redirect + Blob click counter written, NOT deployed: token cannot create projects (403) in team GITTER.
 - Rollback: none needed (nothing live changed).
+
+## 2026-09-30 — Julie full film, masterclass edit
+- Repo: gitteromri-ux/lla-masterclass-assets, commit 8e47988 (tile 18 + video/julie-masterclass-film-full-1080p-masterclass-edit.mp4 + poster). Original tile 17 / file untouched.
+- Change: offer cards at 1:29, 1:53, 1:57, 2:01 rewritten from Blueprint to live masterclass copy (same fonts/sizes/motion); 1:49.7–1:53.7 stock Zoom shot replaced with Omri's latest Artlist generation (Seedance 2.5, Julie hosting 50-ppl Zoom); VO "across six pillars and 18 live sessions" removed via Demucs music stem. No tracking/site/checkout touched.
+- Verified: live URL HTTP 200, md5 of served file == local render, 139.0 s. Approved by Omri in-session before push.
+- Rollback: git revert 8e47988 (or delete tile 18 block in index.html + the two new video/ files).
