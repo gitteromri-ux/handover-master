@@ -96,7 +96,8 @@ def meta():
         row('meta', f'{name} promoted object = pixel {m["pixel_id"]} PURCHASE',
             po.get('pixel_id') == m['pixel_id'] and po.get('custom_event_type') == 'PURCHASE', json.dumps(po)[:80])
         row('meta', f'{name} attribution setting unchanged', a.get('attribution_spec') == m['attribution_spec'][aid], json.dumps(a.get('attribution_spec')))
-        row('meta', f'{name} bid strategy unchanged', a.get('bid_strategy') == inv['bid_strategy'], a.get('bid_strategy'))
+        exp_bid = inv['bid_strategy'].get(aid) if isinstance(inv['bid_strategy'], dict) else inv['bid_strategy']
+        row('meta', f'{name} bid strategy unchanged', a.get('bid_strategy') == exp_bid, a.get('bid_strategy'))
         row('meta', f'{name} geo = US only', a.get('targeting', {}).get('geo_locations', {}).get('countries') == ['US'], json.dumps(a.get('targeting', {}).get('geo_locations'))[:60])
     ads = gj(f'{m["campaign_id"]}/ads?fields=id,name,adset_id,effective_status,creative{{id,url_tags,object_story_spec,asset_feed_spec}}&limit=100').get('data', [])
     live_active = [x for x in ads if x.get('effective_status') == 'ACTIVE' and x.get('adset_id') in m['live_adsets']]
