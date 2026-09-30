@@ -484,3 +484,10 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Changed: acquisition-plan.html gains tabs (Plan unchanged + Day 1 28 Sep + Day 2 29 Sep as of 19:23 IDT); new daily-log.js holds daily data; index.html nav adds "Daily results" link.
 - No Meta, site, tracking or relay change. GOLDEN CAPI items untouched.
 - Rollback: git revert 61c3b55.
+
+## 2026-09-30 03:10 IDT · Meta: single-video test ad in set 03 (approved by Omri: "Test adset approved")
+- Ad set 52668330165828 (ecomm_Adset_03_All_All_CPM_#108815) — NOT a frozen ad set; name, budget ($140), targeting unchanged.
+- New ad 52669371390428 = copy of active ad 52669232322428 (via /copies), creative swapped to 917501771244053: standard VIDEO, video 28073238119010653 (Blueprint Ad#12 history), APPLY_NOW, link inherited https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-link-sample, url_tags inherited (cid=118149&adGroupID=108815...), same page/IG, same masterclass body/title/description. Ad name identical to original.
+- Status ACTIVE, in Meta review at 03:10. Original ad 52669232322428 still ACTIVE. #108813, #108814, relay, site untouched.
+- Rollback: pause ad 52669371390428.
+- Rule recorded: never rename ad sets with anything after the last "#".
