@@ -574,3 +574,28 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 | Repo | Change | SHA | Rollback |
 |---|---|---|---|
 | `Longevity-Academy/julie-masterclass` | Merge `change/20261001-hero-pricing-polish` → main. CSS v9.13–v9.14b, phones only: hero eyebrow hidden, headline 44px balanced, accent near-white, subline 21.5px, button 66px, date chips; VIP title dark navy, VIP Dates block (CSS content, same dates as Standard), Standard Dates block; WhatsApp 64px with bar lane; conversion emphasis (glow bar, sheen on buy buttons, Standard halo, reduced-motion safe). index.html untouched. Omri 15:14 IDT: "Fix it. Go live. No more rounds." Guards after deploy: live 12/12, `--meta` 33/33, `--vercel` 1/1. Live iPhone: nav/hero/bar → #packages 96px, Standard+VIP open checkout, menu, docW 390. | `0fb5b27` | `git revert -m 1 0fb5b27`; golden tag `tracking-golden-20260928` |
+## 2026-09-30 · lla-julie-ugc-ads v5 + new repo final-versions (creative only, no tracking touched)
+- gitteromri-ux/lla-julie-ugc-ads v5: ad1 (man 42) and ad2 (woman 42) second halves regenerated with Higgsfield Seedance 2.5 at 1080p; new ad3 (woman 51). Higgsfield Plus plan active (no new purchase).
+- New repo gitteromri-ux/final-versions = FINAL VERSIONS delivery site. Render matrix 3 ads × 45/60/75 s × 9:16/4:5/1:1/16:9 in progress (output contract in `final-versions/BRIEF.md`; Meta upload spec drafted in `final-versions/META-UPLOAD-SPEC.md`, awaiting Omri's approval; new ads would go to set 03 only and are blocked by the 7-day no-edit rule above until Omri lifts it).
+- Tracking: nothing touched (pixel, CAPI, ad sets, ads, site). GOLDEN CAPI freeze to 2026-10-26 intact.
+- Rollback: previous commit `101c3c2` of lla-julie-ugc-ads.
+
+## 2026-10-01 · Julie film masterclass edit v5 + 12 captioned cutdowns (creative only, no tracking touched)
+- gitteromri-ux/lla-masterclass-assets `f6ee89d`: master v5 replaces the film at `video/julie-masterclass-film-full-1080p-masterclass-edit.mp4` (same URL); new page `julie-film-v4/` (player + Download for master and 12 cuts: 75/60/45 s × 16:9, 9:16, 1:1, 4:5; −14 LUFS; word-timed captions). Audit round 2 (final-versions `audits/2026-10-01/JULIE-FILM-V4-AUDIT.md`) applied: C1 real press headlines verbatim from the site press section, E1/E3 search montage replaced by designed sequence, E2, E4 axis, E5/K6, E7, E8/E9/K5 dissolves, C2, K1 captions, K2/K3 J-cuts, K4, K9, K10. Open: E6 streak, C3 logo tiles, K8 blink, phone clock.
+- gitteromri-ux/lla-julie-ugc-ads `9d056d1`: film card/page now serve v5 (same link).
+- QA: v5 vs v3 full-file diff — 2,786 unedited frames identical within encode noise; cuts measured −14.0/−14.1 LUFS, TP ≤ −1.3 dBTP; durations 71.9 / 55.6 / 41.5 s.
+- Tracking: nothing touched (pixel, CAPI, ad sets, ads, site). GOLDEN CAPI freeze to 2026-10-26 intact.
+- Rollback: lla-masterclass-assets `7363e1f` (v4) / `ff90d7f` (v3); lla-julie-ugc-ads `66c18eb`.
+
+## 2026-10-01 13:13 IDT · LIVE CHANGE — masterclass set 01 `ecomm_Adset_01_All_All_CPM_#108813` 52668330533628 rebuilt as Advantage+ intent set (Omri 13:09 "DO IT", 13:13 "A")
+- Targeting replaced (POST 10:13:38 UTC, success; GET verified): Advantage+ audience ON (geo expansion OFF); hard controls US + age ≥25 (Meta rule: A+ min age ≤25, max 65+); age suggestion 45–64 (`age_range`); suggestions: 41 interests (8 originals minus Anti-aging cream/Natural skin care + Tier 1 16 + Tier 2 19, see SET04-INTEREST-CANDIDATES-20261001.md), behaviors Engaged Shoppers 6071631541183 + Technology early adopters 6003808923172, income top 10% 6107813551783 + top 10–25% 6107813553183; seeds (custom audiences as suggestions) 52666964616028 video viewers 365d, 52666079297628 ATC 90d, 52666963633828 form openers 90d. No exclusions. Placements unchanged FB feed + reels overlay, mobile+desktop.
+- Unchanged: name, budget $229 (Omri set 09:12), LOWEST_COST_WITHOUT_CAP, pixel 1440305917310328 PURCHASE, attribution 7d click/1d view, 4 active ads (zoom-gold, card-gold, Ad#12, Ad#11), links/url_tags. Learning reset accepted by Omri ("nothing to lose").
+- Also today: Omri cut set 01 $399→$229 and raised set 03 $299→$399 at 09:08–09:12 (his login). Set 03 untouched by me.
+- Snapshots: data/before_set01_20261001-1313.json, data/after_set01_20261001-1313.json. Rollback: POST targeting from before file.
+
+## 2026-10-01 — final-versions v11 (Julie masterclass UGC, full redo)
+- Repo: gitteromri-ux/final-versions · commit 721d94c · live https://gitteromri-ux.github.io/final-versions/ (HTTP 200 verified)
+- Replaced v10 (ad1/2/3 × 45/60 s) with one ad: ad4-woman46__9x16__75.mp4 + ad4-woman46__1x1__75.mp4 (73.3 s, −14.0 LUFS, TP −2.4, 24 fps). Pipeline: ugc-prod/assemble75.py (Seedance 2.5 + Extend takes, Julie film cut-ins, film cards, Zoom mockup, offer card).
+- Rollback: `git revert 721d94c` (v10 files preserved in previous commit). No tracking / live LLA site / Meta touched (GOLDEN CAPI untouched).
+- 14:35 — final-versions 3718645: added audit/v11/index.html (18 requests side by side, frames + accent classifier result); qc.json gained accent_check. Rollback: git revert 3718645 1f69ee9.
+- 16:20 — final-versions 7e8ac4c: v12 (ad5-woman46 9:16 + 1:1, 75.0 s): Canva-look cards, Playfair captions/strap, PR-FROM-HERE logos, 4 end cards + official LLA outro, Julie 2nd cut-in removed. audit/v12. Rollback: git revert 7e8ac4c. Omri requested a refund for this thread's credits (~$320 reported) — to be filed with Perplexity support.
