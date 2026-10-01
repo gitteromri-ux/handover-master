@@ -599,3 +599,8 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Rollback: `git revert 721d94c` (v10 files preserved in previous commit). No tracking / live LLA site / Meta touched (GOLDEN CAPI untouched).
 - 14:35 — final-versions 3718645: added audit/v11/index.html (18 requests side by side, frames + accent classifier result); qc.json gained accent_check. Rollback: git revert 3718645 1f69ee9.
 - 16:20 — final-versions 7e8ac4c: v12 (ad5-woman46 9:16 + 1:1, 75.0 s): Canva-look cards, Playfair captions/strap, PR-FROM-HERE logos, 4 end cards + official LLA outro, Julie 2nd cut-in removed. audit/v12. Rollback: git revert 7e8ac4c. Omri requested a refund for this thread's credits (~$320 reported) — to be filed with Perplexity support.
+
+### 2026-10-01 17:50 IDT — Julie masterclass: phone type, VIP, hero, LLA-style CTAs, logo LIVE
+| Repo | Change | SHA | Rollback |
+|---|---|---|---|
+| `Longevity-Academy/julie-masterclass` | Merge `change/20261001-vip-hero-colors` → main. CSS v9.14c–v9.18, phones only: VIP white type on deeper gradient; hero 56/54px, paragraph 24px, button 72px; body 22px, bullets 21.5px, headings 46px, pricing title 36px/price 88px/rows 22px; all CTAs in longevitylifeacademy.com primary style (gradient #2E91FF→#0066FF pill, white bold); floating Enroll = same style, 56px, hides at pricing and in checkout; nav logo 172px. index.html untouched. Omri 17:30 IDT "approve fast". Guards after deploy: live 12/12, `--meta` 33/33, `--vercel` 1/1. Live iPhone 390×664: nav/hero/floater → #packages 96px, Standard+VIP open checkout, overlays hidden in checkout (no overlap with any dialog control), menu, FAQ, docW 390. | `5261139` | `git revert -m 1 5261139`; golden tag `tracking-golden-20260928` |
