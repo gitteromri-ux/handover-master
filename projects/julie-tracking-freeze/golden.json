@@ -1,195 +1,205 @@
 {
- "frozen_from": "2026-09-28",
- "frozen_until": "2026-10-26",
- "meta": {
-  "ad_account": "act_1459085242361281",
-  "campaign_id": "52668266203628",
-  "campaign_name": "LGV_EN_PPC_ecomm-02_2026-09-02_#118149",
-  "pixel_id": "1440305917310328",
-  "live_adsets": {
-   "52668330533628": "ecomm_Adset_01_All_All_CPM_#108813",
-   "52668268711228": "ecomm_Adset_02_All_All_CPM_#108814"
-  },
-  "adset_invariants": {
-   "optimization_goal": "OFFSITE_CONVERSIONS",
-   "billing_event": "IMPRESSIONS",
-   "promoted_object": {
+  "frozen_from": "2026-09-28",
+  "frozen_until": "2026-10-26",
+  "meta": {
+    "ad_account": "act_1459085242361281",
+    "campaign_id": "52668266203628",
+    "campaign_name": "LGV_EN_PPC_ecomm-02_2026-09-02_#118149",
     "pixel_id": "1440305917310328",
-    "custom_event_type": "PURCHASE"
-   },
-   "bid_strategy": "LOWEST_COST_WITHOUT_CAP"
-  },
-  "attribution_spec": {
-   "52668330533628": [
-    {
-     "event_type": "CLICK_THROUGH",
-     "window_days": 7
+    "live_adsets": {
+      "52668330533628": "ecomm_Adset_01_All_All_CPM_#108813",
+      "52668268711228": "ecomm_Adset_02_All_All_CPM_#108814"
     },
-    {
-     "event_type": "VIEW_THROUGH",
-     "window_days": 1
+    "adset_invariants": {
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "billing_event": "IMPRESSIONS",
+      "promoted_object": {
+        "pixel_id": "1440305917310328",
+        "custom_event_type": "PURCHASE"
+      },
+      "bid_strategy": "LOWEST_COST_WITHOUT_CAP"
+    },
+    "attribution_spec": {
+      "52668330533628": [
+        {
+          "event_type": "CLICK_THROUGH",
+          "window_days": 7
+        },
+        {
+          "event_type": "VIEW_THROUGH",
+          "window_days": 1
+        }
+      ],
+      "52668268711228": [
+        {
+          "event_type": "CLICK_THROUGH",
+          "window_days": 7
+        },
+        {
+          "event_type": "VIEW_THROUGH",
+          "window_days": 1
+        },
+        {
+          "event_type": "ENGAGED_VIDEO_VIEW",
+          "window_days": 1
+        }
+      ]
+    },
+    "ad_link": "https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-link-sample",
+    "url_tags_template": "cid=118149&adGroupID={ADGROUP}&utm_source=Facebook&utm_medium=Topic&&utm_campaign={{campaign.id}}&utm_term={{adset.id}}&utm_content={{ad.id}}&creative={{ad.id}}&placement={{placement}}&cq_src=facebook&cq_cmp={{campaign.name}}&cq_con={{ad.name}}&cq_med={{placement}}&cq_net={{site_source_name}}&cq_plt=fp",
+    "adgroup_by_adset": {
+      "52668330533628": "108813",
+      "52668268711228": "108814"
+    },
+    "active_ads": {
+      "52668330730828": [
+        "52668330533628",
+        "1421688130109374"
+      ],
+      "52668898143028": [
+        "52668330533628",
+        "1565187478264079"
+      ],
+      "52668897625628": [
+        "52668330533628",
+        "1343381372190610"
+      ],
+      "52668898107028": [
+        "52668330533628",
+        "1080508261494838"
+      ],
+      "52668330731428": [
+        "52668330533628",
+        "1785478019474524"
+      ],
+      "52668330002428": [
+        "52668268711228",
+        "4959491497611868"
+      ],
+      "52668898253228": [
+        "52668268711228",
+        "1050596871309653"
+      ],
+      "52668898199228": [
+        "52668268711228",
+        "1641722501007422"
+      ],
+      "52668898222428": [
+        "52668268711228",
+        "1794108565116066"
+      ],
+      "52668330002628": [
+        "52668268711228",
+        "1354653956510067"
+      ]
+    },
+    "custom_conversions": {
+      "1426010666308623": "Purchase",
+      "1099790382424644": "InitiateCheckout",
+      "1417373073897207": "AddToCart"
+    },
+    "cc_rule_url": "www.longevitylifeacademy.com/julie-masterclass/",
+    "cc_rule_product_line": "julie_masterclass",
+    "test_adsets_must_stay_paused": [
+      "52668961777228",
+      "52668956239228"
+    ]
+  },
+  "site": {
+    "repo": "Longevity-Academy/julie-masterclass",
+    "branch": "main",
+    "golden_commit": "42726fcd6a46908a499f2d94bb5cbf2f9558c947",
+    "tag": "tracking-golden-20260928",
+    "hosting": "GitHub Pages (www.longevitylifeacademy.com CNAME -> longevity-academy.github.io)",
+    "base_url": "https://www.longevitylifeacademy.com/julie-masterclass/",
+    "release_marker": "julie-meta-20260927-4",
+    "protected_files_sha1": {
+      "index.html": "8b5b119283fedf9f157d6c95cd52814f3ecff4e1",
+      "assets/julie-meta-tracking.js": "763b1da28e769075cc617dedad03350781317ca2",
+      "assets/julie-attribution.js": "23d0780f1e0f84d59799bead220e36b778cc3a5c",
+      "assets/julie-payment-safety.js": "3e0a036b2b0ed7f2bcbb9213c258ea9f87b916c6",
+      "assets/julie-international-checkout.js": "650d2b115ef6cd792ddc719e8efe01faa8abe3d4",
+      "assets/julie-premium-routing.js": "c85635b22e9f180a397cce41b583836f4d2daafc"
+    },
+    "constants": {
+      "PIXEL_ID": "1440305917310328",
+      "RELAY_URL": "https://lla-ac-events.vercel.app/api/meta/capi",
+      "PRODUCT_LINE": "julie_masterclass",
+      "PLANS": {
+        "standard": 49,
+        "vip": 79
+      },
+      "CURRENCY": "USD",
+      "fbc_storage_key": "julie_fbc_v1"
     }
-   ],
-   "52668268711228": [
+  },
+  "relay": {
+    "vercel_project": "lla-ac-events",
+    "project_id": "prj_3v7g4Xwve6OmXrcPCVQOWJOiN2SK",
+    "team": "gitter1 (team_QsIIEvdvnmtyD40s3mcnka6k)",
+    "production_deployment": "dpl_DQogoRsNj1XXTpJQmFrRk9zzCCrU",
+    "alias": [
+      "lla-ac-events.vercel.app",
+      "lla-ac-events-gitter1.vercel.app"
+    ],
+    "endpoint": "https://lla-ac-events.vercel.app/api/meta/capi",
+    "release_header": {
+      "x-lla-release": "clickid-exact-20260922",
+      "note": "value on OPTIONS preflight (live 2026-09-28 15:2x); Blueprint POST path sets blueprint-golden-20260927"
+    },
+    "files_sha1": {
+      "package.json": "62cb340852ed6b8e2f9ddc81a655003eab83fd45",
+      "lib/blueprint-receipt.js": "b11ba702c9a4271ede2b3b60c08e11323ab11278",
+      "lib/blueprint-golden-capi.js": "d05b9a5654cdcdf32e5f5ba49f85651b45e921dd",
+      "lib/click-id.js": "9dc4f336c1f978d8805e09805acdf8a19b658f9e",
+      "lib/julie-capi.js": "d835604aea87e7e66585526aa4d7635e96775bb1",
+      "api/meta/capi.js": "b6b2fb2bcd534b688008404fc9580e31f2f39bfc",
+      "api/ac/event.js": "85f663113123e0e6501a3afb3865133a10ead369"
+    },
+    "env_vars": [
+      "META_PIXEL_ID",
+      "META_CAPI_TOKEN",
+      "AC_API_KEY"
+    ],
+    "previous_deployment_rollback_candidate": "dpl_5SuufwCXfp7DFafmSRbs7SN7giiC (Julie path identical; Blueprint receipt logging absent)"
+  },
+  "freeze_lifts": [
     {
-     "event_type": "CLICK_THROUGH",
-     "window_days": 7
+      "date": "2026-09-30T11:16+03:00",
+      "item": "index.html pricing copy",
+      "sentence": "I lift the Julie tracking freeze for index.html pricing copy",
+      "scope": "Standard card 'You learn' dd -> 3 li bullets (lines 1263-1267)",
+      "index_sha1_before": "dec2210e7f89fc498b2c8b76b9584022167fb064",
+      "index_sha1_after": "c4cf5e2b402d50ab90ebd8a4a040674abe42053a",
+      "merge_commit": "091617faca7e8cce3edd915745fd2dd8a7b1c2fe",
+      "approved": "2026-09-30T11:24+03:00 'do it now'"
     },
     {
-     "event_type": "VIEW_THROUGH",
-     "window_days": 1
+      "date": "2026-09-30T17:58+03:00",
+      "item": "ad set 01 bid strategy + placements + audience (delivery-only fields)",
+      "sentence": "Omri 2026-09-30 17:44 IDT: 'IN REGARDS TO FREEZE ME AND ALL THOSE MESSAGES, AGAIN - ITS ON YOU. IM NOT A PROGRAMMER AND CANT RISK CAPI. IF U PROMISE IT WONT. DO IT.' + 'i think we have to also apply these in adset 1' + 'going more broad including ages 65+ and including removing the 10%income thing'",
+      "scope": "52668330533628: LOWEST_COST_WITHOUT_CAP -> COST_CAP bid_amount 20000; Advantage+ placements -> facebook feed + facebook_reels_overlay (mobile+desktop); age 35-64 -> 35-65+; income top 5%/10% ZIP removed from flexible_spec; 11 interests, US geo unchanged. Also (not frozen) 52668330165828: COST_CAP 15000 + same placements, audience unchanged.",
+      "tracking_untouched": "promoted_object pixel 1440305917310328 PURCHASE, attribution 7d click/1d view, optimization OFFSITE_CONVERSIONS, ad links + url_tags, site files, relay, custom conversions \u2014 guard 24/25 PASS, single FAIL was this bid-strategy invariant, now updated",
+      "before_snapshot": "projects/julie-meta-handover-20260930/data/before_52668330533628.json",
+      "rollback": "POST /52668330533628?bid_strategy=LOWEST_COST_WITHOUT_CAP&targeting=<targeting from before_52668330533628.json>"
     },
     {
-     "event_type": "ENGAGED_VIDEO_VIEW",
-     "window_days": 1
+      "date": "2026-09-30T19:41+03:00",
+      "item": "ad set 01 final configuration (delivery-only fields)",
+      "sentence": "Omri 19:39 IDT: 'DO IT NOW. I WANT 35-65+ AND I WANT ADSET 1 ON THE BEST INTEREST GROUPS. INCLUDE YOURS AND SOME OF MINE ALSO. AND ADSET 3 WE DO AS U SAID.'",
+      "scope": "52668330533628: COST_CAP -> LOWEST_COST_WITHOUT_CAP; age 35-65+; FB feed + reels overlay; interests replaced: Life extension, Anti-aging cream, Natural skin care, Healthy diet, Vitamins and nutritional supplements, Human nutrition, Meditations, Personal development, Physical fitness, Wearable technology (dropped Bodybuilding, Weight training, Bulletproof, High-net-worth individual); no income filter. 52668330165828 (not frozen): LOWEST_COST_WITHOUT_CAP, 35-65+, FB feed + reels overlay, NO interests (broad test).",
+      "tracking_untouched": "promoted_object, attribution_spec, optimization_goal, ad links, url_tags, site, relay unchanged",
+      "rollback": "POST targeting from projects/julie-meta-handover-20260930/data/before_52668330533628.json"
     }
-   ]
-  },
-  "ad_link": "https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-link-sample",
-  "url_tags_template": "cid=118149&adGroupID={ADGROUP}&utm_source=Facebook&utm_medium=Topic&&utm_campaign={{campaign.id}}&utm_term={{adset.id}}&utm_content={{ad.id}}&creative={{ad.id}}&placement={{placement}}&cq_src=facebook&cq_cmp={{campaign.name}}&cq_con={{ad.name}}&cq_med={{placement}}&cq_net={{site_source_name}}&cq_plt=fp",
-  "adgroup_by_adset": {
-   "52668330533628": "108813",
-   "52668268711228": "108814"
-  },
-  "active_ads": {
-   "52668330730828": [
-    "52668330533628",
-    "1421688130109374"
-   ],
-   "52668898143028": [
-    "52668330533628",
-    "1565187478264079"
-   ],
-   "52668897625628": [
-    "52668330533628",
-    "1343381372190610"
-   ],
-   "52668898107028": [
-    "52668330533628",
-    "1080508261494838"
-   ],
-   "52668330731428": [
-    "52668330533628",
-    "1785478019474524"
-   ],
-   "52668330002428": [
-    "52668268711228",
-    "4959491497611868"
-   ],
-   "52668898253228": [
-    "52668268711228",
-    "1050596871309653"
-   ],
-   "52668898199228": [
-    "52668268711228",
-    "1641722501007422"
-   ],
-   "52668898222428": [
-    "52668268711228",
-    "1794108565116066"
-   ],
-   "52668330002628": [
-    "52668268711228",
-    "1354653956510067"
-   ]
-  },
-  "custom_conversions": {
-   "1426010666308623": "Purchase",
-   "1099790382424644": "InitiateCheckout",
-   "1417373073897207": "AddToCart"
-  },
-  "cc_rule_url": "www.longevitylifeacademy.com/julie-masterclass/",
-  "cc_rule_product_line": "julie_masterclass",
-  "test_adsets_must_stay_paused": [
-   "52668961777228",
-   "52668956239228"
+  ],
+  "lifts": [
+    {
+      "date": "2026-10-01",
+      "item": "index.html card copy (learn cards + Standard card), 16 text lines; scripts byte-identical (23 blocks sha d4a632b9d780), fbq x3, LLA_META.track x4, pixel x2 unchanged",
+      "authorized": "Omri via approval prompt 14:44 IDT: 'go live, change bullets, guarantee u wont ruin any capi or tracking. do it now'",
+      "sha1_from": "c4cf5e2b402d50ab90ebd8a4a040674abe42053a",
+      "sha1_to": "8b5b119283fedf9f157d6c95cd52814f3ecff4e1",
+      "merge": "812dfadd05433ca483bc0dd18826310e50b72ee8"
+    }
   ]
- },
- "site": {
-  "repo": "Longevity-Academy/julie-masterclass",
-  "branch": "main",
-  "golden_commit": "42726fcd6a46908a499f2d94bb5cbf2f9558c947",
-  "tag": "tracking-golden-20260928",
-  "hosting": "GitHub Pages (www.longevitylifeacademy.com CNAME -> longevity-academy.github.io)",
-  "base_url": "https://www.longevitylifeacademy.com/julie-masterclass/",
-  "release_marker": "julie-meta-20260927-4",
-  "protected_files_sha1": {
-   "index.html": "c4cf5e2b402d50ab90ebd8a4a040674abe42053a",
-   "assets/julie-meta-tracking.js": "763b1da28e769075cc617dedad03350781317ca2",
-   "assets/julie-attribution.js": "23d0780f1e0f84d59799bead220e36b778cc3a5c",
-   "assets/julie-payment-safety.js": "3e0a036b2b0ed7f2bcbb9213c258ea9f87b916c6",
-   "assets/julie-international-checkout.js": "650d2b115ef6cd792ddc719e8efe01faa8abe3d4",
-   "assets/julie-premium-routing.js": "c85635b22e9f180a397cce41b583836f4d2daafc"
-  },
-  "constants": {
-   "PIXEL_ID": "1440305917310328",
-   "RELAY_URL": "https://lla-ac-events.vercel.app/api/meta/capi",
-   "PRODUCT_LINE": "julie_masterclass",
-   "PLANS": {
-    "standard": 49,
-    "vip": 79
-   },
-   "CURRENCY": "USD",
-   "fbc_storage_key": "julie_fbc_v1"
-  }
- },
- "relay": {
-  "vercel_project": "lla-ac-events",
-  "project_id": "prj_3v7g4Xwve6OmXrcPCVQOWJOiN2SK",
-  "team": "gitter1 (team_QsIIEvdvnmtyD40s3mcnka6k)",
-  "production_deployment": "dpl_DQogoRsNj1XXTpJQmFrRk9zzCCrU",
-  "alias": [
-   "lla-ac-events.vercel.app",
-   "lla-ac-events-gitter1.vercel.app"
-  ],
-  "endpoint": "https://lla-ac-events.vercel.app/api/meta/capi",
-  "release_header": {
-   "x-lla-release": "clickid-exact-20260922",
-   "note": "value on OPTIONS preflight (live 2026-09-28 15:2x); Blueprint POST path sets blueprint-golden-20260927"
-  },
-  "files_sha1": {
-   "package.json": "62cb340852ed6b8e2f9ddc81a655003eab83fd45",
-   "lib/blueprint-receipt.js": "b11ba702c9a4271ede2b3b60c08e11323ab11278",
-   "lib/blueprint-golden-capi.js": "d05b9a5654cdcdf32e5f5ba49f85651b45e921dd",
-   "lib/click-id.js": "9dc4f336c1f978d8805e09805acdf8a19b658f9e",
-   "lib/julie-capi.js": "d835604aea87e7e66585526aa4d7635e96775bb1",
-   "api/meta/capi.js": "b6b2fb2bcd534b688008404fc9580e31f2f39bfc",
-   "api/ac/event.js": "85f663113123e0e6501a3afb3865133a10ead369"
-  },
-  "env_vars": [
-   "META_PIXEL_ID",
-   "META_CAPI_TOKEN",
-   "AC_API_KEY"
-  ],
-  "previous_deployment_rollback_candidate": "dpl_5SuufwCXfp7DFafmSRbs7SN7giiC (Julie path identical; Blueprint receipt logging absent)"
- },
- "freeze_lifts": [
-  {
-   "date": "2026-09-30T11:16+03:00",
-   "item": "index.html pricing copy",
-   "sentence": "I lift the Julie tracking freeze for index.html pricing copy",
-   "scope": "Standard card 'You learn' dd -> 3 li bullets (lines 1263-1267)",
-   "index_sha1_before": "dec2210e7f89fc498b2c8b76b9584022167fb064",
-   "index_sha1_after": "c4cf5e2b402d50ab90ebd8a4a040674abe42053a",
-   "merge_commit": "091617faca7e8cce3edd915745fd2dd8a7b1c2fe",
-   "approved": "2026-09-30T11:24+03:00 'do it now'"
-  },
-  {
-   "date": "2026-09-30T17:58+03:00",
-   "item": "ad set 01 bid strategy + placements + audience (delivery-only fields)",
-   "sentence": "Omri 2026-09-30 17:44 IDT: 'IN REGARDS TO FREEZE ME AND ALL THOSE MESSAGES, AGAIN - ITS ON YOU. IM NOT A PROGRAMMER AND CANT RISK CAPI. IF U PROMISE IT WONT. DO IT.' + 'i think we have to also apply these in adset 1' + 'going more broad including ages 65+ and including removing the 10%income thing'",
-   "scope": "52668330533628: LOWEST_COST_WITHOUT_CAP -> COST_CAP bid_amount 20000; Advantage+ placements -> facebook feed + facebook_reels_overlay (mobile+desktop); age 35-64 -> 35-65+; income top 5%/10% ZIP removed from flexible_spec; 11 interests, US geo unchanged. Also (not frozen) 52668330165828: COST_CAP 15000 + same placements, audience unchanged.",
-   "tracking_untouched": "promoted_object pixel 1440305917310328 PURCHASE, attribution 7d click/1d view, optimization OFFSITE_CONVERSIONS, ad links + url_tags, site files, relay, custom conversions — guard 24/25 PASS, single FAIL was this bid-strategy invariant, now updated",
-   "before_snapshot": "projects/julie-meta-handover-20260930/data/before_52668330533628.json",
-   "rollback": "POST /52668330533628?bid_strategy=LOWEST_COST_WITHOUT_CAP&targeting=<targeting from before_52668330533628.json>"
-  },
-  {
-   "date": "2026-09-30T19:41+03:00",
-   "item": "ad set 01 final configuration (delivery-only fields)",
-   "sentence": "Omri 19:39 IDT: 'DO IT NOW. I WANT 35-65+ AND I WANT ADSET 1 ON THE BEST INTEREST GROUPS. INCLUDE YOURS AND SOME OF MINE ALSO. AND ADSET 3 WE DO AS U SAID.'",
-   "scope": "52668330533628: COST_CAP -> LOWEST_COST_WITHOUT_CAP; age 35-65+; FB feed + reels overlay; interests replaced: Life extension, Anti-aging cream, Natural skin care, Healthy diet, Vitamins and nutritional supplements, Human nutrition, Meditations, Personal development, Physical fitness, Wearable technology (dropped Bodybuilding, Weight training, Bulletproof, High-net-worth individual); no income filter. 52668330165828 (not frozen): LOWEST_COST_WITHOUT_CAP, 35-65+, FB feed + reels overlay, NO interests (broad test).",
-   "tracking_untouched": "promoted_object, attribution_spec, optimization_goal, ad links, url_tags, site, relay unchanged",
-   "rollback": "POST targeting from projects/julie-meta-handover-20260930/data/before_52668330533628.json"
-  }
- ]
 }
