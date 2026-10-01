@@ -598,3 +598,8 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Unchanged: name, budget $229 (Omri set 09:12), LOWEST_COST_WITHOUT_CAP, pixel 1440305917310328 PURCHASE, attribution 7d click/1d view, 4 active ads (zoom-gold, card-gold, Ad#12, Ad#11), links/url_tags. Learning reset accepted by Omri ("nothing to lose").
 - Also today: Omri cut set 01 $399→$229 and raised set 03 $299→$399 at 09:08–09:12 (his login). Set 03 untouched by me.
 - Snapshots: data/before_set01_20261001-1313.json, data/after_set01_20261001-1313.json. Rollback: POST targeting from before file.
+
+## 2026-10-01 — final-versions v11 (Julie masterclass UGC, full redo)
+- Repo: gitteromri-ux/final-versions · commit 721d94c · live https://gitteromri-ux.github.io/final-versions/ (HTTP 200 verified)
+- Replaced v10 (ad1/2/3 × 45/60 s) with one ad: ad4-woman46__9x16__75.mp4 + ad4-woman46__1x1__75.mp4 (73.3 s, −14.0 LUFS, TP −2.4, 24 fps). Pipeline: ugc-prod/assemble75.py (Seedance 2.5 + Extend takes, Julie film cut-ins, film cards, Zoom mockup, offer card).
+- Rollback: `git revert 721d94c` (v10 files preserved in previous commit). No tracking / live LLA site / Meta touched (GOLDEN CAPI untouched).
