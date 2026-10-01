@@ -612,3 +612,13 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Commitment: set 01 untouched 48 h from 17:40. Expected (not verified): CPM $60–150 at 45–64 broad price; buyer-signal pricing has no in-account precedent.
 - Thumbnails: 3 Julie stills produced (A ten-years, B single-mom, C why) — NOT applied; needs Omri's ad assignment. Applying = new creative/ad = another reset.
 - Snapshots: data/before_set01_20261001-1740.json, data/after_set01_20261001-1740.json. Rollback: POST targeting from either before file.
+
+## 2026-10-01 18:07 IDT · LIVE CHANGE — set 01 52668330533628 targeting v4 (Omri 18:03/18:07 "41 interests AND (Engaged Shoppers or income) … 25% … is what i want")
+- POST 15:07 UTC success, verified: US, 45–64 hard, advantage_audience 0, FB feed + reels overlay, mobile+desktop. flexible_spec group 1 = 41 interests; group 2 = Engaged Shoppers 6071631541183 OR income top 10% 6107813551783 OR top 10–25% 6107813553183 (AND between groups). Reach 38.1–44.8M. No CA, no exclusions. Budget/bid/pixel/attribution/name unchanged.
+- Snapshots: data/before_set01_20261001-1807.json, data/after_set01_20261001-1807.json.
+
+## 2026-10-01 18:32 IDT · LIVE CHANGE — thumbnails on set 01 video ads (Omri 18:26 "Middle one", 18:27 "PLUS THE THUMBNAIL NOW")
+- Thumbnail B "The world's slowest-aging single mom. / Masterclass" (still from julie-film-1080p.mp4 @127.5 s, text overlaid) in 1:1, 9:16, 16:9. Ad image hashes: square b1f29c05b2a3d0d282895e542633d562, vertical 21925cb3a0926a95f5e2667d75962044, landscape 387490f1a79549796710c4ee3b3422c1.
+- New creatives cloned from originals with only thumbnail_hash added per placement video (same videos, copy, link `?preview=zoom-link-sample`, CTA APPLY_NOW, url_tags, all enhancements OPT_OUT): Ad#12 52668330731428 creative 1785478019474524 → 1646667173844142; Ad#11 52668330730828 creative 1421688130109374 → 1588624512189284. Both POST success; ads ACTIVE / IN_PROCESS (review). Ad names unchanged.
+- Rollback: POST ad creative={"creative_id":"<old id>"}. Old thumbnails were near-black first frames (see thumbnails/cre_*.json).
+- Clock: set 01 learning restarts from 18:32; 48-hour no-touch runs to 3 Oct 18:32.
