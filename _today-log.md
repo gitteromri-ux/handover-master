@@ -603,3 +603,4 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Repo: gitteromri-ux/final-versions · commit 721d94c · live https://gitteromri-ux.github.io/final-versions/ (HTTP 200 verified)
 - Replaced v10 (ad1/2/3 × 45/60 s) with one ad: ad4-woman46__9x16__75.mp4 + ad4-woman46__1x1__75.mp4 (73.3 s, −14.0 LUFS, TP −2.4, 24 fps). Pipeline: ugc-prod/assemble75.py (Seedance 2.5 + Extend takes, Julie film cut-ins, film cards, Zoom mockup, offer card).
 - Rollback: `git revert 721d94c` (v10 files preserved in previous commit). No tracking / live LLA site / Meta touched (GOLDEN CAPI untouched).
+- 14:35 — final-versions 3718645: added audit/v11/index.html (18 requests side by side, frames + accent classifier result); qc.json gained accent_check. Rollback: git revert 3718645 1f69ee9.
