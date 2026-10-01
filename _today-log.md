@@ -585,3 +585,10 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - New repo gitteromri-ux/final-versions = FINAL VERSIONS delivery site. Render matrix 3 ads × 45/60/75 s × 9:16/4:5/1:1/16:9 in progress (output contract in `final-versions/BRIEF.md`; Meta upload spec drafted in `final-versions/META-UPLOAD-SPEC.md`, awaiting Omri's approval; new ads would go to set 03 only and are blocked by the 7-day no-edit rule above until Omri lifts it).
 - Tracking: nothing touched (pixel, CAPI, ad sets, ads, site). GOLDEN CAPI freeze to 2026-10-26 intact.
 - Rollback: previous commit `101c3c2` of lla-julie-ugc-ads.
+
+## 2026-10-01 · Julie film masterclass edit v5 + 12 captioned cutdowns (creative only, no tracking touched)
+- gitteromri-ux/lla-masterclass-assets `f6ee89d`: master v5 replaces the film at `video/julie-masterclass-film-full-1080p-masterclass-edit.mp4` (same URL); new page `julie-film-v4/` (player + Download for master and 12 cuts: 75/60/45 s × 16:9, 9:16, 1:1, 4:5; −14 LUFS; word-timed captions). Audit round 2 (final-versions `audits/2026-10-01/JULIE-FILM-V4-AUDIT.md`) applied: C1 real press headlines verbatim from the site press section, E1/E3 search montage replaced by designed sequence, E2, E4 axis, E5/K6, E7, E8/E9/K5 dissolves, C2, K1 captions, K2/K3 J-cuts, K4, K9, K10. Open: E6 streak, C3 logo tiles, K8 blink, phone clock.
+- gitteromri-ux/lla-julie-ugc-ads `9d056d1`: film card/page now serve v5 (same link).
+- QA: v5 vs v3 full-file diff — 2,786 unedited frames identical within encode noise; cuts measured −14.0/−14.1 LUFS, TP ≤ −1.3 dBTP; durations 71.9 / 55.6 / 41.5 s.
+- Tracking: nothing touched (pixel, CAPI, ad sets, ads, site). GOLDEN CAPI freeze to 2026-10-26 intact.
+- Rollback: lla-masterclass-assets `7363e1f` (v4) / `ff90d7f` (v3); lla-julie-ugc-ads `66c18eb`.
