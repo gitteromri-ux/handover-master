@@ -622,3 +622,11 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - New creatives cloned from originals with only thumbnail_hash added per placement video (same videos, copy, link `?preview=zoom-link-sample`, CTA APPLY_NOW, url_tags, all enhancements OPT_OUT): Ad#12 52668330731428 creative 1785478019474524 → 1646667173844142; Ad#11 52668330730828 creative 1421688130109374 → 1588624512189284. Both POST success; ads ACTIVE / IN_PROCESS (review). Ad names unchanged.
 - Rollback: POST ad creative={"creative_id":"<old id>"}. Old thumbnails were near-black first frames (see thumbnails/cre_*.json).
 - Clock: set 01 learning restarts from 18:32; 48-hour no-touch runs to 3 Oct 18:32.
+
+## 2026-10-01 · UGC clean part 2 recovered and preserved
+- Recovered the matching original Higgsfield continuation through the newly connected history tool: job `ea657df7-3966-4cbc-a45b-0dd9865408ee`. No new generation or credit-consuming generation call.
+- Repository: `gitteromri-ux/ugc-prod`, isolated branch `recovery/w46b-p2`; commit https://github.com/gitteromri-ux/ugc-prod/commit/7a27dbcdc66d38652945da4547c97a38dab31bc0 .
+- Original is 116,926,233 bytes, 30.000 s, 1080×1920, 24 fps, HEVC/AAC; preserved without transcoding as chunks of 89,000,000 and 27,926,233 bytes. `python3 restore_part2.py` reconstructs `src/w46b_p2.mp4` and verifies SHA-256 `7dc8f9d1cafbb39e6dc93625626b147eb76c27322a3381eedd29c56beef855e9`.
+- Verified local reconstruction byte-for-byte against download and remote Git blob IDs against local committed chunks; commit page HTTP 200. File also shared as a persistent Perplexity artifact `a4c9b9ae-bc38-4cca-9635-e86817accea7`.
+- Historical handover stated 29.92 s; this is the provider's full 30.000 s original, not a claimed byte-identical recovery of the unavailable historical trimmed copy. No final-ad quality audit claimed.
+- Main unchanged at `6ca4c05be212c63bb84c4b1cb90a4934b468617d`. Rollback: use `main` instead of the recovery branch. No ads, campaign settings, rendered videos or live sites changed.
