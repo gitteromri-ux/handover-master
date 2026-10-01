@@ -592,3 +592,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - QA: v5 vs v3 full-file diff — 2,786 unedited frames identical within encode noise; cuts measured −14.0/−14.1 LUFS, TP ≤ −1.3 dBTP; durations 71.9 / 55.6 / 41.5 s.
 - Tracking: nothing touched (pixel, CAPI, ad sets, ads, site). GOLDEN CAPI freeze to 2026-10-26 intact.
 - Rollback: lla-masterclass-assets `7363e1f` (v4) / `ff90d7f` (v3); lla-julie-ugc-ads `66c18eb`.
+
+## 2026-10-01 13:13 IDT · LIVE CHANGE — masterclass set 01 `ecomm_Adset_01_All_All_CPM_#108813` 52668330533628 rebuilt as Advantage+ intent set (Omri 13:09 "DO IT", 13:13 "A")
+- Targeting replaced (POST 10:13:38 UTC, success; GET verified): Advantage+ audience ON (geo expansion OFF); hard controls US + age ≥25 (Meta rule: A+ min age ≤25, max 65+); age suggestion 45–64 (`age_range`); suggestions: 41 interests (8 originals minus Anti-aging cream/Natural skin care + Tier 1 16 + Tier 2 19, see SET04-INTEREST-CANDIDATES-20261001.md), behaviors Engaged Shoppers 6071631541183 + Technology early adopters 6003808923172, income top 10% 6107813551783 + top 10–25% 6107813553183; seeds (custom audiences as suggestions) 52666964616028 video viewers 365d, 52666079297628 ATC 90d, 52666963633828 form openers 90d. No exclusions. Placements unchanged FB feed + reels overlay, mobile+desktop.
+- Unchanged: name, budget $229 (Omri set 09:12), LOWEST_COST_WITHOUT_CAP, pixel 1440305917310328 PURCHASE, attribution 7d click/1d view, 4 active ads (zoom-gold, card-gold, Ad#12, Ad#11), links/url_tags. Learning reset accepted by Omri ("nothing to lose").
+- Also today: Omri cut set 01 $399→$229 and raised set 03 $299→$399 at 09:08–09:12 (his login). Set 03 untouched by me.
+- Snapshots: data/before_set01_20261001-1313.json, data/after_set01_20261001-1313.json. Rollback: POST targeting from before file.
