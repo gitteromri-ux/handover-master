@@ -628,3 +628,10 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Before: US, 35–64, A+ off, one group = 11 interests OR income (2); no CAs. After: US, 45–64 hard, A+ off, group 1 = 41 interests AND group 2 = Engaged Shoppers 6071631541183 OR income top 10% 6107813551783 OR top 10–25% 6107813553183. Geo, placements (automatic), budgets ($69 / $44, set by Omri), optimization, bid, pixel, ads: unchanged.
 - Set 4 #108810 52666232368428 (retargeting, CAs) untouched.
 - Snapshots: data/bp_before_*.json, data/bp_after_*.json. Learning restarts on both from the write time.
+
+## 2026-10-02 18:26 IDT · LIVE CHANGE — masterclass set 03 `ecomm_Adset_03_All_All_CPM_#108815` 52668330165828: broad → 41 interests AND Engaged Shoppers, 35–65+ (Omri 18:24 "41 interests and Engaged shoppers … ages of 35 to 65 plus … and, not or … do it now. Don't touch its budget")
+- Targeting written 15:25:51Z and verified by read-back: US (home/recent/frequently_in), age 35–65+, advantage_audience 0, FB feed + reels overlay, mobile+desktop; flexible_spec group 1 = the 41 interests (identical list to set 01), group 2 = Engaged Shoppers 6071631541183 (AND between groups). No income, no CAs, no exclusions. Meta estimate for this build: 76.0–89.4M (pulled 18:05 IDT).
+- Before: same geo/placements, age 35–65+, no flexible_spec (pure broad, est. 126.5–148.8M).
+- Unchanged: budget $199, LOWEST_COST_WITHOUT_CAP, pixel 1440305917310328 PURCHASE, 7d click / 1d view, ads (52669371390428 active, 52669232322428 paused). The connector force-paused the set on write; re-activated 15:26Z; status ACTIVE / IN_PROCESS (re-review). Learning restarts from 18:26 IDT.
+- Snapshots: data/before_set03_20261002-1825.json, data/after_set03_20261002-1828.json. Rollback: POST targeting from the before file (remove flexible_spec).
+- Set 04 #108816 and set 01 #108813 untouched. UGC files and set 04 build pending Omri's next message.
