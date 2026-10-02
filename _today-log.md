@@ -677,3 +677,4 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
   - Set 06 UGC ads untouched (keep Thumbnail B). Image hashes: T1 e2cab69e… / d1600735…, T2 3280b4f8… / c3ef0653…, T3 8ee905eb… / 4fc50306…. Scratch upload creatives deleted.
   - Rollback: `meta ads ad update <ad_id> --creative-id <old>`.
 - **gitteromri-ux/lla-marketing-dashboard** fd0120b — 3 new first tabs (Campaign Map / Ad Set Settings / Ads by Ad Set) from live Meta pull 2026-10-03 00:45 IDT; 35 ad previews in assets/ads/m_*.jpg; campaign.js / campaign-ui.js / campaign.css; header date now shows pull time. Rollback: revert to 3824e39.
+- 2026-10-03 01:58 IDT — Dashboard repo gitteromri-ux/lla-marketing-dashboard: added masterclass-adsets.html (3 executive slides: all 6 masterclass ad sets, targeting config, ads per set) + nav link; commits 878c26a, 091944c. No Meta changes. Video-library DELETE of old Ad2/Ad4 files refused (pages_manage_posts).
