@@ -622,3 +622,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - New creatives cloned from originals with only thumbnail_hash added per placement video (same videos, copy, link `?preview=zoom-link-sample`, CTA APPLY_NOW, url_tags, all enhancements OPT_OUT): Ad#12 52668330731428 creative 1785478019474524 → 1646667173844142; Ad#11 52668330730828 creative 1421688130109374 → 1588624512189284. Both POST success; ads ACTIVE / IN_PROCESS (review). Ad names unchanged.
 - Rollback: POST ad creative={"creative_id":"<old id>"}. Old thumbnails were near-black first frames (see thumbnails/cre_*.json).
 - Clock: set 01 learning restarts from 18:32; 48-hour no-touch runs to 3 Oct 18:32.
+
+## 2026-10-02 13:56 / 13:57 IDT · LIVE CHANGE — Blueprint campaign LGV_EN_PPC_ecomm-01_2026-09-02_#118148: prospecting sets → set 01 intent rules (Omri 13:55 "Apply the same rules you did for masterclass adset1 … Same exact. Only in the 2 adsets … which aren't set for retargeting")
+- ecomm Adset 2_All_All_CPM_#108808 52669013718628 (write 10:56:40Z) and ecomm Adset 5_All_All_CPM_#108811 52669048300628 (write 10:57:44Z). Both verified by read-back.
+- Before: US, 35–64, A+ off, one group = 11 interests OR income (2); no CAs. After: US, 45–64 hard, A+ off, group 1 = 41 interests AND group 2 = Engaged Shoppers 6071631541183 OR income top 10% 6107813551783 OR top 10–25% 6107813553183. Geo, placements (automatic), budgets ($69 / $44, set by Omri), optimization, bid, pixel, ads: unchanged.
+- Set 4 #108810 52666232368428 (retargeting, CAs) untouched.
+- Snapshots: data/bp_before_*.json, data/bp_after_*.json. Learning restarts on both from the write time.
