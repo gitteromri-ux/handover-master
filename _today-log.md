@@ -667,3 +667,13 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - New lookalikes 1% US: 52670046286828 (checkout seed), 52670046324628 (masterclass viewers seed), 52670046355428 (video 75% seed). Location now follows the ad set (API v27 note).
 - ecomm_Adset_02_All_All_CPM_#108814 52668268711228: custom_audiences 11 → 14 (three LALs added, OR). Write 21:38:06Z success, verified. Ages 35–64, geo US, budget $45, ads unchanged. Learning restarts.
 - At write time all six audiences were still populating ("too small to be used" / "Updating"); reach estimate still 23.3–27.5k. Sizes to be re-read when population completes (typically 1–6 h for seeds, up to 24 h for lookalikes). Snapshots data/before_s02_20261003-0038.json, data/after_s02_20261003-0038.json.
+
+## 2026-10-03 01:50 IDT — UGC thumbnail swap + dashboard campaign slides
+- **Meta (act_1459085242361281, campaign 52668266203628)** — replaced video covers on 4 PAUSED UGC ads (new creatives, old kept for rollback; nothing activated):
+  - Set 03 Ad#14 52670044100028 → creative 1851291222977833 (T1 AGE SLOWER), old 1771229717474377
+  - Set 03 Ad#13 52670040791028 → creative 1663810068510041 (T3 Zoom grid), old 1064412799744926
+  - Set 04 Ad#14 52670044141228 → creative 1105963589113368 (T2 Julie identity, 1:1 + 9:16), old 1084063744519491
+  - Set 04 Ad#13 52670043335628 → creative 3216431918550722 (T3 Zoom grid, 1:1 + 9:16), old 2076734863207568
+  - Set 06 UGC ads untouched (keep Thumbnail B). Image hashes: T1 e2cab69e… / d1600735…, T2 3280b4f8… / c3ef0653…, T3 8ee905eb… / 4fc50306…. Scratch upload creatives deleted.
+  - Rollback: `meta ads ad update <ad_id> --creative-id <old>`.
+- **gitteromri-ux/lla-marketing-dashboard** fd0120b — 3 new first tabs (Campaign Map / Ad Set Settings / Ads by Ad Set) from live Meta pull 2026-10-03 00:45 IDT; 35 ad previews in assets/ads/m_*.jpg; campaign.js / campaign-ui.js / campaign.css; header date now shows pull time. Rollback: revert to 3824e39.
