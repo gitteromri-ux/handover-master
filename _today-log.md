@@ -661,3 +661,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 
 ## 2026-10-03 00:34 IDT · DELETED non-final UGC ads from set 6 (Omri 00:31 "Everything that's not final deleted immediately")
 - Deleted ads 52670045610228 (Ad#15 8 weeks DNA) and 52670045663028 (Ad#16 Not moving) + creatives 1120637993861605, 3054586841552581; status DELETED verified. Set 6 now: Ad#14, Ad#13, card-gold, zoom-gold, all PAUSED. Uploaded videos for Ad 2/4 remain in the account video library only (no ad references).
+
+## 2026-10-03 00:34–00:38 IDT · LIVE CHANGE — set 02 retargeting + 1% lookalikes (Omri 00:31 "ok do it pls at 1% lookalike")
+- New seed audiences (pixel 1440305917310328 / page 1179505785236150): 52670046140828 Checkout starters 180d www-only; 52670046280628 Masterclass page viewers 180d + top-25% time; 52670046220628 Julie video 75% viewers 365d (6 video IDs from Ad#11/Ad#12).
+- New lookalikes 1% US: 52670046286828 (checkout seed), 52670046324628 (masterclass viewers seed), 52670046355428 (video 75% seed). Location now follows the ad set (API v27 note).
+- ecomm_Adset_02_All_All_CPM_#108814 52668268711228: custom_audiences 11 → 14 (three LALs added, OR). Write 21:38:06Z success, verified. Ages 35–64, geo US, budget $45, ads unchanged. Learning restarts.
+- At write time all six audiences were still populating ("too small to be used" / "Updating"); reach estimate still 23.3–27.5k. Sizes to be re-read when population completes (typically 1–6 h for seeds, up to 24 h for lookalikes). Snapshots data/before_s02_20261003-0038.json, data/after_s02_20261003-0038.json.
