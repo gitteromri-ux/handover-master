@@ -649,3 +649,8 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - All: title/description/CTA APPLY_NOW/link identical to set 01; url_tags cid=118149&adGroupID=108816 + golden tags; degrees_of_freedom copied (all OPT_OUT). Set 04 itself untouched: PAUSED, $10, targeting pending Omri's config.
 - 5th ad (UGC Ad 1) blocked: FINAL files 0 bytes on CDN. Set 03 Ad#13 52670040791028 remains PAUSED (square only; set 03 placements are feed + reels overlay).
 - Scratch creative 1755819088871867 (vertical upload) deleted. Rollback: delete the 4 ads above.
+
+## 2026-10-03 00:30 IDT · UGC Ad 1 "33 years apart" (corrected FINAL files, 75.0 s, verified 51,482,053 / 24,500,526 bytes, no top line) uploaded PAUSED
+- Set 04 #108816: 52670044141228 `Ad#14 - UGC Video | 75 Sec | 33 years | 02.10.26` — square 1082174957748492 + vertical 4509784962612563 (Meta re-registered as 1643086480816038 / 1436024458435515), Thumbnail B hashes, rules vertical→story/reels, square→default, Julie post minus "Watch Julie introduce…", tags adGroupID=108816; creative 1084063744519491. Set 04 now 5 ads, all PAUSED; set still off, $10, targeting pending.
+- Set 03 #108815: 52670044100028 `Ad#14 - UGC Video | 75 Sec | 33 years | 02.10.26` — single square video, Thumbnail B, same post, tags adGroupID=108815; creative 1771229717474377. PAUSED. Set 03 now: Julie 65s ACTIVE + Ad#13, Ad#14 PAUSED.
+- Scratch upload creatives deleted. Nothing activated.
