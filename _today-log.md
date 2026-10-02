@@ -635,3 +635,8 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Unchanged: budget $199, LOWEST_COST_WITHOUT_CAP, pixel 1440305917310328 PURCHASE, 7d click / 1d view, ads (52669371390428 active, 52669232322428 paused). The connector force-paused the set on write; re-activated 15:26Z; status ACTIVE / IN_PROCESS (re-review). Learning restarts from 18:26 IDT.
 - Snapshots: data/before_set03_20261002-1825.json, data/after_set03_20261002-1828.json. Rollback: POST targeting from the before file (remove flexible_spec).
 - Set 04 #108816 and set 01 #108813 untouched. UGC files and set 04 build pending Omri's next message.
+
+## 2026-10-02 23:50 IDT · UGC Ad 3 uploaded PAUSED to set 03 `#108815` (Omri 23:37 "same posts as Julie video… start uploading")
+- New ad `Ad#13 - UGC Video | 69 Sec | 5 habits 14 years | 02.10.26` 52670040791028, status PAUSED (IN_PROCESS review), set 03 52668330165828. Creative 1064412799744926: video 38776577228656070 (FINAL 1:1 from julie-masterclass-ads.vercel.app, 68.7 s, 1080×1080), thumbnail = approved Thumbnail B square hash b1f29c05b2a3d0d282895e542633d562, body = set-01 Julie video post minus the final "Watch Julie introduce…" line, title/description/CTA APPLY_NOW identical, link ?preview=zoom-link-sample, url_tags cid=118149&adGroupID=108815 + golden tags, degrees_of_freedom all OPT_OUT (copied). Scratch creative 1145774981214349 deleted.
+- UGC Ad 1 FINAL NOT uploaded: both CDN objects (2cf14c0f…, abf6d813…) are 0 bytes at origin (etag d41d8cd9…, last-modified 15:49Z); needs re-upload by Claude.
+- No budget/targeting change. Ad#13 stays PAUSED until Omri's go.
