@@ -658,3 +658,6 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 ## 2026-10-03 00:40 IDT · Set 6 `ecomm_Adset6_0_All_All_CPM_#108818` 52668330871028: 6 ads uploaded PAUSED (Omri 00:23 "upload all 4 ugc to adset 6, upload all 2 successful banners, dont activate")
 - 52670045587228 Ad#14 UGC 33 years (FINAL) · 52670045637228 Ad#13 UGC 5 habits (FINAL) · 52670045610228 Ad#15 UGC 8 weeks DNA (page: "previous ending", NOT final; end cards include "$249 Longevity Blueprint credit" + "14-day refund") · 52670045663028 Ad#16 UGC Not moving (same caveat) · 52670045668828 card-gold · 52670045677628 zoom-gold.
 - UGC ads: square + vertical, Thumbnail B, Julie post minus "Watch Julie introduce…", tags adGroupID=108818. Banners: copies of set-01 creatives. Set 6 untouched: PAUSED, $10. Scratch creatives deleted.
+
+## 2026-10-03 00:34 IDT · DELETED non-final UGC ads from set 6 (Omri 00:31 "Everything that's not final deleted immediately")
+- Deleted ads 52670045610228 (Ad#15 8 weeks DNA) and 52670045663028 (Ad#16 Not moving) + creatives 1120637993861605, 3054586841552581; status DELETED verified. Set 6 now: Ad#14, Ad#13, card-gold, zoom-gold, all PAUSED. Uploaded videos for Ad 2/4 remain in the account video library only (no ad references).
