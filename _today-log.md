@@ -640,3 +640,12 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - New ad `Ad#13 - UGC Video | 69 Sec | 5 habits 14 years | 02.10.26` 52670040791028, status PAUSED (IN_PROCESS review), set 03 52668330165828. Creative 1064412799744926: video 38776577228656070 (FINAL 1:1 from julie-masterclass-ads.vercel.app, 68.7 s, 1080×1080), thumbnail = approved Thumbnail B square hash b1f29c05b2a3d0d282895e542633d562, body = set-01 Julie video post minus the final "Watch Julie introduce…" line, title/description/CTA APPLY_NOW identical, link ?preview=zoom-link-sample, url_tags cid=118149&adGroupID=108815 + golden tags, degrees_of_freedom all OPT_OUT (copied). Scratch creative 1145774981214349 deleted.
 - UGC Ad 1 FINAL NOT uploaded: both CDN objects (2cf14c0f…, abf6d813…) are 0 bytes at origin (etag d41d8cd9…, last-modified 15:49Z); needs re-upload by Claude.
 - No budget/targeting change. Ad#13 stays PAUSED until Omri's go.
+
+## 2026-10-03 00:15 IDT · Set 04 `ecomm_Adset_04_All_All_CPM_#108816` 52668330870828: 4 ads uploaded PAUSED (Omri 23:44 "5 ads total in adset 4… don't activate anything just upload")
+- 52670043258028 `Ad#12 - Video | 65 Sec | Julie | 13.08.26` — copy of set-01 creative 1646667173844142 (3 videos square/vertical/landscape, Thumbnail B, placement rules), creative 28588722934080215
+- 52670043277028 `Julie Masterclass | card-gold | Revised 3 sizes | 27.09.26` — copy of 1080508261494838, creative 1932283021076626
+- 52670043297028 `Julie Masterclass | zoom-gold | Revised 3 sizes | 27.09.26` — copy of 1565187478264079, creative 1504044815107592
+- 52670043335628 `Ad#13 - UGC Video | 69 Sec | 5 habits | 02.10.26` — UGC Ad 3 FINAL square 38776577228656070 + vertical 1143947958315869, Thumbnail B square/vertical hashes, rules vertical→story/reels, square→default; body = Julie post minus "Watch Julie introduce…" line; creative 2076734863207568
+- All: title/description/CTA APPLY_NOW/link identical to set 01; url_tags cid=118149&adGroupID=108816 + golden tags; degrees_of_freedom copied (all OPT_OUT). Set 04 itself untouched: PAUSED, $10, targeting pending Omri's config.
+- 5th ad (UGC Ad 1) blocked: FINAL files 0 bytes on CDN. Set 03 Ad#13 52670040791028 remains PAUSED (square only; set 03 placements are feed + reels overlay).
+- Scratch creative 1755819088871867 (vertical upload) deleted. Rollback: delete the 4 ads above.
