@@ -654,3 +654,7 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Set 04 #108816: 52670044141228 `Ad#14 - UGC Video | 75 Sec | 33 years | 02.10.26` — square 1082174957748492 + vertical 4509784962612563 (Meta re-registered as 1643086480816038 / 1436024458435515), Thumbnail B hashes, rules vertical→story/reels, square→default, Julie post minus "Watch Julie introduce…", tags adGroupID=108816; creative 1084063744519491. Set 04 now 5 ads, all PAUSED; set still off, $10, targeting pending.
 - Set 03 #108815: 52670044100028 `Ad#14 - UGC Video | 75 Sec | 33 years | 02.10.26` — single square video, Thumbnail B, same post, tags adGroupID=108815; creative 1771229717474377. PAUSED. Set 03 now: Julie 65s ACTIVE + Ad#13, Ad#14 PAUSED.
 - Scratch upload creatives deleted. Nothing activated.
+
+## 2026-10-03 00:40 IDT · Set 6 `ecomm_Adset6_0_All_All_CPM_#108818` 52668330871028: 6 ads uploaded PAUSED (Omri 00:23 "upload all 4 ugc to adset 6, upload all 2 successful banners, dont activate")
+- 52670045587228 Ad#14 UGC 33 years (FINAL) · 52670045637228 Ad#13 UGC 5 habits (FINAL) · 52670045610228 Ad#15 UGC 8 weeks DNA (page: "previous ending", NOT final; end cards include "$249 Longevity Blueprint credit" + "14-day refund") · 52670045663028 Ad#16 UGC Not moving (same caveat) · 52670045668828 card-gold · 52670045677628 zoom-gold.
+- UGC ads: square + vertical, Thumbnail B, Julie post minus "Watch Julie introduce…", tags adGroupID=108818. Banners: copies of set-01 creatives. Set 6 untouched: PAUSED, $10. Scratch creatives deleted.
