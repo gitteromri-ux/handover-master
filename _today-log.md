@@ -709,3 +709,4 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
   - v1-design Reels ads and duplicates deleted: 52670186843428, 52670186885828, 52670186928428, 52670186969428, 52670187022028, 52670187405428.
   - Meta "Add music" enhancement NOT used anywhere (not Reels-only per Meta docs).
   - Omri 21:58: "leave it" (Reels + IG feed stay on all sets). Check 09:00: placement breakdown per set, carts not visits.
+- 2026-10-03 22:05 IDT — Banner dismantle (ordered): paused set05 card-gold static 52670186867628 + reels 52670187364628; set06 card-blue static 52670186950828 + reels 52670187380028; set02 zoom-blue static 52670187009428 + reels 52670187387628. Banners now only: set01 card-gold, set02 card-blue (each static + Reels video). Ad-level only.
