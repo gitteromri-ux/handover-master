@@ -691,3 +691,14 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
   - Set 06 #108818 (52668330871028): PAUSED $10. Targeting written 03:53 to income 10–25% (NOT ordered, my error) → 04:08 rewritten per order: 45–64, 41 AND (Shoppers OR income top 10%/10–25%/25–50%), reach 40.2–47.3M. Ads: Ad#12 52670065374228, Ad#15 52670065390228, Ad#17 52670065412028, card-gold 52670045668828 (active at ad level); zoom-gold 52670045677628 paused.
   - Set 02 budget $45→$70 was changed by Omri, not me.
   - 04:20 Omri: set 06 stays paused; he reviews at 09:00 IDT.
+- 2026-10-03 19:50–21:25 IDT — VERIFIED writes, all ordered by Omri:
+  - 19:50 Set 02 #108814: +Ad#15 man UGC 52670173215428.
+  - 19:51 Set 06 #108818: targeting income → top 10% + 10–25% (dropped 25–50%), Shoppers OR kept, 45–64; budget $10→$165; card-gold 52670045668828 paused; +card-blue 52670173331428 (cre 1794108565116066). 19:52 set ACTIVE.
+  - 20:30 Sets 05/06: Ad#12 replaced with 3-format creative 1646667173844142 → 52670177531628 (05), 52670177588628 (06); square-only copies 52670065326628 / 52670065374228 paused. Root cause: set 03's Ad#12 52669371390428 was square-only since 29 Sep and I copied it.
+  - 20:40 Set 06 placements → feed only (removed overlay). Set 05 +Ad#15 52670178207028.
+  - 20:4x Observed sets 02/03/04/05 already feed-only (overlay removed) — NOT by me (Omri / other session).
+  - 21:14 Placements on ALL 6 sets → publisher_platforms facebook+instagram; facebook_positions feed + facebook_reels; instagram_positions stream; device mobile+desktop. Meta refused 'video_feeds' (deprecated, folded into feed). Before/after JSON in projects/.../data/pl20261003/. Learning restart on 01 and 03.
+  - 21:14 Set 01: Ad#11 90 s 52668330730828 paused; +Ad#15 man 52670181600628. Two duplicate Ad#15 (52670182131828, 52670182862428) created by interrupted runs → deleted 21:19. Set 01 live: Ad#12 (3 formats), card-gold, Ad#15. zoom-gold paused by Omri ~19:30.
+  - 21:23 Set 03: +Ad#12 3-format 52670183445628; square-only 52669371390428 paused.
+  - Banner "Add music" enhancement: NOT applied. Meta docs: library music delivers to FB feed, IG feed, Stories, Reels for image ads; track selection automatic/AI. Fails Omri's "Reels-only, no side effects" standard.
+  - Rule reaffirmed by Omri 20:44: no live changes without explicit go; timing matters.
