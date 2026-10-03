@@ -702,3 +702,10 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
   - 21:23 Set 03: +Ad#12 3-format 52670183445628; square-only 52669371390428 paused.
   - Banner "Add music" enhancement: NOT applied. Meta docs: library music delivers to FB feed, IG feed, Stories, Reels for image ads; track selection automatic/AI. Fails Omri's "Reels-only, no side effects" standard.
   - Rule reaffirmed by Omri 20:44: no live changes without explicit go; timing matters.
+- 2026-10-03 21:25–21:55 IDT — Reels banner videos (ordered by Omri: "upload fast with the music"):
+  - Built 3 × 9:16 15 s videos (card-gold, card-blue, zoom-blue): large-type layout (no bullets, no CTA, dates in accent, small $), slow push-in, music = music-only intro of Julie 65 s cut (0–8.6 s looped, fade to silence 14.7 s). Files /tmp/reelsb/v2-*.mp4; Meta video IDs gold 1089789350446752, blue 1937062417255455, zoom 1466207748761796.
+  - Meta API refuses image+video in one placement-customised creative (SINGLE_IMAGE). Solution: per banner two ads — Static creative (vertical image no longer mapped to facebook_reels) + Reels video creative (video mapped to facebook_reels only; 2nd required rule maps to story, not in ad-set placements).
+  - New ads: set01 static card-gold 52670186830628 + reels 52670187358228; set05 static 52670186867628 + reels 52670187364628; set02 static card-blue 52670186916028 + reels 52670187372428, static zoom-blue 52670187009428 + reels 52670187387628; set06 static card-blue 52670186950828 + reels 52670187380028. Old banner ads paused: 52668898107028, 52670063737028, 52668898222428, 52670173331428, 52668898253228.
+  - v1-design Reels ads and duplicates deleted: 52670186843428, 52670186885828, 52670186928428, 52670186969428, 52670187022028, 52670187405428.
+  - Meta "Add music" enhancement NOT used anywhere (not Reels-only per Meta docs).
+  - Omri 21:58: "leave it" (Reels + IG feed stay on all sets). Check 09:00: placement breakdown per set, carts not visits.
