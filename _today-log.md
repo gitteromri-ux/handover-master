@@ -683,3 +683,11 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
   - ecomm_Adset_04_All_All_CPM_#108816 (52668330870828): targeting → US all states, 35–65+, A+ off, FB feed + Reels overlay (mobile+desktop), 41 interests AND (Engaged Shoppers OR income top 10% OR income 10–25%). Reach 83.4–98.1M. Before/after: /tmp/before_s_52668330870828_*.json, /tmp/after_s_52668330870828.json.
   - ecomm_Adset_05_All_All_CPM_#108817 (52668330871228): same but buyer signal = income top 10% only (no Engaged Shoppers). Reach 15.0–17.6M. Before/after: /tmp/before_s_52668330871228_*.json, /tmp/after_s_52668330871228.json.
   - Ordered by Omri 02:25 IDT. No learning impact: both sets paused with no delivery history since September.
+- 2026-10-03 03:35–04:10 IDT — VERIFIED writes (ordered by Omri 03:51, 04:02, 04:06):
+  - Uploaded 4 FINAL UGC videos (1:1 + 9:16): M1 1084927494397175/950331250969880, W2 28498072423219617/1578771560094567, W3 1487189336585384/1421746970106202, M4 28513681348260899/1058564740340886. New man thumbnail T1_age_slower_man hashes 2db4f9f57ddc11a712005b8d95275ce6 (1:1) / 52951ae9017a08f75ce970a12aa85aab (9:16).
+  - Set 04 #108816 (52668330870828): ads Ad#15 52670065053028 (man v1, T1 man), Ad#16 52670065066828 (woman v2, T1), Ad#17 52670065101028 (woman v3, T3 zoom), Ad#18 52670065151028 (man v4, T2 julie); copy = Ad#12 post minus last "full course" line. Budget $150, ACTIVE 03:48. Old Ad#12/card-gold/zoom-gold copies remain PAUSED.
+  - Deleted wrong UGC ads Ad#13/Ad#14 in sets 03/04/06 (52670044100028, 52670040791028, 52670044141228, 52670043335628, 52670045587228, 52670045637228).
+  - Set 05 #108817 (52668330871228): ads card-gold 52670063737028 + Ad#12 52670065326628; budget $225, ACTIVE 03:48. Targeting: income top 10% only → 04:03 added Shoppers OR (ordered) → 04:07 reverted to income top 10% only (ordered). Reach 15.0–17.6M.
+  - Set 06 #108818 (52668330871028): PAUSED $10. Targeting written 03:53 to income 10–25% (NOT ordered, my error) → 04:08 rewritten per order: 45–64, 41 AND (Shoppers OR income top 10%/10–25%/25–50%), reach 40.2–47.3M. Ads: Ad#12 52670065374228, Ad#15 52670065390228, Ad#17 52670065412028, card-gold 52670045668828 (active at ad level); zoom-gold 52670045677628 paused.
+  - Set 02 budget $45→$70 was changed by Omri, not me.
+  - 04:20 Omri: set 06 stays paused; he reviews at 09:00 IDT.
