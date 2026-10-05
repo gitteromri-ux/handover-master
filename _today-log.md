@@ -726,3 +726,7 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - 05:57 CREATED+ACTIVE Ad#17 (UGC woman five habits) in set 03: ad 52670355336628, creative 1445492807438707 (clone of 1114082707778667, adGroupID=108815). Pending review.
 - Overnight sales: 01:00 set 03 Ad#12; 03:00 set 04 Ad#17. Pixel: Browser 1 / Server 1 each (dedup confirmed post-disconnect).
 - Rollback: reverse statuses; delete 52670355336628.
+
+## 05 Oct 09:55 IDT · Board deck v3 delivered
+- `julie-banners/slides/Julie-Masterclass-Board-Update-5-Oct-2026.pptx` (+ .pdf) pushed to lla-marketing-dashboard. 10 slides: exec summary, CEO plan replica, plan vs actual, ratios, new plan ($40,802 to 26 Oct, ~450 by 27 Oct, CPA $330→$56, Nov column proposal $15k), this-week actions, CEO Q&A, 3 materials slides.
+- Meta read 09:13: campaign lifetime $6,952 / 49,640 imp / 825 clicks / 735 LPV / 16 ATC / 15 IC / 10 P. No live changes.
