@@ -730,3 +730,6 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 ## 05 Oct 09:55 IDT · Board deck v3 delivered
 - `julie-banners/slides/Julie-Masterclass-Board-Update-5-Oct-2026.pptx` (+ .pdf) pushed to lla-marketing-dashboard. 10 slides: exec summary, CEO plan replica, plan vs actual, ratios, new plan ($40,802 to 26 Oct, ~450 by 27 Oct, CPA $330→$56, Nov column proposal $15k), this-week actions, CEO Q&A, 3 materials slides.
 - Meta read 09:13: campaign lifetime $6,952 / 49,640 imp / 825 clicks / 735 LPV / 16 ATC / 15 IC / 10 P. No live changes.
+
+## 05 Oct 10:20 IDT · Board deck v5
+- Meta 10:10: today $1,218 / 158 LPV / 4 ATC / 3 P ($207; set 04 2 P at 01:00 $79 + 08:00 $49, set 03 1 P). Lifetime $6,977 / 754 LPV / 17 ATC / 16 IC / 11 P / $659. Deck v5 pushed (numbered headlines, new plan ~420 Oct in $40,802, +304 Nov for $17k). No live changes.
