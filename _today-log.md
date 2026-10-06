@@ -766,3 +766,10 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Verified via Graph: success true, updated 22:53 UTC; last_sig_edit_ts unchanged (04: Mon 5 Oct 08:19 IDT, 03: Sun 4 Oct 21:35 IDT) = learning NOT reset. Learning conversions: 04 = 3, 03 = 4.
 - Earlier tonight (Omri, in Ads Manager): ad sets 02 #108814 and 06 #108818 paused 00:44 IDT; Ad#12 in set 05 (52670177531628) paused 00:46 IDT.
 - Rollback: set 04 daily_budget=74700, set 03 daily_budget=65900.
+
+## 2026-10-07 — French Atelier checkout v4 "Neon Atelier" (STAGING ONLY)
+- Repo: gitteromri-ux/french-atelier, branch `staging-checkout` @ 89cb119 (main untouched; live /checkout.html still 404).
+- Staging: https://fa-staging-checkout-gitter1.vercel.app (Vercel project fa-staging-checkout, noindex).
+- Changed: js/fa-checkout.js (modal UI), css/fa-checkout.css, checkout.html (step 3), js/fa-geo.js (per-country phone length), cache-bust v=20261007h on 7 pages. Lead forms / leads.js / relay untouched.
+- Proof: 14/14 entry points open correct product; validation, country/dial/state, level/time/capsule limits, back/edit, Esc/X/backdrop, summary toggles, PayPal tab; sandbox card payments desktop #8041849, mobile 390px #8041851 (staging catalog $89).
+- Rollback: redeploy staging from ad6346e (v3).
