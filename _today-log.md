@@ -760,3 +760,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - **Proof**: sandbox card payment on staging completed end-to-end — Airwallex demo intent paid, SetECommercePayment accepted, staging Order #8041846, success screen rendered.
 - Rollback for staging: delete Vercel project fa-staging-checkout; branch can be deleted.
 - **v3 (same day, after design rejection)**: branch `staging-checkout` → full re-scale and Longevity-equivalent flow: step 1 Register (name, email, country with dial prefix, mobile, state, SMS/call consent) creates a CRM lead in production only (staging host sends nothing); step 2 Your course (level, preferred class time, course facts from how-it-works/faq, tuition band with strike-through and 15% OFF, promo chip, payment marks); step 3 checkout page with course card, logo tabs, branded Airwallex, sticky summary, Trustpilot/phone help box. Type scale raised throughout (labels .76rem, inputs 58px/17px, body 1–1.05rem, prices 3.6rem). Sandbox payment re-verified end-to-end (staging Order #8041847). Not on live.
+
+## 2026-10-07 01:53 IDT · Meta LLA masterclass campaign #118149 (act_1459085242361281) · budgets, on Omri's instruction
+- Ad set 04 #108816 (52668330870828): daily budget $747 → $822 (+10%). Ad set 03 #108815 (52668330165828): $659 → $725 (+10%).
+- Verified via Graph: success true, updated 22:53 UTC; last_sig_edit_ts unchanged (04: Mon 5 Oct 08:19 IDT, 03: Sun 4 Oct 21:35 IDT) = learning NOT reset. Learning conversions: 04 = 3, 03 = 4.
+- Earlier tonight (Omri, in Ads Manager): ad sets 02 #108814 and 06 #108818 paused 00:44 IDT; Ad#12 in set 05 (52670177531628) paused 00:46 IDT.
+- Rollback: set 04 daily_budget=74700, set 03 daily_budget=65900.
