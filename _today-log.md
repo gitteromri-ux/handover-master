@@ -733,3 +733,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 
 ## 05 Oct 10:20 IDT · Board deck v5
 - Meta 10:10: today $1,218 / 158 LPV / 4 ATC / 3 P ($207; set 04 2 P at 01:00 $79 + 08:00 $49, set 03 1 P). Lifetime $6,977 / 754 LPV / 17 ATC / 16 IC / 11 P / $659. Deck v5 pushed (numbered headlines, new plan ~420 Oct in $40,802, +304 Nov for $17k). No live changes.
+
+## 6 Oct 2026 (Israel)
+- 12:00–12:45 USER: set 01 → $266, 06 → $149, 03 → $459; set 04 Ad#16 (52670065066828) + card-gold Reels (52670313942228) paused; user reports set 03 Ad#17 (52670355336628) and set 05 Ad#12 (52670177531628) paused (03 Ad#17 still showed ACTIVE at 12:42, unverified after).
+- 12:50–13:15: CEO report updated (julie-ceo-launch-report commits 54a39d8 → 613ed84): new one-page status https://gitteromri-ux.github.io/julie-ceo-launch-report/today.html (8 sections, all metrics to 13:05, day-by-day week-2 plan); terminology unified "CEO original plan / Actual / Our forecast".
+- Planned, NOT yet done: 14:30 raises 04 → $900, 03 → $550, 05 → $350 (user executes).
+- VERIFIED 13:05: masterclass today $851 / 1,336 imp / 92 LPV / 4 ATC / 3 IC / 3 P / $147.
