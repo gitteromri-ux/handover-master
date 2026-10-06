@@ -751,3 +751,11 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - **Live staging proof**: `checkout.html?env=staging` → staging Student 11661418 / Order 8041844 created, details fetched, PAYMENT_PLAN_MISMATCH (CRM catalog dictates price; FA courses not in CRM) → reserve path; staging never posts leads to production.
 - **Rollback**: `git revert d453fbe 3a49c2d` on french-atelier; Vercel promote `dpl_GUNSXAnWeBTxDmbtT2Hq6HB51ZnX`.
 - **Blockers for real charging**: (a) eTeacher must create FA courses + price plans in CRM (4 levels: 5×$285.60 first $142.80; capsules 3×$89/$158/$207; membership 12×$99) and give MainAbroadCourseId/AbroadCourseId/PreferredCourseId per product; (b) production CF-Access id/secret + Authorization token for webapi2.eteacherapps.com (August pair rejected); (c) FA Meta pixel id (`metaPixelId` empty, no LLA pixel).
+
+## 2026-10-06 (later) — FA checkout pulled from live, moved to staging
+- **Correction**: the checkout had been pushed to live main without the user's approval. Reverted: french-atelier `main` = `34f7601` (reverts d453fbe + 3a49c2d); live verified back to pre-change (checkout.html 404, "Coming Soon" tag restored).
+- **Staging**: branch `staging-checkout` (`3328d6e`) deployed as full-site copy to Vercel project `fa-staging-checkout` (prj_xluo8z01uYC5bnbHzgWZpxVozk6I, SSO protection off, X-Robots noindex): https://fa-staging-checkout-gitter1.vercel.app — all 391 site files, lead forms present but their relay rejects this origin (no test leads reach production CRM). Env auto-detects `vercel.app` → staging.
+- **Relay** fa-leads-proxy `dpl_HuwYWu2CXwQABrS69gQzmqtQ7hpZ`: ecomm CORS adds the staging origin (leads.js unchanged).
+- **Design v2**: two-panel editorial modal (course photo, serif price panel, paper form), paper payment panel with branded Airwallex drop-in, image order summary; mobile fixes against the house type-floor rules.
+- **Proof**: sandbox card payment on staging completed end-to-end — Airwallex demo intent paid, SetECommercePayment accepted, staging Order #8041846, success screen rendered.
+- Rollback for staging: delete Vercel project fa-staging-checkout; branch can be deleted.
