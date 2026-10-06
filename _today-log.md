@@ -739,3 +739,8 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - 12:50–13:15: CEO report updated (julie-ceo-launch-report commits 54a39d8 → 613ed84): new one-page status https://gitteromri-ux.github.io/julie-ceo-launch-report/today.html (8 sections, all metrics to 13:05, day-by-day week-2 plan); terminology unified "CEO original plan / Actual / Our forecast".
 - Planned, NOT yet done: 14:30 raises 04 → $900, 03 → $550, 05 → $350 (user executes).
 - VERIFIED 13:05: masterclass today $851 / 1,336 imp / 92 LPV / 4 ATC / 3 IC / 3 P / $147.
+
+## 2026-10-06 13:25 IDT — julie-ceo-launch-report: weekly Meta report
+- Repo: gitteromri-ux/julie-ceo-launch-report, new folder `weekly-2026-10-06/` (index.html + 2 Excel packs). Live: https://gitteromri-ux.github.io/julie-ceo-launch-report/weekly-2026-10-06/
+- Content: top line by effort Sep 28 → Oct 6 12:45 (Meta API live pull), weekly split, masterclass trend (15 sales, 7 in last 37 h), ad-set drill-down with ATC, forecast inside the $40,813 envelope (≈200 paid by Nov 13), Q&A.
+- Commits: 37f8696, then mobile fix. Rollback: `git revert` those two commits; no live Meta/site/tracking changes made.
