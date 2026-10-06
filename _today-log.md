@@ -768,8 +768,9 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Rollback: set 04 daily_budget=74700, set 03 daily_budget=65900.
 
 ## 2026-10-07 — French Atelier checkout v4 "Neon Atelier" (STAGING ONLY)
-- Repo: gitteromri-ux/french-atelier, branch `staging-checkout` @ 89cb119 (main untouched; live /checkout.html still 404).
+- Repo: gitteromri-ux/french-atelier, branch `staging-checkout` @ 89cb119 → latest (see next line) (main untouched; live /checkout.html still 404).
 - Staging: https://fa-staging-checkout-gitter1.vercel.app (Vercel project fa-staging-checkout, noindex).
 - Changed: js/fa-checkout.js (modal UI), css/fa-checkout.css, checkout.html (step 3), js/fa-geo.js (per-country phone length), cache-bust v=20261007h on 7 pages. Lead forms / leads.js / relay untouched.
 - Proof: 14/14 entry points open correct product; validation, country/dial/state, level/time/capsule limits, back/edit, Esc/X/backdrop, summary toggles, PayPal tab; sandbox card payments desktop #8041849, mobile 390px #8041851 (staging catalog $89).
 - Rollback: redeploy staging from ad6346e (v3).
+- Follow-ups same day: f298edd (post-payment help copy), 8bfba68 (contrast, summary title, check icon). Extra sandbox orders #8041854-#8041856 (staging catalog only).
