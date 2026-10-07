@@ -807,3 +807,6 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Production systems touched: none (read-only pulls from Meta, GitHub, Gmail)
 - Open: capsule deck screen recordings (3) to replace the syllabus-based autoplay previews; native PowerPoint playback not yet verified on a Windows/Mac machine
 - Rollback: delete the repo or disable Pages
+
+## 2026-10-07 09:40 IDT — French Atelier staging: emphasis layer + WhatsApp
+- **fa-staging** `staging-checkout` (see `git log -1`): new `css/fa-pop.css` (three-accent system on both themes: gold = money, neon blue = selection, mint = savings; pulsing gold CTA, lit "Your plan" band, boxed totals, featured capsule card glow), savings chips from `FA.savings()/saveChip()` in modal summary, pay-page plan band and fee summary. New `js/fa-whatsapp.js` + `css/fa-whatsapp.css`: bottom-right WhatsApp floater (desktop pill / 60px mobile bubble, lane above the enroll bar) and inline "Start Chat on WhatsApp" after every lead-form submit (lead-gen v2, advisor modal, contact form, pricing) plus checkout help card and modal — sibling elements only, forms untouched. wa.me number = Longevity channel 12015023701 (ASSUMED for FA; one constant to change). Loaded on index, capsules, pricing, checkout, contact, courses/*. Cache-bust `v=20261007v`; both Vercel builds redeployed. Live site untouched.
