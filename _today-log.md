@@ -850,3 +850,5 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - 14:50 IDT — fa-staging: added `assets/video/capsule-cinema-{lumiere,musichall,nouvellevague}.mp4` (+posters), Veo 3.1 Fast, 8s silent 1280×720; hero cinema slot = musichall, Cinema stage reel = lumiere → nouvellevague → pillar-music. Build `v=20261008s`, both hosts READY.
 
 - 15:20 IDT — fa-staging: hero reel replaced with generated `capsule-hero-{versailles,crayere,garnier}.mp4` (Veo 3.1, 8s silent, Versailles re-run once for fisheye); Gastronomy stage = `capsule-gastro-{plating,cave}.mp4` + crayère. Artlist wine-tasting/restaurant and the music-hall clip retired from the page (files kept). Overlays lightened. Build `v=20261008u`, both hosts READY.
+
+- 15:45 IDT — fa-staging: hero Fashion/Cinema clips replaced by generated `capsule-hero-couture.mp4` and `capsule-hero-noir.mp4` (Veo 3.1, 8s silent); Versailles/Garnier unreferenced (files kept). Mobile hero overlay darkened, headline text-shadows. Build `v=20261008x`, both hosts READY.
