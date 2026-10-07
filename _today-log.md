@@ -846,3 +846,5 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 
 ## 2026-10-07 14:40 IDT — FA staging: Culture Capsules v3 (brand palette + lighting)
 - `fa-staging/staging-checkout` (after a79599e). Off-brand burgundy/terracotta cards replaced by navy glass with gold / Parisian-pink / neon-blue edge lighting (Mapstr language); lesson folds on taupe / pink-soft / light-blue with navy glass tiles. Hero now rotates three theme clips (pillar-fashion, wine-tasting, pillar-music); each capsule stage rotates three clips; speakers fold plays pillar-art. Pricing: three lit cards, big theme-coloured price, "3 monthly payments of $X" + total, four short bullets with coloured bold. Build `v=20261008r`, both hosts READY. Live untouched. Open: generated cinema-specific clips (only 1 of 3 cinema clips is on-theme), speaker names.
+
+- 14:50 IDT — fa-staging: added `assets/video/capsule-cinema-{lumiere,musichall,nouvellevague}.mp4` (+posters), Veo 3.1 Fast, 8s silent 1280×720; hero cinema slot = musichall, Cinema stage reel = lumiere → nouvellevague → pillar-music. Build `v=20261008s`, both hosts READY.
