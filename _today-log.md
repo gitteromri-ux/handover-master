@@ -774,3 +774,5 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Proof: 14/14 entry points open correct product; validation, country/dial/state, level/time/capsule limits, back/edit, Esc/X/backdrop, summary toggles, PayPal tab; sandbox card payments desktop #8041849, mobile 390px #8041851 (staging catalog $89).
 - Rollback: redeploy staging from ad6346e (v3).
 - Follow-ups same day: f298edd (post-payment help copy), 8bfba68 (contrast, summary title, check icon). Extra sandbox orders #8041854-#8041856 (staging catalog only).
+## 2026-10-07 07:35 IDT · lla-marketing-dashboard · julie-banners/slides/slides.html · 19bce8b
+- UGC slide (6 of 7): short labels replaced with the four approved full-sentence hooks; status tags updated to Meta 28 Sep–7 Oct (Ad#17 11 sales/$3,530; Ad#18 3/$1,209; Ad#15 paused 0/$147; Ad#16 paused 0/$43). Hook font 20→16px to fit 196px cards. Rollback: git revert 19bce8b.
