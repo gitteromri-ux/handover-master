@@ -776,3 +776,13 @@ The 4 duplicated ads (52669024930028, 52669024929828, 52669024929628, 5266902492
 - Follow-ups same day: f298edd (post-payment help copy), 8bfba68 (contrast, summary title, check icon). Extra sandbox orders #8041854-#8041856 (staging catalog only).
 ## 2026-10-07 07:35 IDT · lla-marketing-dashboard · julie-banners/slides/slides.html · 19bce8b
 - UGC slide (6 of 7): short labels replaced with the four approved full-sentence hooks; status tags updated to Meta 28 Sep–7 Oct (Ad#17 11 sales/$3,530; Ad#18 3/$1,209; Ad#15 paused 0/$147; Ad#16 paused 0/$43). Hook font 20→16px to fit 196px cards. Rollback: git revert 19bce8b.
+
+## 2026-10-07 — Support page (CEO request, app-store package)
+
+Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.com/support` (was 404) + confirmation that `support@longevitylifeacademy.com` is a monitored inbox. Omri: use support@longevitylifeacademy.com exactly as the CEO defined; he opens the inbox himself afterwards.
+
+- `Longevity-Academy/Longevity-Academy.github.io` main `3cfa91b` — new `/support/index.html` (light shell of /privacy.html) + footer link in index.html. Live 200: https://www.longevitylifeacademy.com/support/ (bare /support → 301 → /support/).
+- `Longevity-Academy/julie-masterclass` main `7f1b098` — new `/support/index.html` (dark shell) + one footer link "Support" under The Academy. No tracking, checkout or offer code touched (GOLDEN CAPI freeze intact). Live 200: https://www.longevitylifeacademy.com/julie-masterclass/support/
+- `gitteromri-ux/lla-course-checkout` branch `fix/support-20261007` `09f86f4` (based on `fix/privacy-20260927` 734f476 = live build; index/checkout/_worker byte-identical to production before and after) — new `dist/support.html`. Cloudflare Pages production deployment `6ce3d882` (previous `9ddfcf0c`, rollback target). Live 200: https://longevitylifeacademy.pages.dev/support
+- Content: support@ primary, +1-888-230-5110, Mon–Fri 9–18 US Eastern, one-business-day reply; app sign-in, Apple Health/Health Connect permissions, account + data deletion by email; Zoom access, recordings, changes, receipts; 14-day full refund (masterclass Standard/VIP + Blueprint) then per enrollment agreement; Terms/Privacy/Cancellation links; eTeacher Ltd. Ramat Gan, eTeacher Inc. NY, EU rep RF Privacy Minders; non-medical disclaimer.
+- OPEN (Omri): create/alias mailbox support@longevitylifeacademy.com and tell Harel who monitors it. Until then the address on the page is unmonitored.
