@@ -852,3 +852,5 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - 15:20 IDT — fa-staging: hero reel replaced with generated `capsule-hero-{versailles,crayere,garnier}.mp4` (Veo 3.1, 8s silent, Versailles re-run once for fisheye); Gastronomy stage = `capsule-gastro-{plating,cave}.mp4` + crayère. Artlist wine-tasting/restaurant and the music-hall clip retired from the page (files kept). Overlays lightened. Build `v=20261008u`, both hosts READY.
 
 - 15:45 IDT — fa-staging: hero Fashion/Cinema clips replaced by generated `capsule-hero-couture.mp4` and `capsule-hero-noir.mp4` (Veo 3.1, 8s silent); Versailles/Garnier unreferenced (files kept). Mobile hero overlay darkened, headline text-shadows. Build `v=20261008x`, both hosts READY.
+
+- 16:30 IDT — fa-staging: hero opens on `capsule-hero-garnier.mp4` per user screenshot; reel = Garnier (default) / couture / crayère. Build `v=20261008y`, both hosts READY.
