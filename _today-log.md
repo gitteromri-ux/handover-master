@@ -819,3 +819,6 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 
 ## 2026-10-07 10:15 IDT — French Atelier staging: type readability pass
 - New `css/fa-type.css` (loaded last on index, pricing, capsules, checkout, contact, courses/fa-*): bullets ≥ 1.05rem, body copy ≥ 1.1rem, notes ≥ 1rem, eyebrows/labels ≥ .85rem; plan-card prices/includes, offer-block points, capsule offers, course price cards, modal fields/summary rows, payment-page lines/fee rows/policy/help all raised; fee notes no longer italic. Offer-block bullet dot re-aligned. Both builds `v=20261008a`. Live untouched.
+
+## 2026-10-07 11:05 IDT — French Atelier staging: Midnight theme (dark build default)
+- `js/fa-checkout.js`: dark host default theme `midnight` (?ckt=neon restores the old all-navy; ?ckt=midnight|paper|ivory|split). New `css/fa-midnight.css`: lit navy page shell (light-blue + gold glows), WHITE cards for course lines, tuition band, payment card, summary and help card (navy ink), navy modal aside with white form, gold CTAs. Savings chips changed from mint green to gold/navy on every theme (`css/fa-pop.css`). `css/fa-type.css` floors raised again (bullets 1.15rem, body 1.18rem, fee values 1.3rem). Build `v=20261008d`. fa-staging f-branch `staging-checkout`. Live untouched.
