@@ -799,3 +799,11 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - **Relay fa-leads-proxy** (production): `dpl_DgtqCgtqQLpzs6gwaCfJKpKKMBYk` — api/ecomm.js ALLOWED_ORIGINS + the two fa-staging-light origins only; api/leads.js byte-identical (sha 8c6c454…). Verified after deploy: /leads/production OPTIONS 204 with ACAO www.frenchatelierlive.com; health ok. Rollback: promote `dpl_HuwYWu2CXwQABrS69gQzmqtQ7hpZ`.
 - Proof: light host sandbox payment end-to-end → staging Order #8041863 ($89 catalog charge). Live www.frenchatelierlive.com untouched (main 34f7601).
 - 08:45 "both" (Omri): Support added to top navigation on .com (desktop + mobile menu, `eda666e`) and on the masterclass page (desktop nav + burger menu, `6e795f4`; text links only, header otherwise unchanged, GOLDEN tracking untouched); Support added to the .pages.dev home footer (two text links, `fix/support-20261007` `83bd1e6`, Cloudflare production `fbb15ba2`, rollback `3d77867f`). Click-through verified live on all three: each link lands on the Support page (200).
+
+## 2026-10-07 · French Atelier initiatives deck (JV review with Acadomia + eTeacher CEOs)
+- Repo: gitteromri-ux/french-atelier-jv-deck (new, public, GitHub Pages)
+- Live: https://gitteromri-ux.github.io/french-atelier-jv-deck/ · PPTX: /French-Atelier-Initiatives-Oct-2026.pptx (9 slides, 21 embedded autoplay videos)
+- Commits: a2d367c (initial), see HEAD for Mapstr anchor + mobile controls
+- Production systems touched: none (read-only pulls from Meta, GitHub, Gmail)
+- Open: capsule deck screen recordings (3) to replace the syllabus-based autoplay previews; native PowerPoint playback not yet verified on a Windows/Mac machine
+- Rollback: delete the repo or disable Pages
