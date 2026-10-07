@@ -832,3 +832,11 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Verified: https://www.frenchatelierlive.com/capsules.html 200, byte-identical to commit, 30/30 titles present, no "15 min"/"fifteen"; desktop 1440 + 390px screenshots, 0 broken images, 0 console errors, no horizontal overflow.
 - Not changed: nav still labels Culture Capsules "Coming Soon" (out of scope).
 - Rollback: `gh api -X PUT repos/gitteromri-ux/french-atelier/contents/capsules.html` with content from commit 34f7601 (or revert c5f6111).
+
+## 2026-10-07 13:05 IDT — French Atelier staging: Culture Capsules page rebuilt (e-commerce)
+- Repo: `gitteromri-ux/fa-staging` branch `staging-checkout`, commit `def064f` (prev `aea7651`). Live `french-atelier` main `34f7601` untouched.
+- Hosts: dark https://fa-staging-checkout-gitter1.vercel.app/capsules.html · light https://fa-staging-light-gitter1.vercel.app/capsules.html — cache `v=20261008l`.
+- New: `css/fa-capsules.css`, `js/fa-capsules.js`, `assets/capsules/gen/*.jpg` (33 generated keyframes, no real-person likenesses), `downloads/culture-capsules-syllabus.pdf` (client PDF copied as-is).
+- Changed: `capsules.html` (full rebuild; header/footer/nav/promo/WhatsApp/checkout hooks kept), `js/fa-checkout-config.js` (capsule-1 $99×3=$297, capsule-2 $178×3=$534 ($89/capsule), capsule-3 $237×3=$711 ($79/capsule); membership-12 left in config, no longer on page), `js/fa-checkout.js` + `js/fa-promo.js` (per-capsule texts $99/$89/$79, floater "from $79").
+- Pricing +$10 per tier is the operator's reading of the brief (ASSUMED) — confirm with client. CAPSULE20 = 20% off all 3 payments of 1 capsule ($79.20/mo, $237.60) as the existing promo engine computes it.
+- Rollback: `git revert def064f` on `staging-checkout` + rerun `/tmp/redeploy.sh` / `/tmp/redeploy_light.sh`.
