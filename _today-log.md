@@ -840,3 +840,6 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Changed: `capsules.html` (full rebuild; header/footer/nav/promo/WhatsApp/checkout hooks kept), `js/fa-checkout-config.js` (capsule-1 $99×3=$297, capsule-2 $178×3=$534 ($89/capsule), capsule-3 $237×3=$711 ($79/capsule); membership-12 left in config, no longer on page), `js/fa-checkout.js` + `js/fa-promo.js` (per-capsule texts $99/$89/$79, floater "from $79").
 - Pricing +$10 per tier is the operator's reading of the brief (ASSUMED) — confirm with client. CAPSULE20 = 20% off all 3 payments of 1 capsule ($79.20/mo, $237.60) as the existing promo engine computes it.
 - Rollback: `git revert def064f` on `staging-checkout` + rerun `/tmp/redeploy.sh` / `/tmp/redeploy_light.sh`.
+
+## 2026-10-07 13:50 IDT — FA staging: Culture Capsules v2 (after client feedback)
+- `fa-staging/staging-checkout` commit (see git log, after def064f). Hero: "Culture Capsules. French culture, live from France." on `pillar-travel.mp4`; hooks removed from all headlines, power stats moved to stat blocks. Three gradient cards (navy / burgundy / terracotta) → coloured 10-tile programmes; 33 images regenerated (`assets/capsules/gen/*.jpg`, portrait 4:5). Pricing: three coloured brand cards with centred top badges, large prices, neon bullets. Build `v=20261008n`, both hosts READY. Live untouched.
