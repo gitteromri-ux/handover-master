@@ -854,3 +854,10 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - 15:45 IDT — fa-staging: hero Fashion/Cinema clips replaced by generated `capsule-hero-couture.mp4` and `capsule-hero-noir.mp4` (Veo 3.1, 8s silent); Versailles/Garnier unreferenced (files kept). Mobile hero overlay darkened, headline text-shadows. Build `v=20261008x`, both hosts READY.
 
 - 16:30 IDT — fa-staging: hero opens on `capsule-hero-garnier.mp4` per user screenshot; reel = Garnier (default) / couture / crayère. Build `v=20261008y`, both hosts READY.
+
+## 2026-10-09 18:08 Israel — julie-masterclass: payment-form design + 2x header logo (Omri approved 18:04 "Yes, publish")
+- Repo: Longevity-Academy/julie-masterclass, main 6e795f4 → 058c1f0 (commits 86a4751, 058c1f0). GitHub Pages build "built" 15:05 UTC; live files verified at www.longevitylifeacademy.com/julie-masterclass/.
+- Changed (2 files, 11 lines): assets/julie-payment-safety.js dropIn options only — autoSaveCardForFuturePayments:false; appearance.mode light, variables colorBrand #006EFF / colorText #111722 / colorBackground #FFFFFF; rules .Button radius 6px, 700, 17px, minHeight 52px; .Input radius 8px. assets/lla-logo-header.webp replaced by 1314x596 (same name, built from lla-logo-checkout.png with header colours).
+- Not changed: payment methods (Google Pay kept per Omri 2026-09-24), validation, tracking (pixel/CAPI/url_tags), prices, order flow, index.html.
+- Proof: WebKit iPhone 14 + SE (FB iOS 582 UA) on the live domain, QA orders (qa=1, Meta events off): card entry ready, Pay button rgb(0,110,255) 52px inside 453px frame, save-card unchecked, logo 1314x596. Pre-existing third-party script error unchanged.
+- Rollback: git revert 058c1f0 86a4751 on main (Pages cache 600 s).
