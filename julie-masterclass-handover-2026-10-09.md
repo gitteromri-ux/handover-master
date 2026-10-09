@@ -2,6 +2,10 @@
 
 Written by Perplexity Computer at Omri Gitter's request so that another tool/agency can take over.
 
+Public link: https://github.com/gitteromri-ux/handover-master/blob/main/julie-masterclass-handover-2026-10-09.md · Raw: https://raw.githubusercontent.com/gitteromri-ux/handover-master/main/julie-masterclass-handover-2026-10-09.md
+
+Contents: 0 reliability warning · 1 IDs and systems · 2 timeline · 3 performance data · **3A GOLDEN tracking (url tags, pixel, test exclusion)** · **3B CAPI** · 4 Events Manager checks · 5 checkout tests · 6 today's production change and rollback · 7 hypotheses · 8 open decisions · 9 assistant's errors · 10 QA records to exclude · 11 access state · 12 external sources
+
 ## 0. Read this first — reliability warning (written at the owner's instruction)
 
 The owner's assessment of the author of this document: he considers the assistant that wrote it not competent at this work ("an idiot", his word) and does not want this document treated as a bible. Rules for the reader:
@@ -146,6 +150,45 @@ Cart → purchase 5–9 Oct by day: 4/6, 8/10, 11/13, 3/4, 2/3 — stable. The l
 CPM: lifetime $263; 9 Oct set 3 $585, set 4 $643, set 5 $588, set 1 $1,070; other LLA campaigns same day $157–253. Owner's playbook benchmark: US Facebook feed $8–16, Reels $10–12; LLA Blueprint sets with the same video reached $15–19 on feed (USER-STATED/earlier sessions).
 
 Hourly pattern (from the owner's playbook, 28–30 Sep): Israel 01:00–07:00 carry 42% of visits at ~$11 each; 12:00–19:00 carry 57% of spend at ~$28/visit. Not re-verified on 9 Oct.
+
+## 3A. GOLDEN — what it is and what must never be touched (VERIFIED from live ad config and live code)
+
+"GOLDEN" is Omri's name for the protected attribution chain from ad click to CRM to Meta. It has three parts. All three were intact at 19:30 on 9 Oct and none was modified by any change in this session.
+
+**Part 1 — GOLDEN URL tags on every ad (Meta `url_tags`, exact string as live on set 3 Ad#17):**
+
+```
+cid=118149&adGroupID=108815&utm_source=Facebook&utm_medium=Topic&&utm_campaign={{campaign.id}}&utm_term={{adset.id}}&utm_content={{ad.id}}&creative={{ad.id}}&placement={{placement}}&cq_src=facebook&cq_cmp={{campaign.name}}&cq_con={{ad.name}}&cq_med={{placement}}&cq_net={{site_source_name}}&cq_plt=fp
+```
+
+- `cid=118149` = the eTeacher CRM campaign id (same as the `#118149` in the campaign name). Never changes.
+- `adGroupID=<CRM id>` = the eTeacher CRM ad-set id, one per Meta ad set: set 1 → 108813, set 2 → 108814, set 3 → 108815, set 4 → 108816, set 5 → 108817, set 6 → 108818. The CRM attributes every order to the ad set by this number, not by Meta data. A wrong number sends the sale to the wrong set in the CRM (Meta attribution is unaffected).
+- The double `&&` before `utm_campaign` is in the live string; leave it, it is how every ad has run since September.
+- Rule for any new ad or ad set: copy this string exactly and change only the `adGroupID` to the set's own CRM id. A new ad set needs its CRM `#ID` from Anant (eTeacher) before it exists; the name pattern is `ecomm_Adset_0N_All_All_CPM_#<ID>`. Set 6 (`52668330871028`, #108818) already exists as an empty paused shell with its id.
+- Known mismatches today (VERIFIED, not fixed, no one authorised a fix): set 3 Ad#12 (`52670183445628`) carries `adGroupID=108813` (set 1's id) → its 3 sales are credited to set 1 in the CRM; set 5's paused copies `52670177531628` and `52670187364628` carry 108813 too. Fixing a url_tag is an ad edit and sends the ad to review (ASSUMED on review; VERIFIED that it is an edit).
+- Landing link on every ad: `https://www.longevitylifeacademy.com/julie-masterclass/?preview=zoom-l…` (the proven page). Do not point ads at `longevitylifeacademy.pages.dev` or any other host: the tracking code sends nothing from any host other than `www.longevitylifeacademy.com` on path `/julie-masterclass/` (see Part 3).
+
+**Part 2 — GOLDEN pixel and the Meta Purchase chain (`assets/julie-meta-tracking.js`, release `julie-meta-20260927-4`):**
+- One pixel/dataset only: `1440305917310328`. The code refuses to init a second pixel id (logs DUPLICATE_PIXEL_ID).
+- Events: PageView, ViewContent, AddToCart (plan chosen), InitiateCheckout (order created), Purchase (only after confirmed payment, numeric value 49 or 79, currency USD). Custom events: Enroll_CTA_Click, Clicked_on_Enroll, etc.
+- Every browser event has a server twin with the **same `event_id`** (browser `eventID` === server `event_id`); Purchase `event_id` = the eTeacher order id. This is what makes Events Manager show exact browser/server pairs (4/4, 8/8, 12/12, 3/3, 2/2 on 5–9 Oct). If pairs stop matching, dedup is broken.
+- Match keys sent: `_fbp`, `_fbc` (built from `fbclid` when the cookie is missing, persisted 90 days on `longevitylifeacademy.com`), hashed email/phone/name when known, client IP + user agent via the relay.
+- Protected files: `assets/julie-meta-tracking.js`, `assets/julie-attribution.js`, the pixel gate in `index.html`. Today's publish (§6) touched neither; `git diff 6e795f4..058c1f0 --stat` shows only `assets/julie-payment-safety.js` and `assets/lla-logo-header.webp`.
+
+**Part 3 — Test exclusion (what keeps QA out of the numbers):**
+- `?qa=1` or `?llatest=1` in the URL, `?env=staging`, or any URL whose host/path is not exactly `https://www.longevitylifeacademy.com/julie-masterclass/` → mode `off`: no pixel, no server event, and the relay additionally refuses `qa=1` (`qa_excluded`). All QA orders in §10 were created this way.
+- `?meta_test=TESTnnnnn` → server copies only, flagged with that `test_event_code`, no pixel; shows in Events Manager → Test events, never in reporting.
+
+## 3B. CAPI (Conversions API) — how it runs here and what was checked (VERIFIED unless noted)
+
+- Path: page → `POST https://lla-ac-events.vercel.app/api/meta/capi` (Vercel project `lla-ac-events`, prj_3v7g4Xwve6OmXrcPCVQOWJOiN2SK) → Meta Graph API for dataset 1440305917310328. The relay adds client IP / user agent, forwards `event_id`, `event_source_url`, `action_source=website`.
+- Reliability: client sends once plus up to 2 retries on 5xx/429/no response, **same event_id** (no duplicates). Purchase confirmations are stored in sessionStorage so a reload never re-sends a Purchase.
+- Daily volumes browser / server (pixel stats endpoint): 1 Oct 928/1,862 · 3 Oct 595/2,262 · 4 Oct 714/2,291 · 5 Oct 847/881 · 6 Oct 891/789 · 7 Oct 835/769 · 8 Oct 861/840 · 9 Oct ≈1:1. Until 4 Oct server was 2–4× browser (two server senders); from 5 Oct one sender, 1:1. Which second sender went silent on 4 Oct is **not identified** (ASSUMED: an older relay or GTM server tag). Sales after it: 4, 8, 11–12 per day, so it is not the 8 Oct cause.
+- Events Manager notice 4 Oct 14:10 "This dataset is no longer using the Conversions API": contradicted by the server-event counts above for every later day. ASSUMED explanation: the notice refers to the silenced second source. Not confirmed with Meta.
+- Events Manager warning "Low fbp coverage through Conversions API": fbp 64.5% on PageView, 71% on ViewContent, 93–100% on enroll clicks, AddToCart, InitiateCheckout, Purchase. Purchase 100%. ASSUMED cause: server copy of page-load events fires before `_fbp` exists. Cosmetic for sales.
+- Dedup: Purchase, AddToCart, InitiateCheckout pairs exact every day 5–9 Oct (see §4).
+- Event Match Quality score: **NOT READ** this session (endpoint not queried). Test Events with a `meta_test` code: **NOT RUN** this session. A live paid Purchase through the chain: **NOT RUN** this session. These three rows of the verification matrix are open.
+- Relay runtime logs on Vercel: 403 for the token available; not read. Cloudflare worker `eteacher-leads-proxy` metrics: not read (wrong credential type).
 
 ## 4. Events Manager / pixel checks (VERIFIED, pixel stats endpoint, Israel days)
 
