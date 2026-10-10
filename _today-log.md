@@ -861,3 +861,6 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Not changed: payment methods (Google Pay kept per Omri 2026-09-24), validation, tracking (pixel/CAPI/url_tags), prices, order flow, index.html.
 - Proof: WebKit iPhone 14 + SE (FB iOS 582 UA) on the live domain, QA orders (qa=1, Meta events off): card entry ready, Pay button rgb(0,110,255) 52px inside 453px frame, save-card unchecked, logo 1314x596. Pre-existing third-party script error unchanged.
 - Rollback: git revert 058c1f0 86a4751 on main (Pages cache 600 s).
+
+## 2026-10-10 17:45 Israel — Master handover for tool replacement (private)
+- New private repo gitteromri-ux/handover-instinct-grok @ ceff83f: MASTER-HANDOVER-2026-10-10.md + rules/ copies + tracking-freeze + 9 Oct handover + today-log snapshot. Kept private (contains contacts and account detail). No live system changed. Rollback: delete the repo.
