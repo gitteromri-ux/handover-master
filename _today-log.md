@@ -864,3 +864,4 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 
 ## 2026-10-10 17:45 Israel — Master handover for tool replacement (private)
 - New private repo gitteromri-ux/handover-instinct-grok @ ceff83f: MASTER-HANDOVER-2026-10-10.md + rules/ copies + tracking-freeze + 9 Oct handover + today-log snapshot. Kept private (contains contacts and account detail). No live system changed. Rollback: delete the repo.
+- 17:35: handover-instinct-grok made PUBLIC on Omri's explicit approval; entry files INSTINCT.md and GROKBOT.md added @ ae28614. Raw URLs verified 200, anonymous clone OK.
