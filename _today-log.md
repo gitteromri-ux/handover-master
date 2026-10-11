@@ -867,3 +867,10 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - 17:35: handover-instinct-grok made PUBLIC on Omri's explicit approval; entry files INSTINCT.md and GROKBOT.md added @ ae28614. Raw URLs verified 200, anonymous clone OK.
 - 18:10: handover-instinct-grok @ 5838196: added GAPS.md (gap register + 48h checklist), snapshots/meta-2026-10-10/ACTIVE-AD-COPY.md, VERCEL-PROJECTS.md (52), rules/design/; master corrected: second live session 14 Nov 2026 1 PM ET, set 5 budget $619 at 17:40. Operator memory pages + raw Meta JSON held back (not published).
 - 22:55: GitHub lockout workaround (Omri approved "all active repos"): WRITE deploy keys registered on 94 gitteromri-ux repos + private mirrors gitteromri-ux/julie-masterclass-live (058c1f0) and lla-site-live (d60cb69); private keys only in Omri's Drive folder "PRIVATE — GitHub deploy keys 2026-10-10". Org repos refused (deploy keys disabled by org policy); no workflow added, no live site changed. Rollback: delete keys at <repo>/settings/keys.
+
+## 2026-10-11 12:35 IDT — Meta read-only API access for Instinct (VERIFIED)
+- Registered gitter.omri@gmail.com as Meta developer; created app "Instinct Reader" (1787156302401260, Marketing API use case, no BM attached — BM attach required 2FA).
+- Generated user token via Graph API Explorer (scope ads_read), extended to 60 days via Access Token Debugger. Expires 2026-12-10 09:32 UTC.
+- Verified: /me, act_1459085242361281/campaigns, insights on act_1459085242361281 / act_1188017096669618 / act_1358975119724184.
+- Token stored ONLY in private Drive: folder 1Vx00vP9kIJyzYm0FHtmsEXSzk7nfa4HN, file META-TOKEN-FOR-INSTINCT.md (id 1qyhzjvx23IjGn-igTOle719CzzDcDUNT). Not in any repo.
+- Rollback: developers.facebook.com/apps/1787156302401260 → delete app (invalidates token).
