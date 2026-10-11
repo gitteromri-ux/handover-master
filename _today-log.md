@@ -874,3 +874,8 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Verified: /me, act_1459085242361281/campaigns, insights on act_1459085242361281 / act_1188017096669618 / act_1358975119724184.
 - Token stored ONLY in private Drive: folder 1Vx00vP9kIJyzYm0FHtmsEXSzk7nfa4HN, file META-TOKEN-FOR-INSTINCT.md (id 1qyhzjvx23IjGn-igTOle719CzzDcDUNT). Not in any repo.
 - Rollback: developers.facebook.com/apps/1787156302401260 → delete app (invalidates token).
+
+## 2026-10-11 14:10 IDT — Purchase-check method handed to Grok Bot/Instinct (VERIFIED)
+- Created Cloudflare API token "GrokBot logs read 2026-10-11" (Workers Observability: Read only) in Omri's logged-in Cloudflare session; verified query on eteacher-leads-proxy returns events. Stored ONLY in private Drive folder 1Vx00vP9kIJyzYm0FHtmsEXSzk7nfa4HN as CLOUDFLARE-LOGS-TOKEN-FOR-GROKBOT.md (13VYe_XSNE1wZMWLf8LH2lYcIavJLLci4). Revoke: dash.cloudflare.com/profile/api-tokens.
+- Method file PURCHASE-CHECK-METHOD.md (10pFlPpGnLvBiQi8UO9iwLbNaZfWN-a2i) in the same folder: Worker log (payments/crm 202 = paid order) + Meta adset insights + Events Manager fallback + reporting rules. Kept out of the public repos (contains infra ids).
+- Live read 11 Oct 14:05: Worker shows paid orders 12:27 Norfolk VA and 13:18 Morristown NJ (both iPhone, masterclass); Meta credited 5 today (set01 2, set03 1, set05 2).
