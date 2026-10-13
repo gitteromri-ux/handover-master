@@ -887,3 +887,9 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Vercel review site `french-atelier-onboarding.vercel.app` still serves old build (project not visible to connected Vercel token; 403 on create). GitHub is the source of truth.
 - Also observed: `french-atelier-lifecycle-emails` uses `pricing.html#enroll-online`; that anchor does not exist on the live pricing page (only `#talk-to-advisor`). Domain is correct; anchor is dead (lands at top of page).
 - 19:58 `french-atelier` main `1f59f17`: index.html <head> only — canonical, og:url, Organization/WebSite JSON-LD (user-approved; invisible). Backup tag `backup/20261013-seo-head`. Verified live: 2 JSON-LD blocks, valid JSON. Automation created: daily 09:00 Asia/Jerusalem old-site watch (livefrenchatelier.com), notifies only when it goes down. Facebook Pages connector: re-auth loop on page 61577106456673, and it cannot edit the page Website field anyway — not used.
+
+## 2026-10-13 · Julie Masterclass blast emails (new repo)
+- Repo: gitteromri-ux/julie-masterclass-blast (public, Pages on master). Commit 251e5c3.
+- What: 7 install-ready AC one-time emails: LLA leads promo; IIBS alumni / incomplete / leads; Rosen alumni / incomplete / leads. Same shell as lla-masterclass-emails-3tier; school header uses official IIBS/Rosen "By eTeacher" logos. Facts from live Julie page 13 Oct (two dates, $49/$79, $249 Blueprint credit, 14-day refund).
+- Gallery: https://gitteromri-ux.github.io/julie-masterclass-blast/
+- Production impact: none (no live system touched). Rollback: delete repo/Pages.
