@@ -893,3 +893,11 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - What: 7 install-ready AC one-time emails: LLA leads promo; IIBS alumni / incomplete / leads; Rosen alumni / incomplete / leads. Same shell as lla-masterclass-emails-3tier; school header uses official IIBS/Rosen "By eTeacher" logos. Facts from live Julie page 13 Oct (two dates, $49/$79, $249 Blueprint credit, 14-day refund).
 - Gallery: https://gitteromri-ux.github.io/julie-masterclass-blast/
 - Production impact: none (no live system touched). Rollback: delete repo/Pages.
+
+## 2026-10-14 01:27 IDT — Julie page: phone layout layer (Omri: "go live")
+- Repo `Longevity-Academy/julie-masterclass`, merge commit `8151806` (branch `change/20261014-mobile`, pushed), live on GitHub Pages 01:27:50 IDT.
+- Files: `assets/julie-mobile.css` (new, 220 lines, all inside `@media (max-width:760px)`), `assets/film/julie-film-poster-m.jpg` (new, 46KB), `index.html` (+4/-2 lines: one `<link>` for the stylesheet; `__phone` flag that skips Lenis and GSAP under 760px).
+- GOLDEN CAPI: `julie-meta-tracking.js`, `julie-attribution.js`, `julie-international-checkout.js`, `julie-premium-routing.js`, `julie-payment-safety.js` byte-identical to pre-merge main. Pixel base code, `connect.facebook.net`, `fbq('track')` and all 4 `LLA_META.track` call sites identical (line content diff empty). Guard live 10/12 PASS, same two pre-existing FAILs as before the merge (index.html and payment-safety.js hashes from the approved 9 Oct publish; golden.json not updated since 28 Sep).
+- Live check 01:29 IDT (iPhone UA, in-app): `LLA_META.mode()==='live'`, PageView to facebook.com/tr with id 1440305917310328: 1, relay POST 200 x2, no page errors, Lenis off on phone, page height 7,763px (was 18,086).
+- Desktop untouched (all rules under the 760px media query). Meta campaign, ads, url_tags, relay: untouched.
+- Rollback: `git revert -m 1 8151806 && git push origin main`.
