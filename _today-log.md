@@ -922,3 +922,9 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 ## 2026-10-20 13:45 IDT — FA price display + ProductID 25 finding
 - french-atelier main: checkout shows CRM list + % off (course $1,235 → $799, 35%; capsule $500 → $297, 41%); fixed plan line "4 × $200 / 45%" → "3 × $200 / 35%". Rollback: git revert HEAD.
 - Staging proof (same French course 255/1770, same payload): ProductID 26 → CRM takes website price ($199 today, $799 total); ProductID 25 → CRM ignores it, fixed $89 + 4×$199 = $885 on every course incl. capsules. DiscountPercent field is ignored on both. Needs eTeacher to enable website-price override on ProductID 25.
+
+## 2026-10-20 14:40 IDT — FA course e-commerce LIVE on CRM plan; capsules blocked by ProductID 25 CRM config
+- french-atelier main 9e18981: hidden course LP + checkout now $89 today + 4×$199 = $885 (28% off $1,235) = the CRM's fixed e-commerce plan for ProductID 25. Homepage/other pages untouched. Rollback: git revert 9e18981.
+- Relay prod dpl_5MKWHx75sUWYkfZBvZ3LQyBycSRt (PLANS value 89). Rollback: promote dpl_CScnEfKhxb2sZ6i39qasj3pQoBQH.
+- PROOF real production order: Order 8056277 / Student 11676701 / PaymentID 64612556 / Beginner 255-1770 / Airwallex intent $89 = page amount → card form mounted (not charged). AC stage FA_Abandoned_Cart_No_Payment posted (AC field FA_checkout_events still missing → not written).
+- Staging CRM probes (28 ProductIDs): every ProductID except 25 applies list price + DiscountPercent/FirstPayment plan (e.g. capsule $500 → 40% → $300). ProductID 25 alone returns fixed $89 + 4×$199 = $885 for every course incl. capsules, regardless of FirstPayment/NumberOfPayments/LeftToPay/DiscountPercent/IsTrial/IsAcademic/country. DiscountPercent (where honored) overrides the installment plan and charges the full discounted price at once → not used.
