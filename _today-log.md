@@ -912,3 +912,9 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Repo gitteromri-ux/french-atelier main 19250aa: js/fa-meta-tracking.js (1:1 port of julie-meta-tracking.js, pixel 4075596186030950, ids fa_pv_/fa_vc_/fa_atc_/fa_ic_<orderid>/Purchase=<orderid>), FA_AC client (stages FA_Abandoned_Cart_Name_Details / _Course_Details / _No_Payment, payload = Julie fields, productEvent Regular/VIP/Capsules), no AC write on payment. Only the 3 hidden LPs load these files. Rollback: git revert 19250aa.
 - Relay source (not deployed to production yet, needs owner YES): projects/french-atelier-golden-relay/ (api/meta/capi.js + lib/fa-capi.js, api/ac/event.js, api/ecomm.js gateway mode).
 - Longevity/Julie untouched (frozen until 2026-10-26).
+
+## 2026-10-20 13:20 IDT — FA relay production + CRM IDs (owner YES 13:04)
+- Vercel fa-leads-proxy production: dpl_CScnEfKhxb2sZ6i39qasj3pQoBQH (rollback: promote dpl_DgtqCgtqQLpzs6gwaCfJKpKKMBYk). Env added (production only): FA_PROD_GATEWAY=eteacher-leads-proxy worker, FA_AC_API_KEY (eTeacher AC key, verified 200), FA_META_PIXEL_ID=4075596186030950. FA_META_CAPI_TOKEN NOT set: LLA token returns (#100) Missing Permission on pixel 4075596186030950.
+- french-atelier main 7fdb96a: real MainAbroadCourseIds read back from CRM (Foundation 254/1768, Beginner 255/1770, Elementary 256/1772, Intermediate 257/1773, Fashion&Art 267/1798, Gastronomy&Wine 270/1807, Cinema&Music 269/1806). Dropdown numbers are AbroadCourseIds.
+- Real production order: Order 8056259 / Student 11676664 / MAC 255 Beginner (gitter.omri@gmail.com, not charged). CRM returned fixed plan $89 today + 4x$199 = $885 for every FA order regardless of course or FirstPayment (staging same, capsules too) -> site guard refused payment (PAYMENT_PLAN_MISMATCH) and saved lead via /leads/production.
+- AC: no FA_* fields exist in eteachergroup AC -> /api/ac/event returns field_missing, writes nothing.
