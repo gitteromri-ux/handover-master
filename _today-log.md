@@ -901,3 +901,9 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Live check 01:29 IDT (iPhone UA, in-app): `LLA_META.mode()==='live'`, PageView to facebook.com/tr with id 1440305917310328: 1, relay POST 200 x2, no page errors, Lenis off on phone, page height 7,763px (was 18,086).
 - Desktop untouched (all rules under the 760px media query). Meta campaign, ads, url_tags, relay: untouched.
 - Rollback: `git revert -m 1 8151806 && git push origin main`.
+
+## 2026-10-20 — French Atelier hidden e-commerce LPs (gitteromri-ux/french-atelier, main)
+- Commits 4aea60b + b4b4b3f: NEW files only (no existing page changed): french-course-enroll.html, culture-capsules-enroll.html, enroll-checkout.html (noindex, unlinked), js/fa-checkout*.js, css/fa-*.css, assets.
+- FA pixel 4075596186030950 (ETeacher Group; the pixel FA v2 Sales ad sets optimise on). Card + PayPal only. Capsule CRM ids (1798/1807/1806, campus 4204, semesters 2268/2381) and level AbroadCourseIDs (1768/1770/1772/1773) in config.
+- Production orders: still reserve mode (lead ProductID 25). Waiting: user approval for eTeacher gateway/AC key/CAPI token reuse + fa-leads-proxy production deploy (preview dpl_CuKnXcSyMSZjtkrsGcXnR9wtJiAy built), MainAbroadCourseId, CRM price plan ($801 site vs $988 CRM).
+- Rollback: git revert b4b4b3f 4aea60b on main.
