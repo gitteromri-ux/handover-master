@@ -1,0 +1,48 @@
+{
+  "rewrites": [
+    {
+      "source": "/leads/:env",
+      "destination": "/api/leads?env=:env"
+    },
+    {
+      "source": "/leads",
+      "destination": "/api/leads"
+    },
+    {
+      "source": "/staging/api/lead/ecomm",
+      "destination": "/api/ecomm?env=staging&route=lead/ecomm"
+    },
+    {
+      "source": "/staging/api/checkout/details",
+      "destination": "/api/ecomm?env=staging&route=checkout/details"
+    },
+    {
+      "source": "/staging/api/checkout/payments/crm",
+      "destination": "/api/ecomm?env=staging&route=checkout/payments/crm"
+    },
+    {
+      "source": "/api/lead/ecomm",
+      "destination": "/api/ecomm?env=production&route=lead/ecomm"
+    },
+    {
+      "source": "/api/checkout/details",
+      "destination": "/api/ecomm?env=production&route=checkout/details"
+    },
+    {
+      "source": "/api/checkout/payments/crm",
+      "destination": "/api/ecomm?env=production&route=checkout/payments/crm"
+    },
+    {
+      "source": "/api/ecomm/health",
+      "destination": "/api/ecomm"
+    },
+    {
+      "source": "/api/meta/capi",
+      "destination": "/api/meta/capi"
+    },
+    {
+      "source": "/api/ac/event",
+      "destination": "/api/ac/event"
+    }
+  ]
+}

@@ -907,3 +907,8 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - FA pixel 4075596186030950 (ETeacher Group; the pixel FA v2 Sales ad sets optimise on). Card + PayPal only. Capsule CRM ids (1798/1807/1806, campus 4204, semesters 2268/2381) and level AbroadCourseIDs (1768/1770/1772/1773) in config.
 - Production orders: still reserve mode (lead ProductID 25). Waiting: user approval for eTeacher gateway/AC key/CAPI token reuse + fa-leads-proxy production deploy (preview dpl_CuKnXcSyMSZjtkrsGcXnR9wtJiAy built), MainAbroadCourseId, CRM price plan ($801 site vs $988 CRM).
 - Rollback: git revert b4b4b3f 4aea60b on main.
+
+## 2026-10-20 — French Atelier golden tracking (FA naming, Julie format)
+- Repo gitteromri-ux/french-atelier main 19250aa: js/fa-meta-tracking.js (1:1 port of julie-meta-tracking.js, pixel 4075596186030950, ids fa_pv_/fa_vc_/fa_atc_/fa_ic_<orderid>/Purchase=<orderid>), FA_AC client (stages FA_Abandoned_Cart_Name_Details / _Course_Details / _No_Payment, payload = Julie fields, productEvent Regular/VIP/Capsules), no AC write on payment. Only the 3 hidden LPs load these files. Rollback: git revert 19250aa.
+- Relay source (not deployed to production yet, needs owner YES): projects/french-atelier-golden-relay/ (api/meta/capi.js + lib/fa-capi.js, api/ac/event.js, api/ecomm.js gateway mode).
+- Longevity/Julie untouched (frozen until 2026-10-26).
