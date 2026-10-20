@@ -918,3 +918,7 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - french-atelier main 7fdb96a: real MainAbroadCourseIds read back from CRM (Foundation 254/1768, Beginner 255/1770, Elementary 256/1772, Intermediate 257/1773, Fashion&Art 267/1798, Gastronomy&Wine 270/1807, Cinema&Music 269/1806). Dropdown numbers are AbroadCourseIds.
 - Real production order: Order 8056259 / Student 11676664 / MAC 255 Beginner (gitter.omri@gmail.com, not charged). CRM returned fixed plan $89 today + 4x$199 = $885 for every FA order regardless of course or FirstPayment (staging same, capsules too) -> site guard refused payment (PAYMENT_PLAN_MISMATCH) and saved lead via /leads/production.
 - AC: no FA_* fields exist in eteachergroup AC -> /api/ac/event returns field_missing, writes nothing.
+
+## 2026-10-20 13:45 IDT — FA price display + ProductID 25 finding
+- french-atelier main: checkout shows CRM list + % off (course $1,235 → $799, 35%; capsule $500 → $297, 41%); fixed plan line "4 × $200 / 45%" → "3 × $200 / 35%". Rollback: git revert HEAD.
+- Staging proof (same French course 255/1770, same payload): ProductID 26 → CRM takes website price ($199 today, $799 total); ProductID 25 → CRM ignores it, fixed $89 + 4×$199 = $885 on every course incl. capsules. DiscountPercent field is ignored on both. Needs eTeacher to enable website-price override on ProductID 25.
