@@ -941,3 +941,14 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Not changed (out of scope, flag for Keren): LLA checkout error copy still shows advisor@longevitylifeacademy.com + +1-888-230-5110 (checkout.html, checkout/index.html, blueprint/checkout.html).
 - 2026-11-04: refer-a-friend.html updated → form = LLA referral fields (first/last/email/country select/mobile), advisor-form style, no referrer fields; steps redesigned. Rollback: git revert .
 - `Longevity-Academy/Longevity-Academy.github.io` main `f79cd07` — contacts sweep: 888-230-5110 → WhatsApp +1 (202) 949-4750 in checkout.html, checkout/index.html, blueprint/checkout.html, store/longevity-blueprint/checkout.html (header + payment-error message) and homepage November refund note; cancellation.html + refer-a-friend → service@eteachergroup.com. 10 text lines, 0 script/tracking lines; fbq counts identical before/after. advisor@longevitylifeacademy.com (pre-payment fallbacks) intentionally left pending sales-inbox confirmation. Rollback: `git push origin backup/20261104-contacts-pre:main`.
+
+## 2026-11-04 23:20 Israel — Tracking release completed (session 628adde3; picks up where 8d24d02d stopped)
+
+Live, verified in this session (browser+server pairs captured with Pixel/relay/CRM calls intercepted, no CRM records, no live Meta events; only 4 test-code events to Test Events):
+
+- **Relay lla-ac-events** prod `dpl_FXciptkkz1ZnUJ4zmDPELN7cwiTm` (x-lla-release `addpaymentinfo-20261104`, Julie `julie-strict-20261104-1`). AddPaymentInfo accepted on all three routes; commerce server copies now carry content_ids/content_type/contents. Rollback: promote `dpl_CxigvWKEY6ynmoMBdEHKk7cG3Sfx`.
+- **Longevity-Academy.github.io `55e55ef`** (www.longevitylifeacademy.com): new `assets/lla-funnel.js` — AddToCart (screen-1 Continue) + InitiateCheckout (before /checkout.html), paired event_id, em/ph/fn/ln, fbc/fbp, $79; tester-email device flag; checkout.html paired PageView + AddPaymentInfo `lla_api_<orderid>`; eteacher-ecomm.js source-aware campaign fallback (port of pages.dev 8972591). Rollback: revert 55e55ef.
+- **lla-course-checkout `0337f55`** → Cloudflare Pages deployment `cc61cad2-d2f8-42c9-b15e-b0dc7b316507` (direct upload): AddPaymentInfo on /checkout and /blueprint/checkout. Rollback: Pages dashboard → rollback to 6042e039.
+- **julie-masterclass `97168c7`**: Airwallex.init `.catch` crash fixed (Promise.resolve), AddPaymentInfo `julie_api_<orderid>` (card-iframe focus / PayPal createOrder), tracking asset cache-bust. Purchase/ATC/IC untouched. Rollback: revert 97168c7.
+
+Known, not fixable here: pixel 1440305917310328 shows 3 Purchase events in the 20:00–21:00 Israel hour of 2026-11-04 (server-only, from the previous session's relay tests). Meta does not allow deleting events; Nov 4 Purchase count is inflated by 3.
