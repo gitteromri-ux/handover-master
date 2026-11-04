@@ -928,3 +928,9 @@ Harel (07:31): store package done; outstanding from us: `longevitylifeacademy.co
 - Relay prod dpl_5MKWHx75sUWYkfZBvZ3LQyBycSRt (PLANS value 89). Rollback: promote dpl_CScnEfKhxb2sZ6i39qasj3pQoBQH.
 - PROOF real production order: Order 8056277 / Student 11676701 / PaymentID 64612556 / Beginner 255-1770 / Airwallex intent $89 = page amount → card form mounted (not charged). AC stage FA_Abandoned_Cart_No_Payment posted (AC field FA_checkout_events still missing → not written).
 - Staging CRM probes (28 ProductIDs): every ProductID except 25 applies list price + DiscountPercent/FirstPayment plan (e.g. capsule $500 → 40% → $300). ProductID 25 alone returns fixed $89 + 4×$199 = $885 for every course incl. capsules, regardless of FirstPayment/NumberOfPayments/LeftToPay/DiscountPercent/IsTrial/IsAcademic/country. DiscountPercent (where honored) overrides the installment plan and charges the full discounted price at once → not used.
+
+## 2026-11-04 — French Atelier: hidden Refer-a-Friend LP (new site)
+- Repo gitteromri-ux/french-atelier main `b25c25d` → https://www.frenchatelierlive.com/refer-a-friend.html (HTTP 200 verified). noindex/nofollow, not in nav or sitemap; link-only.
+- Text copied verbatim from https://livefrenchatelier.com/refer-a-friend/ (old WordPress site; its form is gone from the page). Form = the site's working lead form handler (js/eteacher-leads.js → fa-leads-proxy.vercel.app/leads/production, ProductID 25). Friend = lead; referrer name/email → AdminNotes "Source: Refer-a-Friend LP | Referred by: …". Verified locally with an intercepted request (payload captured, success state shown); no production lead created.
+- Context gap: the original FA refer-a-friend form thread was not found in memory/GitHub; the LLA refer-a-friend form (friend fields only + AdminNotes source) was the closest reference.
+- Rollback: `git revert b25c25d` (one new file, nothing else touched).
