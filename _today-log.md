@@ -1038,3 +1038,7 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - Method: POST per lead to the eTeacher Leads API production endpoint (same endpoint the website relay uses), documented fields only + ProductID 25. State, both filter answers, Meta lead ID, campaign/ad set/ad go in AdminNotes and DynamicParameters (the API has no fields for them). CampaignID 116981/117510 taken from the Meta campaign-name suffix (ASSUMED eTeacher campaign number; confirm in CRM).
 - Result: 124/124 accepted with HTTP 200 (queued). Canary 1 lead 13:50, remaining 123 13:52–13:54. Ledger with Meta lead IDs kept offline (contains PII, not in this repo); no lead sent twice; zero duplicate emails in the set; eTeacher dedups by email.
 - Root cause status: our Worker, relay, site and ad sets VERIFIED unchanged on the lead path; remaining location is eTeacher's Meta Lead Ads → CRM connector (Page admin only, ETeacher Group LTD BM). No Business Manager changes made.
+
+## 2026-11-05 16:26 Israel — French Atelier Meta lead backfill, batch 2 (LIVE, approved by Omri: "push")
+- 9 leads created 05/11 14:18–15:55 Israel (7 × #116981, 2 × #117510) sent to the eTeacher Leads API, same fields/endpoint as batch 1; 9/9 HTTP 200. One lead has a +52 phone → CountryIsoCode MX.
+- Running total pushed since Meta→CRM delivery stopped: 133/133, 0 failed. Ledger offline (PII). Meta→Make delivery still not restored; nothing changed in Business Manager.
