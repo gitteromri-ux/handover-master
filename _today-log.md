@@ -1024,3 +1024,8 @@ Known, not fixable here: pixel 1440305917310328 shows 3 Purchase events in the 2
 - Finding (VERIFIED via document.fonts): the site loads Codec Pro only as Regular 400 (+400 italic) from fonts.cdnfonts.com; every "Codec Pro 700" on the site is browser-synthesised faux bold. Phone hero h1/accent now use the real Regular face (font-weight:400; font-synthesis:none), clamp(34px,9.9vw,44px), 3 lines at 320–430px, accent nowrap; Trustpilot pill text → Inter (was Playfair italic). Desktop unchanged (Playfair italic hero).
 - Open: section h2s/cards on phone still inherit the site's "Codec Pro 700" faux bold (same as desktop). Not changed — needs Omri's call.
 - VERIFIED: live / md5 e231ebbf == dist; v2 css 66f78d8b match; /checkout 5f0c3466; formdiff 0/499; prod tracking pixel + fbevents + tr + CAPI fire.
+
+## 2026-11-05 09:50 — LIVE: hero size + spacing (lla-course-checkout 8921037, CF prod 46c780ba)
+- Phone headline: same text, 4 controlled lines ("Build your / personal longevity / protocol in / 18 live classes.") via lla-mobile-v2.js heroH1 (inserts <br class="v2-br">, MutationObserver because copy scripts re-apply until 2.5s). clamp(36px,10.2vw,44px) Codec Pro Regular; 3-line/36px version replaced because Omri said too small.
+- Hero block now vertically centred below nav with rhythm: pill→22px→h1→20px→sub(21px)→30px→CTA→14px→coupon; bottom 34px; scrim extended up the full block. ≤700px-tall tier tightens gaps so CTA + coupon stay on the first screen (iPhone 14 Safari viewport checked).
+- VERIFIED: live / md5 21caf00e == dist; v2 css 896caef4 / js 4cf7af01 match; /checkout 5f0c3466; formdiff 0/499; prod tracking pixel + fbevents + tr + CAPI fire.
