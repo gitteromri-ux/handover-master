@@ -1048,3 +1048,6 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-05 21:47 Israel — French Atelier Meta lead backfill, batch 4 (LIVE, approved by Omri: "push")
 - 11 leads created 05/11 17:25–21:35 Israel sent to the eTeacher Leads API, same fields/endpoint; 11/11 HTTP 200. Running total 149/149, 0 failed. Automatic Meta→CRM delivery still down.
+
+## 2026-11-05 23:59 Israel — French Atelier Meta lead backfill, batch 5 (LIVE, approved by Omri: "push")
+- 7 leads created 05/11 21:50–23:43 Israel sent to the eTeacher Leads API; 7/7 HTTP 200. Running total 156/156, 0 failed. Automatic Meta→CRM delivery still down.
