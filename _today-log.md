@@ -1032,3 +1032,9 @@ Known, not fixable here: pixel 1440305917310328 shows 3 Purchase events in the 2
 
 ## 2026-11-05 10:05 — Tracking audit (no production change)
 Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CAPI with identical event_ids and Meta events_received=1 on every call, fbc/fbp byte-exact, checkout card form mounted on 360px Android, .com + Julie page pixel/CAPI firing, GA4/Ads firing, CRM request carries cid/adGroupID/fbclid/utm. Open: real paid Purchase trace, Events Manager dedup/EMQ view (need Omri's login or a real order). Test CRM record stid 11690336 / order 8072727 to delete.
+
+## 2026-11-05 13:50–13:54 Israel — French Atelier Meta lead backfill to eTeacher CRM (LIVE, approved by Omri: "push")
+- Scope: 124 Meta instant-form leads (form 1008080345425102, campaigns #116981 = 89 leads, #117510 = 35) created 2026-11-04 00:00 → 2026-11-05 10:37 Israel that never reached the CRM after Meta→CRM delivery stopped on Nov 4.
+- Method: POST per lead to the eTeacher Leads API production endpoint (same endpoint the website relay uses), documented fields only + ProductID 25. State, both filter answers, Meta lead ID, campaign/ad set/ad go in AdminNotes and DynamicParameters (the API has no fields for them). CampaignID 116981/117510 taken from the Meta campaign-name suffix (ASSUMED eTeacher campaign number; confirm in CRM).
+- Result: 124/124 accepted with HTTP 200 (queued). Canary 1 lead 13:50, remaining 123 13:52–13:54. Ledger with Meta lead IDs kept offline (contains PII, not in this repo); no lead sent twice; zero duplicate emails in the set; eTeacher dedups by email.
+- Root cause status: our Worker, relay, site and ad sets VERIFIED unchanged on the lead path; remaining location is eTeacher's Meta Lead Ads → CRM connector (Page admin only, ETeacher Group LTD BM). No Business Manager changes made.
