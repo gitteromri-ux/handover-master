@@ -45,7 +45,8 @@ Status labels: VERIFIED (checked live 2026-11-05 in this session) / RECORDED (fr
 | Airwallex, eTeacher CRM, ActiveCampaign UI | Omri's logins only. CRM reachable through the lead proxy; AC through the relay |
 If a tool lacks a credential above, the one ask is: "Omri, share the <system> credential from the private Drive handover folder."
 
-## 4. Live Meta structure (VERIFIED 2026-11-05)
+## 4. Live Meta e-commerce structure (VERIFIED 2026-11-05)
+Scope: e-commerce sales only (OUTCOME_SALES campaigns ecomm-01 and ecomm-02).
 Active ecomm ad sets, all OUTCOME_SALES, optimize OFFSITE_CONVERSIONS on pixel 1440305917310328 PURCHASE:
 
 | Ad set ID | Name | Campaign | Daily budget | Attribution | adGroupID in links |
@@ -55,9 +56,8 @@ Active ecomm ad sets, all OUTCOME_SALES, optimize OFFSITE_CONVERSIONS on pixel 1
 | 52668330870828 | ecomm_Adset_04 #108816 | LGV_EN_PPC_ecomm-02 (cid 118149) | $175 | 7d click, 1d view | 108816 OK |
 | 52673824399628 | ecomm_Adset_02 #108814 | ecomm-02 (cid 118149) | $40 | 7d click, 1d view, 1d engaged view | 108814 OK |
 
-Active lead-form ad sets (OUTCOME_LEADS, instant form `1661211004952839`, no website, $95/day each): 52632882695828 (#108775, links say adGroupID 108779), 52596391921628 (#108719, links say 108778), 52596364713228 (#108718, links say 108777). Mismatch is in url_tags only; instant forms do not use the website, so impact is CRM labeling only.
 
-Active ads (17): 52678067285428, 52678067317028, 52670269935428 (set 52669013718628); 52678067260828, 52666266371228 (52666232368428); 52674115544628, 52670065101028 (52668330870828); 52678067343828, 52678067365228 (52673824399628); 8 lead-form ads.
+Active e-commerce ads (9): 52678067285428, 52678067317028, 52670269935428 (set 52669013718628); 52678067260828, 52666266371228 (52666232368428); 52674115544628, 52670065101028 (52668330870828); 52678067343828, 52678067365228 (52673824399628).
 
 URL parameter template on every ecomm ad (VERIFIED):
 `cid=<118148|118149>&adGroupID=<number>&utm_source=Facebook&utm_medium=Topic&utm_campaign={{campaign.id}}&utm_term={{adset.id}}&utm_content={{ad.id}}&creative={{ad.id}}&placement={{placement}}&cq_src=facebook&cq_cmp={{campaign.name}}&cq_con={{ad.name}}&cq_med={{placement}}&cq_net={{site_source_name}}&cq_plt=fp`
@@ -109,7 +109,6 @@ Rollback: `git revert <sha>` then redeploy `dist/` to Pages project `longevityli
 5. Settled real Purchase traced ad click → order → Airwallex → Meta ad set.
 6. Duplicate pixel init warning.
 7. Attribution windows differ: #108810 and #108814 include 1-day engaged view, #108808 and #108816 do not.
-8. Lead-form ad sets carry adGroupID values that differ from their names (108775→108779, 108719→108778, 108718→108777).
 
 ## 9. How to reproduce what a buyer sees
 ```
