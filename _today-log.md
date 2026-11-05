@@ -1019,3 +1019,8 @@ Known, not fixable here: pixel 1440305917310328 shows 3 Purchase events in the 2
 - Original headline text restored on phones ("Build your personal longevity protocol in 18 live classes."), 3 lines at 360–430px via clamp(36px,10.4vw,46px) + text-wrap:balance; ≤340px tier 32px.
 - Root cause of unreadable "18 live classes.": site CSS renders the accent as transparent-fill gradient text + glow filter. On phones it is now solid #9FDCFF Codec Pro 700 (text-fill, no gradient, no filter). Desktop untouched.
 - Sub 21px white. v2 tags ?v=20261105-m7. VERIFIED: live / md5 748568d0 == dist; v2 css c6ff339d / js 55f36296 match; /checkout 5f0c3466 unchanged; formdiff 0 of 499; prod tracking pixel 1440305917310328 + fbevents + facebook.com/tr + CAPI relay fire.
+
+## 2026-11-05 09:25 — LIVE: hero font (lla-course-checkout fadd14a, CF prod 5a4797f7)
+- Finding (VERIFIED via document.fonts): the site loads Codec Pro only as Regular 400 (+400 italic) from fonts.cdnfonts.com; every "Codec Pro 700" on the site is browser-synthesised faux bold. Phone hero h1/accent now use the real Regular face (font-weight:400; font-synthesis:none), clamp(34px,9.9vw,44px), 3 lines at 320–430px, accent nowrap; Trustpilot pill text → Inter (was Playfair italic). Desktop unchanged (Playfair italic hero).
+- Open: section h2s/cards on phone still inherit the site's "Codec Pro 700" faux bold (same as desktop). Not changed — needs Omri's call.
+- VERIFIED: live / md5 e231ebbf == dist; v2 css 66f78d8b match; /checkout 5f0c3466; formdiff 0/499; prod tracking pixel + fbevents + tr + CAPI fire.
