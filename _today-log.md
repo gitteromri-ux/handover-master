@@ -1090,3 +1090,6 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - CRM: orders 8075237 (student 11694107) and 8075238 (student 11694108), ProductID 25, course 267/1798, class 170581, $99 / 2×$99 / $297; one CRM call per buyer (no Step-1 lead). Payment report and AC events captured and NOT sent. Purchase fired via real Drop-In success handler, no charge.
 - Findings: ads 120251286503860546 and 120251368152010546 carry adGroupID=108758 while sitting in ad sets tagged 108757 (CRM attribution only); same buyer in a new session → new StudentID. QA records to exclude: 8075237, 8075238, qa.gitter.audit+20261109b@gmail.com.
 - Artifacts: /home/user/workspace/fa-e2e-20261109 (screenshots + REPORT.md), scripts e2e_iphone.js. No repo or live system changed.
+
+## 2026-11-09 11:26 Israel — French Atelier lead ad sets: daily budgets raised to $599 (LIVE, instructed by Omri "Do it now")
+- act_1358975119724184. #108762 US Specific 45+ FR Culture (120250357351770546) $169 → $599; Charline Video_All_All_CPM_#108772 (120250356710140546) $99 → $599; AdGroup03_All_All_CPM_#108791 (120250235947000546) $99 → $599. Read back from Meta 11:26:18–20. Rollback: `meta ads adset update <id> --daily-budget 16900|9900|9900`. All other ad sets untouched.
