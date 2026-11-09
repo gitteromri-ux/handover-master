@@ -1082,3 +1082,11 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-09 09:13 Israel — French Atelier Meta lead backfill, batch 15 (LIVE, approved by Omri: "Push")
 - 20 leads created 08/11 22:25 – 09/11 08:13 Israel sent to the eTeacher Leads API; 20/20 HTTP 200. Running total 368/368, 0 failed (Nov 4: 79, Nov 5: 77, Nov 6: 110, Nov 7: 43, Nov 8: 43, Nov 9 so far: 16). Automatic Meta→CRM delivery still down.
+
+## 2026-11-09 09:25 Israel — French Atelier Capsules: iPhone end-to-end funnel proof (read-only on code; 2 uncharged QA orders)
+- Entry from ACTIVE ad 120251245184440546 destination (macros resolved + fbclid), iPhone 15 emulation. Gate passed, mode live, release fa-meta-20261024-golden.
+- Pixel 4075596186030950: PageView, FA_OfferShown, ViewContent → PageView, ViewContent, AddToCart, InitiateCheckout, Purchase; fbc exact, fbp present. Pixel requests answered locally (no test data in the live dataset).
+- CAPI via fa-leads-proxy (fa-strict-20261020-2): 7 events/run, meta_status 200, events_received 1 each, test_event_code TEST28311, event_ids identical to pixel.
+- CRM: orders 8075237 (student 11694107) and 8075238 (student 11694108), ProductID 25, course 267/1798, class 170581, $99 / 2×$99 / $297; one CRM call per buyer (no Step-1 lead). Payment report and AC events captured and NOT sent. Purchase fired via real Drop-In success handler, no charge.
+- Findings: ads 120251286503860546 and 120251368152010546 carry adGroupID=108758 while sitting in ad sets tagged 108757 (CRM attribution only); same buyer in a new session → new StudentID. QA records to exclude: 8075237, 8075238, qa.gitter.audit+20261109b@gmail.com.
+- Artifacts: /home/user/workspace/fa-e2e-20261109 (screenshots + REPORT.md), scripts e2e_iphone.js. No repo or live system changed.
