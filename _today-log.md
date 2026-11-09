@@ -1101,3 +1101,10 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - 17 leads created 09/11 10:00–19:00 Israel sent to the eTeacher Leads API; 17/17 HTTP 200. Running total 385/385, 0 failed (Nov 4: 79, Nov 5: 77, Nov 6: 110, Nov 7: 43, Nov 8: 43, Nov 9 so far: 33). Automatic Meta→CRM delivery still down.
 
 - 2026-11-09 20:25 Israel — FA Meta instant-form leads batch 17: 3 leads (17:13–18:15 UTC) pushed to eTeacher Leads API, 3×200, 0 failed. Running total 388 since Nov 4. Ledger: /tmp/push/ledger.json (copy in workspace fa-lead-backfill).
+
+## 2026-11-10 — Culture Capsules hero-only release (LIVE)
+- Repo gitteromri-ux/french-atelier, main 903700a → c102a6b. Files: culture-capsules.html (hero block + 1 CSS link), new css/fa-capsules-hero-20261110.css.
+- Change: hero lead in serif, three-fact row with dividers replaces bullets, price line with large $63, mobile stacked variant. Nothing else on the page touched (pricing cards, syllabus, checkout unchanged).
+- Verified live: https://www.frenchatelierlive.com/culture-capsules.html serves kps-hero-facts3; CSS 200; desktop 1470×780 CTA bottom 688px; iPhone 13 render clean.
+- Rollback: `git revert c102a6b` on main (or restore 903700a).
+- Still on branch fix/capsules-desktop-20261109 (NOT live): compact pricing cards, secure row, syllabus slider — CEO rejected current version; rework pending.
