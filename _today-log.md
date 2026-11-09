@@ -1096,3 +1096,6 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-09 11:32 Israel — LLA lead ad sets: budgets changed (LIVE, instructed by Omri)
 - act_1459085242361281, campaign #116622. LLA Adset 1_All_All_CPM_#108718 (52596364713228) $39 → $199; LLA Adset 2_All_All_CPM_#108719 (52596391921628) $69 → $49; Adset 3 #108775 untouched ($38). Read back 11:32:20–21. Rollback: `meta ads adset update 52596364713228 --daily-budget 3900` / `52596391921628 --daily-budget 6900`.
+
+## 2026-11-09 19:09 Israel — French Atelier Meta lead backfill, batch 16 (LIVE, approved by Omri: "Push")
+- 17 leads created 09/11 10:00–19:00 Israel sent to the eTeacher Leads API; 17/17 HTTP 200. Running total 385/385, 0 failed (Nov 4: 79, Nov 5: 77, Nov 6: 110, Nov 7: 43, Nov 8: 43, Nov 9 so far: 33). Automatic Meta→CRM delivery still down.
