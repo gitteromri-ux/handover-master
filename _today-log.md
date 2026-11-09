@@ -1108,3 +1108,5 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - Verified live: https://www.frenchatelierlive.com/culture-capsules.html serves kps-hero-facts3; CSS 200; desktop 1470×780 CTA bottom 688px; iPhone 13 render clean.
 - Rollback: `git revert c102a6b` on main (or restore 903700a).
 - Still on branch fix/capsules-desktop-20261109 (NOT live): compact pricing cards, secure row, syllabus slider — CEO rejected current version; rework pending.
+
+- 2026-11-10 later: hero-only follow-up ddea13f live (lead + facts larger, price unchanged, CTAs/Trustpilot smaller). Verified live HTML serves v=20261110-h7, desktop CTA bottom 692px at 1470×780. Rollback: revert ddea13f.
