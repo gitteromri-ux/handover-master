@@ -1093,3 +1093,6 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-09 11:26 Israel — French Atelier lead ad sets: daily budgets raised to $599 (LIVE, instructed by Omri "Do it now")
 - act_1358975119724184. #108762 US Specific 45+ FR Culture (120250357351770546) $169 → $599; Charline Video_All_All_CPM_#108772 (120250356710140546) $99 → $599; AdGroup03_All_All_CPM_#108791 (120250235947000546) $99 → $599. Read back from Meta 11:26:18–20. Rollback: `meta ads adset update <id> --daily-budget 16900|9900|9900`. All other ad sets untouched.
+
+## 2026-11-09 11:32 Israel — LLA lead ad sets: budgets changed (LIVE, instructed by Omri)
+- act_1459085242361281, campaign #116622. LLA Adset 1_All_All_CPM_#108718 (52596364713228) $39 → $199; LLA Adset 2_All_All_CPM_#108719 (52596391921628) $69 → $49; Adset 3 #108775 untouched ($38). Read back 11:32:20–21. Rollback: `meta ads adset update 52596364713228 --daily-budget 3900` / `52596391921628 --daily-budget 6900`.
