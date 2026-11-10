@@ -1113,3 +1113,12 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-10 09:30 Israel — French Atelier Meta lead backfill, batch 18 (LIVE, approved by Omri: "Push")
 - FA Meta instant-form leads batch 18: 39 leads (2026-11-09 20:45 → 2026-11-10 07:07 UTC; campaigns #116981 ×30, #117510 ×9) pushed to eTeacher Leads API, 39×200, 0 failed, 0 duplicates (ledger check by Meta lead id). Running total 427 since Nov 4. Ledger: /tmp/push/ledger.json. Same payload builder and field mapping as batches 2–17; no form, site or Meta change.
+
+## 2026-11-10 13:58 IST — French Atelier Capsules: Caitlin Ad #21 soft opening (LIVE)
+- Audio fix: first ~14s of the dramatic violin opening replaced with the soft Charline (Ad #7) music bed, ducked under voice, then crossfaded into the original mix. Voice and video untouched (1080p kit masters, video stream copied).
+- Review page: https://gitteromri-ux.github.io/fa-capsules-launch/caitlin-soft-opening/
+- Ad 120251240267950546 (#108757 Copy): creative 1678219573896794 -> 1476030387789002, set ACTIVE (user-approved)
+- Ad 120251240260910546 (#108758): creative 1093968046679913 -> 1664240998737673, set ACTIVE (user-approved)
+- Rollback: restore the old creative IDs above.
+- Feed "no music" finding: all 80 Capsules videos have audio; square (feed) files have the same audio hash as vertical. The silent feed preview is muted autoplay (tap for sound); it can't be forced via the creative.
+- Open: remix of Stan #22, 8s banners (#2,#5,#12,#13,#18,#19), 12s montage #4 with soft Philippe/Charline-type music; Ad #13 Video + Ad #4 montage (set #108761, ACTIVE) still start with the dramatic ending track.
