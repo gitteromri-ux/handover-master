@@ -1122,3 +1122,6 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - Rollback: restore the old creative IDs above.
 - Feed "no music" finding: all 80 Capsules videos have audio; square (feed) files have the same audio hash as vertical. The silent feed preview is muted autoplay (tap for sound); it can't be forced via the creative.
 - Open: remix of Stan #22, 8s banners (#2,#5,#12,#13,#18,#19), 12s montage #4 with soft Philippe/Charline-type music; Ad #13 Video + Ad #4 montage (set #108761, ACTIVE) still start with the dramatic ending track.
+
+## 2026-11-10 16:00 Israel — French Atelier Meta lead backfill, batch 19 (LIVE, approved by Omri: "Push")
+- FA Meta instant-form leads batch 19: 25 leads (2026-11-10 07:24 → 13:45 UTC; campaigns #116981 ×18, #117510 ×7) pushed to eTeacher Leads API, 25×200, 0 failed, 0 duplicates (ledger check by Meta lead id). Running total 452 since Nov 4. Ledger: /tmp/push/ledger.json. Same builder and mapping as batches 2–18; no form, site or Meta change.
