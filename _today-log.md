@@ -1128,3 +1128,9 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-10 21:15 Israel — French Atelier Meta lead backfill, batch 20 (LIVE, approved by Omri: "Push")
 - FA Meta instant-form leads batch 20: 20 leads (2026-11-10 13:59 → 19:00 UTC; campaigns #116981 ×10, #117510 ×10) pushed to eTeacher Leads API, 20×200, 0 failed, 0 duplicates. 19 US + 1 lead with a French mobile (+33) sent with CountryIsoCode FR (builder mapping added: +33 → FR). Running total 472 since Nov 4. Ledger: /tmp/push/ledger.json. No form, site or Meta change.
+
+## 2026-11-10 23:05 IST — Capsules: Caitlin reverted, dramatic-music ads paused
+- User instruction: put the original, non-bugged Caitlin Presenter back with its original music. Ads 120251240267950546 -> creative 1678219573896794, 120251240260910546 -> 1093968046679913. Both ACTIVE. The soft-opening creatives are no longer used.
+- User approved pausing Ad #13 Video 120251245188500546 and Ad #4 Montage 120251221623680546 (dramatic music from 0s). Set #108761 keeps Ad #6 Philippe 4:5 and Ad #21 Caitlin 4:5.
+- Live ads scan: no other live Capsules ad uses the dramatic-track audio groups (17c78f7fc8fa, b8dd237d93cd, c915a09053de).
+- Open: Ad #21 Caitlin 4:5 native Feed copies 120251436557150546 (#108761) and 120251436553970546 (#108758) are still ACTIVE; the user paused the third copy as bugged.
