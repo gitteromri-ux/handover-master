@@ -1110,3 +1110,6 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - Still on branch fix/capsules-desktop-20261109 (NOT live): compact pricing cards, secure row, syllabus slider — CEO rejected current version; rework pending.
 
 - 2026-11-10 later: hero-only follow-up ddea13f live (lead + facts larger, price unchanged, CTAs/Trustpilot smaller). Verified live HTML serves v=20261110-h7, desktop CTA bottom 692px at 1470×780. Rollback: revert ddea13f.
+
+## 2026-11-10 09:30 Israel — French Atelier Meta lead backfill, batch 18 (LIVE, approved by Omri: "Push")
+- FA Meta instant-form leads batch 18: 39 leads (2026-11-09 20:45 → 2026-11-10 07:07 UTC; campaigns #116981 ×30, #117510 ×9) pushed to eTeacher Leads API, 39×200, 0 failed, 0 duplicates (ledger check by Meta lead id). Running total 427 since Nov 4. Ledger: /tmp/push/ledger.json. Same payload builder and field mapping as batches 2–17; no form, site or Meta change.
