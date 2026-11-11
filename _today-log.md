@@ -1137,3 +1137,10 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-11 10:00 Israel — French Atelier Meta lead backfill, batch 21 (LIVE, approved by Omri: "Push")
 - FA Meta instant-form leads batch 21: 60 leads (2026-11-10 21:39 → 2026-11-11 07:47 UTC; #116981 ×43, #117510 ×16, 1 organic form lead without CampaignID, noted "organic") pushed to eTeacher Leads API, 60×200, 0 failed, 0 duplicates. All US. Builder now tolerates organic leads (no ad/campaign fields) and maps +66 → TH. Running total 532 since Nov 4. Ledger: /tmp/push/ledger.json. No form, site or Meta change.
+
+## 2026-11-11 Israel — French Atelier sales-team lead sweet spot dashboard (PRIVATE repo, not published publicly)
+- New private repo `gitteromri-ux/fa-lead-sweet-spot`, commit 8c4135d. Static site, two tabs: `index.html` (lead sweet spot per day, week and rep-shift, ROI scenarios, golden rule; CRM pivots 1 Mar – 10 Nov 2026) and `rank.html` (cross-check against the data team's Employee Rank scorecard, French only, 1 Jan – 10 Nov 2026).
+- Viewable as a private Perplexity site preview from the task thread. No GitHub Pages: a public repo was not created because the pages hold internal CRM data (rep names, revenue, media cost). Public Pages needs Omri's explicit go-ahead.
+- `gitteromri-ux/callcenter-kpi-dashboard` used as design reference only. Not modified.
+- Open with the data team: SOV, calls and week-number definitions differ between the scorecard and the CRM export; scorecard PDF is cut off after rank 2.
+- Rollback: delete repo `gitteromri-ux/fa-lead-sweet-spot`. Nothing else changed.
