@@ -1158,3 +1158,8 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - US Specific #108762 (120250357351770546): $599 -> $698
 - US Specific #108766 (120250357369480546): $295 -> $394
 - Lead-gen total daily budget: $3,121.61 -> $3,049.61. Verified by Graph readback. Snapshot: workspace capifix/snap_leadbudgets_*.json
+
+## 2026-11-11 ~18:10 Israel — Capsules ad set #108758 targeting (approved by Omri, "not women only")
+- Ad set 120251212251230546 (FR Culture interests #108758): age 45–65+ -> 45–64. Genders unchanged (M+W). Interests, income, iPhone, placements, budget $199 unchanged.
+- Tried to turn off Advantage detailed targeting: Meta refused ("targeting_optimization field has been removed"; forced on for purchase-optimized ad sets). Unchanged.
+- Snapshot: workspace capifix/snap_adset_108758_*.json. Readback: age_max 64, status IN_PROCESS.
