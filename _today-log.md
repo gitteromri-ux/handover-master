@@ -1150,3 +1150,11 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 
 ## 2026-11-11 17:45 Israel — French Atelier Meta lead backfill, batch 23 (LIVE, approved by Omri: "Push")
 - FA Meta instant-form leads batch 23: 16 leads (2026-11-11 14:14 → 15:34 UTC; CRM campaign 116981 ×14, 117510 ×2) pushed to eTeacher Leads API, 16×200, 0 failed, 0 duplicates. 15 US + 1 Vietnamese mobile (+84) sent as VN (mapping added). Running total 573 since Nov 4. Ledger: /tmp/push/ledger.json. No form, site or Meta change.
+
+## 2026-11-11 ~18:00 Israel — French lead-gen budget changes (approved by Omri)
+- Charline Video #108772 (120250356710140546): $899 -> $769
+- AdGroup02 #108790 (120250235642210546): $213.23 -> $143.23
+- AdGroup03 #108791 (120250235947000546): $559 -> $489
+- US Specific #108762 (120250357351770546): $599 -> $698
+- US Specific #108766 (120250357369480546): $295 -> $394
+- Lead-gen total daily budget: $3,121.61 -> $3,049.61. Verified by Graph readback. Snapshot: workspace capifix/snap_leadbudgets_*.json
