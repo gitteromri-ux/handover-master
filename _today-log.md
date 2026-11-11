@@ -1144,3 +1144,6 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - `gitteromri-ux/callcenter-kpi-dashboard` used as design reference only. Not modified.
 - Open with the data team: SOV, calls and week-number definitions differ between the scorecard and the CRM export; scorecard PDF is cut off after rank 2.
 - Rollback: delete repo `gitteromri-ux/fa-lead-sweet-spot`. Nothing else changed.
+
+## 2026-11-11 15:45 Israel — French Atelier Meta lead backfill, batch 22 (LIVE, approved by Omri: "Push")
+- FA Meta instant-form leads batch 22: 25 leads (2026-11-11 08:14 → 13:31 UTC; #116981 ×20, #117510 ×5) pushed to eTeacher Leads API, 25×200, 0 failed, 0 duplicates. 24 US + 1 lead with a Colombian mobile (+57) sent as CountryIsoCode CO (builder mapping added). Running total 557 since Nov 4. Ledger: /tmp/push/ledger.json. No form, site or Meta change.
