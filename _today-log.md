@@ -1163,3 +1163,8 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - Ad set 120251212251230546 (FR Culture interests #108758): age 45–65+ -> 45–64. Genders unchanged (M+W). Interests, income, iPhone, placements, budget $199 unchanged.
 - Tried to turn off Advantage detailed targeting: Meta refused ("targeting_optimization field has been removed"; forced on for purchase-optimized ad sets). Unchanged.
 - Snapshot: workspace capifix/snap_adset_108758_*.json. Readback: age_max 64, status IN_PROCESS.
+
+## 2026-11-12 — French Atelier lead backfill batch 24
+- Source: Meta instant form 1008080345425102, leads created 2026-11-11 15:50 UTC → 2026-11-12 06:11 UTC not yet in ledger.
+- Pushed 78 leads to eTeacher Leads API (ProductID 25): CRM campaign 116981: 49 · 117510: 29. All 78 returned HTTP 200 (SQS accepted). Ledger now 651 entries, 0 non-200.
+- Tooling unchanged (/tmp/push build_payloads.py + send.py; ledger copy in fa-lead-backfill/ledger.json). Queue acceptance only — CRM arrival not verified from here.
