@@ -1183,3 +1183,9 @@ Lead-gen total daily budget $3,049 → $3,034. Statuses unchanged (all ACTIVE). 
 
 ## 2026-11-12 — French Atelier lead backfill batch 25
 - Meta form 1008080345425102 leads created 2026-11-12 06:16 → 11:32 UTC not yet in ledger: 9 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 7 · 117510: 2. All HTTP 200. Ledger 660 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-12 11:45 UTC — French Atelier lead-gen budgets, second user-instructed change (+$111 each)
+- US Specific 45+ FR Culture #108766 (120250357369480546): $594 → $705
+- US Specific 45+ FR Culture #108762 (120250357351770546): $598 → $709
+- AdGroup01 #108789 (120250234256130546): $96.92 → $207.92
+Draft held only these 3 edits; published and read back live. Lead-gen total daily budget $3,034 → $3,367.
