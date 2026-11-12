@@ -1180,3 +1180,6 @@ Applied via Meta API (draft → published), each read back live and matching:
 - AdGroup01 #108789 (120250234256130546): $151.92 → $96.92
 - AdGroup02 #108790 (120250235642210546): $143.23 → $113.23
 Lead-gen total daily budget $3,049 → $3,034. Statuses unchanged (all ACTIVE). Nothing else touched.
+
+## 2026-11-12 — French Atelier lead backfill batch 25
+- Meta form 1008080345425102 leads created 2026-11-12 06:16 → 11:32 UTC not yet in ledger: 9 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 7 · 117510: 2. All HTTP 200. Ledger 660 entries, 0 non-200. Queue acceptance only.
