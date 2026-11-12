@@ -1192,3 +1192,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-12 — French Atelier lead backfill batch 26
 - Meta form 1008080345425102 leads created 2026-11-12 11:44 → 15:12 UTC not yet in ledger: 18 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 10 · 117510: 8. All HTTP 200. Ledger 678 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-12 ~16:40 UTC — French Atelier: mobile payment page fix LIVE (french-atelier main 2692c28)
+- Bug (since 9 Nov 19:49 UTC, commit 83f5dc0): `@media (max-width:900px){ .fa-pay-main{display:contents} ... }` in css/fa-pay-et.css dissolved the wrapper, so #payCard/#payCourse/#payFoot/#paySummary became width-less implicit grid cells → Airwallex Drop-In container #awx-dropin rendered at 0px on every phone/tablet <900px (desktop unaffected). Live page before fix: blocks squeezed side-by-side (129/39/162/123 px).
+- Fix: same visual order as 9 Nov design (price → card form → course details → policy), but wrapper keeps grid width: `.fa-pay-main{display:flex;flex-direction:column;min-width:0} .fa-pay-main>*{width:100%} #payCard{order:1} #payCourse{order:2} #payFoot{order:3}`. enroll-checkout.html now loads `css/fa-pay-et.css?v=20261112-fix2`. 2 files, 10+/9−. No JS / relay / Drop-In config (recurring, customer_id) touched.
+- Verified on live domain after deploy (relay mocked, no CRM order created): iPhone 13 #awx-dropin 223px / #payCard 325px; Pixel 5 226px / 328px; stylesheet v=20261112-fix2 served. Board: live_after.png (session).
+- Note: 9 Nov evening checkout deploys (e575b26 … 903700a, 18:52–22:12 UTC incl. recurring e196bc0) had no today-log entries.
