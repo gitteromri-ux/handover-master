@@ -1230,3 +1230,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Live verification: Pages build for ee9464d9e8ac58b3e10781ffaa920e6db61c7d94 succeeded; public checkout HTTP 200 and exact reviewed-byte match, SHA-256 `88cbbd837bd650dc3d884b4e0b5ee1a4e3fc67dac20725474c10c1490d59d45b`. Fresh-context public-page test against the same paid staging order displayed receipt in 6.105 seconds, one details read, zero Airwallex frames, no page exceptions; 390px and desktop screenshots.
 - Evidence: actual checkout-stage and receipt screenshots shared in the thread. Detailed report, sanitized payment JSON, CRM paid-state JSON and CAPI receipt JSON retained in the task workspace. Test IDs must be excluded from customer/business reporting.
 
+
+## 2026-11-12 — French Atelier lead backfill batch 27
+- Meta form 1008080345425102 leads created 2026-11-12 15:50 → 19:38 UTC not yet in ledger: 18 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 12 · 117510: 6. All HTTP 200. Ledger 696 entries, 0 non-200. Queue acceptance only.
