@@ -1168,3 +1168,15 @@ Full audit written to LLA-TRACKING-AUDIT-2026-11-05.md: funnel events browser+CA
 - Source: Meta instant form 1008080345425102, leads created 2026-11-11 15:50 UTC → 2026-11-12 06:11 UTC not yet in ledger.
 - Pushed 78 leads to eTeacher Leads API (ProductID 25): CRM campaign 116981: 49 · 117510: 29. All 78 returned HTTP 200 (SQS accepted). Ledger now 651 entries, 0 non-200.
 - Tooling unchanged (/tmp/push build_payloads.py + send.py; ledger copy in fa-lead-backfill/ledger.json). Queue acceptance only — CRM arrival not verified from here.
+
+## 2026-11-12 08:20 UTC — French Atelier lead-gen ad set daily budgets (user-instructed, act_1358975119724184)
+Applied via Meta API (draft → published), each read back live and matching:
+- AdGroup03 #108791 (120250235947000546): $489 → $659
+- US Specific 45+ FR Culture #108766 (120250357369480546): $394 → $594
+- US Specific 45+ FR Culture #108762 (120250357351770546): $698 → $598
+- Charline Video LAL 1% FA Purchasers (120251368165790546): $190.38 → $100.38
+- Charline Video #108772 (120250356710140546): $769 → $699
+- New 1 #108770 (120250357369880546): $155.08 → $115.08
+- AdGroup01 #108789 (120250234256130546): $151.92 → $96.92
+- AdGroup02 #108790 (120250235642210546): $143.23 → $113.23
+Lead-gen total daily budget $3,049 → $3,034. Statuses unchanged (all ACTIVE). Nothing else touched.
