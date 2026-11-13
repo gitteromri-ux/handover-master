@@ -1233,3 +1233,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-12 — French Atelier lead backfill batch 27
 - Meta form 1008080345425102 leads created 2026-11-12 15:50 → 19:38 UTC not yet in ledger: 18 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 12 · 117510: 6. All HTTP 200. Ledger 696 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-13 03:05 IL — LLA checkout restored (user-approved)
+- Repo Longevity-Academy.github.io, commit 5d1b7ab: index.html + checkout.html restored to 2cdb08b (Nov 10). Removes ce18053/47e9024/ee9464d effects (screen-2 blocking CRM wait → "We could not confirm your enrollment request").
+- VERIFIED: live index.html and checkout.html md5 identical to 2cdb08b; error string absent; HTTP 200.
+- Rollback: git checkout ee9464d -- index.html checkout.html.
