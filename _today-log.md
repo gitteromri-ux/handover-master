@@ -1250,3 +1250,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-14 — French Atelier lead backfill batch 31
 - Meta form 1008080345425102 leads created 2026-11-14 13:12 → 15:16 UTC not yet in ledger: 13 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 11 · 117510: 2. All HTTP 200. Ledger 822 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-14 17:55 IL — LLA checkout live test (www) — MISTAKE: 4 production CRM orders created
+- Ran the Playwright flow on https://www.longevitylifeacademy.com/?env=staging to reproduce the "could not confirm your enrollment request" error. VERIFIED afterwards: www index.html hardcodes `LLA_ECOMM_CONFIG.env='production'` (L15587) and ignores `?env=staging`; only longevitylifeacademy.pages.dev honours the param. Result: 4 uncharged PRODUCTION CRM orders were created and must be closed: 8080897 (student 11699858), 8080899 (11699862), 8080902 (11699865), 8080903 (11699866); name "QA Staging Test", qa.staging.1110@example.org. Also fired 4× AddToCart / InitiateCheckout / AddPaymentInfo to pixel 1440305917310328 today (inflates today's counts by 4 each).
+- What the test did show (VERIFIED): Step 1 → Step 2 → /api/lead/ecomm 200 → checkout.html → /api/checkout/details 200 → Airwallex drop-in mounted with card fields. Payment confirm returned 400 with sandbox card 4035501000000008 against the production intent — expected for a test card, NOT proof of a buyer-facing bug.
+- Meta act_1459085242361281 today (before the test, ~17:25 IL): spend $1,477.95, LPV 156, ATC 4, IC 4, Purchases 0. Pixel Purchase events: 12 Nov 5, 13 Nov 2, 14 Nov 0.
+- www repo commits by owner side: 5d1b7ab 13 Nov 03:02 IL "Restore checkout to 2cdb08b"; 75ecb5b 14 Nov 14:47 IL "Fix event-day checkout order staging, recovery and included VIP registration". Nothing changed by Perplexity in any repo, worker, or Business Manager.
