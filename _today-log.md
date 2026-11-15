@@ -1256,3 +1256,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - What the test did show (VERIFIED): Step 1 → Step 2 → /api/lead/ecomm 200 → checkout.html → /api/checkout/details 200 → Airwallex drop-in mounted with card fields. Payment confirm returned 400 with sandbox card 4035501000000008 against the production intent — expected for a test card, NOT proof of a buyer-facing bug.
 - Meta act_1459085242361281 today (before the test, ~17:25 IL): spend $1,477.95, LPV 156, ATC 4, IC 4, Purchases 0. Pixel Purchase events: 12 Nov 5, 13 Nov 2, 14 Nov 0.
 - www repo commits by owner side: 5d1b7ab 13 Nov 03:02 IL "Restore checkout to 2cdb08b"; 75ecb5b 14 Nov 14:47 IL "Fix event-day checkout order staging, recovery and included VIP registration". Nothing changed by Perplexity in any repo, worker, or Business Manager.
+
+## 2026-11-15 — French Atelier lead backfill batch 32
+- Meta form 1008080345425102 leads created 2026-11-14 16:12 → 2026-11-15 15:00 UTC not yet in ledger: 56 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 39 · 117510: 17. All HTTP 200. Ledger 878 entries, 0 non-200. Queue acceptance only.
