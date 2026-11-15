@@ -1268,3 +1268,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - ad → old creative → new creative: 52679619107028 2329037140998873→2547290109015212; 52680290476828 1631691212334843→4622922368030416; 52678067343828 3009371766071521→2194978377897453; 52680296799228 2600193333727455→1164152029992797; 52679582158028 1152286967727008→1450623703187601; 52679582170228 1136268375932373→2714665982337990; 52680296749228 1151715237819696→2308835489908290; 52680296777028 2940104859670354→1492287176426122; 52680290323228 4689086497976883→965072539714411; 52680232013628 1690776042669316→1426149072575922; 52666266371228 977851528254637→1416862390527881.
 - VERIFIED read-back: all 11 ads point to new creative, 0 matches for julie/vip/masterclass/slowest ager. Status right after: PENDING_REVIEW / IN_PROCESS (Meta review). Rollback = set ad creative back to old id.
 - NOT checked: on-video/banner visuals; www/pages.dev payment page still shows Julie VIP masterclass line (site change needs preview + "live").
+
+## 2026-11-15 — French Atelier lead backfill batch 34
+- Meta form 1008080345425102 leads created 2026-11-15 16:03 → 18:07 UTC not yet in ledger: 7 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 7 · 117510: 0. Queue acceptance only.
