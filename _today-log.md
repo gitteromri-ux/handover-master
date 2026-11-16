@@ -1278,3 +1278,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 2026-11-16 — French Atelier lead backfill batch 36
 - Meta form 1008080345425102 leads created 2026-11-16 04:52 → 09:48 UTC not yet in ledger: 21 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 11 · 117510: 10. Queue acceptance only.
 - Culture Capsules mobile fix prepared on branch fix/capsules-mobile-scale (4d9c1d1), NOT live; awaiting "live".
+
+## 2026-11-16 — French Atelier lead backfill batch 37
+- Meta form 1008080345425102 leads created 2026-11-16 10:08 → 13:21 UTC not yet in ledger: 5 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 4 · 117510: 1. Queue acceptance only.
