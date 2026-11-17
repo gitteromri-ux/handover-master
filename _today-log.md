@@ -1410,3 +1410,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Risks: #108811 CPM $656.55 with 0 purchases today; #108816 (+47%) and #108814 (+41%) may re-enter learning.
 - Rollback: set daily_budget back to 33380 / 29900 / 15000 / 16980 cents respectively.
 - Conversation: https://www.perplexity.ai/computer/tasks/9af2056c-01c1-4f66-90e2-9b737d4dee68
+
+## 2026-11-17 — LLA Ecomm 02 Set 2 #108814: added Fasting + Glucose banners
+- Copied (same creative/copy/tracking) from Ecomm 02 Set 4: Fasting 52681696918028 → 52681870576828; Glucose 52680290199828 → 52681870609228. ACTIVE (in review at creation). Nothing paused (user instruction).
+- Rollback: pause 52681870576828 and 52681870609228.
