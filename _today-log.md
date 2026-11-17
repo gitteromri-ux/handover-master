@@ -1481,3 +1481,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-17 — French Atelier lead backfill batch 45
 - Meta form 1008080345425102 leads created 2026-11-17 17:26 → 18:10 UTC not yet in ledger: 7 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 5 · 117510: 2. Queue acceptance only.
+
+## 2026-11-17 20:19 IL — LLA lead ad set budget change (user instruction)
+- Ad set 52596391921628 "LLA Adset 2_All_All_CPM_#108719" (campaign #116622): daily budget $88.00 → $49.00. User: "Adset 2 (#108719) budget 49$".
+- Read-back from Meta: daily_budget 4900, ACTIVE, updated 18:19:44 UTC. Rollback: set daily_budget=8800.
+- Adset 1 (#108718) raise still pending user answer (+$60 vs +60%); not changed.
