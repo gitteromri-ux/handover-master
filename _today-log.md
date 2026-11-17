@@ -1297,3 +1297,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - IDs VERIFIED from CRM GetECommerceFirstPaymentDetails.AvailableClasses (production test order 8082944 / stid 11701801, email gitter.omri+regular@gita-agency.com, unpaid — exclude from buyer counts).
 - Files: index.html (options), nov/eteacher-ecomm.js (BLUEPRINT_CLASSES), assets/mf/pd/november-zones.js (EST/PST labels), checkout.html (cache bump).
 - Live proof: www shows November|December tabs; Dec cards 1:00 PM EST/10:00 AM PST and 8:00 PM EST/5:00 PM PST; classForStart resolves 170774/2397. Desktop + 390px checked.
+
+## 2026-11-17 ~10:30 UTC — LLA: 3DS skip test link (no buyer change)
+- Commit 4ea7a20 (Longevity-Academy.github.io, checkout.html only). Rollback: `git revert 4ea7a20`.
+- Adds three_ds_action 'SKIP_3DS' (top-level + recurringOptions) ONLY when URL has ?skip3ds=1 and plan is installments. Without the flag the drop-in options are byte-identical to before (undefined keys dropped).
+- Staging (Airwallex demo) result: SKIP_3DS sent but ignored — 3DS challenge card 4012000300000088 still challenged; no rejection. Staging QA orders 8081044-8081047 (unpaid).
+- Prod proof: test order 8082944 loads card form on ETEACHER EU LIMITED, mode recurring; flag link carries SKIP_3DS, normal link does not.
+- Pending: one real card payment via the flag link to see whether prod honors it.
