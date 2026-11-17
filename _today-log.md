@@ -1,3 +1,17 @@
+## 2026-11-17 | LLA deferred-script stall reproduced and narrow repair submitted
+
+- User renewed urgent repair instruction and supplied Chrome screenshot showing Secure Checkout footer on details step1. User expects label on step2.
+- BEFORE: holding `assets/lla-julie-vip-motion.js` network response prevented later deferred US/country/ecomm helpers from executing. Live-source page reached interactive with all three globals absent; Continue disabled on "One moment…" and step2 stayed closed.
+- AFTER local preview: moved the SAME three deferred helper tags to head in index.html, ahead of decorative scripts; added fetchpriority=high. With decorative script still held, all three helpers initialized and US details advanced to step2 in observed 250ms, no page exceptions. This proves removal of that artificial-delay dependency, not proof that it was the sole cause on user's device.
+- One CSS rule hides shared Secure Checkout label when #emStep1.on; step2 still shows it, policy links remain. No other UI/copy changes.
+- `index.html` only, 6 additions/3 deletions. All inline script bodies and external script set compared byte-for-byte/equivalent; payment file, helper contents, CRM mappings, pricing, tracking, dates and redirects unchanged.
+- Preview tested mobile390 and desktop1440; IL phone path and December tab/date selection tested. Plan cards are intentionally hidden by existing styles, not a regression. Step2 navigation interception reached checkout with monthly/promo params in observed544ms. Intercepted navigation is NOT payment-card readiness proof.
+- Production commit **1aa165d3d5089b29f86dbba183dd9a6758a53093**, pushed to main. Pages run44095134891 succeeded. Fresh production HTTP200; unversioned homepage SHA256 matches local file exactly.
+- Live390px with decorative script held: helpers initialize, step1 advances in observed988ms; no page exceptions. After release, label visible on step2 and hidden on reopened step1, policy links retained, no horizontal overflow. Fresh1440px confirms new CSS and label hidden on step1. Live step2-to-intercepted-payment-navigation observed1175ms; no new order created. Browser harness timings are not exact user-perceived paint times or complete card readiness measurements.
+- Live proof screenshots: `lla-regression-proof/transition-live-mobile-step1.png`, `transition-live-mobile-step2.png`, `transition-live-desktop-step1.png`. Mobile screenshots shared with user.
+- Backup branch `backup/20261117-before-transition-priority` at91b9daa; rollback only this patch with `git revert 1aa165d`.
+- No new QA order for this repair test. Earlier unpaid8083003 remains excluded from buyer/sales interpretation. Separate CRM/intent latency remains; do not claim universal instant payment or payment/bypass success.
+
 ## 2026-11-17 | LLA urgent checkout latency investigation, unresolved user freeze
 
 - No production code change or deployment. Repo `Longevity-Academy/Longevity-Academy.github.io` remains at `91b9daa`. Protected pricing, CRM mappings, tracking, dates, address order and redirects untouched.
