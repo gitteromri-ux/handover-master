@@ -1452,3 +1452,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Files: css/fa-capsules-mobile-recovery.css, js/fa-capsules-mobile-sliders.js, culture-capsules.html (cache-bust only: recovery.css v=20261116-4, sliders.js v=20261116-2). Presentation only — no checkout, form, pixel, CAPI or lead-script changes.
 - Proof: live HTML serves v=20261116-4 / v=20261116-2; pixel/checkout/leads script references still present; phone screenshots (iPhone 390, Android 360) of live page: 0 gold circles, body text 17px.
 - Rollback: revert 4d9c1d1..948a89e^ on main (previous recovery.css v=20261107-22, sliders.js v=20261030-m1).
+
+## 2026-11-17 — LLA iPhone checkout test from ad link (QA, no payment)
+- Emulated iPhone Safari (iOS 18.6, 393x852), US 4G (70ms/12Mbps), ad URL for Fasting ad 52680296777028 → pages.dev → www.
+- Landing: first paint 8.0s; DOMContentLoaded 35.3s (4G) / 29.2s (unthrottled). Enroll Now does NOTHING until DOMContentLoaded (tapped twice at ~30s: no modal).
+- Cause: 12 render-blocking sync scripts load one after another (lla-promo, r15-sheet, guest-mobile, attendee-pricing, november-zones, julie-approved-player…), each 3–5.5s because 13 videos (~10MB) download in parallel and starve them.
+- After load: Enroll modal 0.5s · details→plan 0.5s · plan→checkout.html 4.7s · "$79.00 today" confirmed at ~16s · Airwallex card fields at ~25s.
+- Price correct everywhere: $79 today, then 4 × $169, $755 total. No Apple Pay shown on iPhone. Billing address fields sit BELOW the Proceed button.
+- QA lead submitted at step 1 — exclude from CRM/buyer counts: "QA Test Perplexity DoNotContact", gitter.omri+qa-checkout-20261117@gmail.com, +1 202-555-0143.
+- No site changes made (production protected).
