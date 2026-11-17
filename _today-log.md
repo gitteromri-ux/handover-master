@@ -1304,3 +1304,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Staging (Airwallex demo) result: SKIP_3DS sent but ignored — 3DS challenge card 4012000300000088 still challenged; no rejection. Staging QA orders 8081044-8081047 (unpaid).
 - Prod proof: test order 8082944 loads card form on ETEACHER EU LIMITED, mode recurring; flag link carries SKIP_3DS, normal link does not.
 - Pending: one real card payment via the flag link to see whether prod honors it.
+
+## 2026-11-17 — LLA: 3DS skip ON for all installment card payments
+- Commit 86e2b19 (Longevity-Academy.github.io, checkout.html only). Previous: 4ea7a20. Rollback: `git revert 86e2b19`; per-visit off: `?skip3ds=0`.
+- SKIP_3DS sent on every installment card payment. If Airwallex errors on that attempt, the page reloads once without it (same order + intent) and shows "Please enter your card details again".
+- Staging VERIFIED: skip path paid (8081048); forced error -> reload without skip -> paid (8081053). Prod VERIFIED: live form loads on ETEACHER EU LIMITED, recurring mode, SKIP_3DS sent (test order 8082944).
+- NOT verified: whether the prod Airwallex account honours the skip (Airwallex demo ignored it). Pricing, CRM, dates, PayPal, pixel/CAPI untouched.
+- QA orders (exclude): staging 8081048-8081053, prod 8082944; email gitter.omri+regular@gita-agency.com.
