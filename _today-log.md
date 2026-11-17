@@ -1,3 +1,12 @@
+## 2026-11-17 | LLA urgent checkout latency investigation, unresolved user freeze
+
+- No production code change or deployment. Repo `Longevity-Academy/Longevity-Academy.github.io` remains at `91b9daa`. Protected pricing, CRM mappings, tracking, dates, address order and redirects untouched.
+- Fresh 390px browser test on live www homepage, localStorage tester flag (NOT qa/llatest URL, which blocks checkout requests): screen 1 to 2 observed 278ms; screen 2 click to payment document DOMContentLoaded observed 740ms. Production order creation request started at +698ms and returned HTTP200 at +3503ms; checkout details started +3548ms and returned HTTP200 at +5855ms. Card iframe observed by +7426ms; visible cardnumber, expiry, cvc and name inputs confirmed subsequently. This is NOT an exact field-ready timestamp, universal performance proof, or a before/after improvement.
+- QA created one unpaid production order **8083003**, student **11701945**, email `gitter.omri+regular@gita-agency.com`. EXCLUDE from sales/buyer reporting. No card entered or payment attempted. No claim of CRM reporting-layer exclusion implemented.
+- Earlier desktop experiment used qa=1 and intercepted payment-document navigation, so its timings do not prove real checkout speed. Separate existing-order test 8082944 skipped order creation.
+- User-reported much longer first/second-step freeze remains UNRESOLVED and was not reproduced in these tests. Current source stages contact data locally on screen1 and creates the order on checkout; no screen1 payment request observed. Do not claim fixed. Need failing-device/request trace to establish cause, not another blind rewrite.
+- Screenshot `/home/user/workspace/lla-regression-proof/live-mobile-speed-qa-8083003.png`. No rollback needed: diagnostic-only source work; new QA order must not be treated as revenue.
+
 ## 2026-09-28 | Julie page CAPI timing-only release
 
 - User approved the prepared timing-only fix. Production repo: `Longevity-Academy/julie-masterclass`; only `assets/julie-meta-tracking.js` changed.
