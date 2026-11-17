@@ -1326,3 +1326,14 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - User then instructed: "WAKE UP DELIVER IN FULL FASTER,.NO MISTAKE". Promoted only the requested, already-previewed address move, `47c92bf`, to main. No other file promoted.
 - Production HTTP 200 fetched with curl and exact content comparison matched `47c92bf`. Fresh browser URL with `v=47c92bf` confirms card container before billing/CGM address. Existing same-URL browser navigation initially reused old cached markup; do not confuse that with a failed deploy.
 - Rollback: `git revert 47c92bf` and normal push. The conversion/speed mission is NOT marked complete. Timing comparison attempts did not yield valid comparable results and are not evidence of improved speed.
+
+## 2026-11-17 — LLA country dropdown initial-load fix published
+- User reported an empty country dropdown beside the US +1 badge, unresponsive for about ten seconds. Reproduced empty dropdown by blocking assets/lla-country.js; adjacent phone input still accepted typing in the reproduction.
+- Production commit `91b9daa27bcf803643369dc9718b39acc701a15b`, repo `Longevity-Academy/Longevity-Academy.github.io`. Only index.html changed: render all 200 canonical countries and existing data-dial values directly inside the existing select. No country/name/code mapping changed.
+- Source assertions: removing only the new select options restores the previous document exactly; every script block byte-identical. Payment, dates, prices, CRM, tracking, GOLDEN and redirects untouched by this release.
+- Initial production push was blocked pending specific approval. Published after the user responded to the pending-approval status: "I NEED EVERYTHING PERFECT FAST". GitHub Pages run 44075324597 succeeded; fresh www HTTP 200 and byte-for-byte HTML match verified.
+- Live browser: deliberately blocked country helper; US +1, IL +972 and GB +44 selected successfully, desktop and 390px mobile phone input editable, no page exceptions or horizontal overflow. Desktop selection operations took 7–22ms in this test, not a universal latency guarantee. Closing/reopening retained IL.
+- Screenshots: /home/user/workspace/lla-regression-proof/country-live-desktop.png and country-live-mobile.png. No order or payment submitted in this verification.
+- Backup branch `backup/20261117-country-before` at 47c92bf. Rollback: `git revert 91b9daa` and normal push.
+- Separate Continue-to-card slowdown, no-challenge payment outcome, later recurring collection and end-to-end tracking acceptance remain unproven. Do not claim the entire checkout mission is complete.
+- User also requested historical screenshots, not restoration or copy changes. Delivered reconstructed Nov 6/10 checkout summaries and Nov 10/15 offer panels from dated Git revisions. No historical copy was deployed.
