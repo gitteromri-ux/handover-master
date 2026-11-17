@@ -1399,3 +1399,14 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-17 — French Atelier lead backfill batch 41
 - Meta form 1008080345425102 leads created 2026-11-17 10:35 → 13:05 UTC not yet in ledger: 4 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 2. Queue acceptance only.
+
+## 2026-11-17 — LLA ecommerce budget raises (user-requested, +$ amounts)
+- Interpreted user request as raise BY the stated USD amounts. Readback verified via Graph, all ACTIVE.
+- Ecomm 01 Set 5 #108811 (52669048300628): $333.80 → $423.80 (+$90)
+- Ecomm 01 Set 4 #108810 (52666232368428): $299.00 → $379.00 (+$80)
+- Ecomm 02 Set 4 #108816 (52668330870828): $150.00 → $220.00 (+$70)
+- Ecomm 02 Set 2 #108814 (52668268711228): $169.80 → $239.80 (+$70)
+- Total ecommerce daily: $952.60 → $1,262.60 (+$310).
+- Risks: #108811 CPM $656.55 with 0 purchases today; #108816 (+47%) and #108814 (+41%) may re-enter learning.
+- Rollback: set daily_budget back to 33380 / 29900 / 15000 / 16980 cents respectively.
+- Conversation: https://www.perplexity.ai/computer/tasks/9af2056c-01c1-4f66-90e2-9b737d4dee68
