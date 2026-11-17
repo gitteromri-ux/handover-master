@@ -1,3 +1,15 @@
+## 2026-11-17 | LLA card-library parallel loading deployed
+
+- Production repo `Longevity-Academy/Longevity-Academy.github.io`, commit **259ee0b7160bbc8b99a3c1dbcb5c85e2ccb76bf4**, Pages44096890162 succeeded. Unversioned live checkout HTML SHA256 equals local:4446040ae0a470ac98be65665e04b15ae4e901a58fa80dda0ddc3f2940000c5d.
+- Scope ONLY checkout.html script loading: same Airwallex library now async/high-priority with explicit ready promise; existing CRM/intent preparation runs concurrently; SDK init awaited before SDK use. No early homepage order/payment requests added.
+- BEFORE controlled test: holding SDK request kept document in loading, LLA_ECOMM absent and no details request started. AFTER preview with SDK held: document interactive, ecomm ready, real existing-order details HTTP200 while Airwallex absent; releasing SDK mounted real cardnumber/expiry/cvc/name fields without page exceptions.
+- Static comparison: order/intent processing block (excluding readiness await), full payment-method/recurring/3DS config, and payment event/report handlers unchanged. All inline scripts parse. Pricing, CRM mappings, tracking and design unchanged.
+- Preview mobile390 and fresh desktop1440 rendered card fields; no outer-page overflow. Note screenshot immediately after field visibility can precede provider iframe resizing; wait for iframe height>300 before visual proof. Do not use resized-mobile context as desktop proof.
+- Live mobile verification HTTP200, async SDK present, card fields and resized iframe visible, no JS exceptions. SDK request began+340ms and details request+504ms. End-to-end tool test including screenshot took17110ms: this is NOT exact card-ready timing or evidence of a speed improvement. Multiple previous QA tabs were open and subsequently closed to avoid harness resource contention.
+- Existing unpaid QA8083003/student11701945 reused; no new order or card entry/payment. This does not prove new-buyer total speed, 3DS bypass or recurring collection.
+- Fresh live1440 desktop after closing surplus QA contexts: observed6667ms from navigation start to visible cardnumber and iframe height>300, measured BEFORE screenshot. Existing-order path only; no before/after speed claim. Proof `lla-regression-proof/card-parallel-live-desktop.png`.
+- Proof `lla-regression-proof/card-parallel-live-mobile.png`; rollback `git revert 259ee0b` only. Backup `backup/20261117-before-card-parallel` points to1aa165d. Earlier label/helper repair retained.
+
 ## 2026-11-17 | LLA deferred-script stall reproduced and narrow repair submitted
 
 - User renewed urgent repair instruction and supplied Chrome screenshot showing Secure Checkout footer on details step1. User expects label on step2.
