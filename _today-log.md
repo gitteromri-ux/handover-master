@@ -1290,3 +1290,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-17 — French Atelier lead backfill batch 40
 - Meta form 1008080345425102 leads created 2026-11-16 19:35 UTC → 2026-11-17 08:36 UTC not yet in ledger: 45 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 25 · 117510: 20. Ledger 997, 0 non-200. Queue acceptance only.
+
+## 2026-11-17 09:15 UTC — LLA: December start dates added (www production)
+- Commit 2878cbc in Longevity-Academy/Longevity-Academy.github.io (rollback: `git revert 2878cbc`, prior HEAD 2076a14).
+- Added Wed Dec 9 1:00 PM ET (CRM CourseID 170773) and Thu Dec 10 8:00 PM ET (CRM CourseID 170774), semester 2397 "2026-12 - Longevity". Nov 23/25 kept.
+- IDs VERIFIED from CRM GetECommerceFirstPaymentDetails.AvailableClasses (production test order 8082944 / stid 11701801, email gitter.omri+regular@gita-agency.com, unpaid — exclude from buyer counts).
+- Files: index.html (options), nov/eteacher-ecomm.js (BLUEPRINT_CLASSES), assets/mf/pd/november-zones.js (EST/PST labels), checkout.html (cache bump).
+- Live proof: www shows November|December tabs; Dec cards 1:00 PM EST/10:00 AM PST and 8:00 PM EST/5:00 PM PST; classForStart resolves 170774/2397. Desktop + 390px checked.
