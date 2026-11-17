@@ -1434,3 +1434,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - #108811 (52669048300628): FB [feed, facebook_reels] → [feed]; IG stream+reels unchanged.
 - Budgets, audiences, ads unchanged. Readback verified. Expect learning reset.
 - Rollback: add facebook_reels back to facebook_positions (before-*.json saved in workspace reels-off-20261117/).
+
+## 2026-11-17 — LLA Ecomm 02 Set 2 #108814 opened to 65+ (user-approved)
+- Age 45–64 → 45–65+ (age_max 65). Budget, placements, audiences unchanged. Readback verified.
+- Basis: in #108811 (only set reaching 65+), 65+ drove 10/11 ATC, 5/5 IC, 2/2 purchases Nov 11–17.
+- Rollback: set age_max back to 64.
