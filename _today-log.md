@@ -1470,3 +1470,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Apple domain file already served on www + pages.dev (identical to IIBS). Open: Daniel (Finance) must register both domains in LIVE Airwallex; real wallet payment test + eTeacher consent confirmation; ask eTeacher about PaymentMethod for wallets and SKIP_3DS.
 - QA to exclude: orders 8083097 (stid 11701998) and 8083153 (stid 11702036), emails gitter.omri+qa-checkout-20261117@ / +qa-wallets-20261117@gmail.com.
 - Rollback: git revert 3eb6505 on main.
+
+## 2026-11-17 — French Atelier lead backfill batch 43
+- Meta form 1008080345425102 leads created 2026-11-17 14:26 → 15:06 UTC not yet in ledger: 6 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 5 · 117510: 1. Queue acceptance only.
