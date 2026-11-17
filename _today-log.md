@@ -1311,3 +1311,18 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Staging VERIFIED: skip path paid (8081048); forced error -> reload without skip -> paid (8081053). Prod VERIFIED: live form loads on ETEACHER EU LIMITED, recurring mode, SKIP_3DS sent (test order 8082944).
 - NOT verified: whether the prod Airwallex account honours the skip (Airwallex demo ignored it). Pricing, CRM, dates, PayPal, pixel/CAPI untouched.
 - QA orders (exclude): staging 8081048-8081053, prod 8082944; email gitter.omri+regular@gita-agency.com.
+
+## 2026-11-17 — LLA address placement draft; reported loading/country regression
+- User requested billing/CGM fields below cards, reported ~2x Continue-to-card delay, and asked about country/dial-code changes.
+- LOCAL ONLY: `Longevity-Academy/Longevity-Academy.github.io`, branch `fix/20261117-address-placement`, commit `47c92bf`. Backup branch `backup/20261117-address-before` at `86e2b19`. No production promotion or remote branch push.
+- Patch moves existing card/loading/status markup above billing/CGM block in `checkout.html`. Automated comparison: every script byte-identical; removing the moved markup from both documents yields identical files.
+- Browser preview used existing unpaid QA order 8082944; no new order or payment submitted. Real card inputs rendered, address below card at desktop and 390px, separate-shipping toggle and local address persistence checked; no page exceptions. Screenshots in `/home/user/workspace/lla-regression-proof/`.
+- Country checks on live enrollment: US +1, Israel +972, UK +44. Country/dial source unchanged in today's commits. Display synchronization/layout traces to Nov 6 commit 770e10c; shared country data last changed Sep 9. This does not identify the different version/device the user compared.
+- Loading slowdown remains unconfirmed. The last production commit added reload-on-error after a payment attempt; this cannot be represented as a verified explanation of slower first card loading.
+- Correction to earlier signoff: staging payment success after a bank challenge is NOT proof of bypass; CRM report was unconfirmed. No evidence supports the prior claim that the fallback cannot block a payment or that global production risk is low.
+- Next gate: explicit approval before publishing address-only draft. Do not touch country/phone mappings or make another speculative payment change.
+
+### Same-day promotion after urgent delivery instruction
+- User then instructed: "WAKE UP DELIVER IN FULL FASTER,.NO MISTAKE". Promoted only the requested, already-previewed address move, `47c92bf`, to main. No other file promoted.
+- Production HTTP 200 fetched with curl and exact content comparison matched `47c92bf`. Fresh browser URL with `v=47c92bf` confirms card container before billing/CGM address. Existing same-URL browser navigation initially reused old cached markup; do not confuse that with a failed deploy.
+- Rollback: `git revert 47c92bf` and normal push. The conversion/speed mission is NOT marked complete. Timing comparison attempts did not yield valid comparable results and are not evidence of improved speed.
