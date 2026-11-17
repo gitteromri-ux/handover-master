@@ -1373,3 +1373,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Before-original-active IDs: 52678254260828, 52678254260628, 52678254261028, 52678253271428, 52678253271628, 52678234760228, 52678234760628, 52678234760428
 - No automatic monitoring task scheduled. Judge intent with self-declared immediate/3–4-week readiness separately from CPL; paid/CRM-qualified outcome remains unverified.
 - Conversation: https://www.perplexity.ai/computer/tasks/9af2056c-01c1-4f66-90e2-9b737d4dee68
+
+## 2026-11-17 — French Atelier lead backfill batch 41
+- Meta form 1008080345425102 leads created 2026-11-17 10:35 → 13:05 UTC not yet in ledger: 4 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 2. Queue acceptance only.
