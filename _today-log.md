@@ -1461,3 +1461,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Price correct everywhere: $79 today, then 4 × $169, $755 total. No Apple Pay shown on iPhone. Billing address fields sit BELOW the Proceed button.
 - QA lead submitted at step 1 — exclude from CRM/buyer counts: "QA Test Perplexity DoNotContact", gitter.omri+qa-checkout-20261117@gmail.com, +1 202-555-0143.
 - No site changes made (production protected).
+
+## 2026-11-17 ~17:30 IL — LLA checkout: Apple Pay + Google Pay (eTeacher FE guide DEV-9922/9915) — LIVE
+- Approved by Omri (17:04 IL). Repo Longevity-Academy/Longevity-Academy.github.io, branch awx-wallets-eteacher-guide (7aea043) → main 3eb6505. Preview page 0b2be18 removed (404).
+- checkout.html now loads Components SDK v1 (static.airwallex.com) and passes CRM AirwallexOptions as-is + appearance/showPayButton. Removed own mode/methods/consent/country/'paypal'. Kept 17 Nov SKIP_3DS (installments) + safety net. Null AirwallexOptions → message + PayPal stays usable.
+- Guard PASS (main vs new): pixel 1440305917310328 3/3, CAPI relay 2/2, Purchase track 2/2, CRM PaymentMethod CreditCard/PayPal unchanged, PayPal SDK unchanged.
+- Verified live, order 8083153 (QA): methods card/applepay/googlepay, mode recurring, GPay countryCode CY, $79 today then 4×$169 ($755), no JS errors. Preview: null fallback OK, PayPal renders.
+- Apple domain file already served on www + pages.dev (identical to IIBS). Open: Daniel (Finance) must register both domains in LIVE Airwallex; real wallet payment test + eTeacher consent confirmation; ask eTeacher about PaymentMethod for wallets and SKIP_3DS.
+- QA to exclude: orders 8083097 (stid 11701998) and 8083153 (stid 11702036), emails gitter.omri+qa-checkout-20261117@ / +qa-wallets-20261117@gmail.com.
+- Rollback: git revert 3eb6505 on main.
