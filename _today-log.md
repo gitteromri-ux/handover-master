@@ -1337,3 +1337,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Backup branch `backup/20261117-country-before` at 47c92bf. Rollback: `git revert 91b9daa` and normal push.
 - Separate Continue-to-card slowdown, no-challenge payment outcome, later recurring collection and end-to-end tracking acceptance remain unproven. Do not claim the entire checkout mission is complete.
 - User also requested historical screenshots, not restoration or copy changes. Delivered reconstructed Nov 6/10 checkout summaries and Nov 10/15 offer panels from dated Git revisions. No historical copy was deployed.
+
+## 2026-11-17 — LLA checkout benefits mockups, not production
+- User requested checkout mockups including Julie VIP Longevity Masterclass with 30-day recording access, professional wording, Abbott Lingo CGM and shipping each at $0/Included, and $100 credits toward the next course.
+- Built isolated local preview `/home/user/workspace/lla-checkout-mockups`, local commit `4863ad6`. Two switchable treatments: A compact summary and B featured Julie portrait.
+- Copy: "Julie Gibson Clark’s VIP Longevity Masterclass" / "The complete masterclass, available on demand for 30 days." No claim of a new live event or invented access activation date.
+- $100 credit is explicitly for the next LLA course, not deducted from this order. Sample schedule preserves $79 today + four $169 payments = $755 total. No production source, payment, CRM or tracking edited.
+- Read-only illustrative payment fields, inert payment control with explicit preview feedback, no backend. Desktop, 390px and 375px checks passed: A/B controls, keyboard activation, no overflow, local image/font loading and no page exceptions.
+- No go-live approval for these mockups. Do not deploy their simulated payment UI to the real checkout. Any approved implementation must modify only the requested summary presentation in the existing production flow.
