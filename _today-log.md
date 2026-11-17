@@ -1487,5 +1487,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Read-back from Meta: daily_budget 4900, ACTIVE, updated 18:19:44 UTC. Rollback: set daily_budget=8800.
 - Adset 1 (#108718) raise still pending user answer (+$60 vs +60%); not changed.
 
-## 2026-11-17 — French Atelier lead backfill batch 46
-- Meta form 1008080345425102 leads created 2026-11-17 18:47 → 19:38 UTC not yet in ledger: 5 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 4 · 117510: 1. Queue acceptance only.
+## 2026-11-17 ~21:50 IL — French Atelier holiday emails: réveillon image replaced (user flagged AI duplicate people)
+- Repo gitteromri-ux/french-atelier-acq-drip, PR #2 merged → main 31d91e4. Only réveillon email/LP desktop/LP mobile JPEGs, alt, provenance, mockups, ZIP changed; other 3 topics and all copy untouched.
+- New source: real Artlist footage still, "Cheers, Toasting, Wine Glasses, Dinner Party" by Azulroto (clip 377094), 3840×2160 4K MP4, frame 0.3s. Licence certificate downloaded. Standalone réveillon master removed (Artlist licence bars standalone asset files).
+- Live verified: Pages build built 31d91e4, HTTP 200, live email JPEG md5 = repo, 18 route checks on live URL.
+- Rollback: git revert 31d91e4 (or reset to backup/reveillon-20261117 = 54c9798).
