@@ -1446,3 +1446,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-17 — French Atelier lead backfill batch 42
 - Meta form 1008080345425102 leads created 2026-11-17 13:26 → 13:36 UTC not yet in ledger: 2 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 0. Queue acceptance only.
+
+## 2026-11-17 16:2x IL — French Atelier Culture Capsules mobile fix LIVE
+- User approved "Yes, live". Pushed fix/capsules-mobile-scale (4d9c1d1) to gitteromri-ux/french-atelier main (fast-forward).
+- Files: css/fa-capsules-mobile-recovery.css, js/fa-capsules-mobile-sliders.js, culture-capsules.html (cache-bust only: recovery.css v=20261116-4, sliders.js v=20261116-2). Presentation only — no checkout, form, pixel, CAPI or lead-script changes.
+- Proof: live HTML serves v=20261116-4 / v=20261116-2; pixel/checkout/leads script references still present; phone screenshots (iPhone 390, Android 360) of live page: 0 gold circles, body text 17px.
+- Rollback: revert 4d9c1d1..948a89e^ on main (previous recovery.css v=20261107-22, sliders.js v=20261030-m1).
