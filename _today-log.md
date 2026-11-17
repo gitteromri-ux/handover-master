@@ -1426,3 +1426,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 2026-11-17 — LLA Ecomm 02 Set 2 #108814: added Fasting + Glucose banners
 - Copied (same creative/copy/tracking) from Ecomm 02 Set 4: Fasting 52681696918028 → 52681870576828; Glucose 52680290199828 → 52681870609228. ACTIVE (in review at creation). Nothing paused (user instruction).
 - Rollback: pause 52681870576828 and 52681870609228.
+
+## 2026-11-17 — LLA ecommerce: Facebook Reels removed (user-approved)
+- Basis (Nov 11–17, live ads): FB Reels spend $2,524 → 2 ATC, 1 IC across these 3 sets; other placements $4,866 → 27 ATC, 12 IC.
+- #108814 (52668268711228): FB [feed, facebook_reels] → [feed]; IG stream unchanged.
+- #108810 (52666232368428): FB [feed, facebook_reels] → [feed]; FB-only.
+- #108811 (52669048300628): FB [feed, facebook_reels] → [feed]; IG stream+reels unchanged.
+- Budgets, audiences, ads unchanged. Readback verified. Expect learning reset.
+- Rollback: add facebook_reels back to facebook_positions (before-*.json saved in workspace reels-off-20261117/).
