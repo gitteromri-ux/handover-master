@@ -1443,3 +1443,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 2026-11-17 — LLA Ecomm 02 Set 4 #108816 opened to 65+ (user-approved)
 - Age 45–64 → 45–65+ (age_max 65). Budget, placements, interests unchanged. Ecomm 01 Set 4 #108810 deliberately left untouched (only set with a purchase on Nov 16: Fasting banner, FB Feed, male 55–64, $79).
 - Rollback: set age_max back to 64.
+
+## 2026-11-17 — French Atelier lead backfill batch 42
+- Meta form 1008080345425102 leads created 2026-11-17 13:26 → 13:36 UTC not yet in ledger: 2 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 0. Queue acceptance only.
