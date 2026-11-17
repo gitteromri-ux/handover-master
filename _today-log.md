@@ -1439,3 +1439,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Age 45–64 → 45–65+ (age_max 65). Budget, placements, audiences unchanged. Readback verified.
 - Basis: in #108811 (only set reaching 65+), 65+ drove 10/11 ATC, 5/5 IC, 2/2 purchases Nov 11–17.
 - Rollback: set age_max back to 64.
+
+## 2026-11-17 — LLA Ecomm 02 Set 4 #108816 opened to 65+ (user-approved)
+- Age 45–64 → 45–65+ (age_max 65). Budget, placements, interests unchanged. Ecomm 01 Set 4 #108810 deliberately left untouched (only set with a purchase on Nov 16: Fasting banner, FB Feed, male 55–64, $79).
+- Rollback: set age_max back to 64.
