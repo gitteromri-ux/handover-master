@@ -1492,3 +1492,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - New source: real Artlist footage still, "Cheers, Toasting, Wine Glasses, Dinner Party" by Azulroto (clip 377094), 3840×2160 4K MP4, frame 0.3s. Licence certificate downloaded. Standalone réveillon master removed (Artlist licence bars standalone asset files).
 - Live verified: Pages build built 31d91e4, HTTP 200, live email JPEG md5 = repo, 18 route checks on live URL.
 - Rollback: git revert 31d91e4 (or reset to backup/reveillon-20261117 = 54c9798).
+
+## 2026-11-18 — French Atelier lead backfill batch 47
+- Meta form 1008080345425102 leads created 2026-11-17 20:21 UTC → 2026-11-18 07:40 UTC not yet in ledger: 47 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 29 · 117510: 18. Ledger 1077, 0 non-200. Queue acceptance only.
+- build_payloads.py: added phone-prefix country mapping +51 → PE, +965 → KW (2 leads; same rule as earlier MX/FR/TH/CO/VN/GB).
