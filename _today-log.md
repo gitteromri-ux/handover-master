@@ -1524,3 +1524,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 08:50 UTC: Meta pixel today: InitiateCheckout 5, AddPaymentInfo 5, Purchase 0 (raw 10/10/0, browser+server pairs).
 - Proceed test on QA 8084667 with dummy PAN 4242...: Airwallex confirm reached (400 "invalid pan", expected). Then the page reloaded (SKIP_3DS safety net on any 'error') and card fields were empty. 403s are only o11y.airwallex.com telemetry.
 - No rollback (user: new Airwallex doc is the instruction). Need Airwallex dashboard attempts for today's orders to see real decline reasons.
+
+## 2026-11-18 ~09:20 UTC: $1 live payment test code (b069853, user-requested)
+- https://www.longevitylifeacademy.com/?paytest=LLATEST1 + email gitter.omri(+tag)@gmail.com / @gita-agency.com -> CRM order $1 today + 4 x $1, recurring, same Airwallex path as buyers.
+- Verified: QA order 8084702 AmountToCharge 1, mode recurring, card/applepay/googlepay. Normal email on same link still sends $79 / 4 / $676 (request aborted, no order).
+- QA orders to exclude: 8084667, 8084701, 8084702 and the user's $1 test order. Remaining 4 x $1 must be cancelled in CRM; refund $1.
+- Remove after test: git revert b069853.
