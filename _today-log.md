@@ -1537,3 +1537,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Local only, NOT pushed (branch fix-error-inline, uncommitted): on dropIn 'error' show Airwallex message inline and keep card fields; reload only for 3DS errors. Verified on live Airwallex with local file (dummy PAN -> inline message, fields kept).
 - New live QA orders to exclude: 8084788 and one more created ~20:05 UTC 18 Nov (same QA email, id not captured).
 - Still open: real decline reasons need Airwallex LIVE dashboard (Daniel) or a $1 paytest payment; no real-card test possible from the agent. Paytest code (b069853) still live, remove after test.
+
+## 2026-11-18 — French Atelier lead backfill batch 50
+- Meta form 1008080345425102 leads created 2026-11-18 17:43 → 19:58 UTC not yet in ledger: 8 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 6. All HTTP 200. Ledger 1103 entries, 0 non-200. Queue acceptance only.
