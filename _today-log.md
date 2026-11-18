@@ -1572,3 +1572,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Vercel relay logs not reachable from the connected Vercel account (no projects listed), so real buyers' device/browser data was not retrieved.
 - New QA orders to exclude: staging 8081093, 8081095.
 - Scripts: /tmp/wk/skip.js (staging|live, card, skip), /tmp/wk/det.js, /tmp/wk/checkout-skip.html (local test copy only).
+
+## 2026-11-18 — French Atelier lead backfill batch 51
+- Meta form 1008080345425102 leads created 2026-11-18 20:51 → 21:35 UTC not yet in ledger: 7 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 3 · 117510: 4. Queue acceptance only.
