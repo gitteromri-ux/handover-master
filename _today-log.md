@@ -1508,3 +1508,4 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - `gitteromri-ux/eteacher-school-banners` commit `b3695dd` adds only `/lms/`: two 2140 × 1074 text-free JPGs, six designed options, English developer copy and a download bundle. No production LMS change.
 - Handoff: https://gitteromri-ux.github.io/eteacher-school-banners/lms/ . Rollback: revert `b3695dd` in the banner repository.
 - Photo revision `195a6da`: replaced the rendered cells with a blue-toned NIH micrograph and the sunset rooftop with the existing French Atelier daylight travel photograph. Same public link, copy and sizes. Revert `195a6da` to restore the first artwork.
+- `189a4d4`: corrected Longevity only after the user rejected the micrograph. Use the original approved Blue Cells Final school artwork, not replacement microscopy or portraits. Updated four LMS JPGs, page and ZIP. French Atelier unchanged. Reverting this commit would reinstate rejected artwork.
