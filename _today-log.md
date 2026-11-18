@@ -1515,3 +1515,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-18 — French Atelier lead backfill batch 49
 - Meta form 1008080345425102 leads created 2026-11-18 16:01 → 17:32 UTC not yet in ledger: 4 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 3 · 117510: 1. Ledger 1095, 0 non-200. Queue acceptance only.
+
+## 2026-11-18 ~08:35 UTC: live checkout check after "6 checkouts, 0 purchases"
+- New unpaid QA order **8084667** (gitter.omri+regular@gita-agency.com). EXCLUDE from sales. No card entered.
+- Live checkout runs commit 3eb6505 (not mine): Airwallex Components SDK v1 + CRM AirwallexOptions as-is, methods card/applepay/googlepay, mode recurring.
+- Card form mounted ~8 s after Continue; Google Pay, Apple Pay, card fields and Proceed visible. Submit/approval not tested.
+- Proposed rollback of checkout.html payment engine to 259ee0b (card+PayPal, pre-wallet). Awaiting user approval.
