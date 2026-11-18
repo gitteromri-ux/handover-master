@@ -1521,3 +1521,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Live checkout runs commit 3eb6505 (not mine): Airwallex Components SDK v1 + CRM AirwallexOptions as-is, methods card/applepay/googlepay, mode recurring.
 - Card form mounted ~8 s after Continue; Google Pay, Apple Pay, card fields and Proceed visible. Submit/approval not tested.
 - Proposed rollback of checkout.html payment engine to 259ee0b (card+PayPal, pre-wallet). Awaiting user approval.
+- 08:50 UTC: Meta pixel today: InitiateCheckout 5, AddPaymentInfo 5, Purchase 0 (raw 10/10/0, browser+server pairs).
+- Proceed test on QA 8084667 with dummy PAN 4242...: Airwallex confirm reached (400 "invalid pan", expected). Then the page reloaded (SKIP_3DS safety net on any 'error') and card fields were empty. 403s are only o11y.airwallex.com telemetry.
+- No rollback (user: new Airwallex doc is the instruction). Need Airwallex dashboard attempts for today's orders to see real decline reasons.
