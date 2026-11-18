@@ -1496,3 +1496,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 2026-11-18 — French Atelier lead backfill batch 47
 - Meta form 1008080345425102 leads created 2026-11-17 20:21 UTC → 2026-11-18 07:40 UTC not yet in ledger: 47 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 29 · 117510: 18. Ledger 1077, 0 non-200. Queue acceptance only.
 - build_payloads.py: added phone-prefix country mapping +51 → PE, +965 → KW (2 leads; same rule as earlier MX/FR/TH/CO/VN/GB).
+## 2026-11-18 ~08:10 UTC: LLA mobile polish (ba20994, index.html CSS only, user-approved)
+- Button gloss moved under the label (fixes smeared text), nav Enroll Now label vertically centred, lead-gen "Enroll Online Now" is one clean button (no inner pill).
+- Trust-strip logos 28px -> 44px phone / 52px desktop.
+- Phone pricing fold compacted: 1228px -> 886px. Desktop pricing unchanged.
+- Floater stays tappable while it fades out over the pricing fold (it used to ignore taps mid-fade).
+- Live verified: hash match, no page errors, floater opens step 1 of the form.
+- Backup branch backup/20261117-before-mobile-polish. Rollback: git revert ba20994.
