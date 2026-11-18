@@ -1575,3 +1575,14 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-18 — French Atelier lead backfill batch 51
 - Meta form 1008080345425102 leads created 2026-11-18 20:51 → 21:35 UTC not yet in ledger: 7 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 3 · 117510: 4. Queue acceptance only.
+
+## 2026-11-19 ~00:15 IL — LLA: OTP skip candidate 85f58f4 (LOCAL ONLY, awaiting Omri's approval; live is still de1cb95)
+- Branch `otp-skip-and-outcomes` in /tmp/lla (Longevity-Academy.github.io), commit 85f58f4, checkout.html only. NOT pushed.
+- What it does: monthly plans send three_ds_action SKIP_3DS via `recurringOptions` (payment_consent values copied from CRM AirwallexOptions, then `payment_consent` removed so the SDK calls payment_consents/create). `?skip3ds=0` turns it off. On any dropIn error with skip active: `el.update({recurringOptions without skip})`, message inline, fields kept, no reload. New Meta signals via LLA_META.track: `Pay_Click` (dropIn clickConfirmButton) and `PayErr_<airwallex code>` (pixel + CAPI relay; live mode only).
+- Sandbox VERIFIED (local file served to test browser): first-try paid 8081102 / 8081107 (consent attached to intent, CRM report 202); 3DS-fail card -> inline message, fields kept -> good card same form -> paid 8081106; forced rejection of skip on confirm -> inline, fields kept -> second tap created consent WITHOUT skip -> paid 8081105. Demo account still shows the OTP (ignores skip).
+- Live (local file, QA order 8084869, dummy PAN, events captured not forwarded): consent create with SKIP_3DS 201; confirm 400 invalid pan; inline message; Pay_Click + PayErr_validation_error fired pixel + server; Google Pay button still renders.
+- NOT VERIFIED: whether the LIVE Airwallex account honours the skip (needs a real card); wallet payments with recurringOptions; real approved card on live.
+- Deviation to note: this replaces the CRM `payment_consent` key with `recurringOptions` carrying the same values (eTeacher FE guide says pass AirwallexOptions as-is).
+- Dead ends tonight: Cloudflare Workers Observability query for eteacher-leads-proxy returns 0 events for 7 days with both vault tokens (logging appears off on the worker); vault Vercel token is invalid; so no real-buyer log is readable. Meta since fix 20:25 UTC: 0 AddToCart / InitiateCheckout (PageView 43 raw); last checkout events 15:00 UTC hour Nov 18.
+- CRM -1 order (8084883): same "still being confirmed" handling exists in 2076a14 (not a regression); other QA orders still load.
+- Staging QA orders to exclude: 8081102–8081107.
