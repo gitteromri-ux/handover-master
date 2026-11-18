@@ -1540,3 +1540,13 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-18 — French Atelier lead backfill batch 50
 - Meta form 1008080345425102 leads created 2026-11-18 17:43 → 19:58 UTC not yet in ledger: 8 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 6. All HTTP 200. Ledger 1103 entries, 0 non-200. Queue acceptance only.
+### 18 Nov 2026 22:30 IL - LLA checkout: card errors no longer wipe the form (LIVE, approved by Omri)
+- Repo Longevity-Academy/Longevity-Academy.github.io, main b069853 -> **de1cb95**. One file: checkout.html (+10/-1). Backup branch: backup/20261118-before-checkout-error-fix. Rollback: `git revert de1cb95` and push.
+- Before: every dropIn 'error' (typo, decline, failed bank verification) reloaded the page once per order, wiped the card fields, showed "Please enter your card details again"; a second error said "check with your payment provider ... before trying another payment". Cause: SKIP_3DS safety net (86e2b19) was active for all installment buyers.
+- Now: Airwallex's own reason is shown under the form, card fields stay, no reload. SKIP_3DS + its reload path only on ?skip3ds=1 test link.
+- Evidence: live confirm request on main (skip default on) carried payment_method_options {"card":{}} - Components SDK v1 does not send three_ds_action, so the flag had no effect on 3DS. Airwallex docs: SKIP_3DS only accepted once enabled on the merchant account.
+- Verified live after deploy: served file == de1cb95; QA order 8084829, plan $79 + 4 x $169 = $755, dummy PAN -> confirm 400 invalid pan -> inline message, fields kept, no reload.
+- Verified sandbox (local file, staging order 8081085): 3DS-fail card 4012000300000070 -> "You have failed to authenticate the payment..." fields kept -> corrected to 4035501000000008 on same form -> "Payment received".
+- Apple Pay on LIVE: merchant validation for www.longevitylifeacademy.com returns a valid session (201, ETEACHER EU LIMITED). Domain is registered.
+- NOT verified: a real approved card on LIVE; why the 17-18 Nov buyers did not pay (needs Airwallex LIVE attempt records - Daniel). 3DS skip for installments needs Airwallex to enable SKIP_3DS on the account and a re-check that the SDK sends it.
+- QA orders to exclude: 8084788, 8084803, 8084813, 8084829 (+ one ~20:05 UTC id not captured). Paytest code b069853 still live.
