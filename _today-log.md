@@ -1509,3 +1509,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Handoff: https://gitteromri-ux.github.io/eteacher-school-banners/lms/ . Rollback: revert `b3695dd` in the banner repository.
 - Photo revision `195a6da`: replaced the rendered cells with a blue-toned NIH micrograph and the sunset rooftop with the existing French Atelier daylight travel photograph. Same public link, copy and sizes. Revert `195a6da` to restore the first artwork.
 - `189a4d4`: corrected Longevity only after the user rejected the micrograph. Use the original approved Blue Cells Final school artwork, not replacement microscopy or portraits. Updated four LMS JPGs, page and ZIP. French Atelier unchanged. Reverting this commit would reinstate rejected artwork.
+
+## 2026-11-18 — French Atelier lead backfill batch 48
+- Meta form 1008080345425102 leads created 2026-11-18 08:21 → 15:09 UTC not yet in ledger: 14 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 9 · 117510: 5. Ledger 1091, 0 non-200. Queue acceptance only.
