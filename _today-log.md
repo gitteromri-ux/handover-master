@@ -1503,3 +1503,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Floater stays tappable while it fades out over the pricing fold (it used to ignore taps mid-fade).
 - Live verified: hash match, no page errors, floater opens step 1 of the form.
 - Backup branch backup/20261117-before-mobile-polish. Rollback: git revert ba20994.
+
+### 2026-11-18 | eTeacher LMS course completion banners
+- `gitteromri-ux/eteacher-school-banners` commit `b3695dd` adds only `/lms/`: two 2140 × 1074 text-free JPGs, six designed options, English developer copy and a download bundle. No production LMS change.
+- Handoff: https://gitteromri-ux.github.io/eteacher-school-banners/lms/ . Rollback: revert `b3695dd` in the banner repository.
