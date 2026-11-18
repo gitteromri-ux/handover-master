@@ -1530,3 +1530,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Verified: QA order 8084702 AmountToCharge 1, mode recurring, card/applepay/googlepay. Normal email on same link still sends $79 / 4 / $676 (request aborted, no order).
 - QA orders to exclude: 8084667, 8084701, 8084702 and the user's $1 test order. Remaining 4 x $1 must be cancelled in CRM; refund $1.
 - Remove after test: git revert b069853.
+
+### 18 Nov 2026 (evening) - LLA checkout: sandbox payment proof, no production change
+- Sandbox end-to-end payment PASSED on live checkout.html?env=staging: staging order 8081083, test Visa 0008, 3DS mock challenge (SKIP_3DS ignored in demo), "Payment received", CRM report queued (202).
+- Pixel 1440305917310328 raw events (browser+server): 8-16 Nov AddPaymentInfo 91 / Purchase 12 (about 1 in 8); 11 Nov 30 / 0; 17-18 Nov 11 / 0. Zero from ~6 payment-starts is not proof of a break. AddPaymentInfo fires on first tap into the card frame, not on Proceed.
+- Local only, NOT pushed (branch fix-error-inline, uncommitted): on dropIn 'error' show Airwallex message inline and keep card fields; reload only for 3DS errors. Verified on live Airwallex with local file (dummy PAN -> inline message, fields kept).
+- New live QA orders to exclude: 8084788 and one more created ~20:05 UTC 18 Nov (same QA email, id not captured).
+- Still open: real decline reasons need Airwallex LIVE dashboard (Daniel) or a $1 paytest payment; no real-card test possible from the agent. Paytest code (b069853) still live, remove after test.
