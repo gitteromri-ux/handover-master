@@ -1563,3 +1563,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - New QA orders to exclude: production 8084846, 8084852, 8084866, 8084869, 8084883; staging 8081090.
 - Scripts: /tmp/wk/journey.js (webkit|chromium), /tmp/wk/sandbox.js. Report: lla-mobile-fix/LLA-checkout-QA-2026-11-18.md.
 - Open: paytest code still live (revert b069853 when no longer needed). Proposed next: record card failure reasons (code only, no card data) so failed attempts are visible.
+
+## 2026-11-18 ~23:10 IL — LLA: OTP (3DS) skip tests + CRM -1 finding (no code change, nothing pushed to the site)
+- User: "I don't want OTP". Tested with a local copy of checkout.html served only to the test browser.
+- Top-level `three_ds_action` (what main sent since 3eb6505): not sent by Components SDK v1. `recurringOptions.three_ds_action` alongside CRM `payment_consent`: also not sent.
+- `recurringOptions {merchant, unscheduled, USD, three_ds_action: SKIP_3DS}` with `payment_consent` removed: SDK calls payment_consents/create with three_ds_action SKIP_3DS. Demo (staging order 8081095, challenge card 4012000300000088): accepted, OTP screen still shown 3.8 s after Proceed. Live (QA order 8084869, dummy PAN): consent create 201 (cst_nlpdcg2wlhoac4ksv3h, REQUIRES_PAYMENT_METHOD, no charge), confirm 400 invalid pan. Whether live honours the skip is NOT VERIFIED (needs a real card). Airwallex docs: SKIP_3DS takes effect only when enabled on the merchant account.
+- Finding: live QA order 8084883 / student 11703255 returns OrderId -1, PaymentID -1, no AirwallexOptions from /api/checkout/details from ~5 min after creation onward; checkout shows "Your existing order is still being confirmed..." and no payment form. Orders 8084846, 8084852, 8084866, 8084869 still load. Cause unknown; real-buyer impact NOT VERIFIED. Each details call returns a new Airwallex intent id.
+- Vercel relay logs not reachable from the connected Vercel account (no projects listed), so real buyers' device/browser data was not retrieved.
+- New QA orders to exclude: staging 8081093, 8081095.
+- Scripts: /tmp/wk/skip.js (staging|live, card, skip), /tmp/wk/det.js, /tmp/wk/checkout-skip.html (local test copy only).
