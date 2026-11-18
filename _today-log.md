@@ -1550,3 +1550,16 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Apple Pay on LIVE: merchant validation for www.longevitylifeacademy.com returns a valid session (201, ETEACHER EU LIMITED). Domain is registered.
 - NOT verified: a real approved card on LIVE; why the 17-18 Nov buyers did not pay (needs Airwallex LIVE attempt records - Daniel). 3DS skip for installments needs Airwallex to enable SKIP_3DS on the account and a re-check that the SDK sends it.
 - QA orders to exclude: 8084788, 8084803, 8084813, 8084829 (+ one ~20:05 UTC id not captured). Paytest code b069853 still live.
+
+## 2026-11-18 ~22:55 IL — LLA checkout full QA after de1cb95 (no code change)
+- Live buyer journey on two phone profiles (iPhone 15 / WebKit 27.2 Safari engine; Pixel 7 / Chromium), touch taps, Meta pixel + CAPI captured and not forwarded.
+- Timings iPhone engine / Android engine: landing 2.2 s (4.3 s full) / 2.0 s; Enroll -> details 2.6 / 0.4; Continue -> plan 2.7 / 0.9; pay tap -> checkout open 3.3 / 0.7; pay tap -> card field ready 14.7 / 9.9 (CRM order create 3.5 s, details 2.6 s, Airwallex form 3-8 s); Proceed with rejected test PAN -> inline message 1.2 / 0.7, fields kept, no reload.
+- Sandbox full payment on WebKit: staging order 8081090, 3DS screen 7.0 s after Proceed, code -> "Payment received" 2.8 s, CRM report 202.
+- Meta events, both engines: PageView, ViewContent, Enroll_CTA_Click, Clicked_on_Enroll, AddToCart, InitiateCheckout, checkout PageView, AddPaymentInfo (lla_api_<order>), Purchase (simulated trigger, id = order id): browser x1 + CAPI x1, same event_id, fbc/fbp on both, email/phone from AddToCart on. Tracking code unchanged since 2076a14 (Nov 16).
+- Test-tool notes: Playwright touch tap inside the Airwallex iframe mis-maps the synthesized click under Chromium site isolation (tap did nothing); with isolation off the same tap confirms. Not a site bug. Under strict isolation the browser InitiateCheckout copy can be cut by navigation; server copy sent.
+- Third-party: Forter script (Airwallex fraud vendor) throws "null is not an object" on Linux WebKit; form and confirm still work. 403s are Airwallex telemetry (o11y-staging.airwallex.com/airtracker/logs); 401 is reCAPTCHA private-access-token challenge.
+- Meta raw counts since Nov 17 05:00 UTC: AddToCart 29, InitiateCheckout 12, AddPaymentInfo 11, Purchase 0 (about 5-6 buyers reached the card field).
+- NOT VERIFIED: real approved card on live; wallet sheets; why Nov 17-18 buyers did not pay (no failure logging exists).
+- New QA orders to exclude: production 8084846, 8084852, 8084866, 8084869, 8084883; staging 8081090.
+- Scripts: /tmp/wk/journey.js (webkit|chromium), /tmp/wk/sandbox.js. Report: lla-mobile-fix/LLA-checkout-QA-2026-11-18.md.
+- Open: paytest code still live (revert b069853 when no longer needed). Proposed next: record card failure reasons (code only, no card data) so failed attempts are visible.
