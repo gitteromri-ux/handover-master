@@ -1620,3 +1620,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Meta pixel /stats: hour 17:00–18:00 IL (15:00–16:00 UTC) Nov 19: AddToCart 2, InitiateCheckout 2, AddPaymentInfo 2, Purchase 2 (raw, browser+server), Pay_Click 1 (browser only), no PayErr_*. Earlier today 15:00–16:00 IL: AddToCart 4, IC 2, API 2, no Purchase, no Pay_Click.
 - Site at that hour = main 85f58f4 (GitHub Pages build 06:29:54 UTC, the latest build; no build since). Live checkout.html / index.html / nov/eteacher-ecomm.js sha1 == origin/main at 18:05 UTC. Pay_Click exists only in 85f58f4, so the buyer paid on the current version.
 - NOT VERIFIED: Cloudflare worker deploy history (403 with both tokens), Vercel relay deploy history (no project access); relay still answers 400 to unknown event names (same as morning). Paid order not seen in CRM by me; OTP shown or not unknown.
+
+## 2026-11-19 20:40 IL — LLA: why 10 add-to-carts yesterday vs 2 today (analysis only, no change)
+- Ads Manager, 5 ecomm ad sets, same hours 00:00-20:00 IL: Nov 18 spend $1,725 / 133 landing page views / 10 ATC / 5 IC / 0 purchase; Nov 19 $1,337 / 131 LPV / 2 ATC / 1 IC / 1 purchase. Pixel (raw/2): ATC 10 vs 3; enroll clicks ~13 vs ~6.
+- Daily ATC (ecomm ad sets): Nov 16 5 (179 LPV), Nov 17 6 (110), Nov 18 10 (175), Nov 19 2 (131 by 20:00).
+- Landing page identical since ba20994 (Nov 18 10:06 IL); only script version tag differs. Not a site change.
+- Mix: reactivated ad set 52673824399628 (ad Claude_Ad17, 52678067343828) = 52 of 131 LPV today at $45-72 CPM, 0 ATC; two days 95 LPV / 1 ATC. Other four ad sets: same hours 108 LPV -> 79 LPV, spend $1,233 -> $910 on Adset 4/5/_04.
+- Window 00:00-05:00 IL: 55 LPV today vs 37, 0 ATC both days. Facebook Reels 56 LPV / 0 ATC today; FB+IG feed LPV 123 (full day Nov 18, 8 ATC) vs 69 today.
+- Activity log: Nov 18 11:01-11:07 budgets + reactivation + 5 ads paused; Nov 19 19:48 ten ads edited (new creative ids; link/copy same in compared fields; Six Pillars videos replaced), 19:52-20:00 budgets changed. All ecomm ad sets optimise for Purchase.
