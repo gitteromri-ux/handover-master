@@ -1586,3 +1586,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Dead ends tonight: Cloudflare Workers Observability query for eteacher-leads-proxy returns 0 events for 7 days with both vault tokens (logging appears off on the worker); vault Vercel token is invalid; so no real-buyer log is readable. Meta since fix 20:25 UTC: 0 AddToCart / InitiateCheckout (PageView 43 raw); last checkout events 15:00 UTC hour Nov 18.
 - CRM -1 order (8084883): same "still being confirmed" handling exists in 2076a14 (not a regression); other QA orders still load.
 - Staging QA orders to exclude: 8081102–8081107.
+
+## 2026-11-19 — French Atelier lead backfill batch 52
+- Meta form 1008080345425102 leads created 2026-11-18 22:17 → 2026-11-19 06:25 UTC not yet in ledger: 40 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 21 · 117510: 19. All HTTP 200. Ledger 1150 entries, 0 non-200. Queue acceptance only.
