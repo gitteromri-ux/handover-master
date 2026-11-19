@@ -1644,3 +1644,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Connector staged a draft instead of a live edit; live edit applied through Graph, leftover draft discarded (drafts list empty).
 - Known, not changed: the Fasting video still shows the retired "VIP masterclass with Julie Gibson Clark" card (same file as the Fasting ads already live in the other sets).
 - Rollback: pause ads 52682438307628 and 52682438314828, set ad set 52673824399628 to PAUSED, restore targeting and $244 budget from /tmp/wk/snap/adset_copy_before_20261119.json, re-activate ad 52678067343828.
+
+## 2026-11-19 — French Atelier lead backfill batch 57
+- Meta form 1008080345425102 leads created 2026-11-19 20:22 → 21:24 UTC not yet in ledger: 7 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 4 · 117510: 3. All HTTP 200. Ledger 1204 entries, 0 non-200. Queue acceptance only.
