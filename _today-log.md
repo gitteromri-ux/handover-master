@@ -1628,3 +1628,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Mix: reactivated ad set 52673824399628 (ad Claude_Ad17, 52678067343828) = 52 of 131 LPV today at $45-72 CPM, 0 ATC; two days 95 LPV / 1 ATC. Other four ad sets: same hours 108 LPV -> 79 LPV, spend $1,233 -> $910 on Adset 4/5/_04.
 - Window 00:00-05:00 IL: 55 LPV today vs 37, 0 ATC both days. Facebook Reels 56 LPV / 0 ATC today; FB+IG feed LPV 123 (full day Nov 18, 8 ATC) vs 69 today.
 - Activity log: Nov 18 11:01-11:07 budgets + reactivation + 5 ads paused; Nov 19 19:48 ten ads edited (new creative ids; link/copy same in compared fields; Six Pillars videos replaced), 19:52-20:00 budgets changed. All ecomm ad sets optimise for Purchase.
+
+## 2026-11-19 — French Atelier lead backfill batch 55
+- Meta form 1008080345425102 leads created 2026-11-19 17:43 → 18:46 UTC not yet in ledger: 7 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 4 · 117510: 3. All HTTP 200. Ledger 1191 entries, 0 non-200. Queue acceptance only.
