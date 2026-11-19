@@ -1615,3 +1615,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-19 — French Atelier lead backfill batch 54
 - Meta form 1008080345425102 leads created 2026-11-19 12:58 → 17:38 UTC not yet in ledger: 24 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 11 · 117510: 13. All HTTP 200. Ledger 1184 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-19 20:10 IL — LLA: first Purchase on the current live checkout
+- Meta pixel /stats: hour 17:00–18:00 IL (15:00–16:00 UTC) Nov 19: AddToCart 2, InitiateCheckout 2, AddPaymentInfo 2, Purchase 2 (raw, browser+server), Pay_Click 1 (browser only), no PayErr_*. Earlier today 15:00–16:00 IL: AddToCart 4, IC 2, API 2, no Purchase, no Pay_Click.
+- Site at that hour = main 85f58f4 (GitHub Pages build 06:29:54 UTC, the latest build; no build since). Live checkout.html / index.html / nov/eteacher-ecomm.js sha1 == origin/main at 18:05 UTC. Pay_Click exists only in 85f58f4, so the buyer paid on the current version.
+- NOT VERIFIED: Cloudflare worker deploy history (403 with both tokens), Vercel relay deploy history (no project access); relay still answers 400 to unknown event names (same as morning). Paid order not seen in CRM by me; OTP shown or not unknown.
