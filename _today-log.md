@@ -1598,3 +1598,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - NOT VERIFIED: live account honouring SKIP_3DS (needs real card); real approved card on live; Apple Pay / Google Pay payment with recurringOptions.
 - Meta since 20:25 UTC Nov 18: no AddToCart / InitiateCheckout / AddPaymentInfo / Purchase; 2 Clicked_on_Enroll (raw).
 - QA orders to exclude: production 8085128; staging 8081102–8081114.
+
+## 2026-11-19 — French Atelier lead backfill batch 53
+- Meta form 1008080345425102 leads created 2026-11-19 06:48 → 12:31 UTC not yet in ledger: 10 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 8. All HTTP 200. Ledger 1160 entries, 0 non-200. Queue acceptance only. One +231 (Liberia, LR) phone mapped.
