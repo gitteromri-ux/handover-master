@@ -1634,3 +1634,13 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-19 — French Atelier lead backfill batch 56
 - Meta form 1008080345425102 leads created 2026-11-19 19:14 → 20:15 UTC not yet in ledger: 6 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 3 · 117510: 3. All HTTP 200. Ledger 1197 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-19 22:40 IL — Hot-only set live on #108814 copy (approved by Omri: "$75, Piano ad plus fasting banner, clearer copy, Go")
+
+- Ad set 52673824399628 `ecomm_Adset_02_All_All_CPM_#108814` (campaign ecomm-02 52668266203628): PAUSED → ACTIVE, daily budget $244 → $75. Name, optimisation (Purchase, pixel 1440305917310328), bid strategy, attribution unchanged.
+- Targeting replaced: US, 18–65+, all genders, no interests, Advantage+ audience off. Include: InitiateCheckout-90d 52666079230228, ATC-90d 52666079297628, LLA Enroll clicks and payment info 90d 52680200065628. Exclude: new audience 52682438105428 "LLA - Blueprint buyers 180d (Purchase, not julie-masterclass) | exclusion". Placements: Facebook feed + Instagram feed, mobile.
+- New ads (both ACTIVE, in Meta review): Piano 52682438307628 (creative 1243126598654458), Fasting 14:10 banner 52682438314828 (creative 2402446110490696). Same media, thumbnails (hashes 595e4870… / 72d13122…), headline, description, CTA, link and #108814 URL tags as the selling ads; only the primary text is new. All Advantage+ creative enhancements opted out.
+- Old Piano ad 52678067343828 in this set: ACTIVE → PAUSED. All other ads in the set stay paused. No other ad set, ad, budget or Leads set touched.
+- Connector staged a draft instead of a live edit; live edit applied through Graph, leftover draft discarded (drafts list empty).
+- Known, not changed: the Fasting video still shows the retired "VIP masterclass with Julie Gibson Clark" card (same file as the Fasting ads already live in the other sets).
+- Rollback: pause ads 52682438307628 and 52682438314828, set ad set 52673824399628 to PAUSED, restore targeting and $244 budget from /tmp/wk/snap/adset_copy_before_20261119.json, re-activate ad 52678067343828.
