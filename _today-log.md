@@ -1608,3 +1608,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Pay-in-full card is hidden on the live modal (`.pp-card[data-pl="upfront"] display:none`), so every buyer uses the monthly plan; a one-time $1 test would exercise a path no buyer uses. Not built.
 - Meta since 06:30 UTC: PageView 73 raw, Clicked_on_Enroll 2 raw, no AddToCart / Pay_Click / PayErr / Purchase (as of 13:17 UTC).
 - Proposed: hourly automatic check of pixel /stats for Pay_Click / PayErr_* / Purchase, reporting in the task thread (awaiting Omri's approval).
+
+## 2026-11-19 15:50 IL — LLA: zero-amount test code checked (no code change, live still 85f58f4)
+- Omri asked for a coupon making all 5 payments $0. Tested with a local-only script override (nothing pushed): order request FirstPayment 0 / NumberOfPayments 4 / LeftToPay 0 -> CRM created production QA order **8085307** (student 11703779) with amount **$279.80**, NumOfPayments 4, PaymentPerMonth 0. Checkout safety check refused to load the card form (amount mismatch). So a $0 order is not possible from the site; CRM minimum that works is the existing $1 paytest. EXCLUDE 8085307 from sales.
+- Link connector (one-time cards) failed to connect. No real card available to the agent.
