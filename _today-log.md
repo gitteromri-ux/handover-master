@@ -1601,3 +1601,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-19 — French Atelier lead backfill batch 53
 - Meta form 1008080345425102 leads created 2026-11-19 06:48 → 12:31 UTC not yet in ledger: 10 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 2 · 117510: 8. All HTTP 200. Ledger 1160 entries, 0 non-200. Queue acceptance only. One +231 (Liberia, LR) phone mapped.
+
+## 2026-11-19 15:20 IL — LLA: no-card proof options checked (no code change, live still 85f58f4)
+- Omri refuses to pay a test himself (no recurring charges on his card). No live card approval is possible without a real card; live Airwallex rejects test numbers ("invalid pan").
+- Checked for real-buyer evidence: Microsoft Clarity on checkout.html is a placeholder (PASTE_CLARITY_ID) = no session recordings; Vercel project lla-ac-events still not visible to the connected account (404 unscoped); worker observability empty.
+- Pay-in-full card is hidden on the live modal (`.pp-card[data-pl="upfront"] display:none`), so every buyer uses the monthly plan; a one-time $1 test would exercise a path no buyer uses. Not built.
+- Meta since 06:30 UTC: PageView 73 raw, Clicked_on_Enroll 2 raw, no AddToCart / Pay_Click / PayErr / Purchase (as of 13:17 UTC).
+- Proposed: hourly automatic check of pixel /stats for Pay_Click / PayErr_* / Purchase, reporting in the task thread (awaiting Omri's approval).
