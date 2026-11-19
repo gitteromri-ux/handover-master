@@ -1612,3 +1612,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 2026-11-19 15:50 IL — LLA: zero-amount test code checked (no code change, live still 85f58f4)
 - Omri asked for a coupon making all 5 payments $0. Tested with a local-only script override (nothing pushed): order request FirstPayment 0 / NumberOfPayments 4 / LeftToPay 0 -> CRM created production QA order **8085307** (student 11703779) with amount **$279.80**, NumOfPayments 4, PaymentPerMonth 0. Checkout safety check refused to load the card form (amount mismatch). So a $0 order is not possible from the site; CRM minimum that works is the existing $1 paytest. EXCLUDE 8085307 from sales.
 - Link connector (one-time cards) failed to connect. No real card available to the agent.
+
+## 2026-11-19 — French Atelier lead backfill batch 54
+- Meta form 1008080345425102 leads created 2026-11-19 12:58 → 17:38 UTC not yet in ledger: 24 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 11 · 117510: 13. All HTTP 200. Ledger 1184 entries, 0 non-200. Queue acceptance only.
