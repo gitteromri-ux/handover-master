@@ -1589,3 +1589,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-19 — French Atelier lead backfill batch 52
 - Meta form 1008080345425102 leads created 2026-11-18 22:17 → 2026-11-19 06:25 UTC not yet in ledger: 40 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 21 · 117510: 19. All HTTP 200. Ledger 1150 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-19 08:30 IL — LLA: OTP skip + pay-outcome signals LIVE (85f58f4), approved by Omri via form
+- Pushed 85f58f4 to Longevity-Academy.github.io main 06:29 UTC; live checkout.html sha1 d67ee6f1… matches at 06:30:51 UTC. Previous de1cb95. Backup branch `backup/20261119-before-otp-skip`. Rollback: `git revert 85f58f4` + push. Per-visit off: `?skip3ds=0`.
+- Live file checks (no local override): (1) new production QA order 8085128 via full phone journey: card form in 10.0 s, $79 + 4 x $169 shown, Google Pay button shown, dummy PAN -> 400 invalid pan -> inline message, fields kept, no reload; Pay_Click + PayErr_validation_error captured (pixel + relay request). (2) existing QA order 8084869: consent create with SKIP_3DS 201 on LIVE Airwallex. (3) sandbox on live file, staging order 8081114: 3DS-fail card -> inline, fields kept -> good card same form (consent created without skip) -> paid, CRM report 202.
+- One earlier sandbox run this morning did not reach the card form (stuck at "Confirming tuition", no staging order returned); the immediate rerun passed. Cause not established (staging CRM side suspected, not proven).
+- CAPI relay (lla-ac-events) has an event allowlist: unknown names return 400 unknown_event, single fetch, no retry. So Pay_Click / PayErr_* reach Meta through the BROWSER pixel only; server copy is dropped. Read them with pixel /stats (aggregation=event).
+- NOT VERIFIED: live account honouring SKIP_3DS (needs real card); real approved card on live; Apple Pay / Google Pay payment with recurringOptions.
+- Meta since 20:25 UTC Nov 18: no AddToCart / InitiateCheckout / AddPaymentInfo / Purchase; 2 Clicked_on_Enroll (raw).
+- QA orders to exclude: production 8085128; staging 8081102–8081114.
