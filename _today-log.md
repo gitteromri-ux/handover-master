@@ -1647,3 +1647,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-19 — French Atelier lead backfill batch 57
 - Meta form 1008080345425102 leads created 2026-11-19 20:22 → 21:24 UTC not yet in ledger: 7 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 4 · 117510: 3. All HTTP 200. Ledger 1204 entries, 0 non-200. Queue acceptance only.
+
+## 2026-11-20 01:40 IL — Hot set raised to $230/day, Instagram Reels added (approved by Omri: "Raise it to 230 and put the placements you are sure are best")
+
+- Ad set 52673824399628 `ecomm_Adset_02_All_All_CPM_#108814` (hot-only copy): daily budget $75 → $230. Placements: Facebook feed + Instagram feed → Facebook feed + Instagram feed + Instagram Reels, mobile. Audience, exclusion, optimisation, ads unchanged.
+- Placement basis (Nov 4–19, both sales campaigns): Facebook feed $8,612 / 10 checkouts / 4 purchases; Instagram Reels $1,641 / 4 / 1; Instagram feed $4,961 / 9 / 0; Facebook Reels $10,441 / 7 / 1 (left out).
+- No other ad set, ad, budget or Leads set touched.
+- Rollback: budget back to 7500 and targeting from /tmp/wk/snap/adset_hot_before_230_20261120.json.
