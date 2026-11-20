@@ -1720,3 +1720,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Adset 3_All_All_CPM_#108775 (52632882695828) unchanged at $49. Leads total $320.85 -> $500.85/day.
 - Verified: before/after diff of all ad sets shows only these two budgets changed. Snapshots /tmp/wk/snap/pre_leads90_20261120_1005.json, post_leads90_20261120_1005.json.
 - Rollback: daily_budget 22285 and 4900 (cents).
+
+## 2026-11-20 10:11 IL — French Atelier lead-gen budget cuts (user-instructed, act_1358975119724184)
+- AdGroup02_All_All_CPM_#108790 (120250235642210546): $279.98 -> $224.98 (-$55)
+- US Specific | 45+ | M & W - FR Culture interests | FB & Inst Story + Reels - OTP_All_All_CPC_#108762 (120250357351770546): $299.60 -> $233.60 (-$66)
+- Charline Video - LAL 1% FA Purchasers 232 - 45+_All_All_CPM_#108772 (120251368165790546): $399.99 -> $355.99 (-$44)
+- New 1_All_All_CPM_#108770 (120250357369880546): $366.50 -> $322.50 (-$44)
+- Lead-gen total $2,934.52 -> $2,725.52/day. Verified: before/after diff of all 15 ad sets in the account shows only these 4 budgets changed; statuses unchanged.
+- Snapshots /tmp/wk/snap/fa_pre_cut_20261120_1011.json, fa_post_cut_20261120_1011.json. Rollback (cents): 27998, 29960, 39999, 36650.
