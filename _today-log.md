@@ -1728,3 +1728,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - New 1_All_All_CPM_#108770 (120250357369880546): $366.50 -> $322.50 (-$44)
 - Lead-gen total $2,934.52 -> $2,725.52/day. Verified: before/after diff of all 15 ad sets in the account shows only these 4 budgets changed; statuses unchanged.
 - Snapshots /tmp/wk/snap/fa_pre_cut_20261120_1011.json, fa_post_cut_20261120_1011.json. Rollback (cents): 27998, 29960, 39999, 36650.
+
+## 2026-11-20 — French Atelier lead backfill batch 59
+- Meta form 1008080345425102 leads created 2026-11-20 07:33 → 09:33 UTC not yet in ledger: 6 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 3 · 117510: 3. All HTTP 200. Ledger 1267 entries, 0 non-200. Queue acceptance only.
