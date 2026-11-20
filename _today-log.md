@@ -1654,3 +1654,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Placement basis (Nov 4–19, both sales campaigns): Facebook feed $8,612 / 10 checkouts / 4 purchases; Instagram Reels $1,641 / 4 / 1; Instagram feed $4,961 / 9 / 0; Facebook Reels $10,441 / 7 / 1 (left out).
 - No other ad set, ad, budget or Leads set touched.
 - Rollback: budget back to 7500 and targeting from /tmp/wk/snap/adset_hot_before_230_20261120.json.
+
+## 2026-11-20 02:34 IL — Men +40% bid rule on ecomm Adset 4 and Adset 02 original (approved by Omri: "I want both adsets 4 and adset 2 on 40% men. Go")
+
+- Account is at Meta's limit of 6 value rule sets, so no new set could be created. Rule set 1429124048549111 (was "Men +30%", one rule: men +30%) edited in place: renamed "Men +40% actual (Adset 4 + Adset 02)", single active rule men +40%. Old +30% rule 1429124051882444 now status DELETED.
+- ecomm Adset 4_All_All_CPM_#108810 (52666232368428): already on this rule set, so men bid +30% → +40%.
+- ecomm_Adset_02_All_All_CPM_#108814 original (52668268711228): no rule → rule set 1429124048549111 attached, value_rules_applied true (men +40%).
+- Side effect: paused set ecomm Adset 2_All_All_CPM_#108808 (52669013718628) shares this rule set, so its stored rule is now +40% too. It is paused, no delivery.
+- Unchanged and verified after: budgets ($289 / $328.80), status ACTIVE, targeting, placements, ads, last significant edit timestamps. ecomm_Adset_04 #108816 (52668330870828) still on rule set 2315605865939893 (named "Men +40%", real value +25%). Adset 5 still +50%. Hot set 52673824399628 and Leads sets: no rule, untouched.
+- Rollback: POST /1429124048549111 with rules men +30% (and old name "Men +30%"); POST /52668268711228 value_rules_applied=false. Snapshots: /tmp/wk/snap/adset_*_before_men40_20261120.json, rulesets_before_men40_20261120.json.
