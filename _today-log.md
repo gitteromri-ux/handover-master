@@ -1691,3 +1691,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - ecomm_Adset_02_All_All_CPM_#108814 hot copy (52673824399628): daily budget 23000 → 19900. Today before the change: $101 spent, 3 visits, 0 carts.
 - Verified after: status ACTIVE, targeting, both HOT ads and last significant edit unchanged. Other budgets unchanged: Adset 5 $499, Adset 4 $289, Adset 02 original $328.80, ecomm_Adset_04 $323.
 - Rollback: POST /52673824399628 daily_budget=23000. Snapshot: /tmp/wk/snap/adset_hot_before_199_20261120.json.
+
+## 2026-11-20 09:44 IL — Three budget moves (Omri: "Raise the adset 4 that had a purchase by 44 dollars. Reduce the other adset4 budget by 44. Add 67 to adset2 original")
+
+- ecomm Adset 4_All_All_CPM_#108810 (52666232368428, last purchase Nov 16 $79): daily budget 28900 → 33300 (+$44).
+- ecomm_Adset_04_All_All_CPM_#108816 (52668330870828, last purchase Nov 8 $49): 32300 → 27900 (−$44).
+- ecomm_Adset_02_All_All_CPM_#108814 original (52668268711228): 32880 → 39580 (+$67).
+- Verified after on all three: status ACTIVE, targeting, men +40% rules and last significant edit unchanged. Untouched: Adset 5 $499, hot set $199, Leads sets $222.85 / $49 / $49.
+- Sales budgets now total $1,705.80/day.
+- Rollback: daily_budget back to 28900 / 32300 / 32880. Snapshots: /tmp/wk/snap/adset_*_before_bud_0941_20261120.json.
