@@ -1705,3 +1705,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 - New read-only script `tools/chart.py` in this repo. `python3 tools/chart.py today` (or `yesterday`, or a date) prints, per active ad set of act_1459085242361281: daily budget, spend, share of budget, visits, carts, checkouts, purchases with value (sales sets) and leads (Leads sets), with totals. Account day = Israel time; Ads Manager ad-attributed numbers only.
 - When Omri types "chart today": run it, send the two tables as they are, nothing else.
+
+## 2026-11-20 09:52 IL — Paused ecomm_Adset_04_All_All_CPM_#108816
+- On user instruction ("pause that adset 4 u recommended and only that"): ad set 52668330870828 status ACTIVE -> PAUSED via Graph API. Its $279/day budget left unchanged and unspent (not moved elsewhere).
+- Reason: Nov 1-20 $6,796.30 -> 1 purchase ($49, Nov 8, from an ad now paused); last 7 days $2,084.94 -> 6 carts, 2 checkouts, 0 purchases.
+- Verified after: only this set changed (before/after diff of all 31 ad sets). Still ACTIVE sales sets: A5 52669048300628 $499; 02 original 52668268711228 $395.80; A4 52666232368428 $333; hot copy 52673824399628 $199. Leads sets untouched.
+- Snapshots: /tmp/wk/snap/pre_pause04_20261120_0952.json, post_pause04_20261120_0952.json.
+- Rollback: POST /52668330870828 status=ACTIVE.
