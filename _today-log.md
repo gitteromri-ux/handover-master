@@ -1676,3 +1676,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Only active ad left in the set: Piano 52680232013628. Set budget $328.80, men +40% rule, targeting, status and last significant edit unchanged (verified after).
 - No other ad, ad set, budget or Leads set touched.
 - Rollback: POST /52681870609228 status=ACTIVE. Snapshot: /tmp/wk/snap/ad_glucose_02orig_before_pause_20261120.json.
+
+## 2026-11-20 — French Atelier lead backfill batch 58
+- Meta form 1008080345425102 leads created 2026-11-19 23:44 → 2026-11-20 06:54 UTC not yet in ledger: 57 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 28 · 117510: 29. All HTTP 200. Ledger 1261 entries, 0 non-200. Queue acceptance only.
