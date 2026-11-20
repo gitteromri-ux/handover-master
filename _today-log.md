@@ -1679,3 +1679,15 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-20 — French Atelier lead backfill batch 58
 - Meta form 1008080345425102 leads created 2026-11-19 23:44 → 2026-11-20 06:54 UTC not yet in ledger: 57 pushed to eTeacher Leads API (ProductID 25). CRM campaign 116981: 28 · 117510: 29. All HTTP 200. Ledger 1261 entries, 0 non-200. Queue acceptance only.
+## 2026-11-20 09:40 IL — ecomm Adset 5 budget $423.80 → $499 (approved by Omri: "U can raise adset 5 budget to 499")
+
+- ecomm Adset 5_All_All_CPM_#108811 (52669048300628): daily budget 42380 → 49900 (+17.7%). Basis: today's $79 purchase (Fasting 14:10 banner 52680290476828, man 35–44, Facebook feed, 1-day view) and 3 of the 7 sales since Nov 4; this account's morning raises (06:00–12:00 IL) were the ones followed by more visits and carts the same day.
+- Verified after: status ACTIVE, targeting, Men +50% rule (4436249439948010), both ads (Piano 52679619107028, Fasting 52680290476828) and last significant edit unchanged.
+- Not changed: Adset 4 $289, Adset 02 original $328.80, ecomm_Adset_04 $323, hot set 52673824399628 still $230 (cut to $75 proposed, not approved), Leads sets.
+- Rollback: POST /52669048300628 daily_budget=42380. Snapshot: /tmp/wk/snap/adset_A5_before_499_20261120.json.
+
+## 2026-11-20 09:41 IL — Hot set budget $230 → $199 (Omri: "Hot set bring down to 199")
+
+- ecomm_Adset_02_All_All_CPM_#108814 hot copy (52673824399628): daily budget 23000 → 19900. Today before the change: $101 spent, 3 visits, 0 carts.
+- Verified after: status ACTIVE, targeting, both HOT ads and last significant edit unchanged. Other budgets unchanged: Adset 5 $499, Adset 4 $289, Adset 02 original $328.80, ecomm_Adset_04 $323.
+- Rollback: POST /52673824399628 daily_budget=23000. Snapshot: /tmp/wk/snap/adset_hot_before_199_20261120.json.
