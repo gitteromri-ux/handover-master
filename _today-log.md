@@ -1700,3 +1700,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Verified after on all three: status ACTIVE, targeting, men +40% rules and last significant edit unchanged. Untouched: Adset 5 $499, hot set $199, Leads sets $222.85 / $49 / $49.
 - Sales budgets now total $1,705.80/day.
 - Rollback: daily_budget back to 28900 / 32300 / 32880. Snapshots: /tmp/wk/snap/adset_*_before_bud_0941_20261120.json.
+
+## 2026-11-20 09:46 IL — "chart" command saved (Omri: "code this format as 'chart' so whenever i type chart today u pull it")
+
+- New read-only script `tools/chart.py` in this repo. `python3 tools/chart.py today` (or `yesterday`, or a date) prints, per active ad set of act_1459085242361281: daily budget, spend, share of budget, visits, carts, checkouts, purchases with value (sales sets) and leads (Leads sets), with totals. Account day = Israel time; Ads Manager ad-attributed numbers only.
+- When Omri types "chart today": run it, send the two tables as they are, nothing else.
