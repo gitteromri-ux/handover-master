@@ -1663,3 +1663,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Side effect: paused set ecomm Adset 2_All_All_CPM_#108808 (52669013718628) shares this rule set, so its stored rule is now +40% too. It is paused, no delivery.
 - Unchanged and verified after: budgets ($289 / $328.80), status ACTIVE, targeting, placements, ads, last significant edit timestamps. ecomm_Adset_04 #108816 (52668330870828) still on rule set 2315605865939893 (named "Men +40%", real value +25%). Adset 5 still +50%. Hot set 52673824399628 and Leads sets: no rule, untouched.
 - Rollback: POST /1429124048549111 with rules men +30% (and old name "Men +30%"); POST /52668268711228 value_rules_applied=false. Snapshots: /tmp/wk/snap/adset_*_before_men40_20261120.json, rulesets_before_men40_20261120.json.
+
+## 2026-11-20 02:37 IL — ecomm_Adset_04 #108816 men rule +25% → +40% (Omri: "Its not? (…368428)(…870828)(…711228)" — all three on 40%)
+
+- Rule set 2315605865939893 "Men +40%" (used only by ecomm_Adset_04_All_All_CPM_#108816, 52668330870828) edited in place: rule men +25% → men +40%. Old rule 2315605862606560 now DELETED; new rule 1898930891544296 ACTIVE. Name now matches the value.
+- Verified after: 52666232368428, 52668330870828, 52668268711228 all have value_rules_applied true with a single active men +40% rule; budgets (89 / 23 / 28.80), targeting, status and last significant edit unchanged.
+- Rollback: POST /2315605865939893 with rules men +25%. Snapshot: /tmp/wk/snap/ruleset_2315_before_40_20261120.json.
