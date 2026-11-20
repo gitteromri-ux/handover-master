@@ -1669,3 +1669,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Rule set 2315605865939893 "Men +40%" (used only by ecomm_Adset_04_All_All_CPM_#108816, 52668330870828) edited in place: rule men +25% → men +40%. Old rule 2315605862606560 now DELETED; new rule 1898930891544296 ACTIVE. Name now matches the value.
 - Verified after: 52666232368428, 52668330870828, 52668268711228 all have value_rules_applied true with a single active men +40% rule; budgets (89 / 23 / 28.80), targeting, status and last significant edit unchanged.
 - Rollback: POST /2315605865939893 with rules men +25%. Snapshot: /tmp/wk/snap/ruleset_2315_before_40_20261120.json.
+
+## 2026-11-20 02:42 IL — Glucose banner paused in Adset 02 original (approved by Omri: "Ok" to "pause only that ad")
+
+- Ad 52681870609228 "Banner | Glucose 70-140 | 9x16 Reels + 1x1 Feed | 11.11.26" in ecomm_Adset_02_All_All_CPM_#108814 original (52668268711228): ACTIVE → PAUSED. Basis: since Nov 17 $248, 24 visits, 0 carts; it was taking about half of the set's spend from Piano (52680232013628: Nov 4–19 $1,755, 6 checkouts, 2 purchases).
+- Only active ad left in the set: Piano 52680232013628. Set budget $328.80, men +40% rule, targeting, status and last significant edit unchanged (verified after).
+- No other ad, ad set, budget or Leads set touched.
+- Rollback: POST /52681870609228 status=ACTIVE. Snapshot: /tmp/wk/snap/ad_glucose_02orig_before_pause_20261120.json.
