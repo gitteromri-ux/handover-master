@@ -1712,3 +1712,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Verified after: only this set changed (before/after diff of all 31 ad sets). Still ACTIVE sales sets: A5 52669048300628 $499; 02 original 52668268711228 $395.80; A4 52666232368428 $333; hot copy 52673824399628 $199. Leads sets untouched.
 - Snapshots: /tmp/wk/snap/pre_pause04_20261120_0952.json, post_pause04_20261120_0952.json.
 - Rollback: POST /52668330870828 status=ACTIVE.
+
+## 2026-11-20 10:06 IL — Leads budgets +$90 on the two sets under $20 CPL
+- On user instruction ("Add 90 dollars to each 2 adsets with leads on below 20$ cpl"). Today's CPL at 10:05 IL: LLA Adset 1 $15.32 (9 leads, $137.91); LLA Adset 2 $8.54 (3 leads, $25.63); Adset 3 no leads ($23.91).
+- LLA Adset 1_All_All_CPM_#108718 (52596364713228): $222.85 -> $312.85/day.
+- LLA Adset 2_All_All_CPM_#108719 (52596391921628): $49 -> $139/day.
+- Adset 3_All_All_CPM_#108775 (52632882695828) unchanged at $49. Leads total $320.85 -> $500.85/day.
+- Verified: before/after diff of all ad sets shows only these two budgets changed. Snapshots /tmp/wk/snap/pre_leads90_20261120_1005.json, post_leads90_20261120_1005.json.
+- Rollback: daily_budget 22285 and 4900 (cents).
