@@ -1743,3 +1743,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-20 — French Atelier lead backfill batch 63
 - Ten new leads submitted to eTeacher (ProductID 25): 5 for campaign 116981 and 5 for 117510. All ten returned HTTP 200. Ledger: 1,297 entries, zero non-200. Queue acceptance only; individual CRM arrivals not verified.
+
+## 2026-11-21 — Longevity ad budgets and lead-generation pause
+- Approved immediate changes verified by before/after Meta readback: hot copy 52673824399628 $179.95 to $134.95; sales Adset 4 52666232368428 $333 to $293. All four previously active sales sets remained active. The three delivering lead sets 52596364713228, 52596391921628 and 52632882695828 changed from ACTIVE to PAUSED, budgets unchanged. No campaign paused. Rollback: restore the two prior budgets and those three statuses only.
+- Native Meta rules enabled and read back for 14:30 Israel on Nov 21 only, execution limit one per target: 1923191572394510 raises Adset 5 (52669048300628) by $70, cap $589.95; 1793125081744375 raises original Adset 02 (52668268711228) by $50, cap $669.99. Scheduling verified, execution not yet verified. To cancel before execution disable those rule IDs; if already applied, restore $519.95 and $619.99 respectively after verifying current state. No Computer reminder created.
+- Superseded before 14:30 by the user's revised instruction: both earlier rules verified DISABLED. Only rule 1180142978291887 enabled for the revised increase: original 02 (52668268711228), +$90, cap $709.99, 14:30 Israel Nov 21, date guard and execution limit one. Adset 5 stays at $519.95. To cancel disable the replacement rule; if applied, verify before restoring $619.99. No extra reminder or scheduled Computer run.
