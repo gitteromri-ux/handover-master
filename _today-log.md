@@ -1767,3 +1767,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - VERIFIED read-back: publisher_platforms [facebook], facebook_positions [feed]. last_sig_edit_ts moved 1795264510 -> 1795374732 (21:12:12 IL) = learning reset. Ad 52680232013628 went IN_PROCESS/PENDING_REVIEW 21:12-21:15, ACTIVE again 21:15 IL.
 - Rollback: set publisher_platforms [facebook, instagram] + instagram_positions [stream] (another significant edit).
 - Also earlier: rule 1653102939837211 (A5 +$49 at midnight) set DISABLED on user acceptance.
+
+## 2026-11-22 21:23-21:26 IL — LLA A4 + A5 audience rebuild (user approved "Do it but...")
+- A5 52669048300628 (21:23): audiences replaced with A2 original's 18 lists; interest list removed; filter = income top 25% ZIP. Placements unchanged (FB feed + IG Reels, mobile). Budget $290.95 unchanged. last_sig_edit_ts -> 1795375426.
+- A4 52666232368428 (21:23, 21:26): interest list removed; filter = income top 10% ZIP only; kept its two 2% lookalikes and added A2 original's 16 warm lists (18 total). Placement unchanged (FB feed, mobile). Budget $321 unchanged. last_sig_edit_ts -> 1795375588.
+- Paused ads stayed paused (configured status checked). Rollback targeting JSON: workspace lla-rollback/pre_*.json.
