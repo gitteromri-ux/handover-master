@@ -1778,3 +1778,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Applied the same user-approved cuts directly: A2 original 52668268711228 $836.99 → $697.99; A2 hot copy 52673824399628 $322.95 → $247.95; A4 52666232368428 $321.00 → $272.00. A5 unchanged $290.95.
 - Read-back confirmed; last_sig_edit_ts unchanged on all three (no learning reset). Rules left enabled; their floor equals the new budgets, so they cannot cut again.
 - Creative finding: live Piano video (Claude_Ad17_BlueprintNov_1m30_Piano) shows "VIP Masterclass · Nov 14" card (date passed). No creative change made.
+
+- 01:05 IL Nov 23 — Artlist password reset via Gmail (user order), signed in. Lipsync v3 re-render of Piano ad segments (frames 1091-1489, 1815-1967, 2286-2376). Files: /tmp/ls/fixed_9x16.mp4, /tmp/ls/fixed_4x5.mp4. Audio byte-identical. NOT uploaded to Meta; waiting for approval.
