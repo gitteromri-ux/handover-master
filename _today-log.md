@@ -1791,3 +1791,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Ads 52682973833628, 52682973843428 (creative 2131014057522738), 52682973846628 (creative 1610696653671687), 52682973847428 (creative 1121335640897385).
 - Body = user's text verbatim ("We can't freeze aging yet. But you can slow it down by 33%. …"), headline "Get Your Own Longevity Protocol. Start for $79 only.", description "The Longevity Blueprint Course: 18 live online sessions/18 weeks - taught from Longevity's leading voices."
 - Button: Meta has no "Enroll Now" (API rejected ENROLL_NOW) → kept APPLY_NOW. Same video 2458221828044855, link and url_tags. Readback: body exact match, status PAUSED on all 4.
+
+## 2026-11-23 — Julie film ads turned ON in A4 and A5 only (user order "Adset5 and 4 turn it on")
+- A4 ad 52682973846628 → ACTIVE; A5 ad 52682973847428 → ACTIVE. A2 original 52682973833628 and A2 hot copy 52682973843428 stay PAUSED. No budgets or ad set settings changed.
