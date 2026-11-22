@@ -1772,3 +1772,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - A5 52669048300628 (21:23): audiences replaced with A2 original's 18 lists; interest list removed; filter = income top 25% ZIP. Placements unchanged (FB feed + IG Reels, mobile). Budget $290.95 unchanged. last_sig_edit_ts -> 1795375426.
 - A4 52666232368428 (21:23, 21:26): interest list removed; filter = income top 10% ZIP only; kept its two 2% lookalikes and added A2 original's 16 warm lists (18 total). Placement unchanged (FB feed, mobile). Budget $321 unchanged. last_sig_edit_ts -> 1795375588.
 - Paused ads stayed paused (configured status checked). Rollback targeting JSON: workspace lla-rollback/pre_*.json.
+
+## 2026-11-23 00:12 IL — midnight cuts applied by hand (rules did not fire)
+- VERIFIED at 00:11–00:12 IL: the three one-time midnight rules (1120254353977250, 3004208793266370, 1826313701753490) had empty history and budgets were unchanged.
+- Applied the same user-approved cuts directly: A2 original 52668268711228 $836.99 → $697.99; A2 hot copy 52673824399628 $322.95 → $247.95; A4 52666232368428 $321.00 → $272.00. A5 unchanged $290.95.
+- Read-back confirmed; last_sig_edit_ts unchanged on all three (no learning reset). Rules left enabled; their floor equals the new budgets, so they cannot cut again.
+- Creative finding: live Piano video (Claude_Ad17_BlueprintNov_1m30_Piano) shows "VIP Masterclass · Nov 14" card (date passed). No creative change made.
