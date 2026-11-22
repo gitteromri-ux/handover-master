@@ -1754,3 +1754,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-21 17:07 Israel — Longevity small Adset 2 budget only
 - Via a direct update to 52673824399628, raised daily budget from $134.95 to $183.95. No draft publish, ad edit or status change. Meta recorded only update_ad_set_budget in the checked window. All 15 ads showed Nov 19 UTC last-update times; post-change learning status LEARNING, last significant edit Nov 20 01:40 Israel, before this change. Original 02 and A5 stayed at $709.99 and $519.95 respectively. Rollback if authorized: set only the hot copy's daily_budget to 13495 cents.
+
+## 2026-11-22 — French Atelier lead backfill batch 65
+- Submitted 39 new instant-form leads to eTeacher: 24 for campaign 116981 and 15 for campaign 117510. All 39 returned HTTP 200. Ledger: 1,412 entries, zero non-200. Queue acceptance only; individual CRM arrivals not verified.
+- LLA budgets changed on user instruction (Israel time): 13:40 hot copy 52673824399628 $183.95 -> $252.95, A4 52666232368428 $233.00 -> $282.00; 13:42 A5 52669048300628 $369.95 -> $330.95. Read back from Meta. Rollback: restore the earlier amounts.
