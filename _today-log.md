@@ -1780,3 +1780,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Creative finding: live Piano video (Claude_Ad17_BlueprintNov_1m30_Piano) shows "VIP Masterclass · Nov 14" card (date passed). No creative change made.
 
 - 01:05 IL Nov 23 — Artlist password reset via Gmail (user order), signed in. Lipsync v3 re-render of Piano ad segments (frames 1091-1489, 1815-1967, 2286-2376). Files: /tmp/ls/fixed_9x16.mp4, /tmp/ls/fixed_4x5.mp4. Audio byte-identical. NOT uploaded to Meta; waiting for approval.
+
+## 2026-11-23 01:27 IL — Julie widescreen film staged PAUSED in 4 live ecomm ad sets (user order)
+- File: VID-20261123-WA0000.mp4, 1080x608, 90.197 s, sha256 0d4eed1f…0287, uploaded unmodified → Meta video 2458221828044855 (length 90.197 read back).
+- Copy = copied from ad 52682438307628 "HOT clear copy" (19 Nov): body "The Longevity Blueprint is an 18-week live online course…", title "Build Your Longevity Protocol: 18-Week Live Course", description "Free Abbott Lingo CGM · 14-day full refund", CTA APPLY_NOW → https://longevitylifeacademy.pages.dev/, per-ad-set url_tags.
+- Ads (all status PAUSED, not turned on): A2 original 52682973833628, A2 hot copy 52682973843428 (creative 1687384312994015); A4 52682973846628 (creative 1764296975051533); A5 52682973847428 (creative 1558331236316413).
+- No existing ad, budget or ad set setting touched. Waiting for user "on".
