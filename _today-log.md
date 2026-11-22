@@ -1786,3 +1786,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Copy = copied from ad 52682438307628 "HOT clear copy" (19 Nov): body "The Longevity Blueprint is an 18-week live online course…", title "Build Your Longevity Protocol: 18-Week Live Course", description "Free Abbott Lingo CGM · 14-day full refund", CTA APPLY_NOW → https://longevitylifeacademy.pages.dev/, per-ad-set url_tags.
 - Ads (all status PAUSED, not turned on): A2 original 52682973833628, A2 hot copy 52682973843428 (creative 1687384312994015); A4 52682973846628 (creative 1764296975051533); A5 52682973847428 (creative 1558331236316413).
 - No existing ad, budget or ad set setting touched. Waiting for user "on".
+
+## 2026-11-23 ~01:50 IL — Julie film ads: copy replaced with user's own text (ads still PAUSED)
+- Ads 52682973833628, 52682973843428 (creative 2131014057522738), 52682973846628 (creative 1610696653671687), 52682973847428 (creative 1121335640897385).
+- Body = user's text verbatim ("We can't freeze aging yet. But you can slow it down by 33%. …"), headline "Get Your Own Longevity Protocol. Start for $79 only.", description "The Longevity Blueprint Course: 18 live online sessions/18 weeks - taught from Longevity's leading voices."
+- Button: Meta has no "Enroll Now" (API rejected ENROLL_NOW) → kept APPLY_NOW. Same video 2458221828044855, link and url_tags. Readback: body exact match, status PAUSED on all 4.
