@@ -1817,3 +1817,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Speed test (VERIFIED, one unpaid production test order 8088480 / student 11706729, qa.speedtest…@example.org, silent mode): tap Continue -> card fields usable 9.0 s on a fast line: 0.7 s page change, 2.1 s CRM order creation, 3.4 s CRM payment intent (first poll not ready), 3.2 s Airwallex form load. Order is created on checkout page (homepage pre-create disabled since Nov 14, 75ecb5b). Each details call mints a NEW Airwallex intent (3 different ids, same PaymentID 64841371) -> "warm-up" idea rejected, no speed change deployed.
 
 - 2026-11-23 23:40 IL — LLA budgets changed on user order, read back from Meta: A2 original 52668268711228 $578.99 -> $489.99 (-$89); A2 hot copy 52673824399628 $217.95 -> $195.95 (-$22); A4 52666232368428 $222.00 -> $266.00 (+$44); A5 52669048300628 $333.95 -> $299.95 (-$34). All four ACTIVE. Rollback: restore earlier amounts.
+
+- 2026-11-24 ~00:05 IL — French Atelier push batch69: 1 new lead (created 2026-11-23 20:35 UTC), 1 accepted (HTTP 200), 0 failed; campaign 116981: 1; ledger 1,456, 0 non-200. Queue acceptance only.
