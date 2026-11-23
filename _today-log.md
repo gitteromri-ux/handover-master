@@ -1808,3 +1808,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 2026-11-23 12:09 IL — A2 original (52668268711228) daily budget $638.99 -> $578.99 (-$60) on user order "reduce set2 original by 60". Read back via API.
 
 - 2026-11-23 14:37 IL — French Atelier push batch67: 1 new lead (created 2026-11-23 12:25 UTC), 1 accepted, 0 failed; campaign 116981: 1; ledger 1,447, 0 non-200.
+
+## 2026-11-23 20:55 IL — LLA site release (floater + PayPal tab), approved by Omri in chat
+- Repo Longevity-Academy/Longevity-Academy.github.io main: 85f58f4 -> 8a1c675 (commits e6dffba index.html floater, 8a1c675 checkout.html PayPal tab). Backup branch: backup/20261123-before-floater-paypal (= 85f58f4). Rollback: `git push origin backup/20261123-before-floater-paypal:main --force-with-lease` is NOT allowed by rules; use `git revert 8a1c675 e6dffba && git push origin HEAD:main`.
+- Floater: French Atelier console structure/sizes in Longevity colours; tap opens popup even before deferred scripts finish.
+- PayPal: tab hidden on monthly plan (PayPal here is one-time, charged month 1 only); kept on one-payment plan. Card/Apple Pay/Google Pay untouched.
+- Proof (VERIFIED): live files byte-identical to tested build; pixel + CAPI request sequence identical before/after (PageView, ViewContent, Enroll_CTA_Click, Clicked_on_Enroll, AddToCart, InitiateCheckout, checkout PageView); popup opens phone + desktop; real card form mounts on live checkout for test order; 0 JS errors.
+- Speed test (VERIFIED, one unpaid production test order 8088480 / student 11706729, qa.speedtest…@example.org, silent mode): tap Continue -> card fields usable 9.0 s on a fast line: 0.7 s page change, 2.1 s CRM order creation, 3.4 s CRM payment intent (first poll not ready), 3.2 s Airwallex form load. Order is created on checkout page (homepage pre-create disabled since Nov 14, 75ecb5b). Each details call mints a NEW Airwallex intent (3 different ids, same PaymentID 64841371) -> "warm-up" idea rejected, no speed change deployed.
