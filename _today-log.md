@@ -1800,3 +1800,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Ads PAUSED: A2 hot copy 52683018696028 (creative 1496012172423766), A5 52683018699228 (creative 1669341391261318). Copy = HOT clear copy (from creative 1243126598654458), APPLY_NOW → pages.dev link, per-ad-set url_tags. Thumbnail = frame at 0:01.
 - Earlier this morning: guard rule 1173571541786743 fired 04:13 IL (A2 original 697.99 → 638.99). 08:00 result: 0 purchases / 0 ATC credited, $846 spent.
 - ~08:30 IL: same corrected Piano ad also staged PAUSED in A2 original and A4 (user order "all ad sets, not active"). IDs in readback of this session; HOT clear copy, per-ad-set url_tags.
+
+## 2026-11-23 ~11:40 IL — French Atelier push batch66
+- 34 new instant-form leads (form 1008080345425102, created 2026-11-22 11:48 UTC → 2026-11-23 09:28 UTC) sent to eTeacher leads API: 34 accepted (HTTP 200), 0 failed. Campaign 116981: 24, campaign 117510: 10. Ledger total 1,446, 0 non-200.
+- One lead had a +234 phone; added +234 → NG to the country mapping in build_payloads.py (same pattern as earlier manual mappings).
