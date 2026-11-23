@@ -1806,3 +1806,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - One lead had a +234 phone; added +234 → NG to the country mapping in build_payloads.py (same pattern as earlier manual mappings).
 
 - 2026-11-23 12:09 IL — A2 original (52668268711228) daily budget $638.99 -> $578.99 (-$60) on user order "reduce set2 original by 60". Read back via API.
+
+- 2026-11-23 14:37 IL — French Atelier push batch67: 1 new lead (created 2026-11-23 12:25 UTC), 1 accepted, 0 failed; campaign 116981: 1; ledger 1,447, 0 non-200.
