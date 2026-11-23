@@ -1799,3 +1799,4 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - File from user link (cloudfront …5da39a0a-417a-434e-a551-09fe8c925591.mp4): 1080x1920, 67.125 s, 24 fps, 51,279,833 bytes, sha256 65803431…0478, uploaded unmodified → Meta video 1649330716659363.
 - Ads PAUSED: A2 hot copy 52683018696028 (creative 1496012172423766), A5 52683018699228 (creative 1669341391261318). Copy = HOT clear copy (from creative 1243126598654458), APPLY_NOW → pages.dev link, per-ad-set url_tags. Thumbnail = frame at 0:01.
 - Earlier this morning: guard rule 1173571541786743 fired 04:13 IL (A2 original 697.99 → 638.99). 08:00 result: 0 purchases / 0 ATC credited, $846 spent.
+- ~08:30 IL: same corrected Piano ad also staged PAUSED in A2 original and A4 (user order "all ad sets, not active"). IDs in readback of this session; HOT clear copy, per-ad-set url_tags.
