@@ -1794,3 +1794,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-23 — Julie film ads turned ON in A4 and A5 only (user order "Adset5 and 4 turn it on")
 - A4 ad 52682973846628 → ACTIVE; A5 ad 52682973847428 → ACTIVE. A2 original 52682973833628 and A2 hot copy 52682973843428 stay PAUSED. No budgets or ad set settings changed.
+
+## 2026-11-23 ~08:20 IL — Corrected Piano ad (user file) staged PAUSED in A2 hot copy and A5
+- File from user link (cloudfront …5da39a0a-417a-434e-a551-09fe8c925591.mp4): 1080x1920, 67.125 s, 24 fps, 51,279,833 bytes, sha256 65803431…0478, uploaded unmodified → Meta video 1649330716659363.
+- Ads PAUSED: A2 hot copy 52683018696028 (creative 1496012172423766), A5 52683018699228 (creative 1669341391261318). Copy = HOT clear copy (from creative 1243126598654458), APPLY_NOW → pages.dev link, per-ad-set url_tags. Thumbnail = frame at 0:01.
+- Earlier this morning: guard rule 1173571541786743 fired 04:13 IL (A2 original 697.99 → 638.99). 08:00 result: 0 purchases / 0 ATC credited, $846 spent.
