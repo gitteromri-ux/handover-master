@@ -1804,3 +1804,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 2026-11-23 ~11:40 IL — French Atelier push batch66
 - 34 new instant-form leads (form 1008080345425102, created 2026-11-22 11:48 UTC → 2026-11-23 09:28 UTC) sent to eTeacher leads API: 34 accepted (HTTP 200), 0 failed. Campaign 116981: 24, campaign 117510: 10. Ledger total 1,446, 0 non-200.
 - One lead had a +234 phone; added +234 → NG to the country mapping in build_payloads.py (same pattern as earlier manual mappings).
+
+- 2026-11-23 12:09 IL — A2 original (52668268711228) daily budget $638.99 -> $578.99 (-$60) on user order "reduce set2 original by 60". Read back via API.
