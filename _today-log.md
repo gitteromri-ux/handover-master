@@ -1821,3 +1821,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 2026-11-24 ~00:05 IL — French Atelier push batch69: 1 new lead (created 2026-11-23 20:35 UTC), 1 accepted (HTTP 200), 0 failed; campaign 116981: 1; ledger 1,456, 0 non-200. Queue acceptance only.
 
 - 2026-11-24 08:30 IL — French Atelier lead push batch70: 18 Meta instant-form leads (created Nov 23 22:20 UTC – Nov 24 06:17 UTC) sent to eTeacher queue, all HTTP 200, 0 failed. Ledger 1,474. Queue acceptance only, not confirmed CRM arrival.
+
+## 2026-11-24 11:47 IL — Longevity home page: old floating Enroll bar restored (LIVE)
+- Ordered by Omri in chat ("return floater to wat we had").
+- Repo Longevity-Academy.github.io main 0c8fce5 -> 832ac8a. Only index.html changed; it is byte-identical to 85f58f4 (live Nov 19 08:30 - Nov 23 20:53 IL). Undoes e6dffba only. checkout.html unchanged (PayPal-tab change and loading message stay).
+- Backup of previous live state: branch backup/20261124-before-floater-revert (0c8fce5).
+- Verified live after build: live index.html == 85f58f4 (cmp), live checkout.html == 0c8fce5 (cmp). iPhone WebKit + Pixel 7: floating bar tap opens popup, Enroll_CTA_Click + Clicked_on_Enroll fire, Continue fires AddToCart; 0 JS errors. Probe traffic blocked from Meta/CRM.
+- Rollback: git push origin backup/20261124-before-floater-revert:main (force not needed if done as revert of 832ac8a).
