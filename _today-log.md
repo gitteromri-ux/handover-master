@@ -1819,3 +1819,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 2026-11-23 23:40 IL — LLA budgets changed on user order, read back from Meta: A2 original 52668268711228 $578.99 -> $489.99 (-$89); A2 hot copy 52673824399628 $217.95 -> $195.95 (-$22); A4 52666232368428 $222.00 -> $266.00 (+$44); A5 52669048300628 $333.95 -> $299.95 (-$34). All four ACTIVE. Rollback: restore earlier amounts.
 
 - 2026-11-24 ~00:05 IL — French Atelier push batch69: 1 new lead (created 2026-11-23 20:35 UTC), 1 accepted (HTTP 200), 0 failed; campaign 116981: 1; ledger 1,456, 0 non-200. Queue acceptance only.
+
+- 2026-11-24 08:30 IL — French Atelier lead push batch70: 18 Meta instant-form leads (created Nov 23 22:20 UTC – Nov 24 06:17 UTC) sent to eTeacher queue, all HTTP 200, 0 failed. Ledger 1,474. Queue acceptance only, not confirmed CRM arrival.
