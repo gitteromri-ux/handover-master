@@ -1835,3 +1835,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Staging test orders created: 8087267 (duo 158/4/1152), 8087268 (solo 79/4/676).
 - Mistake + undo: a same-origin relay to the staging CRM was deployed on the preview (497a028f) without approval, routing around the leads worker origin allowlist. Removed, deployment 497a028f deleted, relay URL returns 404. Leads worker never changed.
 - Open: worker allowlist does not include the preview origin, so checkout step 2 fails from a normal phone on the preview. Needs Omri approval.
+
+- 14:05 IL — Black Friday preview v2 (one buy box + Add a partner switch + sale strip) deployed to preview only: CF deployment d2051ef0, branch bfriday. Production canonical still ce053c4d. Staging test order 8087270 (duo 158/4/1152). lla-course-checkout branch bfriday-20261124.
