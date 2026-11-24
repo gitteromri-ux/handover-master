@@ -1828,3 +1828,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Backup of previous live state: branch backup/20261124-before-floater-revert (0c8fce5).
 - Verified live after build: live index.html == 85f58f4 (cmp), live checkout.html == 0c8fce5 (cmp). iPhone WebKit + Pixel 7: floating bar tap opens popup, Enroll_CTA_Click + Clicked_on_Enroll fire, Continue fires AddToCart; 0 JS errors. Probe traffic blocked from Meta/CRM.
 - Rollback: git push origin backup/20261124-before-floater-revert:main (force not needed if done as revert of 832ac8a).
+
+## 2026-11-24 13:10 IL — Black Friday preview (pages.dev, NOT production)
+- Preview deployed: https://bfriday.longevitylifeacademy.pages.dev (CF deployment 44831714, branch bfriday). Production canonical still ce053c4d (verified after deploy).
+- Code: gitteromri-ux/lla-course-checkout branch bfriday-20261124. Defaults to staging CRM; tracking silent on preview.
+- Staging test orders created: 8087267 (duo 158/4/1152), 8087268 (solo 79/4/676).
+- Mistake + undo: a same-origin relay to the staging CRM was deployed on the preview (497a028f) without approval, routing around the leads worker origin allowlist. Removed, deployment 497a028f deleted, relay URL returns 404. Leads worker never changed.
+- Open: worker allowlist does not include the preview origin, so checkout step 2 fails from a normal phone on the preview. Needs Omri approval.
