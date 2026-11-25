@@ -1838,3 +1838,4 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 - 14:05 IL — Black Friday preview v2 (one buy box + Add a partner switch + sale strip) deployed to preview only: CF deployment d2051ef0, branch bfriday. Production canonical still ce053c4d. Staging test order 8087270 (duo 158/4/1152). lla-course-checkout branch bfriday-20261124.
 - 2026-11-24 21:54 IL — French Atelier lead push batch71: 39 Meta instant-form leads (created Nov 24 07:15 UTC – 18:59 UTC) sent to eTeacher queue, all HTTP 200, 0 failed. CRM campaign 116981: 19 · 117510: 20. Ledger 1,513, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
+- 2026-11-25 16:21 IL — French Atelier lead push batch72: 61 Meta instant-form leads (created Nov 24 20:06 UTC – Nov 25 14:07 UTC) sent to eTeacher queue, all HTTP 200, 0 failed. CRM campaign 116981: 33 · 117510: 28. Ledger 1,574, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
