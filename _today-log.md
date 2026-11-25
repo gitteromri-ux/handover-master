@@ -1847,3 +1847,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Budgets, ads, bids, value rules, hot copy `52673824399628`: untouched. Validate-only passed first; read-back matches.
 - Rollback: `/home/user/workspace/lla-rollback/20261125/before_<adset_id>.json` (POST its `targeting`).
 - Evidence basis: Adset 2 65+ = 52% of clicks Nov 21–25 with 1 checkout / 0 sales; A4/A5 AddToCart 16 → 5 (Nov 15–18 vs Nov 22–25) after Nov 21–22 audience changes.
+
+## 2026-11-25 ~17:35 IL — French Atelier lead push batch73
+- 5 leads (form 1008080345425102, created 2026-11-25 16:34–17:15 IL) sent to eTeacher queue, all HTTP 200. Ledger 1,579, 0 non-200. Queue acceptance only.
