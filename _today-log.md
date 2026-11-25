@@ -1850,3 +1850,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-25 ~17:35 IL — French Atelier lead push batch73
 - 5 leads (form 1008080345425102, created 2026-11-25 16:34–17:15 IL) sent to eTeacher queue, all HTTP 200. Ledger 1,579, 0 non-200. Queue acceptance only.
+
+## 2026-11-25 23:19 IL — French Atelier lead push batch74
+- 21 leads (form 1008080345425102, created 2026-11-25 17:37–23:10 IL) sent to eTeacher queue, all HTTP 200. Ledger 1,600, 0 non-200. Queue acceptance only.
