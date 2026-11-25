@@ -1839,3 +1839,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 14:05 IL — Black Friday preview v2 (one buy box + Add a partner switch + sale strip) deployed to preview only: CF deployment d2051ef0, branch bfriday. Production canonical still ce053c4d. Staging test order 8087270 (duo 158/4/1152). lla-course-checkout branch bfriday-20261124.
 - 2026-11-24 21:54 IL — French Atelier lead push batch71: 39 Meta instant-form leads (created Nov 24 07:15 UTC – 18:59 UTC) sent to eTeacher queue, all HTTP 200, 0 failed. CRM campaign 116981: 19 · 117510: 20. Ledger 1,513, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
 - 2026-11-25 16:21 IL — French Atelier lead push batch72: 61 Meta instant-form leads (created Nov 24 20:06 UTC – Nov 25 14:07 UTC) sent to eTeacher queue, all HTTP 200, 0 failed. CRM campaign 116981: 33 · 117510: 28. Ledger 1,574, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
+
+## 2026-11-25 17:04 IL — Meta targeting edits on 3 sales ad sets (user said "DOIT" after the 3-edit recommendation)
+- Adset 2 `52668268711228`: age 45–65+ → 45–64. Nothing else changed (FB feed mobile, 18 audiences + income, budget 499.99).
+- A4 `52666232368428`: age 45–65+ → 45–64; audience back to pre-Nov-22 (2 lookalikes 2% + 41 interests; income + warm list removed). FB feed only, budget 369.
+- A5 `52669048300628`: audience back to Nov 20 (women, min age 25, Advantage+ audience on, 1 lookalike + 41 interests). Placements unchanged (FB feed + IG Reels), budget 339.
+- Budgets, ads, bids, value rules, hot copy `52673824399628`: untouched. Validate-only passed first; read-back matches.
+- Rollback: `/home/user/workspace/lla-rollback/20261125/before_<adset_id>.json` (POST its `targeting`).
+- Evidence basis: Adset 2 65+ = 52% of clicks Nov 21–25 with 1 checkout / 0 sales; A4/A5 AddToCart 16 → 5 (Nov 15–18 vs Nov 22–25) after Nov 21–22 audience changes.
