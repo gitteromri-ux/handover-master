@@ -1898,3 +1898,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Staging paid end to end via card-first: solo $79 orders 8087364, 8087368 (iPhone), 8087371; duo $158 order 8087366. CRM report 202 each. Consent request body identical to Drop-In. Track calls identical to Drop-In: AddPaymentInfo → Pay_Click → Purchase, once each, with order id (tracking is off in staging; nothing sent to Meta).
 - Not verified: production Airwallex, real handsets, Apple Pay button (not available in the lab), wallet payment through the wallet-only Drop-In.
 - Next: Omri approval required before any production deploy. Rollback = revert the single commit.
+
+## 2026-11-26 — lla-black-friday-emails v2 (design and copy rebuilt from the live homepage)
+- Repo: gitteromri-ux/lla-black-friday-emails (public, GitHub Pages). Link: https://gitteromri-ux.github.io/lla-black-friday-emails/
+- What changed: all four emails rebuilt after v1 was rejected. Homepage look (Playfair Display + Inter, navy, Black Friday strip), the site's price card reproduced in HTML, six pillars, why the course is different, how it works, faculty, Julie 90-minute VIP masterclass bonus, Abbott Lingo CGM, four class times, 14-day refund. Partner line last in emails 2 and 4 only. Images cache-busted (?v=bf2-20261126).
+- Tracked link unchanged: https://www.longevitylifeacademy.com/?code=BFRIDAY&cid=118854&utm_source=activecampaign&utm_medium=email&utm_campaign=bfriday_history_leads&utm_content=lla-bf-0N (verified live: BFRIDAY active, $79 first / $755 total, cid + UTMs stored; third-party hosts blocked, no events sent).
+- Not done: no lists built, nothing sent, live site and checkout untouched. cid 118854 is reused from the previous Blueprint email round (assumed, not confirmed by eTeacher).
+- SHA: e262d78ebbc169c6011a7871eadeab4daf6888a8 (v2 content 5386ba0, cache-bust e262d78). Previous v1: 7400b67.
+- Rollback: `git revert e262d78 5386ba0` in lla-black-friday-emails (returns Pages to v1 at 7400b67).
