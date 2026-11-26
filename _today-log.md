@@ -1914,3 +1914,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Not done: no lists built, nothing sent, live site and checkout untouched. cid 118854 still assumed.
 - SHA: b81dac33a57a8e8548b6c08fd4805c34301f2b0d. Previous: v2 e262d78, v1 7400b67.
 - Rollback: `git revert b81dac3` in lla-black-friday-emails (returns Pages to v2).
+
+## 2026-11-26 — lla-black-friday-emails v4 (short, bold version)
+- Repo: gitteromri-ux/lla-black-friday-emails (public, GitHub Pages). Link: https://gitteromri-ux.github.io/lla-black-friday-emails/
+- What changed: v3 rejected as too long. All four emails cut to about 200 words: bold headline, two sentences, one navy price box ($79 first month, then $169/month, "Promo code: BFRIDAY"), button "Start my first month for $79", five one-line value points, one line on the last 2026 classes. Top strip and dates table removed. Partner line last in emails 2 and 4 only.
+- Tracked link unchanged (cid 118854 still assumed). No lists built, nothing sent, live site and checkout untouched.
+- SHA: 44b7a8443421006d9183547b118266be70b8b700. Previous: v3 b81dac3, v2 e262d78, v1 7400b67.
+- Rollback: `git revert 44b7a84` in lla-black-friday-emails (returns Pages to v3).
