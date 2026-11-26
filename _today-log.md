@@ -1956,3 +1956,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - What changed: outcome-led subject lines, preheaders and headlines on all four emails (email 1 uses Omri's line "Learn to age 33% slower and master longevity in just 18 weeks", backed in the body by Julie Gibson Clark's 0.665 pace of aging). Links, price box, design and footer unchanged. Nothing sent. Live site, checkout and CRM untouched.
 - SHA: 8332da3f92bf79fdabbd94443c843f57048ae6c2
 - Rollback: git revert 8332da3 (restores v6, 3931064)
+
+### 2026-11-26 15:55 UTC · lla-black-friday-emails v8
+- Repo: gitteromri-ux/lla-black-friday-emails (GitHub Pages)
+- What changed: subject lines and headlines on all four emails now short, lead with Black Friday, carry the hook and name the longevity course. Body, links, price box, design and footer unchanged. Nothing sent. Live site, checkout and CRM untouched.
+- SHA: 16b291c8d6bd6d3c355e40799a796e7e2c443fa5
+- Rollback: git revert 16b291c (restores v7, 8332da3)
