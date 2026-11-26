@@ -1874,3 +1874,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - What it does: small "Bringing a partner?" line on the price card; "Add a partner" switch on popup screen 2 (name, email, mobile). One order, two seats: $158 today, then 4 x $288 ($1,310). Notes carry `BFRIDAYDUO DUO 2 SEATS PARTNER Name/Email/Phone`. Off after Nov 27 23:59 ET.
 - Verified: staging CRM orders 8087315/8087316/8087318/8087319 (duo 158/4/1152, card form mounted, checkout shows $158 + 4 x $288) and 8087317 (solo after switch on/off = 79/4/676). Live site (no order created, CRM calls blocked): partner line + switch present, staged payload 158/4/1152 with partner notes; solo and duo paths fire PageView, ViewContent, Enroll clicks, AddToCart, InitiateCheckout on browser + server with event_id, fbp, fbc.
 - NOT verified: a paid duo order on production, and a completed test-card payment of $158 on staging.
+
+## 2026-11-26 11:24 IL — French Atelier push batch76
+- 3 Meta instant-form leads (created 09:28–10:24 IL Nov 26) sent to eTeacher queue, 3/3 HTTP 200, 0 failed. Ledger 1,648. Today total 48. Queue acceptance only, not confirmed CRM arrival.
