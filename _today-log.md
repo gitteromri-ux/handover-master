@@ -1877,3 +1877,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-26 11:24 IL — French Atelier push batch76
 - 3 Meta instant-form leads (created 09:28–10:24 IL Nov 26) sent to eTeacher queue, 3/3 HTTP 200, 0 failed. Ledger 1,648. Today total 48. Queue acceptance only, not confirmed CRM arrival.
+
+## 2026-11-26 12:05 IL — FINDING: hot-copy 3 AddToCart + 3 InitiateCheckout today are test events, not buyers
+- Meta insights, ad set 52673824399628, today: all 3 ATC + 3 IC sit in the 03:00 IL hour, attribution 1d_view only, one row (age 18-24 male, 1 impression, reach 1), ad 52682438314828, 0 clicks, 0 AddPaymentInfo.
+- Same hour: three production verification runs (bf.js prod, iPhone 03:41, Android 03:43, desktop 03:45 IL), each sent AddToCart + InitiateCheckout server copies through the relay with test_event_code TEST90210 and one shared buyer identity (dana.probe@outlook.com / 2125550147).
+- Meta docs: events sent with test_event_code are NOT dropped; they are used for ads measurement. So test_event_code does not keep test data out of ad numbers.
+- RULE from now: no server event may reach lla-ac-events / Meta from any test run on production, with or without test_event_code. Abort relay calls in harness.
+- Real today 00:00-11:42 IL: 2 AddToCart (A5, 1d_click, 03:00 and 05:00), 0 InitiateCheckout, 0 purchases. No Meta object touched.
