@@ -1864,3 +1864,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Not tested: paid Purchase event, card decline message, real handset (BrowserStack not connected), staging purchase (env=staging is not carried from homepage to checkout).
 - Countdown ends Nov 27 23:59 ET (Nov 28 06:59 Israel); after that the page still shows Black Friday wording with 0 left until reverted.
 - Observed, not mine: ad set 52666232368428 budget 369 -> 399 and 52673824399628 205.95 -> 245.95, updated 01:34-01:36 Israel Nov 26.
+
+## 2026-11-26 08:58 Israel — French Atelier push batch75
+- 45 leads from Meta form 1008080345425102 (created 23:23 Nov 25 – 08:29 Nov 26 Israel; #117510: 24, Linda & ALL Persona: 21) sent to eTeacher Leads API; 45/45 HTTP 200. Ledger 1,645, 0 non-200. Queue acceptance only, CRM arrival not confirmed.
