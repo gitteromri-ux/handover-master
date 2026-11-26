@@ -1921,3 +1921,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Tracked link unchanged (cid 118854 still assumed). No lists built, nothing sent, live site and checkout untouched.
 - SHA: 44b7a8443421006d9183547b118266be70b8b700. Previous: v3 b81dac3, v2 e262d78, v1 7400b67.
 - Rollback: `git revert 44b7a84` in lla-black-friday-emails (returns Pages to v3).
+
+## 2026-11-26 16:22 IL — Card-first checkout deployed to production, switched OFF by default
+- Approved by Omri in chat ("Yes, deploy it", 16:21 IL). Repo Longevity-Academy.github.io main c12ce4b -> 68a7942 (checkout.html only, +133 lines). No sender/tracking/order-creation code touched.
+- Backup branch: backup/20261126-1621-before-card-first. Rollback: git revert 68a7942 5e24893 (or reset main to backup).
+- Flag: off for all buyers. ?fast=1 on checkout.html turns it on for that browser (localStorage lla_fast); ?fast=0 turns off.
+- Safety: any failed payment in fast field -> standard Drop-In mounts for same order (staging-verified, order 8087391; injected failure).
+- Production check (Android emulation, existing unpaid order 8091236, pixel/relay blocked, no payment): normal path card form 17.9 s; fast=1 card form 10.0 s, order attached, Pay $79.00 + Google Pay shown.
+- NOT verified: a real production payment through the fast field (only Omri's one iPhone live purchase is allowed).
+- Earlier today: live unpaid partner test orders created by me in production CRM: 8091666 (Android, $158 + 4 x $288) and one iPhone order (id not captured, "Test Ignore", qa.duo.iphone.duo.*@example.org). To void along with 8091236. Correction: "10-12 s Continue->checkout on iPhone" was a lab tap artefact, not a site problem.
