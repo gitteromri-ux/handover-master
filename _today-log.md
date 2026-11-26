@@ -1853,3 +1853,14 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-25 23:19 IL — French Atelier lead push batch74
 - 21 leads (form 1008080345425102, created 2026-11-25 17:37–23:10 IL) sent to eTeacher queue, all HTTP 200. Ledger 1,600, 0 non-200. Queue acceptance only.
+
+## 2026-11-26 03:39 Israel — Black Friday layer live on www.longevitylifeacademy.com homepage
+- Repo Longevity-Academy/Longevity-Academy.github.io main 9acd3ca -> 96f71dc. Files: index.html (bf-layer style, bf-layer-js + __BFVIP script, 4 wording lines), new assets/bf-julie-vip.jpg. All 44 pre-existing script blocks byte-identical; CSP, checkout.html, lla-funnel.js, popup, relay untouched.
+- Source: "LLA Black Friday - Final" preview (session 0494cd3e). Removed for production: tracking silencer, storage shim, base href, CSP removal, inline-edit script, partner add-on line (not connected to checkout).
+- Why homepage, not a separate page: Cloudflare credential refused (403), so the pages.dev redirect could not be changed; homepage keeps the ad URL, redirect and page URL identical. No Meta object touched.
+- Backup branch backup/20261126-0400-before-blackfriday = 9acd3ca. Rollback: `git revert 96f71dc` and push to main.
+- Verified on production from the ad link (pages.dev -> .com, query kept), iPhone WebKit, Pixel 7 Chrome, desktop Chrome: PageView, ViewContent, Enroll_CTA_Click, Clicked_on_Enroll_Pricing, Clicked_on_Enroll, AddToCart, InitiateCheckout, checkout PageView: browser + server, event_id on both, fbp + fbc on all; server copies sent with test_event_code TEST90210, Meta events_received 1, fbc_state kept_exact. Browser Pixel requests were aborted in tests (no test data in numbers).
+- One production order created by this test at 03:55 Israel: student 11708848, order 8091236, "Laura Verify BF", laura.verify.bf@outlook.com, unpaid, no card submitted (script opened Apple Pay sheet instead of card Pay). Card form mounted, AddPaymentInfo fired (Meta test event received). Needs voiding by eTeacher together with 8091234. No further order/payment tests.
+- Not tested: paid Purchase event, card decline message, real handset (BrowserStack not connected), staging purchase (env=staging is not carried from homepage to checkout).
+- Countdown ends Nov 27 23:59 ET (Nov 28 06:59 Israel); after that the page still shows Black Friday wording with 0 left until reverted.
+- Observed, not mine: ad set 52666232368428 budget 369 -> 399 and 52673824399628 205.95 -> 245.95, updated 01:34-01:36 Israel Nov 26.
