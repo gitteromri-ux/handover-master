@@ -1930,3 +1930,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Production check (Android emulation, existing unpaid order 8091236, pixel/relay blocked, no payment): normal path card form 17.9 s; fast=1 card form 10.0 s, order attached, Pay $79.00 + Google Pay shown.
 - NOT verified: a real production payment through the fast field (only Omri's one iPhone live purchase is allowed).
 - Earlier today: live unpaid partner test orders created by me in production CRM: 8091666 (Android, $158 + 4 x $288) and one iPhone order (id not captured, "Test Ignore", qa.duo.iphone.duo.*@example.org). To void along with 8091236. Correction: "10-12 s Continue->checkout on iPhone" was a lab tap artefact, not a site problem.
+
+## 2026-11-26 16:55 IL — Post-deploy production checks of card-first (flag on per test browser only)
+- iPhone (WebKit emulation), existing solo order 8091236, events blocked, no payment: normal 27.8 s to card form; fast 13.6 s card + order attached 14.6 s.
+- Partner path full live flow with fast flag, Android: new unpaid order 8091750 (student 11709262, $158 + 4 x $288), fast card shown with "Pay $158.00". Order to void.
+- Re-opening an old duo order by bare URL in a fresh browser stays on "Confirming tuition" (quote lives in sessionStorage) - harness limitation, same with flag off.
+- Still open: one real production payment through fast field (Omri's iPhone test only).
