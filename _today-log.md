@@ -1936,3 +1936,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Partner path full live flow with fast flag, Android: new unpaid order 8091750 (student 11709262, $158 + 4 x $288), fast card shown with "Pay $158.00". Order to void.
 - Re-opening an old duo order by bare URL in a fresh browser stays on "Confirming tuition" (quote lives in sessionStorage) - harness limitation, same with flag off.
 - Still open: one real production payment through fast field (Omri's iPhone test only).
+
+## 2026-11-26: lla-black-friday-emails v5 (course-first rewrite, Resend tags)
+- Repo: gitteromri-ux/lla-black-friday-emails (branch main, GitHub Pages https://gitteromri-ux.github.io/lla-black-friday-emails/)
+- What changed: four Black Friday emails for The Longevity Blueprint rewritten (v5): larger type (20px body, 44px headlines), course-first copy, real scarcity (last 2026 classes, 8 to 15 students, price ends Fri Nov 27 11:59 PM ET), no Julie portrait. Merge tags switched from ActiveCampaign to Resend (`{{{contact.first_name|there}}}`, `{{{RESEND_UNSUBSCRIBE_URL}}}`), preferences link removed, eTeacher Ltd. postal address added to footers, utm_source=Email_Marketing. New file emails.json (subject, preheader, links). Plain-text files no longer carry Subject/Preheader header lines.
+- Source: /home/user/workspace/lla-bf (top5.mjs constants, body5.mjs copy + template, tail5.mjs gallery, mk5.sh build)
+- SHA: 11b782d39ab3e55f01513d8ee95d6178e832480b
+- Verified: node verify.mjs, all four pages and images 200, each button link activates BFRIDAY ($79 first month, $755 total) with cid 118854 and the right utm_content. Nothing sent, no list built, live site untouched.
+- Rollback: `git revert 11b782d39ab3e55f01513d8ee95d6178e832480b` in the repo, then push (restores v4).
