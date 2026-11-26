@@ -1950,3 +1950,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - What changed: new subject lines and preheaders on all four emails; new headline, subline and opening for emails 1 and 2 (email 1 "You asked about The Longevity Blueprint. Now it starts at $79.", email 2 "What your doctor doesn't have time to teach you."). Links, price box, design and footer unchanged. Nothing sent. Live site, checkout and CRM untouched.
 - SHA: 3931064401d504b082cd94f5ef1edd726a1a0460
 - Rollback: git revert 3931064 (restores v5, 11b782d)
+
+### 2026-11-26 15:40 UTC · lla-black-friday-emails v7
+- Repo: gitteromri-ux/lla-black-friday-emails (GitHub Pages)
+- What changed: outcome-led subject lines, preheaders and headlines on all four emails (email 1 uses Omri's line "Learn to age 33% slower and master longevity in just 18 weeks", backed in the body by Julie Gibson Clark's 0.665 pace of aging). Links, price box, design and footer unchanged. Nothing sent. Live site, checkout and CRM untouched.
+- SHA: 8332da3f92bf79fdabbd94443c843f57048ae6c2
+- Rollback: git revert 8332da3 (restores v6, 3931064)
