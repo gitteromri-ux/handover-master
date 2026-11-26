@@ -1906,3 +1906,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Not done: no lists built, nothing sent, live site and checkout untouched. cid 118854 is reused from the previous Blueprint email round (assumed, not confirmed by eTeacher).
 - SHA: e262d78ebbc169c6011a7871eadeab4daf6888a8 (v2 content 5386ba0, cache-bust e262d78). Previous v1: 7400b67.
 - Rollback: `git revert e262d78 5386ba0` in lla-black-friday-emails (returns Pages to v1 at 7400b67).
+
+## 2026-11-26 — lla-black-friday-emails v3 (rewritten as letter-format emails)
+- Repo: gitteromri-ux/lla-black-friday-emails (public, GitHub Pages). Link: https://gitteromri-ux.github.io/lla-black-friday-emails/
+- What changed: v2 (price-card mockup and site sections inside the email) rejected. All four emails rewritten in the format of the previous approved LLA leads email: one headline per section, bullet value points (why learn longevity, what you get in the course, Julie's masterclass bonus), one navy offer box with "Promo code: BFRIDAY", class times, button "Start my first month for $79". Partner line last in emails 2 and 4 only. Hero 2 redrawn without the price card.
+- Tracked link unchanged and re-verified live on all four (BFRIDAY active, $79 first / $755 total, cid 118854 + UTMs stored; third-party hosts blocked, no events sent).
+- Not done: no lists built, nothing sent, live site and checkout untouched. cid 118854 still assumed.
+- SHA: b81dac33a57a8e8548b6c08fd4805c34301f2b0d. Previous: v2 e262d78, v1 7400b67.
+- Rollback: `git revert b81dac3` in lla-black-friday-emails (returns Pages to v2).
