@@ -1891,3 +1891,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Verified: all 4 live links load the homepage with LLA_PROMO BFRIDAY active ($79 / $755) and attribution stored (cid 118854 + UTMs), third-party hosts blocked, no events sent. Not verified: a paid order landing in CRM under cid 118854 (cid reused from the previous Blueprint email round, assumed).
 - Not touched: live site, checkout, Meta, ActiveCampaign. No lists built, nothing sent.
 - SHA: 7400b67. Rollback: delete or make private the repo `gitteromri-ux/lla-black-friday-emails` (nothing else depends on it).
+## 2026-11-26 ~13:10 IL — Card-first checkout built on TEST branch (NOT live)
+- Branch `speed/20261126-card-first` commit `5e24893` (checkout.html only, +125 lines, flag `?fast=1`, off by default). Production untouched. No Meta change. Tracking senders untouched.
+- Design: Airwallex card field drawn at page open while CRM order + intent run; Pay uses same CRM intent / customer / consent (merchant, unscheduled, SKIP_3DS) and the same success/error handlers, Purchase event and CRM report as the Drop-In. Wallet-only Drop-In drawn under the card. Falls back to Drop-In on any failure.
+- Staging results (cloud emulated phones): Android click→card usable 4.4–8.4 s (Drop-In 18.5–20.4 s). iPhone/WebKit page open→card usable 11.0 s (Drop-In 23.4 s).
+- Staging paid end to end via card-first: solo $79 orders 8087364, 8087368 (iPhone), 8087371; duo $158 order 8087366. CRM report 202 each. Consent request body identical to Drop-In. Track calls identical to Drop-In: AddPaymentInfo → Pay_Click → Purchase, once each, with order id (tracking is off in staging; nothing sent to Meta).
+- Not verified: production Airwallex, real handsets, Apple Pay button (not available in the lab), wallet payment through the wallet-only Drop-In.
+- Next: Omri approval required before any production deploy. Rollback = revert the single commit.
