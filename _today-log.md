@@ -1970,3 +1970,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - CRM lead payload carried fbclid, utm_source, cid, adGroupID.
 - Meta insights today (account time): A2 70 clicks/60 LPV/76 VC; A4 59/50/57; A5 44/38/40 + 2 ATC; hot copy 2 clicks (3 ATC/3 IC = my earlier test-coded events). Real InitiateCheckout today: 0.
 - Support email sent at user's instruction in thread "Full Computer credit refund request ... (task 628adde3)" 17:20 IL.
+
+## 2026-11-26 17:45 IL — iPhone (WebKit emulation, Facebook in-app user agent) live event check, no payment, events intercepted
+- All browser + relay events fired through AddPaymentInfo; unpaid order 8091814 (student 11709309, qa.eventcheck.69370@lla-qa-check.dev) - to void.
+- Meta insights, 4 sales ad sets: Nov 17-23: 918 clicks, 850 LPV, 39 ATC, 19 IC, 5 website Purchase events. Nov 24-26 (to 17:30 IL, my 3 test events removed): 452 clicks, 401 LPV, 8 ATC, 0 IC, 0 Purchase. Last IC Nov 23, last Purchase event Nov 22.
+- ATC fires on popup step 1 submit; IC fires on Continue at step 2 (plan/date screen).
