@@ -1962,3 +1962,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - What changed: subject lines and headlines on all four emails now short, lead with Black Friday, carry the hook and name the longevity course. Body, links, price box, design and footer unchanged. Nothing sent. Live site, checkout and CRM untouched.
 - SHA: 16b291c8d6bd6d3c355e40799a796e7e2c443fa5
 - Rollback: git revert 16b291c (restores v7, 8332da3)
+
+## 2026-11-26 17:30 IL — Live event check up to card form (no payment; pixel + relay intercepted, nothing sent to Meta)
+- Android emulation, live site, ad-style URL (fbclid, cid=118148, adGroupID=108810), non-tester email qa.eventcheck.14214@lla-qa-check.dev. Unpaid order 8091808 (student 11709301) - to void. Also unpaid $1 paytest order 8091792 (gitter.omri+fast265) - to void.
+- Browser pixel fired: PageView, ViewContent, Enroll_CTA_Click, Clicked_on_Enroll_Pricing, Clicked_on_Enroll, AddToCart, InitiateCheckout, AddPaymentInfo.
+- Relay (CAPI) payloads built for the same events with event_id, fbc (fbclid intact), fbp, external_id, email/phone/name/state, value 79 USD, order_id on AddPaymentInfo (event_id lla_api_8091808).
+- CRM lead payload carried fbclid, utm_source, cid, adGroupID.
+- Meta insights today (account time): A2 70 clicks/60 LPV/76 VC; A4 59/50/57; A5 44/38/40 + 2 ATC; hot copy 2 clicks (3 ATC/3 IC = my earlier test-coded events). Real InitiateCheckout today: 0.
+- Support email sent at user's instruction in thread "Full Computer credit refund request ... (task 628adde3)" 17:20 IL.
