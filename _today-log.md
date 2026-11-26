@@ -1884,3 +1884,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Meta docs: events sent with test_event_code are NOT dropped; they are used for ads measurement. So test_event_code does not keep test data out of ad numbers.
 - RULE from now: no server event may reach lla-ac-events / Meta from any test run on production, with or without test_event_code. Abort relay calls in harness.
 - Real today 00:00-11:42 IL: 2 AddToCart (A5, 1d_click, 03:00 and 05:00), 0 InitiateCheckout, 0 purchases. No Meta object touched.
+
+## 2026-11-26 · LLA Black Friday emails for historical Longevity leads (handoff for Chris)
+- Repo: `gitteromri-ux/lla-black-friday-emails` (new, public, GitHub Pages on main). Live: https://gitteromri-ux.github.io/lla-black-friday-emails/
+- What changed: 4 ActiveCampaign-ready emails (`lla-bf-01`..`04`) with HTML, text copies, full-email images and a gallery page. Offer copied from the live homepage: $79 first month (regular $179), then $169/month x4 (regular $289), code BFRIDAY, ends Fri Nov 27 2026 11:59 PM ET. Link: `https://www.longevitylifeacademy.com/?code=BFRIDAY&cid=118854&utm_source=activecampaign&utm_medium=email&utm_campaign=bfriday_history_leads&utm_content=<email id>`.
+- Verified: all 4 live links load the homepage with LLA_PROMO BFRIDAY active ($79 / $755) and attribution stored (cid 118854 + UTMs), third-party hosts blocked, no events sent. Not verified: a paid order landing in CRM under cid 118854 (cid reused from the previous Blueprint email round, assumed).
+- Not touched: live site, checkout, Meta, ActiveCampaign. No lists built, nothing sent.
+- SHA: 7400b67. Rollback: delete or make private the repo `gitteromri-ux/lla-black-friday-emails` (nothing else depends on it).
