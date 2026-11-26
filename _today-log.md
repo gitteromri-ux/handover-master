@@ -1944,3 +1944,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - SHA: 11b782d39ab3e55f01513d8ee95d6178e832480b
 - Verified: node verify.mjs, all four pages and images 200, each button link activates BFRIDAY ($79 first month, $755 total) with cid 118854 and the right utm_content. Nothing sent, no list built, live site untouched.
 - Rollback: `git revert 11b782d39ab3e55f01513d8ee95d6178e832480b` in the repo, then push (restores v4).
+
+### 2026-11-26 15:25 UTC · lla-black-friday-emails v6
+- Repo: gitteromri-ux/lla-black-friday-emails (GitHub Pages)
+- What changed: new subject lines and preheaders on all four emails; new headline, subline and opening for emails 1 and 2 (email 1 "You asked about The Longevity Blueprint. Now it starts at $79.", email 2 "What your doctor doesn't have time to teach you."). Links, price box, design and footer unchanged. Nothing sent. Live site, checkout and CRM untouched.
+- SHA: 3931064401d504b082cd94f5ef1edd726a1a0460
+- Rollback: git revert 3931064 (restores v5, 11b782d)
