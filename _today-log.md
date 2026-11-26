@@ -1867,3 +1867,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-26 08:58 Israel — French Atelier push batch75
 - 45 leads from Meta form 1008080345425102 (created 23:23 Nov 25 – 08:29 Nov 26 Israel; #117510: 24, Linda & ALL Persona: 21) sent to eTeacher Leads API; 45/45 HTTP 200. Ledger 1,645, 0 non-200. Queue acceptance only, CRM arrival not confirmed.
+
+## 2026-11-26 09:50 IL — LLA Black Friday partner add-on LIVE (.com)
+- Repo Longevity-Academy/Longevity-Academy.github.io, commit `c12ce4b` on `c9326f7`. Backup branch `backup/20261126-before-partner`. Rollback: `git revert c12ce4b`.
+- Files: index.html (new `<script id="bf-duo-js">`, CSS in `#bf-layer`, ecomm.js version bump), nov/eteacher-ecomm.js (duo price 158 / 4 / 1152, partner in order notes, quote allowlist), checkout.html (duo labels, version bump). nov/lla-promo.js and all tracking senders untouched.
+- What it does: small "Bringing a partner?" line on the price card; "Add a partner" switch on popup screen 2 (name, email, mobile). One order, two seats: $158 today, then 4 x $288 ($1,310). Notes carry `BFRIDAYDUO DUO 2 SEATS PARTNER Name/Email/Phone`. Off after Nov 27 23:59 ET.
+- Verified: staging CRM orders 8087315/8087316/8087318/8087319 (duo 158/4/1152, card form mounted, checkout shows $158 + 4 x $288) and 8087317 (solo after switch on/off = 79/4/676). Live site (no order created, CRM calls blocked): partner line + switch present, staged payload 158/4/1152 with partner notes; solo and duo paths fire PageView, ViewContent, Enroll clicks, AddToCart, InitiateCheckout on browser + server with event_id, fbp, fbc.
+- NOT verified: a paid duo order on production, and a completed test-card payment of $158 on staging.
