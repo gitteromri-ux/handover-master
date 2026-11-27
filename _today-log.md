@@ -2093,3 +2093,13 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 2026-11-27 21:31 IL — A2 guardrail hit (Omri rule: <2 carts and 0 purchases at 21:30 -> -$40)
 - A2 52668268711228 at 21:30: 1 cart, 0 purchases. daily_budget $698.99 -> $658.99. Rollback: daily_budget=69899.
 - Observed: A5 52669048300628 budget is $388 (not $339; not changed by me).
+
+## 2026-11-27 21:45 IL — LLA Black Friday email 4 (last call) sent via Resend
+- Email 4, approved design, copy made clearer on who we are and what the course is (intro paragraph, hero sub, preheader); headline unchanged. Source: gitteromri-ux/lla-black-friday-emails lla-bf-04.html.
+- Subject: "Black Friday ends tonight: longevity course for $79, not $179". From advisor@longevitylifeacademy.net, reply-to Omri.
+- Batch 1: broadcast 0ca414a7-8708-4369-b52c-6c6b7d1809e4, 1,000 recipients, sent 21:27 IL (162 checkout starters, 186 masterclass signups, 257 November leads, 395 newest Oct/late-Sept leads). At 21:40 IL: 981 delivered, 13 bounced, 37 opened, 17 clickers, 42 offer-link clicks, 0 unsubscribes.
+- Batch 2: broadcast b1d1198f-f734-4231-8351-cfd71007d6f6, 558 recipients, sent 21:39 IL (147 Oct/late-Sept + 411 Sept 8-24 leads).
+- Excluded: 61 earlier bounces, 15 Blueprint buyers, internal/test addresses. Not mailed: 442 oldest leads (Aug 28-early Sept).
+- Resend contacts now hold batch 2 only (free plan cap 1,000); lead lists stay local, not in git. Resend segment counters lag (showed 960 while actual send was 558).
+- Measurement: links carry cid=118854 + utm_campaign=bfriday_history_leads + utm_content=lla-bf-04; per-person clicks in Resend. No access to GA4 from the gitter.omri Google login, and the Vercel project behind lla-ac-events is not in the connected Vercel team, so per-person add-to-cart for email visitors is not readable. Site-wide pixel counts per hour are readable (pixel 1440305917310328).
+- Three paused Resend automations (plain versions) left paused.
