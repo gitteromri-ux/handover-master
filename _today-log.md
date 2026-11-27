@@ -1975,3 +1975,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - All browser + relay events fired through AddPaymentInfo; unpaid order 8091814 (student 11709309, qa.eventcheck.69370@lla-qa-check.dev) - to void.
 - Meta insights, 4 sales ad sets: Nov 17-23: 918 clicks, 850 LPV, 39 ATC, 19 IC, 5 website Purchase events. Nov 24-26 (to 17:30 IL, my 3 test events removed): 452 clicks, 401 LPV, 8 ATC, 0 IC, 0 Purchase. Last IC Nov 23, last Purchase event Nov 22.
 - ATC fires on popup step 1 submit; IC fires on Continue at step 2 (plan/date screen).
+
+## 2026-11-27 12:53 IL — Meta: ad set 4 paused on Omri instruction
+- Omri wrote "Pause ad set 4." Set status PAUSED on ecomm Adset 4_All_All_CPM_#108810 (52666232368428), campaign ecomm-01. Verified by read-back: effective_status PAUSED. Nothing else changed (budget, ads, other ad sets untouched). Undo: set status ACTIVE on the same ad set.
