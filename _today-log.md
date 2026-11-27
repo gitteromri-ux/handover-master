@@ -2054,3 +2054,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - The "VIP masterclass with Julie Gibson Clark" card (outdated offer wording) is cut from both videos; that freed the time for the opening, so length is unchanged and no other scene is covered. Audio stream copied, md5 identical to source (Six Pillars fc3fb127…, clock 7f5508d9…).
 - Caption rewritten value-first in page voice; offer facts checked against the live homepage (price $79 then $169 x 4, Lingo sensor, masterclass recording bonus, 14-day refund, Dec 9/10 starts, 11:59 PM ET).
 - Not posted. Posting needs Omri's approval of videos and caption. Rollback: revert commit `b81d99f`.
+
+### 2026-11-27 ~16:00 UTC — LLA Black Friday organic social video v3 (awaiting approval, NOT posted)
+- Repo `gitteromri-ux/lla-blueprint-banners-nov`, folder `black-friday/`. Review page: https://gitteromri-ux.github.io/lla-blueprint-banners-nov/black-friday/
+- Replaced the two v2 videos (Six Pillars + Clock) with ONE video in two formats: `LLA-BF-Longevity-Course-9x16.mp4`, `LLA-BF-Longevity-Course-1x1.mp4` (701 frames, 23.4 s, original "New Dawn" audio stream copied unchanged).
+- Structure: opener "Learn to age 33% slower. / The 18-week live online longevity course. / Black Friday: start for $79. / Ends tonight, 11:59 PM ET." -> "Master the Six Pillars" card -> six pillar clips in the lower window under "The Longevity Course." header -> "Get your written longevity protocol" -> Zoom grid -> "$79 / 14-day refund" -> Enroll end card.
+- Removed per Omri: all small caps labels (LONGEVITY BLUEPRINT, 18 LIVE ONLINE SESSIONS, 18 WEEKS, PILLAR 0n, FORMAT/DURATION/SESSION), the outdated masterclass card, the biological-age angle.
+- Caption rewritten (in `black-friday/caption.txt`). Status: video + caption need Omri's explicit approval before posting. Posting path untested.
+- Build script: sandbox only (`lla-social/v3/make.py`), not in repo.
