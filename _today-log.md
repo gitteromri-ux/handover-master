@@ -2085,3 +2085,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-27 21:08 IL — French Atelier lead push batch78
 - 15 Meta instant-form leads (form 1008080345425102, created Nov 27 14:16–20:54 IL) sent to eTeacher Leads API queue, 15/15 HTTP 200, 0 failed. CRM campaign 116981: 10 · 117510: 5. Ledger 1,724, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
+
+- 21:18 IL — A5 52669048300628 daily budget $339 -> $388 (+$49). Ordered by Omri in chat. Rollback: daily_budget 33900.
