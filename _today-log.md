@@ -2152,3 +2152,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 00:01: owner supplied the certificate answer (Longevity Blueprint Graduate Certificate on completion; not a teacher-training course; Julie Gibson Clark 90-min VIP recording in the platform with Black Friday enrollment only). Sent to the Page 1 prospect in Page voice, ending with a save-your-seat ask. No reply yet at 00:03.
 - New on Page 2 since 22:58: one DM recipient declined ("Thanks but not at this time"); two new negative public comments on the "You don't need another supplement" ad post (one "Scam", one "sales trick" critique). Not answered, not hidden — owner decision.
 - Same certificate question still open in one Page 2 thread; Oct 29 support complaint still unanswered.
+
+## 00:15 IL — 4x5 feed versions uploaded to ad library (no ads created/changed)
+- Glucose 4x5 vid 1598441655658161 (from v23 1x1 original, edge-extended) · Fasting 4x5 vid 2261202894445765 · Piano FIXED 67s 4x5 vid 907274432407100 (crop of Meta 720p copy, upscaled to 1080x1350).
+- Files: /tmp/rs/out/. Nothing attached or activated.
