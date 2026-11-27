@@ -1985,3 +1985,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - New creative `1699031578556420` = copy of Piano FIXED creative `1496012172423766`; only change: "November offer:" -> "Black Friday offer. Ends tonight at 11:59 PM ET:". Same video, headline, link, url_tags, CTA, Advantage+ creative opt-outs.
 - New ad `52684098516228` "Piano FIXED | 67 Sec | 9x16 | 23.11.26 | BF price line" ACTIVE, in Meta review at 13:40 IL. (First attempt `52684098405828` carried the old post's tracking specs; deleted while paused, never delivered.)
 - Rollback: pause ad set `52684098188828`.
+
+## 2026-11-27 14:05 IL — French Atelier lead push batch77
+- 61 Meta instant-form leads (form 1008080345425102, created Nov 26 11:24 IL – Nov 27 13:25 IL) sent to eTeacher Leads API queue, 61/61 HTTP 200, 0 failed. CRM campaign 116981: 38 · 117510: 23. Ledger 1,709, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
