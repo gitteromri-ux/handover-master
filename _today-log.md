@@ -2111,3 +2111,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Root cause found: sending domain longevitylifeacademy.net was registered 2026-11-27 (RDAP) and carried ~3,000 emails the same day; opens fell from 27.5% (150) to 2.4-3.9% (1,000-sends); 1 of 8 tests landed in Spam in the owner's own Gmail. Do not send further bulk from this domain.
 - .com DNS is on AWS Route 53 (not in our control), so the aged domain cannot be added to Resend from this side.
 - Created a private Google Sheet in Omri's Drive: call list of the 173 hottest leads with phone numbers (1 real clicker, 38 checkout starters, 134 masterclass signups). Owner-only, no link sharing. No PII in git.
+
+## 22:07 IL — Black Friday end extended (Omri order)
+- Site commit a878c19 on main: BF end 11:59 PM ET -> midnight Pacific = Sat Nov 28 10:00 IL. 4 date lines only (index.html x2, nov/lla-promo.js, nov/eteacher-ecomm.js). Live verified byte-identical; countdown shows 11h53m at 22:06 IL; BFRIDAY active, $79 first payment. No order, no test, Meta requests blocked in check.
+- Rollback: branch backup/20261127-before-bf-extend (68a7942).
