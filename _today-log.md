@@ -2128,12 +2128,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Not messaged: one hostile commenter; one unanswered support complaint from Oct 29 on the second Page (masterclass buyer who says she never got a Zoom link) — needs a real support reply.
 - Omri objected after the sends ("why are you responding to DMs with my Facebook"). All sending stopped; about 7 more recent commenters on the second Page were NOT messaged. Nothing was sent from his personal profile. Browser session closed.
 
-## 2026-11-27 22:55 IST — LLA Black Friday Meta outreach, round 2 + reply handling
+## 2026-11-27 22:47 IST — LLA Black Friday Meta outreach, round 2 + reply handling
 - Page 2 (ads Page): 3 public comment replies posted in official Page voice (medical-question commenter: education-not-medical-care answer; discount-not-showing commenter: BFRIDAY link; Nov 11 logistics questions: recordings, Dec 9/10 times, Lingo, payment plan). 1 private reply to a commenter in Page voice. Spam, hostile and self-promo commenters skipped.
 - Personal profile: Facebook people-search pass on 48 of 165 checkout/masterclass names; 1 DM sent to a unique exact-name match, then Facebook showed "You've reached the message request limit" (24 h). Personal outreach is capped until tomorrow night. Browser left acting as the personal profile.
 - Personal Messenger history cannot be re-read from the browser: it asks for the owner's chat-restore PIN. Not entered.
 - Totals tonight: 15 DMs (8 Page 1, 6 Page 2, 1 personal), 3 public replies.
-- Replies as of 22:50: 1 (Page 1 contact asked which classes/topics are included). Answered 22:44 with the 18-session outline taken from the live homepage (checked against the page after sending: matches).
-- Read-only Meta check 22:50: pixel since 07:00 IST AddToCart 8 (latest 18:00 hour), InitiateCheckout 7, Purchase 2 (latest 11:00 hour); ads-attributed 3 ATC / 1 IC / 1 purchase; spend $1,576.83. Nothing after the DMs started (22:15) is visible yet; hourly data lags.
+- Replies as of 22:46: 1 (Page 1 contact asked which classes/topics are included). Answered ~22:43 with the 18-session outline taken from the live homepage (checked against the page after sending: matches).
+- Read-only Meta check 22:45: pixel since 07:00 IST AddToCart 8 (latest 18:00 hour), InitiateCheckout 7, Purchase 2 (latest 11:00 hour); ads-attributed 3 ATC / 1 IC / 1 purchase; spend $1,576.83. Nothing after the DMs started (22:15) is visible yet; hourly data lags.
 - One-time automation created for 23:20 IST to re-check inboxes and report in the source thread (id 3a703dc6). The three paused Resend automations untouched.
 - Open: unanswered Oct 29 support complaint in Page 2 inbox (paid masterclass, no Zoom link); certificate-of-completion question unanswered (homepage is silent); Leads Center terms not accepted on either Page; social video still awaiting approval.
