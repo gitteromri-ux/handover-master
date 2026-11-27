@@ -1978,3 +1978,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-27 12:53 IL — Meta: ad set 4 paused on Omri instruction
 - Omri wrote "Pause ad set 4." Set status PAUSED on ecomm Adset 4_All_All_CPM_#108810 (52666232368428), campaign ecomm-01. Verified by read-back: effective_status PAUSED. Nothing else changed (budget, ads, other ad sets untouched). Undo: set status ACTIVE on the same ad set.
+
+## 2026-11-27 13:40 IL — New ad set: Adset 2 last-week setup, Piano FIXED only, Black Friday price line ($229/day)
+- Requested by Omri ("go", budget 229). Nothing else touched: A2 `52668268711228`, A4 `52666232368428` (paused), A5 `52669048300628`, Hot copy `52673824399628` unchanged (updated_time unchanged, read back).
+- New ad set `52684098188828` "ecomm_Adset_02_BF_Nov20-setup_All_All_CPM_#108814" in campaign `52668266203628`. Made as a copy of A2 (no ads copied), then set to A2's Nov 17–22 setup: age 45–65+, Facebook feed + Instagram feed, mobile, US, same 18 audiences + income ZIPs, Advantage+ audience off, Purchase optimisation, lowest cost, 7d click / 1d view / 1d engaged view, value rule set `1429124048549111` applied. Daily budget $229. ACTIVE.
+- New creative `1699031578556420` = copy of Piano FIXED creative `1496012172423766`; only change: "November offer:" -> "Black Friday offer. Ends tonight at 11:59 PM ET:". Same video, headline, link, url_tags, CTA, Advantage+ creative opt-outs.
+- New ad `52684098516228` "Piano FIXED | 67 Sec | 9x16 | 23.11.26 | BF price line" ACTIVE, in Meta review at 13:40 IL. (First attempt `52684098405828` carried the old post's tracking specs; deleted while paused, never delivered.)
+- Rollback: pause ad set `52684098188828`.
