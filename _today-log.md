@@ -2115,3 +2115,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 22:07 IL — Black Friday end extended (Omri order)
 - Site commit a878c19 on main: BF end 11:59 PM ET -> midnight Pacific = Sat Nov 28 10:00 IL. 4 date lines only (index.html x2, nov/lla-promo.js, nov/eteacher-ecomm.js). Live verified byte-identical; countdown shows 11h53m at 22:06 IL; BFRIDAY active, $79 first payment. No order, no test, Meta requests blocked in check.
 - Rollback: branch backup/20261127-before-bf-extend (68a7942).
+
+### 2026-11-27 ~22:25 Israel — LLA Black Friday: last-night outreach prep (nothing sent)
+- Private call-list sheet (owner-only Google Sheet, 168 people with phones): removed 1 test row and 3 internal-looking numbers; columns H/I now hold a per-person message and a prefilled WhatsApp link. Message v3 uses Omri's wording ("3 seats left before midnight", "we saw you tried to check out", "reaching out to our community for the last seats"). Seat count is Omri's figure, not verified against enrollment data.
+- Facebook Page inbox checked (read-only): 8 real Messenger conversations (latest Monday, others Nov 15 back to Aug 6); reply box is open in old threads (not send-tested). Newest post/ad comment is Nov 20; ~50 commenters on Nov 16-17 are outside the 7-day private-reply window. Instagram is not connected to the Business Suite inbox.
+- Meta policy: a Page cannot open a Messenger chat with someone who never messaged it, so the email/phone lead list cannot be DMed from the Page.
+- No DM, text or email sent. Social video and caption still awaiting approval.
