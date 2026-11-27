@@ -2077,3 +2077,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-27 ~21:00 IL — Hot Fasting banner paused (Omri: "You can pause it")
 - Ad 52682438314828 "Banner | Fasting 14:10 | HOT clear copy" in Hot 52673824399628: ACTIVE -> PAUSED. Reason: copy lists past class dates. Piano FIXED 52683018696028 stays ACTIVE. Rollback: POST status=ACTIVE.
+
+## 2026-11-27 ~21:15 IL — New HOT 1-day-click ad set (ordered by Omri: "Duplicate ad set too hot... one day click... 190 dollar budget... Do it right now")
+- Ad set 52684175918828 "ecomm_Adset_02_HOT_1dClick_All_All_CPM_#108814", campaign 52668266203628, $190/day, ACTIVE. Same targeting/exclusion/placements/optimization (Purchase, pixel 1440305917310328, lowest cost) as Hot 52673824399628. Attribution: 1-day click only.
+- Ads (ACTIVE, in review): Piano FIXED BF 52684176008028 (creative 1771235771372952) and Glucose BF 52684176017028 (creative 1826012232007631). Copy = BF copy with past dates removed ("Classes start Dec 9 or Dec 10."). url_tags cid=118149&adGroupID=108814.
+- Hot itself untouched. Rollback: pause ad set 52684175918828.
