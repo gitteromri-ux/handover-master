@@ -2089,3 +2089,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 21:18 IL — A5 52669048300628 daily budget $339 -> $388 (+$49). Ordered by Omri in chat. Rollback: daily_budget 33900.
 
 - Added PAUSED (not active, per Omri) ad 52684177770628 "Banner | Fasting 14:10 | ... | HOT 1dClick | Black Friday" to 52684175918828; creative 1888035542208138 = Hot Fasting assets (feed 1:1 + reels 9:16 videos, thumbnails) with BF copy, Dec dates, url_tags 108814.
+
+## 2026-11-27 21:31 IL — A2 guardrail hit (Omri rule: <2 carts and 0 purchases at 21:30 -> -$40)
+- A2 52668268711228 at 21:30: 1 cart, 0 purchases. daily_budget $698.99 -> $658.99. Rollback: daily_budget=69899.
+- Observed: A5 52669048300628 budget is $388 (not $339; not changed by me).
