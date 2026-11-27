@@ -2137,3 +2137,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Read-only Meta check 22:45: pixel since 07:00 IST AddToCart 8 (latest 18:00 hour), InitiateCheckout 7, Purchase 2 (latest 11:00 hour); ads-attributed 3 ATC / 1 IC / 1 purchase; spend $1,576.83. Nothing after the DMs started (22:15) is visible yet; hourly data lags.
 - One-time automation created for 23:20 IST to re-check inboxes and report in the source thread (id 3a703dc6). The three paused Resend automations untouched.
 - Open: unanswered Oct 29 support complaint in Page 2 inbox (paid masterclass, no Zoom link); certificate-of-completion question unanswered (homepage is silent); Leads Center terms not accepted on either Page; social video still awaiting approval.
+
+## 2026-11-27 23:00 IST — LLA Page 1 live chat with one prospect
+- Same Page 1 contact sent two more questions: is $79 a monthly subscription (answered ~22:49: 5 payments, $79 then 4×$169, $755 total, or $799 once, 14-day refund) and is there a certificate/diploma (~22:57). Site has no certificate statement, so a holding reply was sent ~22:59 ("confirming with our academic team"). Owner must supply the yes/no; the same question is open in a Page 2 thread.
+- No other replies on Page 1 or Page 2 as of 22:58.
