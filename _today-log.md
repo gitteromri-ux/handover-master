@@ -2009,3 +2009,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Placement evidence: identical designed test went to Spam at 12:02/12:05 UTC (Gmail reason: "similar to messages that were identified as spam in the past"; SPF/DKIM/DMARC pass) and to Inbox at 12:35, 12:38, 12:47 UTC (gmail.com Inbox; gita-agency.com Inbox/Promotions). Spam copies show no images because Gmail blocks images in Spam.
 - Automations 6da44473, 3f455109, 8b6c750b stay PAUSED; their prompts reference the plain version and must not be resumed unedited.
 - Open: designed email 4 ("ends tonight") to the 433 recipients of email 1; needs Omri's go.
+
+## 2026-11-27 13:55 UTC — LLA Black Friday email: wave 3 staged, NOT sent
+- Resend: deleted segment "BF W1 150" (contacts kept), created segment "BF W3 567" (567 Sept 24–Oct 31 lead-form leads not yet emailed today; list file is local only, no PII here).
+- Draft broadcast `c30ca1d7-57a6-4e53-8857-0191c3f010fe` = duplicate of the designed email 1 (`22e0d813`), To = "BF W3 567". Unsent; waits for Omri's explicit go.
+- Designed tests 13:49 and 13:51 UTC: gitter.omri@gmail.com INBOX both; gita-agency Workspace mailbox SPAM both (it was INBOX at 12:47). Placement is inconsistent; cause unproven.
+- Wave 2 (283, designed) at 13:45 UTC: 274 delivered, 9 bounced, 26 opened, 4 clicked, 0 unsubscribed, 0 complaints.
+- SpamAssassin content score (Postmark spamcheck): designed 0, plain 0.
