@@ -2062,3 +2062,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Removed per Omri: all small caps labels (LONGEVITY BLUEPRINT, 18 LIVE ONLINE SESSIONS, 18 WEEKS, PILLAR 0n, FORMAT/DURATION/SESSION), the outdated masterclass card, the biological-age angle.
 - Caption rewritten (in `black-friday/caption.txt`). Status: video + caption need Omri's explicit approval before posting. Posting path untested.
 - Build script: sandbox only (`lla-social/v3/make.py`), not in repo.
+
+### 2026-11-27 ~16:50 UTC — LLA Black Friday social video v4 (awaiting approval, NOT posted)
+- Omri rejected v3 (weak main message, pillar footage too slow). Replaced same file names in `lla-blueprint-banners-nov/black-friday/` with a 15.3 s cut.
+- Opener: "Black Friday / Learn to slow your aging. / Live online course. Start for $79. / Ends tonight, 11:59 PM ET." Pillar clips now 0.6 s each. Music: same track, 8.0 s removed with a 0.7 s crossfade at ~3.1 s, original ending kept.
+- Review page unchanged: https://gitteromri-ux.github.io/lla-blueprint-banners-nov/black-friday/ (video URLs carry `?v=4`).
