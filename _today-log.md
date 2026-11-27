@@ -2033,3 +2033,10 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Account limit is 6 rule sets: deleted two sets attached to no ad set ("No bias (inert placement)" `1800993781121202`, "Instagram | Women" `2115320605858599`); definitions saved in /tmp/an/backup_h1_*.json.
 - Learning clocks after: A2 Nov 25 17:04:55 (unchanged), New ad set Nov 27 13:40:10 (unchanged).
 - Rollback: A2 budget 49999 + rule 1429124048549111; pause 52684126860828; activate 52680232013628; New ad set rule 1429124048549111.
+
+## 2026-11-27 16:29 IL — A5 age rule (approved by Omri in chat: "80% on 55 plus", delete unused set approved)
+- Deleted rule set `4436249439948010` "Men +50%" (attached only to paused old ecomm_Adset_05 #108817 `52668330871228`) to free a slot (account limit 6).
+- Created rule set `3316218181910214` "Age 55+ +80%, then Men +40% (Adset 5)": rule 1 AGE 55+ INCREASE 80; rule 2 GENDER male INCREASE 40.
+- A5 `52669048300628`: value_rule_set_id `1429124048549111` -> `3316218181910214`. Rule-only POST. Budget $339 and targeting untouched.
+- Learning clock after: Nov 25 17:04:59 (unchanged).
+- Rollback: POST A5 value_rule_set_id=1429124048549111. Backup /tmp/an/backup_h3_*.json.
