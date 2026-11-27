@@ -2087,3 +2087,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - 15 Meta instant-form leads (form 1008080345425102, created Nov 27 14:16–20:54 IL) sent to eTeacher Leads API queue, 15/15 HTTP 200, 0 failed. CRM campaign 116981: 10 · 117510: 5. Ledger 1,724, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
 
 - 21:18 IL — A5 52669048300628 daily budget $339 -> $388 (+$49). Ordered by Omri in chat. Rollback: daily_budget 33900.
+
+- Added PAUSED (not active, per Omri) ad 52684177770628 "Banner | Fasting 14:10 | ... | HOT 1dClick | Black Friday" to 52684175918828; creative 1888035542208138 = Hot Fasting assets (feed 1:1 + reels 9:16 videos, thumbnails) with BF copy, Dec dates, url_tags 108814.
