@@ -1999,3 +1999,13 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Not done yet: wave 2 (350), wave 3 (500), email 4 tonight. Gated follow-up runs set for 15:35 IL, 16:50 IL and 02:20 IL (Nov 28) in the Perplexity task.
 - Not touched: live site, checkout, CRM, ActiveCampaign, Meta. No lead data in any repo.
 - Rollback: delete unsent/scheduled broadcasts in Resend; remove the 5 DNS records; the domain simply expires Nov 27, 2027.
+
+## 2026-11-27 12:48 UTC — LLA Black Friday email, wave 2 (DESIGNED email 1) sent
+- Rule from Omri (12:3x UTC): only the approved designed emails (lla-bf-01..04.html) may be sent. Plain versions are forbidden. Wave 1 (150, plain, 12:29 UTC) was a wrong unilateral switch.
+- Sent: Resend broadcast 22e0d813-eae8-49a1-ac14-83f99297699d (designed lla-bf-01, subject "Black Friday: Learn to age 33% slower. Longevity course, $79.") to segment "General" = 283 contacts at 12:47:51 UTC. From advisor@longevitylifeacademy.net, Reply-To omri.gitter@longevitylifeacademy.com.
+- Audience: 168 unpaid checkout starters (Drive sheet "PRIVATE - Rebuilt Meta audience 52676591763828 LLA seed (2026-10-28)", segments "unpaid checkout starter*", 9 internal/test addresses dropped) + 115 November Meta leads not in wave 1 (7 duplicates with checkout list removed). No Blueprint or masterclass buyers. Local list: workspace lla-leads/wave2-designed-batch.csv (PII, not in git).
+- Gap: checkout starters after the 2026-10-28 snapshot (November Blueprint) are NOT in this list; no source with emails found in workspace or Drive.
+- Resend contacts: 138 oldest September leads (not yet emailed) deleted to stay under the 1,000-contact cap; they remain in lla-leads/wave2-remove.txt and the send list.
+- Placement evidence: identical designed test went to Spam at 12:02/12:05 UTC (Gmail reason: "similar to messages that were identified as spam in the past"; SPF/DKIM/DMARC pass) and to Inbox at 12:35, 12:38, 12:47 UTC (gmail.com Inbox; gita-agency.com Inbox/Promotions). Spam copies show no images because Gmail blocks images in Spam.
+- Automations 6da44473, 3f455109, 8b6c750b stay PAUSED; their prompts reference the plain version and must not be resumed unedited.
+- Open: designed email 4 ("ends tonight") to the 433 recipients of email 1; needs Omri's go.
