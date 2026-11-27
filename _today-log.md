@@ -2074,3 +2074,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - A2 52668268711228 daily_budget $548.99 -> $698.99. Verified after: 69899, ACTIVE. Spent today at change: $444.65.
 - Nothing else touched. Observed: Hot 52673824399628 budget is $295.95 (not $245.95 as earlier today; not changed by me).
 - Rollback: POST /52668268711228 daily_budget=54899. Snapshot /tmp/a2_before_1921.json.
+
+## 2026-11-27 ~21:00 IL — Hot Fasting banner paused (Omri: "You can pause it")
+- Ad 52682438314828 "Banner | Fasting 14:10 | HOT clear copy" in Hot 52673824399628: ACTIVE -> PAUSED. Reason: copy lists past class dates. Piano FIXED 52683018696028 stays ACTIVE. Rollback: POST status=ACTIVE.
