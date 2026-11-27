@@ -2146,3 +2146,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Check: Meta purchases today 1 (unchanged), pixel Purchase since 12:00 = 0.
 - A2 52668268711228 $658.99 -> $519.99 · A5 52669048300628 $388 -> $318 · Hot 52673824399628 $295.95 -> $256.95 · New unchanged. All ACTIVE.
 - Rollback: A2 65899, A5 38800, Hot 29595 (backups /tmp/an/backup_2345_*.json).
+
+## 2026-11-28 00:10 IST — LLA Page inbox follow-up
+- 23:20 scheduled re-check could not read inboxes (owner's browser not reachable from a scheduled run; Meta connection lacks Page messaging permission). Sales read only.
+- 00:01: owner supplied the certificate answer (Longevity Blueprint Graduate Certificate on completion; not a teacher-training course; Julie Gibson Clark 90-min VIP recording in the platform with Black Friday enrollment only). Sent to the Page 1 prospect in Page voice, ending with a save-your-seat ask. No reply yet at 00:08.
+- New on Page 2 since 22:58: one DM recipient declined ("Thanks but not at this time"); two new negative public comments on the "You don't need another supplement" ad post (one "Scam", one "sales trick" critique). Not answered, not hidden — owner decision.
+- Same certificate question still open in one Page 2 thread; Oct 29 support complaint still unanswered.
