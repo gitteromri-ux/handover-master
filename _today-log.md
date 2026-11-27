@@ -2046,3 +2046,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Clock video (LLA-03 Pace of Aging Clock) with a 2.5 s Black Friday opening in the Age Slower opening style (Playfair Display 500, gradient italic, blurred cell background from the Age Slower reel, text centred): `LLA-BF-Pace-of-Aging-Clock-9x16.mp4`, `-1x1.mp4`. Length 17.538 s, audio stream byte-identical to the original (md5 checked).
 - Carousel: new opening card `LLA-BF-Carousel-01.png` (1638x2048) + the 8 existing "The CarouselNN" cards unchanged (`-02..-09.jpg`), zip included.
 - Caption draft on the page, awaiting Omri's approval. Nothing posted to Facebook or Instagram. No Meta, site, checkout or CRM changes.
+
+## 2026-11-27 17:27 IL — LLA Black Friday social post: review page v2 (awaiting Omri approval, nothing posted)
+- Repo `gitteromri-ux/lla-blueprint-banners-nov`, folder `black-friday/`, commit `b81d99f`. Page: https://gitteromri-ux.github.io/lla-blueprint-banners-nov/black-friday/
+- Replaced the still-image carousel (wrong asset) with the Six Pillars carousel VIDEO (source `reels-v23/LLA-07-Six-Pillars`). Files: `LLA-BF-Six-Pillars-9x16.mp4`, `-1x1.mp4`, `LLA-BF-Clock-9x16.mp4`, `-1x1.mp4`, `caption.txt`.
+- Edit in both videos: 2.3 s opening card in the Age Slower style (Playfair, logo, blurred cell background), two lines only. Six Pillars: "Learn to age 33% slower." / "Black Friday: start for $79." Clock: "Your biological age isn't set in stone." / "Black Friday: start for $79."
+- The "VIP masterclass with Julie Gibson Clark" card (outdated offer wording) is cut from both videos; that freed the time for the opening, so length is unchanged and no other scene is covered. Audio stream copied, md5 identical to source (Six Pillars fc3fb127…, clock 7f5508d9…).
+- Caption rewritten value-first in page voice; offer facts checked against the live homepage (price $79 then $169 x 4, Lingo sensor, masterclass recording bonus, 14-day refund, Dec 9/10 starts, 11:59 PM ET).
+- Not posted. Posting needs Omri's approval of videos and caption. Rollback: revert commit `b81d99f`.
