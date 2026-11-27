@@ -2024,3 +2024,12 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Result at ~14:05 UTC: 939 delivered, 47 bounced (4.70%, above Resend's 4% guideline), 0 unsubscribed, 0 complaints. Click and open tracking verified ON; all CTA links carry utm_content=lla-bf-01.
 - Pre-send test 14:01 UTC: gmail.com INBOX, gita-agency Workspace SPAM.
 - Not emailed yet: 437 oldest leads (Aug 28–Sept 8). The 3 paused automations still reference plain versions; do not resume unedited.
+
+## 2026-11-27 16:10 IL — A2 single change set (ordered by Omri)
+- A2 `52668268711228`: daily budget $499.99 -> $548.99; value rule set `1429124048549111` (Men +40%) -> `1156932967263871` (Men +70%). One POST.
+- New ad `52684126860828` in A2, ACTIVE: "Banner | Glucose 70-140 | 9x16 Reels + 1x1 Feed | Black Friday | 27.11.26", creative `1135989512550749` (glucose videos, Black Friday text copied from new ad set's post, url_tags adGroupID=108814, all creative enhancements OPT_OUT). tracking_specs: pixel 1440305917310328 + own post 122163221127346827.
+- Ad17 `52680232013628` (Piano not fixed, A2) -> PAUSED. Piano FIXED untouched.
+- New ad set `52684098188828`: value rule set -> `1553741499895689` (Men +80%).
+- Account limit is 6 rule sets: deleted two sets attached to no ad set ("No bias (inert placement)" `1800993781121202`, "Instagram | Women" `2115320605858599`); definitions saved in /tmp/an/backup_h1_*.json.
+- Learning clocks after: A2 Nov 25 17:04:55 (unchanged), New ad set Nov 27 13:40:10 (unchanged).
+- Rollback: A2 budget 49999 + rule 1429124048549111; pause 52684126860828; activate 52680232013628; New ad set rule 1429124048549111.
