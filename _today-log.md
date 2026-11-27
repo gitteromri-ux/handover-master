@@ -2067,3 +2067,5 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Omri rejected v3 (weak main message, pillar footage too slow). Replaced same file names in `lla-blueprint-banners-nov/black-friday/` with a 15.3 s cut.
 - Opener: "Black Friday / Learn to slow your aging. / Live online course. Start for $79. / Ends tonight, 11:59 PM ET." Pillar clips now 0.6 s each. Music: same track, 8.0 s removed with a 0.7 s crossfade at ~3.1 s, original ending kept.
 - Review page unchanged: https://gitteromri-ux.github.io/lla-blueprint-banners-nov/black-friday/ (video URLs carry `?v=4`).
+
+- 18:32 IL — Hot copy 52673824399628 daily budget $245.95 -> $295.95 (+$50). Ordered by Omri in chat. Rollback: set daily_budget 24595. Backup /tmp/an/backup_hot_budget_*.json
