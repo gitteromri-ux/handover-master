@@ -2082,3 +2082,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Ad set 52684175918828 "ecomm_Adset_02_HOT_1dClick_All_All_CPM_#108814", campaign 52668266203628, $190/day, ACTIVE. Same targeting/exclusion/placements/optimization (Purchase, pixel 1440305917310328, lowest cost) as Hot 52673824399628. Attribution: 1-day click only.
 - Ads (ACTIVE, in review): Piano FIXED BF 52684176008028 (creative 1771235771372952) and Glucose BF 52684176017028 (creative 1826012232007631). Copy = BF copy with past dates removed ("Classes start Dec 9 or Dec 10."). url_tags cid=118149&adGroupID=108814.
 - Hot itself untouched. Rollback: pause ad set 52684175918828.
+
+## 2026-11-27 21:08 IL — French Atelier lead push batch78
+- 15 Meta instant-form leads (form 1008080345425102, created Nov 27 14:16–20:54 IL) sent to eTeacher Leads API queue, 15/15 HTTP 200, 0 failed. CRM campaign 116981: 10 · 117510: 5. Ledger 1,724, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
