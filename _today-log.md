@@ -2103,3 +2103,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Resend contacts now hold batch 2 only (free plan cap 1,000); lead lists stay local, not in git. Resend segment counters lag (showed 960 while actual send was 558).
 - Measurement: links carry cid=118854 + utm_campaign=bfriday_history_leads + utm_content=lla-bf-04; per-person clicks in Resend. No access to GA4 from the gitter.omri Google login, and the Vercel project behind lla-ac-events is not in the connected Vercel team, so per-person add-to-cart for email visitors is not readable. Site-wide pixel counts per hour are readable (pixel 1440305917310328).
 - Three paused Resend automations (plain versions) left paused.
+
+## 2026-11-27 22:10 IL — LLA Black Friday email results, real-click audit, call list
+- All five Resend sends today: 2,991 sent, 2,898 delivered, 77 bounced, 0 unsubscribes, 0 complaints.
+- Click audit (every click event read with timestamp): 70 offer-link clicks reported, 68 automated (security scanners hitting every link within 1 s, 15-102 s after delivery), 2 look human (both on the 21:27 last-call send). 0 add to carts or purchases tied to email.
+- Meta today (read-only): 3 add to carts (11:00, 17:00, 18:00), 1 checkout, 1 purchase, all ad-attributed. Pixel stats endpoint shows each event twice.
+- Root cause found: sending domain longevitylifeacademy.net was registered 2026-11-27 (RDAP) and carried ~3,000 emails the same day; opens fell from 27.5% (150) to 2.4-3.9% (1,000-sends); 1 of 8 tests landed in Spam in the owner's own Gmail. Do not send further bulk from this domain.
+- .com DNS is on AWS Route 53 (not in our control), so the aged domain cannot be added to Resend from this side.
+- Created a private Google Sheet in Omri's Drive: call list of the 173 hottest leads with phone numbers (1 real clicker, 38 checkout starters, 134 masterclass signups). Owner-only, no link sharing. No PII in git.
