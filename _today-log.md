@@ -2069,3 +2069,8 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Review page unchanged: https://gitteromri-ux.github.io/lla-blueprint-banners-nov/black-friday/ (video URLs carry `?v=4`).
 
 - 18:32 IL — Hot copy 52673824399628 daily budget $245.95 -> $295.95 (+$50). Ordered by Omri in chat. Rollback: set daily_budget 24595. Backup /tmp/an/backup_hot_budget_*.json
+
+## 2026-11-27 19:21 IL — A2 budget +$150 (ordered by Omri: "raise ad set 2 budgets by 150 dollars")
+- A2 52668268711228 daily_budget $548.99 -> $698.99. Verified after: 69899, ACTIVE. Spent today at change: $444.65.
+- Nothing else touched. Observed: Hot 52673824399628 budget is $295.95 (not $245.95 as earlier today; not changed by me).
+- Rollback: POST /52668268711228 daily_budget=54899. Snapshot /tmp/a2_before_1921.json.
