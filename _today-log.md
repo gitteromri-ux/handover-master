@@ -2016,3 +2016,11 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - Designed tests 13:49 and 13:51 UTC: gitter.omri@gmail.com INBOX both; gita-agency Workspace mailbox SPAM both (it was INBOX at 12:47). Placement is inconsistent; cause unproven.
 - Wave 2 (283, designed) at 13:45 UTC: 274 delivered, 9 bounced, 26 opened, 4 clicked, 0 unsubscribed, 0 complaints.
 - SpamAssassin content score (Postmark spamcheck): designed 0, plain 0.
+
+## 2026-11-27 14:05 UTC — LLA Black Friday email: wave 3 SENT (designed, 1,000)
+- Omri gave explicit go ("make sure you send it") at ~14:00 UTC after asking for a 1,000 minimum batch.
+- Resend broadcast `c30ca1d7-57a6-4e53-8857-0191c3f010fe`, designed email 1, sent ~14:02 UTC to segment "BF W3 567" (`8359ca9e-65ce-4829-8afb-ce4cb1be36f5`, name is stale; it holds 1,000): 567 leads Sept 24–Oct 31 + 433 next-newest leads Sept 8–Sept 24, none emailed earlier today.
+- To fit the 1,000-contact cap, the 433 already-emailed contacts (wave 1: 150, wave 2: 283) were deleted from Resend. Their lists remain in local files only. Before any re-import (e.g. email 4), note that unsubscribes made after deletion are not visible in Resend.
+- Result at ~14:05 UTC: 939 delivered, 47 bounced (4.70%, above Resend's 4% guideline), 0 unsubscribed, 0 complaints. Click and open tracking verified ON; all CTA links carry utm_content=lla-bf-01.
+- Pre-send test 14:01 UTC: gmail.com INBOX, gita-agency Workspace SPAM.
+- Not emailed yet: 437 oldest leads (Aug 28–Sept 8). The 3 paused automations still reference plain versions; do not resume unedited.
