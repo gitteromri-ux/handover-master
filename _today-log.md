@@ -2040,3 +2040,9 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 - A5 `52669048300628`: value_rule_set_id `1429124048549111` -> `3316218181910214`. Rule-only POST. Budget $339 and targeting untouched.
 - Learning clock after: Nov 25 17:04:59 (unchanged).
 - Rollback: POST A5 value_rule_set_id=1429124048549111. Backup /tmp/an/backup_h3_*.json.
+
+## 2026-11-27 14:58 UTC — LLA Black Friday social assets published for review (not posted)
+- Repo `gitteromri-ux/lla-blueprint-banners-nov`, new folder `black-friday/`, commits `de951aa`, `ce6bb1e`. Review page: https://gitteromri-ux.github.io/lla-blueprint-banners-nov/black-friday/
+- Clock video (LLA-03 Pace of Aging Clock) with a 2.5 s Black Friday opening in the Age Slower opening style (Playfair Display 500, gradient italic, blurred cell background from the Age Slower reel, text centred): `LLA-BF-Pace-of-Aging-Clock-9x16.mp4`, `-1x1.mp4`. Length 17.538 s, audio stream byte-identical to the original (md5 checked).
+- Carousel: new opening card `LLA-BF-Carousel-01.png` (1638x2048) + the 8 existing "The CarouselNN" cards unchanged (`-02..-09.jpg`), zip included.
+- Caption draft on the page, awaiting Omri's approval. Nothing posted to Facebook or Instagram. No Meta, site, checkout or CRM changes.
