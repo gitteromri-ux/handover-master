@@ -1988,3 +1988,14 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 2026-11-27 14:05 IL — French Atelier lead push batch77
 - 61 Meta instant-form leads (form 1008080345425102, created Nov 26 11:24 IL – Nov 27 13:25 IL) sent to eTeacher Leads API queue, 61/61 HTTP 200, 0 failed. CRM campaign 116981: 38 · 117510: 23. Ledger 1,709, 0 non-200. Queue acceptance only, not confirmed CRM arrival.
+
+## 2026-11-27 14:35 IL — LLA Black Friday emails: new sending domain, wave 1 sent (150)
+- Bought `longevitylifeacademy.net` at Cloudflare Registrar, $11.86, 1 year, auto-renew OFF. Order `3530df4a-e505-4be3-8d9c-c299ccdd3b62`, Cloudflare account `55eb74f4002b7237e393bd6980a1676a`. Approved by Omri ("Do it fast, fast, fast").
+- Cloudflare DNS for the .net zone (5 records, all DNS only): CNAME `send` -> `send.forge.rmta.net`, CNAME `rsend` -> `rsend-apne1.forge.rmta.net`, TXT `resend._domainkey` (Resend DKIM), TXT `_dmarc` = `v=DMARC1; p=none;`, CNAME `links` -> `links2.resend-dns.com` (click/open tracking).
+- Resend (team gitter.omri, free plan): domain `479b1ef0-cd47-4707-8ab0-add0b26ed027` Verified; click + open tracking on `links.longevitylifeacademy.net`. Sender "Longevity Life Academy" <advisor@longevitylifeacademy.net>, Reply-To omri.gitter@longevitylifeacademy.com.
+- Placement tests (read back from the mailboxes): designed HTML email 1 -> SPAM at gitter.omri@gmail.com and at gitter.omri@gita-agency.com (SPF/DKIM/DMARC all PASS). Plain-text-style version -> INBOX at both (Workspace: Promotions tab). eTeacher Outlook: neither test visible in Inbox or Junk 20 min after send (Resend shows delivered).
+- Decision: send the plain version only. Files `lla-bf/site/lla-bf-01-plain.html`, `lla-bf-04-plain.html` (same approved copy, links, footer; no images).
+- Wave 1: broadcast `ce91bb9e-3b84-498e-809f-3cefec043e9b`, segment "BF W1 150" (`a8e99d80-0930-46bc-bebc-70a9fec3472b`), sent 14:29 IL. Two minutes later: 141 delivered, 5 bounced (3.33%), 23 opened, 1 clicked, 0 unsubscribed, 0 complained.
+- Not done yet: wave 2 (350), wave 3 (500), email 4 tonight. Gated follow-up runs set for 15:35 IL, 16:50 IL and 02:20 IL (Nov 28) in the Perplexity task.
+- Not touched: live site, checkout, CRM, ActiveCampaign, Meta. No lead data in any repo.
+- Rollback: delete unsent/scheduled broadcasts in Resend; remove the 5 DNS records; the domain simply expires Nov 27, 2027.
