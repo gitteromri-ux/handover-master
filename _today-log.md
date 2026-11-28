@@ -2162,3 +2162,7 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 04:30 IL — 04:30 conditional A2 cut (Omri order, A2 0 purchases Nov27-28)
 - A2 52668268711228 $519.99 -> $430.99, ACTIVE. Rollback daily_budget 51999.
+
+## 11:41 IL — Black Friday extended to Sunday night (Omri order)
+- Site commit fe7338b: end = Mon Nov 30 00:00 PT = 10:00 IL (4 date lines). Live files identical; iPhone countdown 1d 22h 18m, BFRIDAY applied (test had Meta blocked).
+- Rollback: branch backup/20261128-before-bf-sunday (a878c19).
