@@ -2159,3 +2159,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 
 ## 02:24 IL — Reels-safe 9x16 banners uploaded to ad library (no ads created/changed)
 - Glucose 9x16 Reels-safe vid 1500698155582515 · Fasting 9x16 Reels-safe vid 2239789483560045 (from v23 1x1 originals; text inside 14%/35% Reels safe area).
+
+## 04:30 IL — 04:30 conditional A2 cut (Omri order, A2 0 purchases Nov27-28)
+- A2 52668268711228 $519.99 -> $430.99, ACTIVE. Rollback daily_budget 51999.
