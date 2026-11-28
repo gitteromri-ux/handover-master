@@ -2156,3 +2156,6 @@ Draft held only these 3 edits; published and read back live. Lead-gen total dail
 ## 00:15 IL — 4x5 feed versions uploaded to ad library (no ads created/changed)
 - Glucose 4x5 vid 1598441655658161 (from v23 1x1 original, edge-extended) · Fasting 4x5 vid 2261202894445765 · Piano FIXED 67s 4x5 vid 907274432407100 (crop of Meta 720p copy, upscaled to 1080x1350).
 - Files: /tmp/rs/out/. Nothing attached or activated.
+
+## 02:24 IL — Reels-safe 9x16 banners uploaded to ad library (no ads created/changed)
+- Glucose 9x16 Reels-safe vid 1500698155582515 · Fasting 9x16 Reels-safe vid 2239789483560045 (from v23 1x1 originals; text inside 14%/35% Reels safe area).
